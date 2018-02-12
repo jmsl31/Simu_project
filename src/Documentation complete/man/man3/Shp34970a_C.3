@@ -1,0 +1,344 @@
+.TH "Shp34970a_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shp34970a_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBvirtual_multimeters_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBerrorQuery\fP (long *errorToTolerate_i=NULL, int nbError_i=0)"
+.br
+.ti -1c
+.RI "virtual double \fBgetDcVolt\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetAcVolt\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetDcAmp\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetAcAmp\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetOhm\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetOhm_FourWire\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetFreq\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetFreqMon\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetTemp\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetPower\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetAverage\fP ()"
+.br
+.ti -1c
+.RI "virtual std::string \fBgetError\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBsetDcVolt\fP (double DcVolt_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetAcVolt\fP (double AcVolt_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetDcAmp\fP (double DcAmp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetAcAmp\fP (double AcAmp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetOhm\fP (double Ohm_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetOhm_FourWire\fP (double Ohm_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetFreq\fP (double Freq_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetFreqMon\fP (double Freq_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetTemp\fP (double Temp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetPower\fP (double Power_dbm_i)"
+.br
+.ti -1c
+.RI "virtual void \fBsetAverage\fP (int Average_i)"
+.br
+.ti -1c
+.RI "virtual void \fBsetError\fP (std::string error_i)"
+.br
+.ti -1c
+.RI "std::string \fBrecvMessage\fP (std::string message, int adr, GPIB_BUSDATA *status)"
+.br
+.RI "\fIReception du Message\&. Fonction virtualle abstraite\&. \fP"
+.ti -1c
+.RI "void \fBChangeConfiguration\fP ()"
+.br
+.RI "\fIdefini un changement de configuration\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrPrimaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrSecondaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "void \fBtimeoutRecvData\fP (double timeout=0)"
+.br
+.RI "\fIdefini le time Out du Reception\&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBShp34970a_C::ChangeAdrPrimaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBvirtual_multimeters_C\fP\&.
+.SS "void \fBShp34970a_C::ChangeAdrSecondaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBvirtual_multimeters_C\fP\&.
+.SS "void \fBShp34970a_C::ChangeConfiguration\fP ()"
+
+.PP
+defini un changement de configuration\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getAcAmp\fP ()\fC [virtual]\fP"
+Mesure en mode ampèremètre alternatif\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIacAmp_a_o\fP pointeur sur le courant mesuré en ampères\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getAcVolt\fP ()\fC [virtual]\fP"
+Mesure en mode voltmètre alternatif\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIacVolt_v_o\fP pointeur sur la tension mesurée en volts\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getDcAmp\fP ()\fC [virtual]\fP"
+Mesure en mode ampèremètre continu\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdcAmp_a_o\fP pointeur sur le courant mesuré en ampères\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getDcVolt\fP ()\fC [virtual]\fP"
+Mesure en mode voltmètre continu\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdcVolt_v_o\fP pointeur sur la tension mesurée en volts\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getFreq\fP ()\fC [virtual]\fP"
+Mesure en mode fréquence-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIfreq_o\fP pointeur sur la fréquence mesurée en Hz\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getFreqMon\fP ()\fC [virtual]\fP"
+Mesure en mode fréquence-mètre pour un monitoring\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIfreq_o\fP pointeur sur la fréquence mesurée en Hz\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getOhm\fP ()\fC [virtual]\fP"
+Mesure en mode ohm-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIohm_o\fP pointeur sur la résistance mesurée en ohms\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getOhm_FourWire\fP ()\fC [virtual]\fP"
+Mesure en mode ohm-mètre, en mode 4 fils\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIohm_o\fP pointeur sur la résistance mesurée en ohms\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getPower\fP ()\fC [virtual]\fP"
+Mesure en mode power-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIpow_dBm_o\fP pointeur sur la puissance mesurée en dBm\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "double \fBShp34970a_C::getTemp\fP ()\fC [virtual]\fP"
+Mesure en mode thermocouple K\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fItemp_o\fP pointeur sur la température mesurée en °C\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBvirtual_multimeters_C\fP\&.
+.SS "std::string \fBShp34970a_C::recvMessage\fP (std::stringmessage, intadr, GPIB_BUSDATA *status)"
+
+.PP
+Reception du Message\&. Fonction virtualle abstraite\&. \fBParamètres:\fP
+.RS 4
+\fIstring\fP message : Message reçu\&. 
+.br
+\fIint\fP adr : Adresse du l'instrument\&. 
+.br
+\fIGPIB_STATUS*\fP status : pointeur Status de l'interface GPIB\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBvirtual_multimeters_C\fP\&.
+.SS "void \fBShp34970a_C::timeoutRecvData\fP (doubletimeout = \fC0\fP)"
+
+.PP
+defini le time Out du Reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBvirtual_multimeters_C\fP\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

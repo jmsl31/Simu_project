@@ -1,0 +1,67 @@
+.TH "error_Ex" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+error_Ex \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <visa_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBerror_Ex\fP (int errnum, char *errstr)"
+.br
+.ti -1c
+.RI "\fBerror_Ex\fP (int errnum, string errstr)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "string \fBerreurStr\fP"
+.br
+.ti -1c
+.RI "int \fBerreurCode\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe des exceptions VISA\&. 
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBerror_Ex::error_Ex\fP (interrnum, char *errstr)\fC [inline]\fP"
+Exportation de l'erreur sous forme char\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIerrnum\fP pointeur sur le numéro d'erreur, copie de la variable membre erreurCode\&. 
+.br
+\fIerrstr\fP pointeur sur le premier caractère de la chaine d'erreur, copie de la variable membre erreurStr\&. 
+.RE
+.PP
+
+.SS "\fBerror_Ex::error_Ex\fP (interrnum, stringerrstr)\fC [inline]\fP"
+Exportation de l'erreur sous forme string\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIerrnum\fP pointeur sur le numéro d'erreur, copie de la variable membre erreurCode\&. 
+.br
+\fIerrstr\fP pointeur sur le premier caractère de la chaine d'erreur, copie de la variable membre erreurStr\&. 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "int \fBerror_Ex::erreurCode\fP"
+Variable membre contenant le numéro du code erreur\&. 
+.SS "string \fBerror_Ex::erreurStr\fP"
+Variable membre contenant une chaine de string définissant l'erreur\&. 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

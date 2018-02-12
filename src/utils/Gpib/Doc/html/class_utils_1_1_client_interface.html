@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>GPIB Interface: Référence de la classe Utils::ClientInterface</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GPIB Interface
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="namespace_utils.html">Utils</a>      </li>
+      <li class="navelem"><a class="el" href="class_utils_1_1_client_interface.html">ClientInterface</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Utils::ClientInterface</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_client_interface_8h_source.html">ClientInterface.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Utils::ClientInterface:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_utils_1_1_client_interface.png" usemap="#Utils::ClientInterface_map" alt=""/>
+  <map id="Utils::ClientInterface_map" name="Utils::ClientInterface_map">
+<area href="class_utils_1_1_gpib_observer.html" title="definit la classe Observer GPIB ." alt="Utils::GpibObserver" shape="rect" coords="0,0,123,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_utils_1_1_client_interface-members.html">Liste de tous les membres</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a5aa2c90799c7ffc3f0152cf648165fe7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a5aa2c90799c7ffc3f0152cf648165fe7">ClientInterface</a> ()</td></tr>
+<tr class="memitem:a23c005bb86aa3bf6d073512d6ad0d756"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a23c005bb86aa3bf6d073512d6ad0d756">~ClientInterface</a> ()</td></tr>
+<tr class="memitem:a58df84a5f1d1c06cce59f40bafdc3a6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a58df84a5f1d1c06cce59f40bafdc3a6b">changeStatus</a> (<a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="el" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a>)</td></tr>
+<tr class="memdesc:a58df84a5f1d1c06cce59f40bafdc3a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change le Status du GPIB.  <a href="#a58df84a5f1d1c06cce59f40bafdc3a6b"></a><br/></td></tr>
+<tr class="memitem:a4d241c60c3141b553ea8e3072dae765d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a4d241c60c3141b553ea8e3072dae765d">recvMessage</a> (std::string <a class="el" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">message</a>, int adr, <a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> *<a class="el" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a>)</td></tr>
+<tr class="memdesc:a4d241c60c3141b553ea8e3072dae765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reception du Message.  <a href="#a4d241c60c3141b553ea8e3072dae765d"></a><br/></td></tr>
+<tr class="memitem:ac97510e9339462b1c06e78300720cf40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#ac97510e9339462b1c06e78300720cf40">ChangeConfiguration</a> ()</td></tr>
+<tr class="memdesc:ac97510e9339462b1c06e78300720cf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">defini un changement de configuration.  <a href="#ac97510e9339462b1c06e78300720cf40"></a><br/></td></tr>
+<tr class="memitem:a388f015119767fcf2ed3f280eb30c976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a388f015119767fcf2ed3f280eb30c976">ChangeAdrPrimaire</a> (int Adr)</td></tr>
+<tr class="memdesc:a388f015119767fcf2ed3f280eb30c976"><td class="mdescLeft">&#160;</td><td class="mdescRight">defini un changement de l'adresse primaire.  <a href="#a388f015119767fcf2ed3f280eb30c976"></a><br/></td></tr>
+<tr class="memitem:a6c631a48b18336a0b6aae70728e0f59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a6c631a48b18336a0b6aae70728e0f59f">ChangeAdrSecondaire</a> (int Adr)</td></tr>
+<tr class="memdesc:a6c631a48b18336a0b6aae70728e0f59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">defini un changement de l'adresse secondaire.  <a href="#a6c631a48b18336a0b6aae70728e0f59f"></a><br/></td></tr>
+<tr class="memitem:a61fce75c77b7255e766de0b0813410f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a61fce75c77b7255e766de0b0813410f2">timeoutRecvData</a> (double <a class="el" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">timeout</a>=0)</td></tr>
+<tr class="memdesc:a61fce75c77b7255e766de0b0813410f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">defini le time Out du Reception.  <a href="#a61fce75c77b7255e766de0b0813410f2"></a><br/></td></tr>
+<tr class="memitem:a5668e7a1b32dc3d6f62b03affd1d4ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a5668e7a1b32dc3d6f62b03affd1d4ad9">getStatus</a> ()</td></tr>
+<tr class="memitem:ad2a60971ef87a66a2d3c8f4b6704f6e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#ad2a60971ef87a66a2d3c8f4b6704f6e2">setStatus</a> (<a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="el" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a>)</td></tr>
+<tr class="memitem:a6e51b918200cc295e9aabd2a7fa460ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a6e51b918200cc295e9aabd2a7fa460ad">getAdrprimaire</a> ()</td></tr>
+<tr class="memitem:af6fe9ce96d2b55ab51a203a7cf6c56e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#af6fe9ce96d2b55ab51a203a7cf6c56e0">setAdrPrimarie</a> (int adr)</td></tr>
+<tr class="memitem:a41380a87563d2f80ab781955e8a68f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a41380a87563d2f80ab781955e8a68f54">getAdrSecondaire</a> ()</td></tr>
+<tr class="memitem:aeb91e7db803d413dbc9e572675c7d1b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#aeb91e7db803d413dbc9e572675c7d1b5">setAdrSecondaire</a> (int adr)</td></tr>
+<tr class="memitem:a4e53e797e772ab1c05a1923b7a98e951"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a4e53e797e772ab1c05a1923b7a98e951">getmessage</a> ()</td></tr>
+<tr class="memitem:a6065c35dec7344724536c93260ed15ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a6065c35dec7344724536c93260ed15ef">setmessage</a> (std::string mes)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a294746ed5a9b8d80911b72453e6bcaa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a></td></tr>
+<tr class="memitem:af70c08c002e3197535b6f252f2e2d7c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#af70c08c002e3197535b6f252f2e2d7c3">AdrPrimaire</a></td></tr>
+<tr class="memitem:acce41ecbf147d67a692431562a78f07d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#acce41ecbf147d67a692431562a78f07d">AdrSecondaire</a></td></tr>
+<tr class="memitem:a7d7ce2a713743236ffea043ee2044d5c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">timeout</a></td></tr>
+<tr class="memitem:aafb210cdd9c884552425ad76e864dc08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">message</a></td></tr>
+</table>
+<hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a5aa2c90799c7ffc3f0152cf648165fe7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utils_1_1_client_interface.html#a5aa2c90799c7ffc3f0152cf648165fe7">Utils::ClientInterface::ClientInterface</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Constructeur de la classe. </p>
+
+</div>
+</div>
+<a class="anchor" id="a23c005bb86aa3bf6d073512d6ad0d756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utils_1_1_client_interface.html#a23c005bb86aa3bf6d073512d6ad0d756">Utils::ClientInterface::~ClientInterface</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destructeur de la classe. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a388f015119767fcf2ed3f280eb30c976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a388f015119767fcf2ed3f280eb30c976">Utils::ClientInterface::ChangeAdrPrimaire</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Adr</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>defini un changement de l'adresse primaire. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>timeout : Time Out de reception. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#a1774ad6b62d75ad0e5f14efa6678fb19">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c631a48b18336a0b6aae70728e0f59f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a6c631a48b18336a0b6aae70728e0f59f">Utils::ClientInterface::ChangeAdrSecondaire</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Adr</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>defini un changement de l'adresse secondaire. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>timeout : Time Out de reception. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#a85ac0a532fef5163b7f54b7dadb71c29">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac97510e9339462b1c06e78300720cf40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#ac97510e9339462b1c06e78300720cf40">Utils::ClientInterface::ChangeConfiguration</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>defini un changement de configuration. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>timeout : Time Out de reception. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#a0e45985743fbaacaae7d2b904530337e">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58df84a5f1d1c06cce59f40bafdc3a6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a58df84a5f1d1c06cce59f40bafdc3a6b">Utils::ClientInterface::changeStatus</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Change le Status du GPIB. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>: Statut du GPIB. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#ae4ecfbe34ec008cacceb31bfde247969">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e51b918200cc295e9aabd2a7fa460ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_utils_1_1_client_interface.html#a6e51b918200cc295e9aabd2a7fa460ad">Utils::ClientInterface::getAdrprimaire</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41380a87563d2f80ab781955e8a68f54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_utils_1_1_client_interface.html#a41380a87563d2f80ab781955e8a68f54">Utils::ClientInterface::getAdrSecondaire</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e53e797e772ab1c05a1923b7a98e951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="class_utils_1_1_client_interface.html#a4e53e797e772ab1c05a1923b7a98e951">Utils::ClientInterface::getmessage</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5668e7a1b32dc3d6f62b03affd1d4ad9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="el" href="class_utils_1_1_client_interface.html#a5668e7a1b32dc3d6f62b03affd1d4ad9">Utils::ClientInterface::getStatus</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d241c60c3141b553ea8e3072dae765d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a4d241c60c3141b553ea8e3072dae765d">Utils::ClientInterface::recvMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reception du Message. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>message : Message re�u. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#a94ef1ae205100f239d46a1d1abff0578">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6fe9ce96d2b55ab51a203a7cf6c56e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#af6fe9ce96d2b55ab51a203a7cf6c56e0">Utils::ClientInterface::setAdrPrimarie</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb91e7db803d413dbc9e572675c7d1b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#aeb91e7db803d413dbc9e572675c7d1b5">Utils::ClientInterface::setAdrSecondaire</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6065c35dec7344724536c93260ed15ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a6065c35dec7344724536c93260ed15ef">Utils::ClientInterface::setmessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>mes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2a60971ef87a66a2d3c8f4b6704f6e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#ad2a60971ef87a66a2d3c8f4b6704f6e2">Utils::ClientInterface::setStatus</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61fce75c77b7255e766de0b0813410f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_utils_1_1_client_interface.html#a61fce75c77b7255e766de0b0813410f2">Utils::ClientInterface::timeoutRecvData</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>defini le time Out du Reception. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>timeout : Time Out de reception. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_utils_1_1_gpib_observer.html#a20938df3c512a7b1f26766278d23c89b">Utils::GpibObserver</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="af70c08c002e3197535b6f252f2e2d7c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_utils_1_1_client_interface.html#af70c08c002e3197535b6f252f2e2d7c3">Utils::ClientInterface::AdrPrimaire</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acce41ecbf147d67a692431562a78f07d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_utils_1_1_client_interface.html#acce41ecbf147d67a692431562a78f07d">Utils::ClientInterface::AdrSecondaire</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aafb210cdd9c884552425ad76e864dc08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">Utils::ClientInterface::message</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a294746ed5a9b8d80911b72453e6bcaa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="el" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">Utils::ClientInterface::status</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d7ce2a713743236ffea043ee2044d5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">Utils::ClientInterface::timeout</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>D:/cpp/drivers_cpp/src/utils/Gpib/<a class="el" href="_client_interface_8h_source.html">ClientInterface.h</a></li>
+<li>D:/cpp/drivers_cpp/src/utils/Gpib/<a class="el" href="_client_interface_8cpp.html">ClientInterface.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Avril 12 2017 09:49:10 pour GPIB Interface par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+.TH "Utils::ClientInterface" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::ClientInterface \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClientInterface\&.h>\fP
+.PP
+Est dérivée de \fBUtils::GpibObserver\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBClientInterface\fP ()"
+.br
+.ti -1c
+.RI "\fB~ClientInterface\fP ()"
+.br
+.ti -1c
+.RI "void \fBchangeStatus\fP (\fBGPIB_STATUS\fP \fBstatus\fP)"
+.br
+.RI "\fIChange le Status du GPIB\&. \fP"
+.ti -1c
+.RI "void \fBrecvMessage\fP (std::string \fBmessage\fP, int adr, \fBGPIB_STATUS\fP *\fBstatus\fP)"
+.br
+.RI "\fIReception du Message\&. \fP"
+.ti -1c
+.RI "void \fBChangeConfiguration\fP ()"
+.br
+.RI "\fIdefini un changement de configuration\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrPrimaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrSecondaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "void \fBtimeoutRecvData\fP (double \fBtimeout\fP=0)"
+.br
+.RI "\fIdefini le time Out du Reception\&. \fP"
+.ti -1c
+.RI "\fBGPIB_STATUS\fP \fBgetStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetStatus\fP (\fBGPIB_STATUS\fP \fBstatus\fP)"
+.br
+.ti -1c
+.RI "int \fBgetAdrprimaire\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAdrPrimarie\fP (int adr)"
+.br
+.ti -1c
+.RI "int \fBgetAdrSecondaire\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAdrSecondaire\fP (int adr)"
+.br
+.ti -1c
+.RI "std::string \fBgetmessage\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetmessage\fP (std::string mes)"
+.br
+.in -1c
+.SS "Attributs privés"
+
+.in +1c
+.ti -1c
+.RI "\fBGPIB_STATUS\fP \fBstatus\fP"
+.br
+.ti -1c
+.RI "int \fBAdrPrimaire\fP"
+.br
+.ti -1c
+.RI "int \fBAdrSecondaire\fP"
+.br
+.ti -1c
+.RI "double \fBtimeout\fP"
+.br
+.ti -1c
+.RI "std::string \fBmessage\fP"
+.br
+.in -1c
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::ClientInterface::ClientInterface\fP ()"
+Constructeur de la classe\&. 
+.SS "\fBUtils::ClientInterface::~ClientInterface\fP ()"
+Destructeur de la classe\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::ClientInterface::ChangeAdrPrimaire\fP (intAdr)\fC [virtual]\fP"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SS "void \fBUtils::ClientInterface::ChangeAdrSecondaire\fP (intAdr)\fC [virtual]\fP"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SS "void \fBUtils::ClientInterface::ChangeConfiguration\fP ()\fC [virtual]\fP"
+
+.PP
+defini un changement de configuration\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SS "void \fBUtils::ClientInterface::changeStatus\fP (\fBGPIB_STATUS\fPstatus)\fC [virtual]\fP"
+
+.PP
+Change le Status du GPIB\&. \fBParamètres:\fP
+.RS 4
+\fIstatus\fP : Statut du GPIB\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SS "int \fBUtils::ClientInterface::getAdrprimaire\fP ()"
+
+.SS "int \fBUtils::ClientInterface::getAdrSecondaire\fP ()"
+
+.SS "std::string \fBUtils::ClientInterface::getmessage\fP ()"
+
+.SS "\fBGPIB_STATUS\fP \fBUtils::ClientInterface::getStatus\fP ()"
+
+.SS "void \fBUtils::ClientInterface::recvMessage\fP (std::stringmessage, intadr, \fBGPIB_STATUS\fP *status)\fC [virtual]\fP"
+
+.PP
+Reception du Message\&. \fBParamètres:\fP
+.RS 4
+\fIstring\fP message : Message re�u\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SS "void \fBUtils::ClientInterface::setAdrPrimarie\fP (intadr)"
+
+.SS "void \fBUtils::ClientInterface::setAdrSecondaire\fP (intadr)"
+
+.SS "void \fBUtils::ClientInterface::setmessage\fP (std::stringmes)"
+
+.SS "void \fBUtils::ClientInterface::setStatus\fP (\fBGPIB_STATUS\fPstatus)"
+
+.SS "void \fBUtils::ClientInterface::timeoutRecvData\fP (doubletimeout = \fC0\fP)\fC [virtual]\fP"
+
+.PP
+defini le time Out du Reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::GpibObserver\fP\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "int \fBUtils::ClientInterface::AdrPrimaire\fP\fC [private]\fP"
+
+.SS "int \fBUtils::ClientInterface::AdrSecondaire\fP\fC [private]\fP"
+
+.SS "std::string \fBUtils::ClientInterface::message\fP\fC [private]\fP"
+
+.SS "\fBGPIB_STATUS\fP \fBUtils::ClientInterface::status\fP\fC [private]\fP"
+
+.SS "double \fBUtils::ClientInterface::timeout\fP\fC [private]\fP"
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

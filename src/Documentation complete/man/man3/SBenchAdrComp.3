@@ -1,0 +1,72 @@
+.TH "SBenchAdrComp" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SBenchAdrComp \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBSBenchAdrComp\fP ()"
+.br
+.RI "\fIConstructeur de la classe\&. \fP"
+.ti -1c
+.RI "\fB~SBenchAdrComp\fP ()"
+.br
+.RI "\fIDestructeur de la classe\&. \fP"
+.ti -1c
+.RI "T1DStringArray \fBsearchDevice\fP (AnsiString Section, AnsiString searchValue, bool *valueFind)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property \fBSBenchAdrs\fP * \fBBenchAdrFile\fP = {read = SBenchAdrFile}"
+.br
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = \fBFActive\fP, write = SetActive }"
+.br
+.ti -1c
+.RI "__property AnsiString \fBFileName\fP = {read = \fBFFileName\fP, write = SetFileName}"
+.br
+.ti -1c
+.RI "__property AnsiString \fBSection\fP = {read = FSection, write = SetSection}"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "virtual void __fastcall \fBSetActive\fP (bool AValue)"
+.br
+.ti -1c
+.RI "virtual void __fastcall \fBSetFileName\fP (AnsiString AValue)"
+.br
+.ti -1c
+.RI "virtual void __fastcall \fBSetSection\fP (AnsiString AValue)"
+.br
+.in -1c
+.SS "Attributs protégés"
+
+.in +1c
+.ti -1c
+.RI "bool \fBFActive\fP"
+.br
+.RI "\fIVariable de type bool caracterisant l'etat\&. \fP"
+.ti -1c
+.RI "AnsiString \fBFFileName\fP"
+.br
+.RI "\fIChaine de caracteres contenant : nom du fichier\&. \fP"
+.ti -1c
+.RI "AnsiString \fBFCaption\fP"
+.br
+.RI "\fIChaine de caracteres contenant : legende\&. \fP"
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

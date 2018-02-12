@@ -1,0 +1,164 @@
+.TH "virtual_equipment_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_equipment_C \- 
+.PP
+Permet la representation objet d'un equipement\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <virtual_equipment_C\&.h>\fP
+.PP
+Dérivée par \fBvirtual_receiver_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_equipment_C\fP ()"
+.br
+.RI "\fIConstructeur de la fonction \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "\fB~virtual_equipment_C\fP ()"
+.br
+.RI "\fIDestructeur de la fonction \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetTranche\fP (double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max, double gain_i)"
+.br
+.RI "\fIFixe la tranche\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetAlim\fP (double voltage_i, double current_i, double protVoltage_i, double protcurrent_i, double tension_max_i, double courant_min_m, double courant_max_i, double puissance_i, double puissance_max_i)"
+.br
+.RI "\fIFixe l'alimentation\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetTmtc\fP (bool tm_status, bool tm_On_Off)"
+.br
+.RI "\fIFixe le tmtc de l'equipement\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBvirtual_RF_C\fP > \fBtranche_m\fP"
+.br
+.RI "\fIPointeur de type std::vector<virtual_RF_C> \fP"
+.ti -1c
+.RI "std::vector< \fBvirtual_alim_C\fP > \fBalim_m\fP"
+.br
+.RI "\fIPointeur de type std::vector<virtual_alim_C> \fP"
+.ti -1c
+.RI "std::vector< \fBvirtual_tmtc_C\fP > \fBtmtc_m\fP"
+.br
+.RI "\fIPointeur de type std::vector<virtual_tmtc_C> \fP"
+.ti -1c
+.RI "__property double \fBTemperature\fP = {read = getTemperature, write = setTemperature}"
+.br
+.RI "\fIPropriete Temperature des fonctions getTemperature et setTemperature\&. \fP"
+.ti -1c
+.RI "__property std::string \fBName\fP = {read = getName, write = setName}"
+.br
+.RI "\fIPropriete Name de l'objet \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "__property std::string \fBType\fP = {read = getType, write = setType}"
+.br
+.RI "\fIPropriete Type de l'objet \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = GetActive, write = FActive}"
+.br
+.RI "\fIPropriete TrancheRF de l'objet \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBVerifyInUse\fP = {read = FVerifyInUse, write = FVerifyInUse}"
+.br
+.RI "\fIPropriete VerifyInUse de l'objet \fBvirtual_equipment_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBLock\fP = {read = FLock, write = FLock}"
+.br
+.RI "\fIPropriete Lock de l'objet \fBvirtual_equipment_C\fP\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Permet la representation objet d'un equipement\&. 
+
+\fBAuteur:\fP
+.RS 4
+: JOHANN MEISSL 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+: 10/02/2017
+.RE
+.PP
+Elle est composee d'un vecteur de Classe \fIvtranche_C\fP d'un vecteur de Classe \fIvalim_C\fP d'un vecteur de Classe \fIvtmtc_C\fP 
+.PP
+\fBVersion:\fP
+.RS 4
+: 1\&.0\&.0 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_equipment_C::setAlim\fP (doublevoltage_i, doublecurrent_i, doubleprotVoltage_i, doubleprotcurrent_i, doubletension_max_i, doublecourant_min_m, doublecourant_max_i, doublepuissance_i, doublepuissance_max_i)\fC [virtual]\fP"
+
+.PP
+Fixe l'alimentation\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP voltage_i : voltage de l'alimentation 
+.br
+\fIdouble\fP current_i : courant de l'alimentation 
+.br
+\fIdouble\fP protVoltage_i : voltage de protection 
+.br
+\fIdouble\fP protcurrent_i : courant de protection 
+.RE
+.PP
+
+.SS "void \fBvirtual_equipment_C::setTmtc\fP (booltm_status, booltm_On_Off)\fC [virtual]\fP"
+
+.PP
+Fixe le tmtc de l'equipement\&. \fBParamètres:\fP
+.RS 4
+\fIbool\fP tm_status : status du tmtc 
+.br
+\fIbool\fP tm_On_Off : etat du tmtc 
+.RE
+.PP
+
+.SS "void \fBvirtual_equipment_C::setTranche\fP (doublefq_start_i, doublefq_stop_i, doublebandwidth_i, doublestep_i, doublepower_i, doublepower_min, doublepower_max, doublefrequency_min, doublefrequency_max, doublegain_i)\fC [virtual]\fP"
+
+.PP
+Fixe la tranche\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP fq_start_i : frequence de depart 
+.br
+\fIdouble\fP fq_stop_i : frequence de fin 
+.br
+\fIdouble\fP bandwidth_i : bande passante 
+.br
+\fIdouble\fP step_i : etape 
+.br
+\fIdouble\fP power_i : puissance 
+.br
+\fIdouble\fP power_min : puissance minimum 
+.br
+\fIdouble\fP power_max : puissance maximum 
+.br
+\fIdouble\fP frequency_min : frequence minimum 
+.br
+\fIdouble\fP frequency_max : frequence maximum 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "__property bool \fBvirtual_equipment_C::Active\fP = {read = GetActive, write = FActive}"
+
+.PP
+Propriete TrancheRF de l'objet \fBvirtual_equipment_C\fP\&. Propriete Active de l'objet \fBvirtual_equipment_C\fP 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

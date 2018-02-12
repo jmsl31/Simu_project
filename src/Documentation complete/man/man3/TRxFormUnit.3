@@ -1,0 +1,217 @@
+.TH "TRxFormUnit" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TRxFormUnit \- 
+.PP
+Definit la class d'interface Homme/Machine de l'equipement Rx\&. *La classe herite de la classe \fBTSimuForm\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SRxFormUnit\&.h>\fP
+.PP
+Est dérivée de \fBTSimuForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "__fastcall \fBTRxFormUnit\fP (TComponent *Owner)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TPageControl * \fBPageControl\fP"
+.br
+.ti -1c
+.RI "TTabSheet * \fBPageParam\fP"
+.br
+.ti -1c
+.RI "TPanel * \fBPanelDesc\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelCourant\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelName\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelNbAlim\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelNbTmtc\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelNbTranche\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelTension\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLabel * \fBLabelType\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBTensionF\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBCourantF\fP"
+.br
+.ti -1c
+.RI "TGridPanel * \fBGridParam\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTTension\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLTension\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLCourant\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTCourant\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPuissance\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPuissance\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLTensionMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTTensionMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLCourantMin\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTCourantMin\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPuissanceMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLGain\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTGain\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLFreqStart\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTFreqStart\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLFreqStop\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTFreqStop\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTFreqMin\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTfreqMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTBandwidth\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTstep\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPower\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTFreqOl\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTpowerOl\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPowerMin\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPowerMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPowerOlMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLFreqMin\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLFreqMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLBandwidth\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLStep\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPower\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLFreqOl\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLpowerOl\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPowerMin\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPowerMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPowerOlMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTPuissanceMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLCourantMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTCourantMax\fP"
+.br
+.ti -1c
+.RI "TBitBtn * \fBBitBtn1\fP"
+.br
+.ti -1c
+.RI "\fBSRxThread\fP * \fBThread\fP"
+.br
+.ti -1c
+.RI "\fBRx_C\fP * \fBDevice\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Definit la class d'interface Homme/Machine de l'equipement Rx\&. *La classe herite de la classe \fBTSimuForm\fP\&. 
+
+Definit la class d'interface Homme/Machine de l'instrumentation \fBAlimentation\fP\&. La classe herite de la classe \fBTSimuForm\fP\&.
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 17/10/2017 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/equipment/Recepteur/Rx_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/equipment/Recepteur/Rx_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef Rx_CH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define Rx_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;IniFiles.hpp&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;virtual_receiver_C.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;Define.h&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;InstObserver.h&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;InstSubject.h&quot;</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="preprocessor">#define num_tranche 0</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="keyword">using namespace </span>Utils;
+<a name="l00017"></a>00017 <span class="comment">/* ! \struct Alimentation</span>
+<a name="l00018"></a>00018 <span class="comment"> \brief Structure de definition de l&#39;alimentation</span>
+<a name="l00019"></a>00019 <span class="comment"> */</span>
+<a name="l00020"></a><a class="code" href="struct_alimentation.html">00020</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00022"></a><a class="code" href="struct_alimentation.html#aed070f7022e06e68b15062a7bbbc0486">00022</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#aed070f7022e06e68b15062a7bbbc0486" title="voltage_m : voltage desire">voltage_m</a>;
+<a name="l00024"></a><a class="code" href="struct_alimentation.html#a188ac7946f63cebf38c90d9a25bf751b">00024</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#a188ac7946f63cebf38c90d9a25bf751b" title="voltage_actif_m : voltage actif">voltage_actif_m</a>;
+<a name="l00026"></a><a class="code" href="struct_alimentation.html#abc4e16b612c57f21725695552e44df89">00026</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#abc4e16b612c57f21725695552e44df89" title="current_m : courant desire">current_m</a>;
+<a name="l00028"></a><a class="code" href="struct_alimentation.html#a04cd39901da0bb16766e019add58354a">00028</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#a04cd39901da0bb16766e019add58354a" title="current_actif_m : courant actif">current_actif_m</a>;
+<a name="l00030"></a><a class="code" href="struct_alimentation.html#a4f6870885a5ea21ba2a0adf743abbbeb">00030</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#a4f6870885a5ea21ba2a0adf743abbbeb" title="voltageMax_m : Tension Max autorisée">voltageMax_m</a>;
+<a name="l00032"></a><a class="code" href="struct_alimentation.html#a07338914d474f6883eb0e61aa7851cdf">00032</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#a07338914d474f6883eb0e61aa7851cdf" title="voltageMin_m : Tension Min autorisée">courantMin_m</a>;
+<a name="l00034"></a><a class="code" href="struct_alimentation.html#aefb15189c2d3e73e6bf59b9415bf309e">00034</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#aefb15189c2d3e73e6bf59b9415bf309e" title="voltageMin_m : Tension Min autorisée">courantMax_m</a>;
+<a name="l00036"></a><a class="code" href="struct_alimentation.html#a3332d0f5c828b06c5f362f213d2c1cfa">00036</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#a3332d0f5c828b06c5f362f213d2c1cfa" title="Puissance de l&#39;equipement : Tension Min autorisée.">puissance_m</a>;
+<a name="l00038"></a><a class="code" href="struct_alimentation.html#af2d43309c206f18c16ecb1a29efbbdea">00038</a>         <span class="keywordtype">double</span> <a class="code" href="struct_alimentation.html#af2d43309c206f18c16ecb1a29efbbdea" title="puissanceMax_m : puissance Maximal autorisée">puissanceMax_m</a>;
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 } <a class="code" href="struct_alimentation.html">Alimentation</a>;
+<a name="l00041"></a>00041 <span class="comment">/* ! \struct Frequency</span>
+<a name="l00042"></a>00042 <span class="comment"> \brief Structure de definition des frequences</span>
+<a name="l00043"></a>00043 <span class="comment"> */</span>
+<a name="l00044"></a><a class="code" href="struct_frequency.html">00044</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00046"></a><a class="code" href="struct_frequency.html#a88999521a402e4fb7508595c7db8d8c4">00046</a>         <span class="keywordtype">double</span> frequency_Start_In,
+<a name="l00048"></a>00048         frequency_Stop_In,
+<a name="l00050"></a>00050         bandwidth,
+<a name="l00052"></a>00052         <a class="code" href="struct_frequency.html#a88999521a402e4fb7508595c7db8d8c4" title="Etape.">step</a>,
+<a name="l00054"></a>00054         frequency_Min,
+<a name="l00056"></a>00056         frequency_Max,
+<a name="l00058"></a>00058         frequency_Ol,
+<a name="l00060"></a>00060         frequencyOlMax,
+<a name="l00062"></a>00062         frequencyOlMin,
+<a name="l00064"></a>00064         power_Ol,
+<a name="l00066"></a>00066         powerOlMax,
+<a name="l00068"></a>00068         powerOlMin,
+<a name="l00070"></a>00070         power_min,
+<a name="l00072"></a>00072         power_max,
+<a name="l00074"></a>00074         power_in,
+<a name="l00076"></a>00076         power_out,
+<a name="l00078"></a>00078         gain;
+<a name="l00079"></a>00079 } <a class="code" href="struct_frequency.html">Frequency</a>;
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="comment">/* ! \struct Equipement_RX</span>
+<a name="l00082"></a>00082 <span class="comment"> \brief Structure de definition de l&#39;equipement RX</span>
+<a name="l00083"></a>00083 <span class="comment"> */</span>
+<a name="l00084"></a><a class="code" href="struct_equipement___r_x.html">00084</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00086"></a><a class="code" href="struct_equipement___r_x.html#ac268bdae18ac9ff351ef56d8e377c291">00086</a>         <a class="code" href="struct_t_comp_eqpt.html" title="Structure de l&#39;equipement.">TCompEqpt</a> <a class="code" href="struct_equipement___r_x.html#ac268bdae18ac9ff351ef56d8e377c291" title="Structure de l&#39;objet de type TCompEqpt.">eqpt</a>;
+<a name="l00088"></a><a class="code" href="struct_equipement___r_x.html#af4b4418f885bc1dafff9357265cb0e1f">00088</a>         <a class="code" href="struct_alimentation.html">Alimentation</a> <a class="code" href="struct_equipement___r_x.html#af4b4418f885bc1dafff9357265cb0e1f" title="Type d&#39;alimentation.">alimentation</a>;
+<a name="l00090"></a><a class="code" href="struct_equipement___r_x.html#a1676b3ed300354f2bad3ae8da8ee2afa">00090</a>         <a class="code" href="struct_frequency.html">Frequency</a> <a class="code" href="struct_equipement___r_x.html#a1676b3ed300354f2bad3ae8da8ee2afa" title="Type de frequence.">frequence</a>;
+<a name="l00091"></a>00091 } <a class="code" href="struct_equipement___r_x.html">Equipement_RX</a>;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="comment">/* ! \class Rx_C</span>
+<a name="l00094"></a>00094 <span class="comment"> \brief Classe publique du recepteur virtuel.</span>
+<a name="l00095"></a>00095 <span class="comment"> */</span>
+<a name="l00096"></a><a class="code" href="class_rx___c.html">00096</a> <span class="keyword">class </span><a class="code" href="class_rx___c.html">Rx_C</a> : <span class="keyword">public</span> <a class="code" href="classvirtual__receiver___c.html" title="Classe du recepteur virtuel.">virtual_receiver_C</a>, <span class="keyword">public</span> <a class="code" href="class_utils_1_1_inst_observer.html">InstObserver</a>, <span class="keyword">public</span> <a class="code" href="class_utils_1_1_eqpt_subject.html">EqptSubject</a> {
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 <span class="keyword">private</span>:
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100         <span class="comment">/* ! \brief *file : pointeur de type TIniFile</span>
+<a name="l00101"></a>00101 <span class="comment">         */</span>
+<a name="l00102"></a>00102         TIniFile *file;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="keyword">protected</span>:
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="keyword">public</span>:
+<a name="l00107"></a>00107         <span class="comment">/* ! \brief Contructeur de Classe</span>
+<a name="l00108"></a>00108 <span class="comment">         */</span>
+<a name="l00109"></a>00109         <a class="code" href="class_rx___c.html">Rx_C</a>();
+<a name="l00110"></a>00110 
+<a name="l00114"></a>00114         <span class="keywordtype">double</span> getNb_Tranche();
+<a name="l00115"></a>00115         <span class="comment">/* ! \brief Recupere le nombre d&#39;alimentation</span>
+<a name="l00116"></a>00116 <span class="comment">         \return Nombre d&#39;alimentations</span>
+<a name="l00117"></a>00117 <span class="comment">         */</span>
+<a name="l00118"></a>00118         <span class="keywordtype">double</span> getNb_Alim();
+<a name="l00119"></a>00119         <span class="comment">/* ! \brief Recupere le nombre de tmtc</span>
+<a name="l00120"></a>00120 <span class="comment">         \return Nombre de tmtc</span>
+<a name="l00121"></a>00121 <span class="comment">         */</span>
+<a name="l00122"></a>00122         <span class="keywordtype">double</span> getNb_Tmtc();
+<a name="l00123"></a>00123         <span class="comment">/* ! \brief Initialise l&#39;equipement</span>
+<a name="l00124"></a>00124 <span class="comment">         \param *file : pointeur de type TIniFile</span>
+<a name="l00125"></a>00125 <span class="comment">         */</span>
+<a name="l00126"></a>00126         <span class="comment">/* ! \brief Recupere la frequence de depart en sortie de l&#39;appareil</span>
+<a name="l00127"></a>00127 <span class="comment">         \param int Num_Tranche : numero de la tranche</span>
+<a name="l00128"></a>00128 <span class="comment">         \return Frequence de la tranche</span>
+<a name="l00129"></a>00129 <span class="comment">         */</span>
+<a name="l00130"></a>00130         <span class="keywordtype">double</span> getFrequency_Start_Out(<span class="keywordtype">int</span> Num_Tranche);
+<a name="l00131"></a>00131         <span class="comment">/* ! \brief Fixe la frequence de depart en sortie de l&#39;appareil</span>
+<a name="l00132"></a>00132 <span class="comment">         \param int Num_Tranche : numero de la tranche</span>
+<a name="l00133"></a>00133 <span class="comment">         \param double fq_out_start_i : valeur de la fréquence de depart</span>
+<a name="l00134"></a>00134 <span class="comment">         */</span>
+<a name="l00135"></a>00135         <span class="keywordtype">void</span> setFrequency_Start_Out(<span class="keywordtype">int</span> Num_Tranche, <span class="keywordtype">double</span> fq_out_start_i);
+<a name="l00136"></a>00136         <span class="comment">/* ! \brief Recupere la frequence de fin en sorite de l&#39;appareil</span>
+<a name="l00137"></a>00137 <span class="comment">         \param int Num_Tranche : numero de tranche</span>
+<a name="l00138"></a>00138 <span class="comment">         \return Frequence de la tranche</span>
+<a name="l00139"></a>00139 <span class="comment">         */</span>
+<a name="l00140"></a>00140         <span class="keywordtype">double</span> getFrequency_Stop_Out(<span class="keywordtype">int</span> Num_Tranche);
+<a name="l00141"></a>00141         <span class="comment">/* ! \brief Fixe la fréquence de fin en sortie de l&#39;appareil</span>
+<a name="l00142"></a>00142 <span class="comment">         \param int Num_Tranche : numero de la tranche</span>
+<a name="l00143"></a>00143 <span class="comment">         \param double fq_out_stop_i : valeur de la frequence de fin</span>
+<a name="l00144"></a>00144 <span class="comment">         */</span>
+<a name="l00145"></a>00145         <span class="keywordtype">void</span> setFrequency_Stop_Out(<span class="keywordtype">int</span> Num_Tranche, <span class="keywordtype">double</span> fq_out_stop_i);
+<a name="l00146"></a>00146         <span class="comment">/* ! \brief Recupere la puissance de sortie de l&#39;appareil</span>
+<a name="l00147"></a>00147 <span class="comment">         \param int Num_Tranche : numero de la tranche</span>
+<a name="l00148"></a>00148 <span class="comment">         \param double Pin : puissance en entrée de l&#39;appareil</span>
+<a name="l00149"></a>00149 <span class="comment">         \return Puissance de l&#39;appareil</span>
+<a name="l00150"></a>00150 <span class="comment">         */</span>
+<a name="l00151"></a>00151         <span class="keywordtype">double</span> getPout(<span class="keywordtype">int</span> Num_Tranche, <span class="keywordtype">double</span> Pin);
+<a name="l00152"></a>00152 
+<a name="l00153"></a>00153         <span class="comment">/* ! \brief Transmets les valeurs des variables au objet Client(Observer)</span>
+<a name="l00154"></a>00154 <span class="comment">         \param double Voltage : Tension de l&#39;equipement</span>
+<a name="l00155"></a>00155 <span class="comment">         \param double Current : Courant de l&#39;equipement</span>
+<a name="l00156"></a>00156 <span class="comment">         \param bool overvoltage : Flag de l&#39;overvoltage</span>
+<a name="l00157"></a>00157 <span class="comment">         \param bool overcurrent : Flag de l&#39;overcurrent</span>
+<a name="l00158"></a>00158 <span class="comment">         \param bool active_power : Flag de l&#39;activation de la puissance RF</span>
+<a name="l00159"></a>00159 <span class="comment">         \param bool active_alim : Flag de l&#39;activation de la puissance d&#39;alimentation</span>
+<a name="l00160"></a>00160 <span class="comment">         \param double power : puissance de l&#39;equipement</span>
+<a name="l00161"></a>00161 <span class="comment">         */</span>
+<a name="l00162"></a>00162         <span class="keywordtype">void</span> ReturnValue(<span class="keywordtype">double</span> Voltage, <span class="keywordtype">double</span> Current, <span class="keywordtype">bool</span> overvoltage, <span class="keywordtype">bool</span> overcurrent, <span class="keywordtype">bool</span> active_power, <span class="keywordtype">bool</span> active_alim, <span class="keywordtype">double</span> power);
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164         <span class="comment">/* ! \brief Methode d&#39;activation de l&#39;equipement.</span>
+<a name="l00165"></a>00165 <span class="comment">         */</span>
+<a name="l00166"></a>00166         <span class="keywordtype">void</span> setActive();
+<a name="l00167"></a>00167         <span class="comment">/* ! \brief Methode permettant la configuration de l&#39;equipement virtual  à partir d&#39;un fichier INI</span>
+<a name="l00168"></a>00168 <span class="comment">         */</span>
+<a name="l00169"></a>00169         <span class="keywordtype">void</span> InitEqpt(TIniFile *file);
+<a name="l00175"></a>00175         <span class="keyword">virtual</span> <span class="keywordtype">void</span> ChangeValueDown(std::string value, TYPE_PARAM type);
+<a name="l00176"></a>00176         <span class="keyword">virtual</span> <span class="keywordtype">void</span> ChangeValueDown(<span class="keywordtype">int</span> value, TYPE_PARAM type);
+<a name="l00177"></a>00177         <span class="keyword">virtual</span> <span class="keywordtype">void</span> ChangeValueDown(<span class="keywordtype">double</span> value, TYPE_PARAM type);
+<a name="l00178"></a>00178         <span class="keyword">virtual</span> <span class="keywordtype">void</span> ChangeValueDown(<span class="keywordtype">bool</span> value, TYPE_PARAM type);
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 };
+<a name="l00181"></a>00181 
+<a name="l00182"></a>00182 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:38 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

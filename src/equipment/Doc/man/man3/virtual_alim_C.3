@@ -1,0 +1,73 @@
+.TH "virtual_alim_C" 3 "Jeudi Mai 18 2017" "Equipements" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_alim_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_alim_C\fP ()"
+.br
+.RI "\fIRConstructeur de la Classe virtual_Alim_C\&. \fP"
+.ti -1c
+.RI "virtual void \fBinitAlim\fP (double voltage_i, double current_i, double protVoltage_i, double protcurrent_i)"
+.br
+.RI "\fIInitialise la tranche Alim de l'equipement\&. param \fIvoltage_i\fP tension de l'equipement\&. param \fIcurrent_i\fP courant de l'equipement\&. param \fIprotVoltage_i\fP protection de la tension de l'equipement\&. param \fIprotcurrent_i\fP protection du courant de l'equipement\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property double \fBVoltage\fP = {read = getVoltage, write = setVoltage}"
+.br
+.RI "\fIproprieté \fIVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrent\fP = {read = getCurrent, write = setCurrent}"
+.br
+.RI "\fIproprieté \fICurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBProtVoltage\fP = {read = getProtVoltage, write = setProtVoltage}"
+.br
+.RI "\fIproprieté \fIProtVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBProtCurrent\fP = {read = getProtCurrent, write = setProtCurrent}"
+.br
+.RI "\fIproprieté \fIProtCurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBPuissance\fP = {read = getPuissance, write = setPuissance}"
+.br
+.RI "\fIproprieté \fIPuissance\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBProtectedVoltage\fP = {read = FProtectedVoltage, write = FProtectedVoltage}"
+.br
+.RI "\fIproprieté \fIRegistre\fP Protection en Tension de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBProtectedCurrent\fP = {read = FProtectedCurrent, write = FProtectedCurrent}"
+.br
+.RI "\fIproprieté \fIRegistre\fP Protection en Courant de l'objet virtual_Alim \&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_alim_C::initAlim\fP (doublevoltage_i, doublecurrent_i, doubleprotVoltage_i, doubleprotcurrent_i)\fC [virtual]\fP"
+
+.PP
+Initialise la tranche Alim de l'equipement\&. param \fIvoltage_i\fP tension de l'equipement\&. param \fIcurrent_i\fP courant de l'equipement\&. param \fIprotVoltage_i\fP protection de la tension de l'equipement\&. param \fIprotcurrent_i\fP protection du courant de l'equipement\&. \fBRenvoie:\fP
+.RS 4
+Un \fIdouble\fP representant la tension instantanée\&. 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "__property double \fBvirtual_alim_C::Puissance\fP = {read = getPuissance, write = setPuissance}"
+
+.PP
+proprieté \fIPuissance\fP de l'objet virtual_Alim \&. /** 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Equipements à partir du code source\&.

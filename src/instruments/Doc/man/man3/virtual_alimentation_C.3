@@ -1,0 +1,269 @@
+.TH "virtual_alimentation_C" 3 "Jeudi Mai 18 2017" "Instruments" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_alimentation_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBvsim_C\fP\&.
+.PP
+Dérivée par \fBUtils::Shp661xxa_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_alimentation_C\fP ()"
+.br
+.RI "\fIConstructeur de la classe\&. \fP"
+.ti -1c
+.RI "virtual void \fBresetInstr\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetVoltLevel\fP (double voltLevel_V_i, int channel_i=0, int sub_channel_i=0)=0"
+.br
+.RI "\fIProgramme la tension de sortie désirée\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetVoltLevel\fP (double *voltLevel_V_o, int channel_i=0, int sub_channel_i=0)=0"
+.br
+.RI "\fILecture de la tension de sortie réelle\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetCurrLevel\fP (double currLevel_A_i, int channel_i=0, int sub_channel_i=0)=0"
+.br
+.RI "\fIProgramme la tension de sortie désirée en mode Rampe\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetCurrLevel\fP (double *currLevel_A_o, int channel_i=0, int sub_channel_i=0)=0"
+.br
+.RI "\fILecture du courant de sortie réel\&. \fP"
+.ti -1c
+.RI "void \fBchangeStatus\fP (GPIB_STATUS status)"
+.br
+.RI "\fIPrograme la protection en courant dans l'état désiré (ON ou OFF)\&. \fP"
+.ti -1c
+.RI "std::string \fBrecvMessage\fP (std::string message, int adr, GPIB_STATUS *status)"
+.br
+.RI "\fIReception du Message\&. Fonction virtualle abstraite\&. \fP"
+.ti -1c
+.RI "void \fBChangeConfiguration\fP ()"
+.br
+.RI "\fIdefini un changement de configuration\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrPrimaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrSecondaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "void \fBtimeoutRecvData\fP (double timeout=0)"
+.br
+.RI "\fIdefini le time Out du Reception\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property bool \fBOverVoltage\fP = {read=FOverVoltage, write=FOverVoltage}"
+.br
+.RI "\fIpropriété OverVoltage de la variable FOverVoltage\&. \fP"
+.ti -1c
+.RI "__property bool \fBOverCurrent\fP = {read=FOverCurrent, write=FOverCurrent}"
+.br
+.RI "\fIpropriété OverCurrent de la variable FOverCurrent\&. \fP"
+.ti -1c
+.RI "__property bool \fBOverTemperature\fP = {read=FOverTemperature, write=FOverTemperature}"
+.br
+.RI "\fIpropriété OverTemperature de la variable FOverTemperature\&. \fP"
+.ti -1c
+.RI "__property bool \fBRemoteInhibit\fP = {read=FRemoteInhibit, write=FRemoteInhibit}"
+.br
+.RI "\fIpropriété RemoteInhibit de la variable FRemoteInhibit\&. \fP"
+.ti -1c
+.RI "__property bool \fBUnregulation\fP = {read=FUnregulation, write=FUnregulation}"
+.br
+.RI "\fIpropriété Unregulation de la variable FUnregulation\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageMax\fP = {read=voltageMax_m, write=voltageMax_m}"
+.br
+.RI "\fIpropriété VoltageMax de la variable voltageMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentMax\fP = {read=currentMax_m, write=currentMax_m}"
+.br
+.RI "\fIpropriété CurrentMax de la variable currentMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBPowerMax\fP = {read=powerMax_m, write=powerMax_m}"
+.br
+.RI "\fIpropriété PowerMax de la variable powerMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageRMS\fP = {read=voltageRMS_m, write=voltageRMS_m}"
+.br
+.RI "\fIpropriété VoltageRMS de la variable voltageRMS_m\&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentRMS\fP = {read=currentRMS_m, write=currentRMS_m}"
+.br
+.RI "\fIpropriété CurrentRMS de la variable currentRMS_m\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltagePeak\fP = {read=voltagePeak_m, write=voltagePeak_m}"
+.br
+.RI "\fIpropriété VoltagePeak de la variable voltagePeak_m\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveCurrent\fP = {read=activeCurrent_m, write=activeCurrent_m}"
+.br
+.RI "\fIpropriété ActiveCurrent de la variable activeCurrent_m\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveVoltage\fP = {read=activeVoltage_m, write=activeVoltage_m}"
+.br
+.RI "\fIpropriété ActiveVoltage de la variable activeVoltage_m\&. \fP"
+.ti -1c
+.RI "__property double \fBChannel\fP = {read=channel_m, write=channel_m}"
+.br
+.RI "\fIpropriété Channel de la variable channel_m\&. \fP"
+.ti -1c
+.RI "__property double \fBSubChannel\fP = {read=sub_channel_m, write=sub_channel_m}"
+.br
+.RI "\fIpropriété SubChannel de la variable sub_channel_m\&. \fP"
+.ti -1c
+.RI "__property std::string \fBName\fP = {read=Name_m, write=Name_m}"
+.br
+.RI "\fIpropriété Name de la variable Name_m\&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_alimentation_C::ChangeAdrPrimaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBUtils::Shp661xxa_C\fP\&.
+.SS "void \fBvirtual_alimentation_C::ChangeAdrSecondaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBUtils::Shp661xxa_C\fP\&.
+.SS "void \fBvirtual_alimentation_C::ChangeConfiguration\fP ()"
+
+.PP
+defini un changement de configuration\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBUtils::Shp661xxa_C\fP\&.
+.SS "void \fBvirtual_alimentation_C::changeStatus\fP (GPIB_STATUSstatus)"
+
+.PP
+Programe la protection en courant dans l'état désiré (ON ou OFF)\&. \fBParamètres:\fP
+.RS 4
+\fIstate_i\fP paramètre d'entrée définissant l'état de la protection en courant (TRUE pour ON, FALSE pour OFF), l'état ON étant sélectionné par défaut\&. 
+.br
+\fIocpDelayS_i\fP paramètre d'entrée définissant le delai de prise en compte de la protection en courant (en secondes), 0 étant sélectionné par défaut\&. Lecture de l'état dans lequel est la protection en courant\&. 
+.br
+\fIstate_o\fP pointeur sur l'état de la protection en courant (TRUE pour ON, FALSE pour OFF)\&. 
+.br
+\fIocpDelayS_o\fP pointeur sur le delai de prise en compte de la protection en courant (en secondes)\&. Programme le courant 
+.br
+\fIcurrentRange_A_o\fP valeur du courant\&. 
+.br
+\fIchannel_i\fP channel utilisé\&. lecture du courant 
+.br
+\fIcurrentRange_A_o\fP valeur du courant\&. 
+.br
+\fIchannel_i\fP channel utilisé\&. Change le Status du GPIB\&. 
+.br
+\fIstatus\fP : Statut du GPIB\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBUtils::Shp661xxa_C\fP\&.
+.SS "virtual void \fBvirtual_alimentation_C::getCurrLevel\fP (double *currLevel_A_o, intchannel_i = \fC0\fP, intsub_channel_i = \fC0\fP)\fC [pure virtual]\fP"
+
+.PP
+Lecture du courant de sortie réel\&. \fBParamètres:\fP
+.RS 4
+\fIcurrLevel_A_o\fP pointeur sur le courant de sortie actuel en ampères\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::getVoltLevel\fP (double *voltLevel_V_o, intchannel_i = \fC0\fP, intsub_channel_i = \fC0\fP)\fC [pure virtual]\fP"
+
+.PP
+Lecture de la tension de sortie réelle\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_o\fP pointeur sur la tension de sortie actuelle en volts\&. 
+.RE
+.PP
+
+.SS "std::string \fBvirtual_alimentation_C::recvMessage\fP (std::stringmessage, intadr, GPIB_STATUS *status)"
+
+.PP
+Reception du Message\&. Fonction virtualle abstraite\&. \fBParamètres:\fP
+.RS 4
+\fIstring\fP message : Message reçu\&. 
+.br
+\fIint\fP adr : Adresse du l'instrument\&. 
+.br
+\fIGPIB_STATUS*\fP status : pointeur Status de l'interface GPIB\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setCurrLevel\fP (doublecurrLevel_A_i, intchannel_i = \fC0\fP, intsub_channel_i = \fC0\fP)\fC [pure virtual]\fP"
+
+.PP
+Programme la tension de sortie désirée en mode Rampe\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Lecture la tension de sortie désirée en mode Rampe\&. 
+.br
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Programe la protection en surtension de sortie à la valeur désirée\&. 
+.br
+\fIOVPLevel_V_i\fP paramètre d'entrée définissant la surtension de sortie maximum désirée en volts avant protection\&. Lecture de la valeur de surtension de sortie appliquée\&. 
+.br
+\fIOVPLevel_V_o\fP pointeur sur la surtension de sortie en volts avant activation de la protection\&. Programe la tension de trigger à la valeur désirée\&. 
+.br
+\fIvoltTrig_V_i\fP paramètre d'entrée définissant la tension de trigger désirée en volts\&. Lecture de la tension de trigger appliquée\&. 
+.br
+\fIvoltTrig_V_o\fP pointeur sur la tension de trigger en volts\&. Programe le courant de sortie désiré\&. 
+.br
+\fIcurrLevel_A_i\fP paramètre d'entrée définissant le courant de sortie désirée en ampères\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setVoltLevel\fP (doublevoltLevel_V_i, intchannel_i = \fC0\fP, intsub_channel_i = \fC0\fP)\fC [pure virtual]\fP"
+
+.PP
+Programme la tension de sortie désirée\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. 
+.RE
+.PP
+
+.SS "void \fBvirtual_alimentation_C::timeoutRecvData\fP (doubletimeout = \fC0\fP)"
+
+.PP
+defini le time Out du Reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBUtils::Shp661xxa_C\fP\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Instruments à partir du code source\&.

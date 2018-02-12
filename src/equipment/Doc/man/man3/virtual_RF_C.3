@@ -1,0 +1,65 @@
+.TH "virtual_RF_C" 3 "Jeudi Mai 18 2017" "Equipements" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_RF_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBinitTranche\fP (double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property double \fBFrequency_Start_In\fP = {read = getFrequency_Start_In, write = setFrequency_Start_In}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_Stop_In\fP = {read = getFrequency_Stop_In, write = setFrequency_Stop_In}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_Start_Out\fP = {read = getFrequency_Start_Out, write = setFrequency_Start_Out}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_Stop_Out\fP = {read = getFrequency_Stop_Out, write = setFrequency_Stop_Out}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_Min\fP = {read = getFrequency_Min, write = setFrequency_Min}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_Max\fP = {read = getFrequency_Max, write = setFrequency_Max}"
+.br
+.ti -1c
+.RI "__property double \fBBandwidth\fP = {read = getbandwidth, write = setbandwidth}"
+.br
+.ti -1c
+.RI "__property double \fBStep\fP = {read = getstep, write = setstep}"
+.br
+.ti -1c
+.RI "__property double \fBPower\fP = {read = getPower, write = setPower}"
+.br
+.ti -1c
+.RI "__property double \fBPower_Max\fP = {read = getPower_Max, write = setPower_Max}"
+.br
+.ti -1c
+.RI "__property double \fBPower_Min\fP = {read = getPower_Min, write = setPower_Min}"
+.br
+.ti -1c
+.RI "__property bool \fBActiveRF\fP = {read = FActiveRF, write = FActiveRF}"
+.br
+.ti -1c
+.RI "__property bool \fBActivePower\fP = {read = FActivePower, write = FActivePower}"
+.br
+.ti -1c
+.RI "__property bool \fBOverload\fP = {read = FOverload, write = FOverload}"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Equipements à partir du code source\&.

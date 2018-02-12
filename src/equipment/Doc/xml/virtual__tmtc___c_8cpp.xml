@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="virtual__tmtc___c_8cpp" kind="file">
+    <compoundname>virtual_tmtc_C.cpp</compoundname>
+    <includes refid="virtual__tmtc___c_8h" local="yes">virtual_tmtc_C.h</includes>
+    <incdepgraph>
+      <node id="32">
+        <label>D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp</label>
+        <link refid="virtual_tmtc_C.cpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>virtual_tmtc_C.h</label>
+        <link refid="virtual__tmtc___c_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>hdrstop</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="virtual__tmtc___c_8h" kindref="compound">virtual_tmtc_C.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>package(smart_init)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//*******************************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Implementation<sp/>VTmtc_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//*******************************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="classvirtual__tmtc___c_1a544015eb15ccc141bed8543d31b26402" kindref="member">virtual_tmtc_C::virtual_tmtc_C</ref>(){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__tmtc___c_1a42dccafaa3c2f23a7023ad49b6c45527" kindref="member">Tm_ON_OFF</ref><sp/>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__tmtc___c_1a6fae5ef5888e25519f94422db59a9e53" kindref="member">Tm_Status</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classvirtual__tmtc___c_1a3525b738b21e49474c45ba890066a5a1" kindref="member">virtual_tmtc_C::~virtual_tmtc_C</ref>(){};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__tmtc___c_1ae776f69eef4cba95d742992a598b15de" kindref="member">virtual_tmtc_C::setTm_Status</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__tmtc___c_1a4ef562383e7eaec55b9f2193f45082e2" kindref="member">tm_Status_m</ref><sp/>=<sp/>status<sp/>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvirtual__tmtc___c_1a305dc2b2a2895a8a1b174976dbea7ee4" kindref="member">virtual_tmtc_C::getTm_Status</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__tmtc___c_1a4ef562383e7eaec55b9f2193f45082e2" kindref="member">tm_Status_m</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__tmtc___c_1afc4307280bb7617ba7d3949a930e4d47" kindref="member">virtual_tmtc_C::setTm_ON_OFF</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__tmtc___c_1a7218481a38e43d229f7f5d8817d98e14" kindref="member">tm_ON_OFF_m</ref><sp/>=<sp/>status;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvirtual__tmtc___c_1a47d4f50a52129e1c9352408c9cebf44a" kindref="member">virtual_tmtc_C::getTm_ON_OFF</ref><sp/>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__tmtc___c_1a7218481a38e43d229f7f5d8817d98e14" kindref="member">tm_ON_OFF_m</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp"/>
+  </compounddef>
+</doxygen>

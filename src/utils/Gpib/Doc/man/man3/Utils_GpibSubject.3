@@ -1,0 +1,171 @@
+.TH "Utils::GpibSubject" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::GpibSubject \- 
+.PP
+definit la classe Observable GPIB \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GpibSubject\&.h>\fP
+.PP
+Dérivée par \fBUtils::GpibInterface\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~GpibSubject\fP ()"
+.br
+.RI "\fIDestructeur de la classe\&. \fP"
+.ti -1c
+.RI "void \fBnotifychangeStatus\fP (\fBGPIB_STATUS\fP status)"
+.br
+.RI "\fINotifier le changement de statut\&. \fP"
+.ti -1c
+.RI "virtual \fBGPIB_STATUS\fP * \fBnotifyRecvMessage\fP (std::string message, int adr, \fBGPIB_STATUS\fP *status)"
+.br
+.RI "\fINotifier la reception du message\&. \fP"
+.ti -1c
+.RI "void \fBnotifyTimeoutRecvData\fP (double timeout=0)"
+.br
+.RI "\fINotifier le changement de Time out de reception\&. \fP"
+.ti -1c
+.RI "void \fBnotifyChangeConfiguration\fP ()"
+.br
+.RI "\fIAjout un Observateur\&. \fP"
+.ti -1c
+.RI "void \fBnotifyChangeAdrPrimaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "void \fBnotifyChangeAdrSecondaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "void \fBaddObserver\fP (\fBGpibObserver\fP &obs)"
+.br
+.RI "\fIAjoute un Observateur\&. \fP"
+.ti -1c
+.RI "void \fBremoveObserver\fP (\fBGpibObserver\fP &obs)"
+.br
+.RI "\fISupprime un Observateur\&. \fP"
+.in -1c
+.SS "Attributs privés"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBGpibObserver\fP * > \fBObservers_m\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe Observable GPIB \&. 
+
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 29/03/2017 
+.RE
+.PP
+
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::GpibSubject::~GpibSubject\fP ()\fC [virtual]\fP"
+
+.PP
+Destructeur de la classe\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::GpibSubject::addObserver\fP (\fBGpibObserver\fP &obs)"
+
+.PP
+Ajoute un Observateur\&. \fBParamètres:\fP
+.RS 4
+\fI\fBGpibObserver\fP\fP &obs\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::notifyChangeAdrPrimaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::notifyChangeAdrSecondaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::notifyChangeConfiguration\fP ()"
+
+.PP
+Ajout un Observateur\&. \fBParamètres:\fP
+.RS 4
+\fI\fBGpibObserver\fP\fP &obs\&. defini un changement de configuration\&. 
+.br
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::notifychangeStatus\fP (\fBGPIB_STATUS\fPstatus)"
+
+.PP
+Notifier le changement de statut\&. \fBParamètres:\fP
+.RS 4
+\fIGPIB_STATUS\fP status\&. 
+.RE
+.PP
+
+.SS "\fBGPIB_STATUS\fP * \fBUtils::GpibSubject::notifyRecvMessage\fP (std::stringmessage, intadr, \fBGPIB_STATUS\fP *status)\fC [virtual]\fP"
+
+.PP
+Notifier la reception du message\&. \fBParamètres:\fP
+.RS 4
+\fIstd::string\fP message\&. 
+.br
+\fI:\fP int adr : adresse de l'instrument\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::notifyTimeoutRecvData\fP (doubletimeout = \fC0\fP)"
+
+.PP
+Notifier le changement de Time out de reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibSubject::removeObserver\fP (\fBGpibObserver\fP &obs)"
+
+.PP
+Supprime un Observateur\&. \fBParamètres:\fP
+.RS 4
+\fI\fBGpibObserver\fP\fP &obs\&. 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "std::vector<\fBGpibObserver\fP*> \fBUtils::GpibSubject::Observers_m\fP\fC [private]\fP"
+Liste d'Observateur\&. 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

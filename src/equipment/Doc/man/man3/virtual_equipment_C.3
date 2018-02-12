@@ -1,0 +1,62 @@
+.TH "virtual_equipment_C" 3 "Jeudi Mai 18 2017" "Equipements" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_equipment_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBsetTranche\fP (double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max)"
+.br
+.ti -1c
+.RI "virtual void \fBsetAlim\fP (double voltage_i, double current_i, double protVoltage_i, double protcurrent_i)"
+.br
+.ti -1c
+.RI "virtual void \fBsetTmtc\fP (bool tm_status, bool tm_On_Off)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property double \fBTemperature\fP = {read = getTemperature, write = setTemperature}"
+.br
+.ti -1c
+.RI "__property std::string \fBName\fP = {read = getName, write = setName}"
+.br
+.ti -1c
+.RI "__property std::string \fBType\fP = {read = getType, write = setType}"
+.br
+.ti -1c
+.RI "__property std::vector
+.br
+< \fBvirtual_RF_C\fP > \fBTrancheRF\fP = {read = getTranche}"
+.br
+.ti -1c
+.RI "__property std::vector
+.br
+< \fBvirtual_alim_C\fP > \fBAlim\fP = {read = getAlim}"
+.br
+.ti -1c
+.RI "__property std::vector
+.br
+< \fBvirtual_tmtc_C\fP > \fBTmtc\fP = {read = getTmtc}"
+.br
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = GetActive, write = SetActive}"
+.br
+.ti -1c
+.RI "__property bool \fBVerifyInUse\fP = {read = FVerifyInUse, write = FVerifyInUse}"
+.br
+.ti -1c
+.RI "__property bool \fBLock\fP = {read = FLock, write = FLock}"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Equipements à partir du code source\&.

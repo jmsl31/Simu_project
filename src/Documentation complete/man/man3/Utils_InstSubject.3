@@ -1,0 +1,70 @@
+.TH "Utils::InstSubject" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::InstSubject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dérivée par \fBSBench_C\fP, et \fBvirtual_alimentation_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBnotifyChangeValueDown\fP (std::string value, TYPE_PARAM type)"
+.br
+.RI "\fIMethode de communication de l'observer descendant permettant la propagation de l'inforamtion entre les objets\&. \fP"
+.ti -1c
+.RI "void \fBnotifyChangeValueDown\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBnotifyChangeValueDown\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBnotifyChangeValueDown\fP (bool value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBaddObserverDown\fP (\fBInstObserver\fP *obs)"
+.br
+.RI "\fIAjout dans la pile d'un objet \fBInstObserver\fP\&. \fP"
+.ti -1c
+.RI "void \fBremoveObserverDown\fP (\fBInstObserver\fP *obs)"
+.br
+.RI "\fISupprime un Observateur\&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::InstSubject::addObserverDown\fP (\fBInstObserver\fP *obs)"
+
+.PP
+Ajout dans la pile d'un objet \fBInstObserver\fP\&. \fBParamètres:\fP
+.RS 4
+\fI\fBInstObserver\fP\fP obs : Objet \fBInstObserver\fP\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::InstSubject::notifyChangeValueDown\fP (std::stringvalue, TYPE_PARAMtype)"
+
+.PP
+Methode de communication de l'observer descendant permettant la propagation de l'inforamtion entre les objets\&. \fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.SS "void \fBUtils::InstSubject::removeObserverDown\fP (\fBInstObserver\fP *obs)"
+
+.PP
+Supprime un Observateur\&. \fBParamètres:\fP
+.RS 4
+\fI\fBInstObserver\fP\fP &obs\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

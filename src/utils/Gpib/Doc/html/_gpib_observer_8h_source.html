@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>GPIB Interface:  Fichier source de D:/cpp/drivers_cpp/src/utils/Gpib/GpibObserver.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GPIB Interface
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/drivers_cpp/src/utils/Gpib/GpibObserver.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_gpib_observer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef GpibObserverH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define GpibObserverH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="_gpib___enum_8h.html">Gpib_Enum.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">namespace </span>Utils {    <span class="comment">//\namespace Utils</span>
+<a name="l00012"></a>00012 
+<a name="l00021"></a><a class="code" href="class_utils_1_1_gpib_observer.html">00021</a>   <span class="keyword">class </span><a class="code" href="class_utils_1_1_gpib_observer.html" title="definit la classe Observer GPIB .">GpibObserver</a> {
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023   <span class="keyword">public</span>:
+<a name="l00027"></a>00027         <span class="keyword">virtual</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a053bd76c1961061a3d5b792cee71ae11">~GpibObserver</a>();
+<a name="l00032"></a>00032         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#ae4ecfbe34ec008cacceb31bfde247969" title="Change le Status du GPIB.">changeStatus</a>(<a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> status) = 0;
+<a name="l00037"></a>00037         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a94ef1ae205100f239d46a1d1abff0578" title="Reception du Message.">recvMessage</a>(std::string message,<span class="keywordtype">int</span> adr,<a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>* status) = 0;
+<a name="l00042"></a>00042         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a0e45985743fbaacaae7d2b904530337e" title="defini un changement de configuration.">ChangeConfiguration</a>() = 0;
+<a name="l00047"></a>00047         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a1774ad6b62d75ad0e5f14efa6678fb19" title="defini un changement de l&#39;adresse primaire.">ChangeAdrPrimaire</a>(<span class="keywordtype">int</span> Adr) = 0;
+<a name="l00052"></a>00052         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a85ac0a532fef5163b7f54b7dadb71c29" title="defini un changement de l&#39;adresse secondaire.">ChangeAdrSecondaire</a>(<span class="keywordtype">int</span> Adr) = 0;
+<a name="l00057"></a>00057         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_gpib_observer.html#a20938df3c512a7b1f26766278d23c89b" title="defini le time Out du Reception.">timeoutRecvData</a>(<span class="keywordtype">double</span> timeout=0) = 0;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060   <span class="keyword">protected</span>:
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062   <span class="keyword">private</span>:
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064   };
+<a name="l00065"></a>00065 }
+<a name="l00066"></a>00066 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Avril 12 2017 09:49:09 pour GPIB Interface par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

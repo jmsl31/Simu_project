@@ -1,0 +1,38 @@
+﻿# Historique des versions
+
+[V1.3.2]
+10/01/17
+L. RULLIER
+Plus de transformation implicite en Hexa
+
+[V1.3.1]
+09/12/16
+L. RULLIER
+Correction bug SCPI
+
+[V1.3]
+11/05/16
+J. CARRERE
+Message d'alerte si les timings positionnés pour le trou du signal VALCS ne sont des multiples de 10ns
+Correction bug sur la durée du trou du signal VALCS
+
+[V1.2]
+14/04/16
+J. CARRERE
+Possibilité de modifier le nombre de bits dans l'IHM
+Ajout de la possibilité de faire un trou dans le VAL
+Ajout des timings dans l'entête du fichier résultat
+
+[V1.1]
+11/04/16
+J. CARRERE
+Correction Bug Scenario
+Ajout de la possibilité d'envoyer 2 CS
+Modification de l'unité des timings
+
+
+[V1.0]
+28/02/16
+L. RULLIER
+Version originale
+

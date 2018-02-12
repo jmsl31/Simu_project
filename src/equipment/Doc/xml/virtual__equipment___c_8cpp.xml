@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="virtual__equipment___c_8cpp" kind="file">
+    <compoundname>virtual_equipment_C.cpp</compoundname>
+    <includes refid="virtual__equipment___c_8h" local="yes">virtual_equipment_C.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>virtual_RF_C.h</label>
+        <link refid="virtual___r_f___c_8h"/>
+      </node>
+      <node id="8">
+        <label>D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp</label>
+        <link refid="virtual_equipment_C.cpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>virtual_alim_C.h</label>
+        <link refid="virtual__alim___c_8h"/>
+      </node>
+      <node id="14">
+        <label>virtual_tmtc_C.h</label>
+        <link refid="virtual__tmtc___c_8h"/>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>IniFiles.hpp</label>
+      </node>
+      <node id="9">
+        <label>virtual_equipment_C.h</label>
+        <link refid="virtual__equipment___c_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>hdrstop</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="virtual__equipment___c_8h" kindref="compound">virtual_equipment_C.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>package(smart_init)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//*******************************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Implementation<sp/>vequipment_c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//*******************************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="classvirtual__equipment___c_1a74f8c62a44f96ea524392e93648354d5" kindref="member">virtual_equipment_C::virtual_equipment_C</ref>(){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" kindref="member">name_m</ref><sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" kindref="member">Type_m</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" kindref="member">temperature_m</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" kindref="member">FVerifyInUse</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kindref="member">FLock</ref>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" kindref="member">tranche_m</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>std::vector&lt;virtual_RF_C&gt;;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" kindref="member">alim_m</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>std::vector&lt;virtual_alim_C&gt;<sp/>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" kindref="member">tmtc_m</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>std::vector&lt;virtual_tmtc_C&gt;;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="classvirtual__equipment___c_1abd3c7644895339403fbe3485d8d56168" kindref="member">virtual_equipment_C::~virtual_equipment_C</ref>(){};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1ab68a023d661bdab14eded1f3cca1ada2" kindref="member">virtual_equipment_C::setTranche</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fq_start_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fq_stop_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bandwidth_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>power_i,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>power_min,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>power_max,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>frequency_min,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>frequency_max){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual___r_f___c" kindref="compound">virtual_RF_C</ref><sp/>tranche_temp;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tranche_temp.<ref refid="classvirtual___r_f___c_1a46a550b9fa08d7d42b5bd99ca6f76495" kindref="member">initTranche</ref>(fq_start_i,fq_stop_i,bandwidth_i,step_i,power_i,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>power_min,power_max,frequency_min,frequency_max);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" kindref="member">tranche_m</ref>-&gt;push_back(tranche_temp);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">std::vector&lt;virtual_RF_C&gt;<sp/><ref refid="classvirtual__equipment___c_1a0f2134b2169de19fa70188cd7323541b" kindref="member" tooltip="Recupere la tension de l&amp;#39;equipement.">virtual_equipment_C::getTranche</ref>(){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(*<ref refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" kindref="member">tranche_m</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a89495dac7bc60b8df6b83dbd2272c01e" kindref="member">virtual_equipment_C::setAlim</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>voltage_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>protVoltage_i,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>protcurrent_i){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__alim___c" kindref="compound">virtual_alim_C</ref><sp/>alim_temp;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alim_temp.<ref refid="classvirtual__alim___c_1a4e4ba81b0d47560bb5c0a8af9643d915" kindref="member" tooltip="Initialise la tranche Alim de l&amp;#39;equipement.">initAlim</ref>(voltage_i,current_i,protVoltage_i,protcurrent_i);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" kindref="member">alim_m</ref>-&gt;push_back(alim_temp);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">std::vector&lt;virtual_alim_C&gt;<sp/><ref refid="classvirtual__equipment___c_1a145d94336958ebd33de11c7c45570e9a" kindref="member">virtual_equipment_C::getAlim</ref>(){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(*<ref refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" kindref="member">alim_m</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1aaf8f0c20c81d987b46c80ac5111b036c" kindref="member">virtual_equipment_C::getTemperature</ref>(){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" kindref="member">temperature_m</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a103af7dc6c923013f0add4a1b9645f49" kindref="member">virtual_equipment_C::setTemperature</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp_i){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" kindref="member">temperature_m</ref>=<sp/>temp_i;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">std::string<sp/><ref refid="classvirtual__equipment___c_1ad43dd1d6d2ed521d2027c473a39e443b" kindref="member">virtual_equipment_C::getName</ref>(){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" kindref="member">name_m</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a0193c2f421e075f057ecc2754f0cd83e" kindref="member">virtual_equipment_C::setName</ref>(std::string<sp/>name_i){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" kindref="member">name_m</ref>=<sp/>name_i;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">std::string<sp/><ref refid="classvirtual__equipment___c_1abb04bb70248f80ed4db751cec03520dd" kindref="member">virtual_equipment_C::getType</ref>(){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" kindref="member">Type_m</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a78a36daea33c28deaefeb98e72c5ab11" kindref="member">virtual_equipment_C::setType</ref>(std::string<sp/>type_i){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" kindref="member">Type_m</ref>=<sp/>type_i;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a343b266f2f6d3908c645df90776a83a3" kindref="member">virtual_equipment_C::SetActive</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AValue){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref>=<sp/>AValue;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a2c51023b7a82513676d155e6d63496f5" kindref="member">virtual_equipment_C::GetActive</ref>(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1ae879279aefc29ff6b998838c8753d9dc" kindref="member">virtual_equipment_C::check_Eqpt</ref>(TObject<sp/>*Sender,<ref refid="classvirtual__equipment___c" kindref="compound">virtual_equipment_C</ref><sp/>*eqpt){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>eqpt-&gt;<ref refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" kindref="member">tranche_m</ref>-&gt;size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eqpt-&gt;<ref refid="classvirtual__equipment___c_1ad19694d55eff900974dcfa8b58d7c88a" kindref="member">TrancheRF</ref>[i].Overload)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>eqpt-&gt;<ref refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" kindref="member">alim_m</ref>-&gt;size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>eqpt-&gt;<ref refid="classvirtual__equipment___c_1a01eb135acd3086e9d16ea5e1d2e6376a" kindref="member">Alim</ref>[i].ProtectedVoltage<sp/>||eqpt-&gt;<ref refid="classvirtual__equipment___c_1a01eb135acd3086e9d16ea5e1d2e6376a" kindref="member">Alim</ref>[i].ProtectedCurrent)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kindref="member">FActive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a1c3a353cafb5d790d70dd6ae59b7b17f" kindref="member">virtual_equipment_C::LockDevice</ref>()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kindref="member">FLock</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a44207e2691b20701e6f595cecf06d1f3" kindref="member">virtual_equipment_C::UnlockDevice</ref>()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kindref="member">FLock</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvirtual__equipment___c_1a9df560e74b3a55eefee3bee74f1b7805" kindref="member">virtual_equipment_C::setTmtc</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tm_status,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tm_On_Off){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__tmtc___c" kindref="compound">virtual_tmtc_C</ref><sp/>tmtc_l;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmtc_l.<ref refid="classvirtual__tmtc___c_1a6fae5ef5888e25519f94422db59a9e53" kindref="member">Tm_Status</ref><sp/>=tm_status;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmtc_l.<ref refid="classvirtual__tmtc___c_1a42dccafaa3c2f23a7023ad49b6c45527" kindref="member">Tm_ON_OFF</ref><sp/>=tm_On_Off;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" kindref="member">tmtc_m</ref>-&gt;push_back(tmtc_l);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">std::vector&lt;virtual_tmtc_C&gt;<sp/><ref refid="classvirtual__equipment___c_1a428918b25cfbb179380007b6219c5adf" kindref="member">virtual_equipment_C::getTmtc</ref>(){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(*<ref refid="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" kindref="member">tmtc_m</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,265 @@
+.TH "Utils::GpibInterface" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::GpibInterface \- 
+.PP
+definit la classe d'Interface GPIB \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GpibInterface\&.h>\fP
+.PP
+Est dérivée de \fBUtils::GpibSubject\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBGpibInterface\fP ()"
+.br
+.ti -1c
+.RI "\fB~GpibInterface\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_Gpib_T\fP (\fBGPIB_T\fP struct_i)"
+.br
+.ti -1c
+.RI "\fBGPIB_T\fP * \fBget_Gpibt_T\fP ()"
+.br
+.ti -1c
+.RI "bool \fBInstallGpib\fP ()"
+.br
+.ti -1c
+.RI "bool \fBUnInstallGPIB\fP ()"
+.br
+.ti -1c
+.RI "\fBUtils::GPIB_STATUS\fP \fBgetStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetStatus\fP (\fBUtils::GPIB_STATUS\fP status)"
+.br
+.ti -1c
+.RI "\fBTYPE_GPIB\fP \fBgetType\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetType\fP (\fBTYPE_GPIB\fP t)"
+.br
+.ti -1c
+.RI "void \fBsetInstr\fP (ViSession instr)"
+.br
+.ti -1c
+.RI "ViSession \fBgetInstr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDefaultSession\fP (ViSession instr)"
+.br
+.ti -1c
+.RI "ViSession \fBgetDefaultSession\fP ()"
+.br
+.ti -1c
+.RI "void \fBerrVisaToStr\fP (ViStatus errVisa_i)"
+.br
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.ti -1c
+.RI "void \fBStop\fP ()"
+.br
+.ti -1c
+.RI "Utils::Thread::THEARD_STATUS \fBgetRecvStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRecvStatus\fP (Utils::Thread::THEARD_STATUS status)"
+.br
+.ti -1c
+.RI "std::string \fBthreadRecv\fP ()"
+.br
+.ti -1c
+.RI "void \fBthreadSend\fP (std::string reponse)"
+.br
+.in -1c
+.SS "Attributs privés"
+
+.in +1c
+.ti -1c
+.RI "ViSession \fBdefaultRM\fP"
+.br
+.ti -1c
+.RI "ViSession \fBSessionInstrument\fP"
+.br
+.ti -1c
+.RI "\fBGPIB_T\fP * \fBComm_gpib_m\fP"
+.br
+.ti -1c
+.RI "Utils::Thread::THEARD_STATUS \fBRecvStatus_m\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe d'Interface GPIB \&. 
+
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 29/03/2017 
+.RE
+.PP
+
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::GpibInterface::GpibInterface\fP ()"
+Constructeur de la classe\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI\\e\fP TYPE_GPIB : Enumeration des types de Connection Manager du protocole GPIB 
+.RE
+.PP
+
+.SS "\fBUtils::GpibInterface::~GpibInterface\fP ()"
+Destructeur de la classe\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI\\e\fP TYPE_GPIB : Enumeration des types de Connection Manager du protocole GPIB 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::GpibInterface::errVisaToStr\fP (ViStatuserrVisa_i)"
+Traite l'erreur de communication de l'instrument GPIB\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI\\e\fP ViStatus errVisa_i : erreur Ni_visa\&. 
+.RE
+.PP
+
+.SS "\fBGPIB_T\fP * \fBUtils::GpibInterface::get_Gpibt_T\fP ()"
+/**
+.PP
+Recupere l'objet de configuration Gpib de la classe 
+.PP
+\fBRenvoie:\fP
+.RS 4
+\fBGPIB_T\fP : Objet regroupant la configuration de la communication GPIB 
+.RE
+.PP
+
+.SS "ViSession \fBUtils::GpibInterface::getDefaultSession\fP ()"
+Retourne la session par defaut de communication de l'instrument GPIB\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+\fIViSession\fP 
+.RE
+.PP
+
+.SS "ViSession \fBUtils::GpibInterface::getInstr\fP ()"
+Retourne la session de communication de l'instrument GPIB\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+\fIViSession\fP 
+.RE
+.PP
+
+.SS "Utils::Thread::THEARD_STATUS \fBUtils::GpibInterface::getRecvStatus\fP ()"
+return le status du le Thread\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+THEARD_STATUS : Status du Thread\&. 
+.RE
+.PP
+
+.SS "\fBGPIB_STATUS\fP \fBUtils::GpibInterface::getStatus\fP ()"
+Retourne l'etat de la communication du protocole GPIB\&. 
+.SS "\fBTYPE_GPIB\fP \fBUtils::GpibInterface::getType\fP ()"
+Retourne le type de communication du protocole GPIB\&.  Server ou Client\&. 
+.SS "bool \fBUtils::GpibInterface::InstallGpib\fP ()"
+Initialisation et ouvre la communication du Protocole GPIB de la classe avec le numero de la carte et l'adresse de l'instrument\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI\\e\fP TYPE_GPIB : Enumeration des types de Connection Manager du protocole GPIB 
+.br
+\fI\\e\fP GpibCard_i : Numero de la carte GPIB utilis�e\&. 
+.br
+\fI\\e\fP GpibAdr_i : Adresse de la carte GPIB utilis�e\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibInterface::set_Gpib_T\fP (\fBGPIB_T\fPstruct_i)"
+Initialisation l'objet de configuration Gpib de la classe 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI\fBGPIB_T\fP\fP : Objet regroupant la configuration de la communication GPIB 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibInterface::setDefaultSession\fP (ViSessioninstr)"
+Initialise la session par defaut de communication de l'instrument GPIB\&. 
+.SS "void \fBUtils::GpibInterface::setInstr\fP (ViSessioninstr)"
+Initialise la session de communication de l'instrument GPIB\&. 
+.SS "void \fBUtils::GpibInterface::setRecvStatus\fP (Utils::Thread::THEARD_STATUSstatus)"
+Renseigne le status du le Thread\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITHEARD_STATUS\fP : Status du Thread\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibInterface::setStatus\fP (\fBUtils::GPIB_STATUS\fPstatus)"
+Initialise l'etat de la communication du protocole GPIB\&. 
+.SS "void \fBUtils::GpibInterface::setType\fP (\fBTYPE_GPIB\fPt)"
+Initialise le type de communication du protocole GPIB\&.  Server ou Client\&. 
+.SS "void \fBUtils::GpibInterface::Start\fP ()"
+Lance le Thread de communication de l'instrument GPIB\&. 
+.SS "void \fBUtils::GpibInterface::Stop\fP ()"
+Stop le Thread de communication de l'instrument GPIB\&. 
+.SS "std::string \fBUtils::GpibInterface::threadRecv\fP ()"
+Fonction execute l'ecoute du port de communication GPIB\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+String Message re�u\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::GpibInterface::threadSend\fP (std::stringreponse)"
+Fonction execute l'envoi de la reponse sur le port de communication GPIB\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIString\fP Message re�u\&. 
+.RE
+.PP
+
+.SS "bool \fBUtils::GpibInterface::UnInstallGPIB\fP ()"
+Ferme la communication du Protocole GPIB\&. 
+.SH "Documentation des données membres"
+.PP 
+.SS "\fBGPIB_T\fP* \fBUtils::GpibInterface::Comm_gpib_m\fP\fC [private]\fP"
+Objet de configuration Gpib de la classe\&. 
+.SS "ViSession \fBUtils::GpibInterface::defaultRM\fP\fC [private]\fP"
+Session par Default du protocole GPIB 
+.SS "Utils::Thread::THEARD_STATUS \fBUtils::GpibInterface::RecvStatus_m\fP\fC [private]\fP"
+Status du Thread de Reception de l'instrument du protocole GPIB 
+.SS "ViSession \fBUtils::GpibInterface::SessionInstrument\fP\fC [private]\fP"
+Session de l'instance de l'instrument du protocole GPIB 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

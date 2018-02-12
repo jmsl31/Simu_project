@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Alimentation:  Fichier source de D:/cpp/simu_cpp/src/instruments/Alim/virtual_Alimentation_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Alimentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/instruments/Alim/virtual_Alimentation_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef virtual_Alimentation_CH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define virtual_Alimentation_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">//--------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;IniFiles.hpp&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;vsim_C.h&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="keyword">using namespace </span>Utils;
+<a name="l00010"></a>00010 
+<a name="l00018"></a><a class="code" href="classvirtual__alimentation___c.html">00018</a> <span class="keyword">class </span><a class="code" href="classvirtual__alimentation___c.html">virtual_alimentation_C</a> : <span class="keyword">public</span> <a class="code" href="classvsim___c.html" title="definit la classe virtuelle des instruments Alimentation simulés .">vsim_C</a>, <span class="keyword">public</span> GpibObserver{
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020         <span class="keyword">private</span>:
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022         <span class="keywordtype">bool</span>    FOverVoltage,                                           <span class="comment">// Registre d&#39;etat de Over Voltage</span>
+<a name="l00023"></a>00023                         FOverCurrent,                       <span class="comment">// Registre d&#39;etat de Over Courant</span>
+<a name="l00024"></a>00024                         FOverTemperature,                   <span class="comment">// Regisre d&#39;etat de Over Temperature</span>
+<a name="l00025"></a>00025                         FRemoteInhibit,                     <span class="comment">// Registre d&#39;etat de Remote</span>
+<a name="l00026"></a>00026                         FUnregulation;                      <span class="comment">// Registre d&#39;etat de regulation</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028          <span class="keywordtype">double</span> voltageMax_m,                       <span class="comment">// Tension maximal delivrée par l&#39;alimentation</span>
+<a name="l00029"></a>00029                         currentMax_m,                         <span class="comment">// Courant maximal delivrée par l&#39;alimentation</span>
+<a name="l00030"></a>00030                         powerMax_m,                           <span class="comment">// Puissance maximal delivrée par l&#39;alimentation</span>
+<a name="l00031"></a>00031                         voltageRMS_m,                       <span class="comment">// Tension RMS delivrée par l&#39;alimentation</span>
+<a name="l00032"></a>00032                         voltagePeak_m,                      <span class="comment">// Tension Peak to Peak delivrée par l&#39;alimentation</span>
+<a name="l00033"></a>00033                         currentRMS_m;                       <span class="comment">// Courant RMS delivrée par l&#39;alimentation</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035          <span class="keywordtype">double</span> activeCurrent_m,                    <span class="comment">// Courant instantanée delivrée par l&#39;alimentation</span>
+<a name="l00036"></a>00036                         activeVoltage_m;                    <span class="comment">// Tension instantanée delivrée par l&#39;alimentation</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038          <span class="keywordtype">double</span> channel_m,                          <span class="comment">// Channel principale de l&#39;alimentation.</span>
+<a name="l00039"></a>00039                         sub_channel_m;                      <span class="comment">// Channel secondaire de l&#39;alimentation.</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042         std::string Name_m;                                                     <span class="comment">// Nom de l&#39;alimentation.</span>
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044         <span class="keyword">protected</span>:
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="keyword">public</span>:
+<a name="l00049"></a>00049 
+<a name="l00053"></a><a class="code" href="classvirtual__alimentation___c.html#a514aae651ac99ddadded6805cd9ded45">00053</a>         __property <span class="keywordtype">bool</span> OverVoltage = {read=FOverVoltage, write=FOverVoltage};
+<a name="l00057"></a><a class="code" href="classvirtual__alimentation___c.html#aaf05005a1a28600adb73d7fe21e79322">00057</a>         __property <span class="keywordtype">bool</span> OverCurrent = {read=FOverCurrent, write=FOverCurrent};
+<a name="l00061"></a><a class="code" href="classvirtual__alimentation___c.html#a323841f0a8b0ac7b04ebdd18c75f22cb">00061</a>         __property <span class="keywordtype">bool</span> OverTemperature = {read=FOverTemperature, write=FOverTemperature};
+<a name="l00065"></a><a class="code" href="classvirtual__alimentation___c.html#a0c292d52c99bf79b577be7a4bce05d42">00065</a>         __property <span class="keywordtype">bool</span> RemoteInhibit = {read=FRemoteInhibit, write=FRemoteInhibit};
+<a name="l00069"></a><a class="code" href="classvirtual__alimentation___c.html#a98e2a8060f03264f3594a5f3c05de26a">00069</a>         __property <span class="keywordtype">bool</span> Unregulation = {read=FUnregulation, write=FUnregulation};
+<a name="l00073"></a><a class="code" href="classvirtual__alimentation___c.html#a610da37042ca23767ddcd1f06a13a208">00073</a>         __property <span class="keywordtype">double</span> VoltageMax = {read=voltageMax_m, write=voltageMax_m};
+<a name="l00077"></a><a class="code" href="classvirtual__alimentation___c.html#a5d54c5849b6ecc82d18227f3db32aaff">00077</a>         __property <span class="keywordtype">double</span> CurrentMax = {read=currentMax_m, write=currentMax_m};
+<a name="l00081"></a><a class="code" href="classvirtual__alimentation___c.html#af7353682c688bf247d461759768e15c3">00081</a>         __property <span class="keywordtype">double</span> PowerMax = {read=powerMax_m, write=powerMax_m};
+<a name="l00085"></a><a class="code" href="classvirtual__alimentation___c.html#adc7c9e59c72ebc68bc1050d82caaf387">00085</a>         __property <span class="keywordtype">double</span> VoltageRMS = {read=voltageRMS_m, write=voltageRMS_m};
+<a name="l00089"></a><a class="code" href="classvirtual__alimentation___c.html#a58ef11d28a0a27b594541e249c22bafc">00089</a>         __property <span class="keywordtype">double</span> CurrentRMS = {read=currentRMS_m, write=currentRMS_m};
+<a name="l00093"></a><a class="code" href="classvirtual__alimentation___c.html#ac515e8807f404f3dbfd5c25ff7511515">00093</a>         __property <span class="keywordtype">double</span> VoltagePeak = {read=voltagePeak_m, write=voltagePeak_m};
+<a name="l00097"></a><a class="code" href="classvirtual__alimentation___c.html#a81a107c8699587373e0fabae7b079bab">00097</a>         __property <span class="keywordtype">double</span> ActiveCurrent = {read=activeCurrent_m, write=activeCurrent_m};
+<a name="l00101"></a><a class="code" href="classvirtual__alimentation___c.html#a370fd76b2eadbfe0df4da2d18856f436">00101</a>         __property <span class="keywordtype">double</span> ActiveVoltage = {read=activeVoltage_m, write=activeVoltage_m};
+<a name="l00105"></a><a class="code" href="classvirtual__alimentation___c.html#a7fb36fbf6c70f25f328a7c7803a8d3b5">00105</a>         __property <span class="keywordtype">double</span> Channel = {read=channel_m, write=channel_m};
+<a name="l00109"></a><a class="code" href="classvirtual__alimentation___c.html#aa6fa65c536034b6f5853ab89ef330e94">00109</a>         __property <span class="keywordtype">double</span> SubChannel = {read=sub_channel_m, write=sub_channel_m};
+<a name="l00113"></a><a class="code" href="classvirtual__alimentation___c.html#a716692347fbf54567bbb22746effd6d3">00113</a>         __property std::string Name = {read=Name_m, write=Name_m};
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 
+<a name="l00119"></a>00119         <a class="code" href="classvirtual__alimentation___c.html">virtual_alimentation_C</a>();
+<a name="l00120"></a>00120         <span class="comment">/*</span>
+<a name="l00121"></a>00121 <span class="comment">        *\brief  Reset l&#39;instrument.*/</span>
+<a name="l00122"></a>00122         <span class="keyword">virtual</span> <span class="keywordtype">void</span> resetInstr()=0;
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124     <span class="comment">/*==================Tension===================================================*/</span>
+<a name="l00125"></a>00125 
+<a name="l00130"></a>00130         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setVoltLevel(<span class="keywordtype">double</span> voltLevel_V_i, <span class="keywordtype">int</span> channel_i = 0,<span class="keywordtype">int</span> sub_channel_i =0 )=0;
+<a name="l00131"></a>00131 
+<a name="l00136"></a>00136         <span class="keyword">virtual</span> <span class="keywordtype">void</span> getVoltLevel(<span class="keywordtype">double</span> *voltLevel_V_o, <span class="keywordtype">int</span> channel_i = 0,<span class="keywordtype">int</span> sub_channel_i =0)=0;
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138         <span class="comment">/*----------Range-----------------------------------------------------*/</span>
+<a name="l00143"></a>00143    <span class="comment">//   virtual void setVoltRange(double voltRange_V_i, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00148"></a>00148 <span class="comment"></span>   <span class="comment">//   virtual void getVoltRange(double *voltRange_V_o, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00149"></a>00149 
+<a name="l00150"></a>00150         <span class="comment">/*----------Protection de surtention----------------------------------*/</span>
+<a name="l00151"></a>00151 
+<a name="l00156"></a>00156   <span class="comment">//    virtual void setOVProtLevel(double OVPLevel_V_i, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00157"></a>00157 
+<a name="l00162"></a>00162   <span class="comment">//    virtual void getOVProtLevel(double *OVPLevel_V_o, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164         <span class="comment">/*----------Tension de trig-------------------------------------------*/</span>
+<a name="l00165"></a>00165 
+<a name="l00170"></a>00170   <span class="comment">//    virtual void setVoltTrig(double voltTrig_V_i, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00171"></a>00171 
+<a name="l00176"></a>00176   <span class="comment">//    virtual void getVoltTrig(double *voltTrig_V_o, int channel_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178     <span class="comment">/*==================Courant===================================================*/</span>
+<a name="l00179"></a>00179 
+<a name="l00184"></a>00184         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCurrLevel(<span class="keywordtype">double</span> currLevel_A_i, <span class="keywordtype">int</span> channel_i = 0,<span class="keywordtype">int</span> sub_channel_i =0)=0;
+<a name="l00185"></a>00185 
+<a name="l00190"></a>00190         <span class="keyword">virtual</span> <span class="keywordtype">void</span> getCurrLevel(<span class="keywordtype">double</span> *currLevel_A_o, <span class="keywordtype">int</span> channel_i = 0,<span class="keywordtype">int</span> sub_channel_i =0)=0;
+<a name="l00191"></a>00191 
+<a name="l00192"></a>00192         <span class="comment">/*----------Protection de surampérage---------------------------------*/</span>
+<a name="l00193"></a>00193 
+<a name="l00199"></a>00199  <span class="comment">//     virtual void setOCProtState(bool state_i = true, int channel_i = 0, double ocpDelayS_i = 0,int sub_channel_i =0)=0;</span>
+<a name="l00200"></a>00200 
+<a name="l00206"></a>00206  <span class="comment">//     virtual void getOCProtState(bool *state_o, int channel_i = 0, double *ocpDelayS_o = 0,int sub_channel_i =0)=0;</span>
+<a name="l00207"></a>00207 
+<a name="l00208"></a>00208         <span class="comment">/*----------Range-----------------------------------------------------*/</span>
+<a name="l00209"></a>00209 
+<a name="l00215"></a>00215  <span class="comment">//     virtual void setCurrentRange(double currentRange_A_i, int channel_i = 0,int sub_channel_i =0) = 0;</span>
+<a name="l00216"></a>00216 
+<a name="l00223"></a>00223  <span class="comment">//     virtual void getCurrentRange(double *currentRange_A_o, int channel_i = 0,int sub_channel_i =0) = 0;</span>
+<a name="l00224"></a>00224 
+<a name="l00229"></a>00229         <span class="keywordtype">void</span> changeStatus(GPIB_STATUS status);
+<a name="l00236"></a>00236          std::string recvMessage(std::string message,<span class="keywordtype">int</span> adr,GPIB_STATUS* status);
+<a name="l00241"></a>00241         <span class="keywordtype">void</span> ChangeConfiguration();
+<a name="l00246"></a>00246         <span class="keywordtype">void</span> ChangeAdrPrimaire(<span class="keywordtype">int</span> Adr);
+<a name="l00251"></a>00251         <span class="keywordtype">void</span> ChangeAdrSecondaire(<span class="keywordtype">int</span> Adr);
+<a name="l00256"></a>00256         <span class="keywordtype">void</span> timeoutRecvData(<span class="keywordtype">double</span> timeout=0);
+<a name="l00257"></a>00257 
+<a name="l00258"></a>00258 };
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260 
+<a name="l00261"></a>00261 
+<a name="l00262"></a>00262 
+<a name="l00263"></a>00263 
+<a name="l00264"></a>00264 
+<a name="l00265"></a>00265 
+<a name="l00266"></a>00266 
+<a name="l00267"></a>00267 
+<a name="l00268"></a>00268 
+<a name="l00269"></a>00269 
+<a name="l00270"></a>00270 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Mai 18 2017 10:54:12 pour Alimentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

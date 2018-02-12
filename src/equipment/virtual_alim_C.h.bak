@@ -1,0 +1,297 @@
+// ---------------------------------------------------------------------------
+
+#ifndef virtual_alim_CH
+#define virtual_alim_ CH
+// ---------------------------------------------------------------------------
+
+/** \file : virtual_alim_C.c
+ *	\class virtual_alim_C
+ *	\version : 1.0
+ *   \date : 2/01/2017
+ *   \brief definit la classe alimentation representant  l'objet Alimentation d'un equipement
+ *   \author JOHANN MEISSL
+ */
+class virtual_alim_C {
+
+private:
+	// Parametre Privée de la \a Classe valim_C
+	///Voltage de l'alimentation
+	double voltage_m,
+	///Courant de l'alimentation
+	current_m,
+	///Voltage de protection de l'alimentation
+	protVoltage_m,
+	///Courant de protection de l'alimentation
+	protcurrent_m,
+	///Courant de protection de l'alimentation
+	tension_max_m,
+	///Courant min de l'alimentation
+	courant_min_m,
+	///Courant max de l'alimentation
+	courant_max_m,
+	///Puissance de l'alimentation
+	puissance_m,
+	///Puissance active de l'alimentation
+	puissance_active_m,
+	///Puissance max de l'alimentation
+	puissance_max_m;
+
+	///Booleen protection voltage
+	bool FProtectedVoltage,
+
+		///Booleen protection courant
+		FProtectedCurrent,
+		// Boolean d'activation d'alim
+		FActive;
+	///voltage_actif_m : voltage actif
+	double voltage_actif_m;
+	///voltage_actif_m : voltage actif
+	double current_actif_m;
+	// Methode Privee de la \a Classe valim_C
+
+	/**
+	 *\brief Recupere la tension de l'equipement.
+	 *\details Si la tension est superieure a la tension de protection de l'equipement.
+	 *  la valeur de la tension sera etablie a 0 et le registre \e FProtectedVoltage sera active a \e true.
+	 * Sinon  la valeur de la tension instantanee de l'equipement sera retourne.
+	 *\return Un \e double representant la tension instantanee.
+	 */
+	virtual double getVoltage();
+	/**
+	 *\brief Configure la tension de l'equipement.
+	 *\details Si la tension est superieure a la tension de protection de l'equipement ou que le registre \e FProtectedVoltage est active.
+	 * 	la valeur de la tension sera etabli a 0.
+	 * Sinon  la valeur de la tension instantanee de l'equipement sera configure.
+	 *\param   voltage_i La valeur du courant.
+	 */
+	virtual void setVoltage(double voltage_i);
+	/**
+	 *\brief Recupere le courant de l'equipement.
+	 *\details Si le courant est superieur au courant de protection de l'equipement.
+	 *  la valeur du courant sera etabli a 0 et le registre \e FProtectedCurrent sera active a \e true.
+	 * Sinon  la valeur du courant instantanee de l'equipement sera retourne.
+	 *\return Un \e double representant le courant instantanee.
+	 */
+	virtual double getCurrent();
+	/**
+	 *\brief Configure le courant de l'equipement.
+	 *\details Si le courant est superieur au courant de protection de l'equipement
+	 * ou que le registre \e FProtectedVoltage est active
+	 * ou que le registre \e FProtectedCurrent est active
+	 * la valeur du courant sera etabli a 0.
+	 * Sinon  la valeur du courant instantanee de l'equipement sera configure.
+	 *\param   current_i La valeur du courant.
+	 */
+	virtual void setCurrent(double current_i);
+	/**
+	 *\brief Recupere la tension de protection de l'equipement.
+	 *\return Un \e double representant la tension de protection.
+	 */
+	virtual double getProtVoltage();
+	/**
+	 *\brief Configure la tension de protection de l'equipement.
+	 *\param   ProtVoltage_i la valeur de la tension de protection de l'equipement.
+	 */
+	virtual void setProtVoltage(double ProtVoltage_i);
+	/**
+	 *\brief Recupere le courant de protection de l'equipement.
+	 *\return Un \e double representant le courant de protection.
+	 */
+	virtual double getProtCurrent();
+	/**
+	 *\brief Configure le courant de protection de l'equipement.
+	 *\param   ProtCurrent_i la valeur de la tension de protection de l'equipement.
+	 */
+	virtual void setProtCurrent(double ProtCurrent_i);
+	/**
+	 *\brief Recupere la puissance instantanee de l'equipement.
+	 *\return Un \e double representant la puissance instantanee
+	 */
+	virtual double getPuissance();
+	/**
+	 *\brief Calcule la puissance instantanee de l'equipement.
+	 *\details Si les registres de protection \e  FProtectedVoltage & \e FProtectedCurrent sont actives
+	 *Alors la puissance renseignee sera egale a 0.
+	 *Sinon la puissance sera egale a \e  voltage_i * \e current_i.
+	 */
+	virtual void setPuissance(double value);
+/**
+	 *\brief Recupere la puissance active de l'equipement.
+	 *\return Un \e double representant la puissance instantanee
+	 */
+	virtual double getPuissanceActive();
+
+	/**
+	 *\brief Recupere la tension active de l'equipement.
+	 *\return Un \e double representant la tension active.
+	 */
+	virtual double getVoltageActifs();
+	/**
+	 *\brief Configure la tension active de l'equipement..
+	 *\param   ProtVoltage_i la valeur de la tension de protection de l'equipement.
+	 */
+	virtual void setVoltageActifs(double ProtVoltage_i);
+	/**
+	 *\brief Recupere le courant actif de l'equipement.
+	 *\return Un \e double representant la tension active.
+	 */
+	virtual double getCurrentActifs();
+	/**
+	 *\brief Recupere la tension maximal de l'equipement.
+	 *\return Un \e double representant la tension active.
+	 */
+	virtual double getVoltageMax();
+	/**
+	 *\brief Configure la tension maximal de l'equipement..
+	 *\param   voltage_i la valeur de la tension maximal de l'equipement.
+	 */
+	virtual void setVoltageMax(double voltage_i);
+	/**
+	 *\brief Recupere le courant  minimal de l'equipement.
+	 *\return Un \e double representant le courant minimal.
+	 */
+	virtual double getCurrentMin();
+	/**
+	 *\brief Configure le courant  minimal de l'equipement.
+	 *\param   current_i la valeur du courant  minimal de l'equipement.
+	 */
+	virtual void setCurrentMin(double current_i);
+	/**
+	 *\brief Recupere le courant  maximal de l'equipement.
+	 *\param   ProtVoltage_i la valeur du courant  maximal
+	 */
+	virtual double getCurrentMax();
+	/**
+	 *\brief Configure le courant  maximal de l'equipement.
+	 *\param   current_i la valeur du courant  maximal de l'equipement.
+	 */
+	virtual void setCurrentMax(double current_i);
+	/**
+	 *\brief Recupere la puissance maximal.
+	 */
+	virtual double getPuissanceMax();
+	/**
+	 *\brief Configure la puissance maximal.
+	 *\param   puissance_i la valeur de la puissance maximal.
+	 */
+	virtual void setPuissanceMax(double puissance_i);
+
+public:
+	// Methode Public de la \a Classe valim_C
+
+	/**
+	 *\brief Constructeur de la Classe virtual_Alim_C.
+	 */
+	virtual_alim_C();
+	/**
+	 *\brief Initialise la tranche Alim de l'equipement.
+	 *\param voltage_i tension de l'equipement.
+	 *\param current_i courant de l'equipement.
+	 *\param protVoltage_i protection de la tension de l'equipement.
+	 *\param protcurrent_i protection du courant de l'equipement.
+	 *\return Un double representant la tension instantanee.
+	 */
+
+	virtual void initAlim(double voltage_i, double current_i,
+		double protVoltage_i, double protcurrent_i, double tension_max_i,
+		double courant_min_m, double courant_max_i, double puissance_i,
+		double puissance_max_i);
+
+	
+	/**
+	 *\brief Configure la courant actif de l'equipement..
+	 *\param   ProtVoltage_i la valeur de la tension de protection de l'equipement.
+	 */
+	virtual void setCurrentActifs();
+	/**
+	 *\brief Calcule la puissance active de l'equipement.
+	 *\details Si les registres de protection \e  FProtectedVoltage & \e FProtectedCurrent sont actives
+	 *Alors la puissance renseignee sera egale a 0.
+	 *Sinon la puissance sera egale a \e  voltage_i * \e current_i.
+	 */
+	virtual void setPuissanceActive();
+	/**
+	 *\brief Destructeur de la Classe virtual_Alim_C
+	 */
+	~virtual_alim_C();
+
+	// Propriete de la \a Classe valim_C
+	/**
+	 *\brief propriete \e Puissance de l'objet virtual_Alim .
+	 */
+	__property double PuissanceActive = {
+		read = getPuissanceActive, write = puissance_active_m};
+	/**
+	 *\brief propriete \e Voltage de l'objet virtual_Alim .
+	 */
+	__property double Voltage = {read = getVoltage, write = setVoltage};
+	/**
+	 *\brief propriete \e Current de l'objet virtual_Alim .
+	 */
+	__property double Current = {read = getCurrent, write = setCurrent};
+	/**
+	 *\brief propriete \e Voltage de l'objet virtual_Alim .
+	 */
+	__property double VoltageActif = {
+		read = getVoltageActifs, write = setVoltageActifs};
+	/**
+	 *\brief propriete \e Current de l'objet virtual_Alim .
+	 */
+	__property double CurrentActif = {
+		read = getCurrentActifs, write = current_actif_m};
+
+	/**
+	 *\brief propriete \e ProtVoltage de l'objet virtual_Alim .
+	 */
+	__property double ProtVoltage = {
+		read = getProtVoltage, write = setProtVoltage};
+	/**
+	 *\brief propriete \e ProtCurrent de l'objet virtual_Alim .
+	 */
+	__property double ProtCurrent = {
+		read = getProtCurrent, write = setProtCurrent};
+
+	/**
+	 *\brief propriete \e Puissance de l'objet virtual_Alim .
+	 */
+	__property double Puissance = {read = getPuissance, write = setPuissance};
+
+	/**
+	 *\brief propriete \e Registre Protection en Tension de l'objet virtual_Alim .
+	 */
+	__property bool ProtectedVoltage = {
+		read = FProtectedVoltage, write = FProtectedVoltage};
+	/**
+	 *\brief propriete \e Registre Protection en Tension de l'objet virtual_Alim .
+	 */
+	__property bool ProtectedCurrent = {
+		read = FProtectedCurrent, write = FProtectedCurrent};
+	/**
+	 *\brief propriete \e Registre Protection en Courant de l'objet virtual_Alim .
+	 */
+	__property double VoltageMax = {read = getVoltageMax, write = setVoltageMax
+	};
+	/**
+	 *\brief propriete \e Registre Protection en Courant de l'objet virtual_Alim .
+	 */
+	__property double CurrentMin = {read = getCurrentMin, write = setCurrentMin
+	};
+	/**
+	 *\brief propriete \e Registre Protection en Courant de l'objet virtual_Alim .
+	 */
+	__property double CurrentMax = {read = getCurrentMax, write = setCurrentMax
+	};
+	/**
+	 *\brief propriete \e Registre Protection en Courant de l'objet virtual_Alim .
+	 */
+	__property double PuissanceMax = {
+		read = getPuissanceMax, write = setPuissanceMax};
+	/**
+	 *\brief propriete \e Registre Protection en Tension de l'objet virtual_Alim .
+	 */
+	__property bool Active = {read = FActive, write = FActive};
+
+protected:
+
+};
+#endif

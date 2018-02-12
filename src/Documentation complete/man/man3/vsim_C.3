@@ -1,0 +1,147 @@
+.TH "vsim_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vsim_C \- 
+.PP
+definit la classe virtuelle des instruments \fBAlimentation\fP simulés \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'instruments\\Alim\\SAlimentations\&.h'\fP
+.PP
+Dérivée par \fBvirtual_alimentation_C\fP, et \fBvirtual_multimeters_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvsim_C\fP ()"
+.br
+.RI "\fIContructeur de la classe\&. \fP"
+.ti -1c
+.RI "void \fBsetDescription\fP (\fBvdescription_C\fP *Description)"
+.br
+.RI "\fIInitialiser de la variable Description_m\&. \fP"
+.ti -1c
+.RI "\fBvdescription_C\fP * \fBgetDescription\fP ()"
+.br
+.RI "\fIRecuperer la variable Description_m\&. \fP"
+.ti -1c
+.RI "std::string \fBRecupDataSCPI\fP (std::string mes)"
+.br
+.RI "\fIRecupere la valeur passee dans la commande scpi\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property bool \fBVerifyInUse\fP = {read = FVerfiyUse_m, write = FVerfiyUse_m}"
+.br
+.RI "\fIpropriete VerifyInUse de la variable FVerfiyUse_m\&. \fP"
+.ti -1c
+.RI "__property bool \fBLockStateDevice\fP = {read = FLockStateDevice, write = FLockStateDevice}"
+.br
+.RI "\fIpropriete LockStateDevice de la variable FLockStateDevice\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBNameDevice\fP = {read = getName_Device, write = setName_Device}"
+.br
+.RI "\fIpropriete LockStateDevice de la variable FLockStateDevice\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBAdresseString\fP = {read = getAdr, write = setAdr}"
+.br
+.RI "\fIpropriete AdresseString de la variable Adr_m\&. \fP"
+.ti -1c
+.RI "__property int \fBAdrPrimaire\fP = {read = getAdrPrimaire, write = setAdrPrimaire}"
+.br
+.RI "\fIpropriete AdrPrimaire de la variable AdrPrimaire_m\&. \fP"
+.ti -1c
+.RI "__property int \fBAdrSecondaire\fP = {read = getAdrSecondaire, write = setAdrSecondaire}"
+.br
+.RI "\fIpropriete AdrSecondaire de la variable AdrSecondaire_m\&. \fP"
+.ti -1c
+.RI "__property double \fBTimeout\fP = {read = getTimeout, write = setTimeout}"
+.br
+.RI "\fIpropriete AdrSecondaire de la varible AdrSecondaire_m\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBCaption\fP = {read = getCaption, write = setCaption}"
+.br
+.RI "\fIpropriete AdrSecondaire de la varible AdrSecondaire_m\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe virtuelle des instruments \fBAlimentation\fP simulés \&. 
+
+Definit la classe virtuelle des instruments simules\&.
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 13/04/2017
+.RE
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 6/04/2017
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+: 1\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+: 29/03/2017 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBvdescription_C\fP * \fBvsim_C::getDescription\fP ()"
+
+.PP
+Recuperer la variable Description_m\&. \fBRenvoie:\fP
+.RS 4
+vdescription_C : variable de type vdescription_C\&. 
+.RE
+.PP
+
+.SS "std::string \fBvsim_C::RecupDataSCPI\fP (std::stringmes)"
+
+.PP
+Recupere la valeur passee dans la commande scpi\&. \fBRenvoie:\fP
+.RS 4
+std::string : la valeur en chaine de caractere\&. 
+.RE
+.PP
+
+.SS "void \fBvsim_C::setDescription\fP (\fBvdescription_C\fP *Description)"
+
+.PP
+Initialiser de la variable Description_m\&. Represente la description de l'instrument\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIvdescription_C\fP Description : variable de type vdescription_C\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

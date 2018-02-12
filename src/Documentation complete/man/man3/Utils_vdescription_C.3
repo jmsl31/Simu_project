@@ -1,0 +1,142 @@
+.TH "Utils::vdescription_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::vdescription_C \- 
+.PP
+Classe de la description de l'appareil de mesure\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <vdescription_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvdescription_C\fP ()"
+.br
+.RI "\fIConstructeur de la classe \fBvdescription_C\fP\&. \fP"
+.ti -1c
+.RI "\fBvdescription_C\fP (AnsiString name, AnsiString ref, AnsiString option)"
+.br
+.RI "\fIConstructeur surcharge de la classe \fBvdescription_C\fP\&. \fP"
+.ti -1c
+.RI "void \fBsetName\fP (AnsiString name)"
+.br
+.RI "\fIFixe le nom de l'appareil\&. \fP"
+.ti -1c
+.RI "AnsiString \fBgetName\fP ()"
+.br
+.RI "\fIRecupere le nom de l'appareil\&. \fP"
+.ti -1c
+.RI "void \fBsetReference\fP (AnsiString reference)"
+.br
+.RI "\fIFixe la reference de l'appareil\&. \fP"
+.ti -1c
+.RI "AnsiString \fBgetReference\fP ()"
+.br
+.RI "\fIRecupere la reference de l'appareil\&. \fP"
+.ti -1c
+.RI "void \fBsetnameOption\fP (AnsiString nameOption)"
+.br
+.RI "\fIFixe le nom de l'option\&. \fP"
+.ti -1c
+.RI "AnsiString \fBgetnameOption\fP ()"
+.br
+.RI "\fIRecupere le nom de l'option\&. \fP"
+.ti -1c
+.RI "void \fBaddOption\fP (AnsiString name, AnsiString version)"
+.br
+.RI "\fIAjoute une option\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe de la description de l'appareil de mesure\&. 
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::vdescription_C::vdescription_C\fP (AnsiStringname, AnsiStringref, AnsiStringoption)"
+
+.PP
+Constructeur surcharge de la classe \fBvdescription_C\fP\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP name : chaine de caractere indiquant le nom 
+.br
+\fIAnsiString\fP ref : chaine de caractere indiquant la reference 
+.br
+\fIAnsiString\fP option : chaine de caractere indiquant l'option 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::vdescription_C::addOption\fP (AnsiStringname, AnsiStringversion)"
+
+.PP
+Ajoute une option\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP name : chaine de caractere indiquant le nom 
+.br
+\fIAnsiString\fP version : chaine de caractere indiquant la version 
+.RE
+.PP
+
+.SS "AnsiString \fBUtils::vdescription_C::getName\fP ()"
+
+.PP
+Recupere le nom de l'appareil\&. \fBRenvoie:\fP
+.RS 4
+AnsiString name_m : chaine de caractere indiquant le nom 
+.RE
+.PP
+
+.SS "AnsiString \fBUtils::vdescription_C::getnameOption\fP ()"
+
+.PP
+Recupere le nom de l'option\&. \fBRenvoie:\fP
+.RS 4
+AnsiString nameOption_m : chaine de caractere indiquant le nom de l'option 
+.RE
+.PP
+
+.SS "AnsiString \fBUtils::vdescription_C::getReference\fP ()"
+
+.PP
+Recupere la reference de l'appareil\&. \fBRenvoie:\fP
+.RS 4
+AnsiString reference_m : chaine de caractere indiquant la reference 
+.RE
+.PP
+
+.SS "void \fBUtils::vdescription_C::setName\fP (AnsiStringname)"
+
+.PP
+Fixe le nom de l'appareil\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP name : chaine de caractere indiquant le nom 
+.RE
+.PP
+
+.SS "void \fBUtils::vdescription_C::setnameOption\fP (AnsiStringnameOption)"
+
+.PP
+Fixe le nom de l'option\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP nameOption : chaine de caractere indiquant le nom de l'option 
+.RE
+.PP
+
+.SS "void \fBUtils::vdescription_C::setReference\fP (AnsiStringreference)"
+
+.PP
+Fixe la reference de l'appareil\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP reference : chaine de caractere indiquant la reference 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

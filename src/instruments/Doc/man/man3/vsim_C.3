@@ -1,0 +1,192 @@
+.TH "vsim_C" 3 "Jeudi Mai 18 2017" "Instruments" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vsim_C \- 
+.PP
+definit la classe virtuelle des instruments simulÃ©s \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'instruments\\Alim\\SAlimentations\&.h'\fP
+.PP
+Dérivée par \fBvirtual_alimentation_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetDescription\fP (\fBvdescription_C\fP *Description)"
+.br
+.RI "\fIInitialiser de la variable Description_m\&. Represente la description de l'instrument\&. \fP"
+.ti -1c
+.RI "\fBvdescription_C\fP * \fBgetDescription\fP ()"
+.br
+.RI "\fIRecuperer la variable Description_m\&. \fP"
+.ti -1c
+.RI "void \fBsetDescription\fP (\fBvdescription_C\fP *Description)"
+.br
+.RI "\fIInitialiser de la variable Description_m\&. Represente la description de l'instrument\&. \fP"
+.ti -1c
+.RI "\fBvdescription_C\fP * \fBgetDescription\fP ()"
+.br
+.RI "\fIRecuperer la variable Description_m\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property bool \fBVerifyInUse\fP = {read = FVerfiyUse_m, write = FVerfiyUse_m}"
+.br
+.RI "\fIpropriÃ©tÃ© VerifyInUse de la varible FVerfiyUse_m\&. \fP"
+.ti -1c
+.RI "__property bool \fBLockStateDevice\fP = {read = FLockStateDevice, write = FLockStateDevice}"
+.br
+.RI "\fIpropriÃ©tÃ© LockStateDevice de la varible FLockStateDevice\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBNameDevice\fP = {read = getName_Device, write = setName_Device}"
+.br
+.RI "\fIpropriÃ©tÃ© LockStateDevice de la varible FLockStateDevice\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBAdresseString\fP = {read = getAdr, write = setAdr}"
+.br
+.RI "\fIpropriÃ©tÃ© AdresseString de la varible Adr_m\&. \fP"
+.ti -1c
+.RI "__property int \fBAdrPrimaire\fP = {read = getAdrPrimaire, write = setAdrPrimaire}"
+.br
+.RI "\fIpropriÃ©tÃ© AdrPrimaire de la varible AdrPrimaire_m\&. \fP"
+.ti -1c
+.RI "__property int \fBAdrSecondaire\fP = {read = getAdrSecondaire, write = setAdrSecondaire}"
+.br
+.RI "\fIpropriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. \fP"
+.ti -1c
+.RI "__property double \fBTimeout\fP = {read = getTimeout, write = setTimeout}"
+.br
+.RI "\fIpropriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. \fP"
+.ti -1c
+.RI "__property AnsiString \fBCaption\fP = {read = getCaption, write = setCaption}"
+.br
+.RI "\fIpropriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe virtuelle des instruments simulÃ©s \&. 
+
+definit la classe virtuelle des instruments simulés \&.
+.PP
+definit la classe virtuelle des instruments Alimentation simulés \&.
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 29/03/2017
+.RE
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 13/04/2017
+.RE
+.PP
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 6/04/2017 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBvdescription_C\fP * \fBvsim_C::getDescription\fP ()"
+
+.PP
+Recuperer la variable Description_m\&. \fBRenvoie:\fP
+.RS 4
+vdescription_C : variable de type vdescription_C\&. 
+.RE
+.PP
+
+.SS "\fBvdescription_C\fP* \fBvsim_C::getDescription\fP ()"
+
+.PP
+Recuperer la variable Description_m\&. \fBRenvoie:\fP
+.RS 4
+vdescription_C : variable de type vdescription_C\&. 
+.RE
+.PP
+
+.SS "void \fBvsim_C::setDescription\fP (\fBvdescription_C\fP *Description)"
+
+.PP
+Initialiser de la variable Description_m\&. Represente la description de l'instrument\&. \fBParamètres:\fP
+.RS 4
+\fIvdescription_C\fP Description : variable de type vdescription_C\&. 
+.RE
+.PP
+
+.SS "void \fBvsim_C::setDescription\fP (\fBvdescription_C\fP *Description)"
+
+.PP
+Initialiser de la variable Description_m\&. Represente la description de l'instrument\&. \fBParamètres:\fP
+.RS 4
+\fIvdescription_C\fP Description : variable de type vdescription_C\&. 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "__property AnsiString \fBvsim_C::AdresseString\fP = {read = getAdr, write = setAdr}"
+
+.PP
+propriÃ©tÃ© AdresseString de la varible Adr_m\&. propriété AdresseString de la varible Adr_m\&. 
+.SS "__property int \fBvsim_C::AdrPrimaire\fP = {read = getAdrPrimaire, write = setAdrPrimaire}"
+
+.PP
+propriÃ©tÃ© AdrPrimaire de la varible AdrPrimaire_m\&. propriété AdrPrimaire de la varible AdrPrimaire_m\&. 
+.SS "__property int \fBvsim_C::AdrSecondaire\fP = {read = getAdrSecondaire, write = setAdrSecondaire}"
+
+.PP
+propriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. propriété AdrSecondaire de la varible AdrSecondaire_m\&. 
+.SS "__property AnsiString \fBvsim_C::Caption\fP = {read = getCaption, write = setCaption}"
+
+.PP
+propriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. propriété AdrSecondaire de la varible AdrSecondaire_m\&. 
+.SS "__property bool \fBvsim_C::LockStateDevice\fP = {read = FLockStateDevice, write = FLockStateDevice}"
+
+.PP
+propriÃ©tÃ© LockStateDevice de la varible FLockStateDevice\&. propriété LockStateDevice de la varible FLockStateDevice\&. 
+.SS "__property AnsiString \fBvsim_C::NameDevice\fP = {read = getName_Device, write = setName_Device}"
+
+.PP
+propriÃ©tÃ© LockStateDevice de la varible FLockStateDevice\&. propriété LockStateDevice de la varible FLockStateDevice\&. 
+.SS "__property double \fBvsim_C::Timeout\fP = {read = getTimeout, write = setTimeout}"
+
+.PP
+propriÃ©tÃ© AdrSecondaire de la varible AdrSecondaire_m\&. propriété AdrSecondaire de la varible AdrSecondaire_m\&. 
+.SS "__property bool \fBvsim_C::VerifyInUse\fP = {read = FVerfiyUse_m, write = FVerfiyUse_m}"
+
+.PP
+propriÃ©tÃ© VerifyInUse de la varible FVerfiyUse_m\&. propriété VerifyInUse de la varible FVerfiyUse_m\&. 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Instruments à partir du code source\&.

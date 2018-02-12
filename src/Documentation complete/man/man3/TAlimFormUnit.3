@@ -1,0 +1,260 @@
+.TH "TAlimFormUnit" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TAlimFormUnit \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBTSimuForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBButTensionparamClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBButCourantAppClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBFormShow\fP (TObject *Sender, AnsiString filebaie, AnsiString baie, AnsiString caption)"
+.br
+.ti -1c
+.RI "void __fastcall \fBAdvGlassButton1Click\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBButDisjonctionAppClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBButSurchauffeAppClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "__fastcall \fBTAlimFormUnit\fP (TComponent *Owner)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TTimer * \fBTimer1\fP"
+.br
+.ti -1c
+.RI "TPageControl * \fBPageControl\fP"
+.br
+.ti -1c
+.RI "TTabSheet * \fBTabSheet1\fP"
+.br
+.ti -1c
+.RI "TTabSheet * \fBTabSheet2\fP"
+.br
+.ti -1c
+.RI "TTabSheet * \fBTabSheet3\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBoxAlim\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBVoltUnitLabel\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBCurrUnitLabel\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeOverVoltage\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeOverCurrent\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeOverTemperature\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeRemote\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeUnregulation\fP"
+.br
+.ti -1c
+.RI "TShape * \fBShapeActive\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBoxParameters\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLTitre\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLTensionMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLCourantMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLPuissanceMax\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLTensionRMS\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLtensionPeak\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLCourantRMS\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextTensionMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextCourantMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextPowerMax\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextTensionRMS\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextTensionpeak\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBTextCourantRMS\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBox1\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBox2\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBVoltageLabel\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBCurrentLabel\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBox3\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBActionTensionText\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBox4\fP"
+.br
+.ti -1c
+.RI "TEdit * \fBActionCourantText\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBButDisjonctionApp\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBButTensionparam\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBButCourantApp\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBButSurchauffeApp\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBButRegulApp\fP"
+.br
+.ti -1c
+.RI "TAdvGlassButton * \fBAdvGlassButton1\fP"
+.br
+.ti -1c
+.RI "TGroupBox * \fBGroupBoxParamAlim\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBVoltageProgLabel\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBVoltageProtLabel\fP"
+.br
+.ti -1c
+.RI "TAdvSmoothLedLabel * \fBCurrentProtLabel\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLabel1\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLabel2\fP"
+.br
+.ti -1c
+.RI "TLabel * \fBLabel3\fP"
+.br
+.ti -1c
+.RI "TBitBtn * \fBButHelpAlim\fP"
+.br
+.ti -1c
+.RI "\fBSAlimentations\fP * \fBAlimDevice\fP"
+.br
+.ti -1c
+.RI "__property double \fBVoltageActive\fP = {read = getVoltageActive, write = setVoltageActive}"
+.br
+.RI "\fIpropriete \fIVoltageActive\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentActive\fP = {read = getCurrentActive, write = setCurrentActive}"
+.br
+.RI "\fIpropriete \fICurrentActive\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBOverVoltage\fP = {read = getOverVoltage, write = setOverVoltage}"
+.br
+.RI "\fIpropriete \fIOverVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBOverCurrent\fP = {read = getOverCurrent, write = setOverCurrent}"
+.br
+.RI "\fIpropriete \fIOverCurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBOverTemperature\fP = {read = getOverTemperature, write = setOverTemperature}"
+.br
+.RI "\fIpropriete \fIOverTemperature\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBRemote\fP = {read = getRemote, write = setRemote}"
+.br
+.RI "\fIpropriete \fIRemote\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = getActive, write = setActive}"
+.br
+.RI "\fIpropriete \fIActive\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBTensionMax\fP = {read = getTensionMax, write = setTensionMax}"
+.br
+.RI "\fIpropriete \fITensionMax\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBTensionMin\fP = {read = getTensionMin, write = setTensionMin}"
+.br
+.RI "\fIpropriete \fITensionMin\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCourantMax\fP = {read = getCourantMax, write = setCourantMax}"
+.br
+.RI "\fIpropriete \fICourantMax\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBPowerMax\fP = {read = getPowerMax, write = setPowerMax}"
+.br
+.RI "\fIpropriete \fIPowerMax\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBTensionRMS\fP = {read = getTensionRMS, write = setTensionRMS}"
+.br
+.RI "\fIpropriete \fITensionRMS\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBTensionpeak\fP = {read = getTensionpeak, write = setTensionpeak}"
+.br
+.RI "\fIpropriete \fITensionpeak\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCourantRMS\fP = {read = getCourantRMS, write = setCourantRMS}"
+.br
+.RI "\fIpropriete \fICourantRMS\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBTensionApp\fP = {read = getTensionApp, write = setTensionApp}"
+.br
+.RI "\fIpropriete \fITensionApp\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCourantApp\fP = {read = getCourantApp, write = setCourantApp}"
+.br
+.RI "\fIpropriete \fICourantApp\fP de l'objet virtual_Alim \&. \fP"
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

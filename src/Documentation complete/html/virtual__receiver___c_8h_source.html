@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/equipment/Recepteur/virtual_receiver_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/equipment/Recepteur/virtual_receiver_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00002"></a>00002 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef virtual_receiver_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define virtual_receiver_CH</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;virtual_equipment_C.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;IniFiles.hpp&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;time.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;EqptSubject.h&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00017"></a>00017 <span class="keyword">enum</span> equipmentEnum {RX,DOCON,UPCON,DUAL};
+<a name="l00018"></a>00018 
+<a name="l00022"></a><a class="code" href="struct_t_comp_eqpt.html">00022</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00024"></a><a class="code" href="struct_t_comp_eqpt.html#a5dcb90fe938e67cbc8b32d1147516f80">00024</a>         <span class="keywordtype">int</span> <a class="code" href="struct_t_comp_eqpt.html#a5dcb90fe938e67cbc8b32d1147516f80" title="nb_Tranche : nombre de tranche">nb_Tranche</a>;
+<a name="l00026"></a><a class="code" href="struct_t_comp_eqpt.html#ade2c93dce148b4ae4a50405dffe9ba1f">00026</a>         <span class="keywordtype">int</span> <a class="code" href="struct_t_comp_eqpt.html#ade2c93dce148b4ae4a50405dffe9ba1f" title="nb_Alim : nombre d&#39;alimentation">nb_Alim</a>;
+<a name="l00028"></a><a class="code" href="struct_t_comp_eqpt.html#a3c724f082043bb62950a1ab3e9e98ff3">00028</a>         <span class="keywordtype">int</span> <a class="code" href="struct_t_comp_eqpt.html#a3c724f082043bb62950a1ab3e9e98ff3" title="nb_Tmtc : nombre de tmtc">nb_Tmtc</a>;
+<a name="l00029"></a>00029 }<a class="code" href="struct_t_comp_eqpt.html" title="Structure de l&#39;equipement.">TCompEqpt</a>;
+<a name="l00030"></a>00030 
+<a name="l00034"></a><a class="code" href="classvirtual__receiver___c.html">00034</a> <span class="keyword">class </span><a class="code" href="classvirtual__receiver___c.html" title="Classe du recepteur virtuel.">virtual_receiver_C</a> : <span class="keyword">public</span> <a class="code" href="classvirtual__equipment___c.html" title="Permet la representation objet d&#39;un equipement.">virtual_equipment_C</a>
+<a name="l00035"></a>00035 {
+<a name="l00036"></a>00036 <span class="keyword">private</span> :
+<a name="l00038"></a>00038         <span class="keywordtype">double</span> frequency_Ol_m;
+<a name="l00040"></a>00040         <span class="keywordtype">double</span> interval_Fq_OL;
+<a name="l00042"></a>00042         <span class="keywordtype">double</span> power_Ol_m;
+<a name="l00044"></a>00044         <span class="keywordtype">double</span> power_Ol_min_m;
+<a name="l00046"></a>00046         <span class="keywordtype">double</span> power_Ol_max_m;
+<a name="l00048"></a>00048         <span class="keywordtype">double</span> gain_m;
+<a name="l00050"></a>00050         <span class="keywordtype">double</span> power_in_m;
+<a name="l00052"></a>00052         <span class="keywordtype">double</span> power_out_m;
+<a name="l00054"></a>00054         equipmentEnum FDeviceType;
+<a name="l00056"></a>00056         <a class="code" href="struct_t_comp_eqpt.html" title="Structure de l&#39;equipement.">TCompEqpt</a> *CompositionEqpt;
+<a name="l00057"></a>00057 
+<a name="l00059"></a>00059         <span class="keywordtype">bool</span> FOl_Active;
+<a name="l00061"></a>00061         <span class="keywordtype">bool</span> FOL_Overload;
+<a name="l00063"></a>00063         <span class="keywordtype">double</span> time_Hot;
+<a name="l00064"></a>00064 
+<a name="l00067"></a>00067         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getTime_Hot();
+<a name="l00071"></a>00071         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setTime_Hot(<span class="keywordtype">double</span> time);
+<a name="l00075"></a>00075         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getFrequency_Ol();
+<a name="l00079"></a>00079         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setFrequency_Ol(<span class="keywordtype">double</span> freqOl_i);
+<a name="l00083"></a>00083         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getPower_Ol();
+<a name="l00087"></a>00087         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPower_Ol(<span class="keywordtype">double</span> powerOl_i);
+<a name="l00091"></a>00091         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getPower_Ol_min();
+<a name="l00095"></a>00095         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPower_Ol_min(<span class="keywordtype">double</span> powerOl_i);
+<a name="l00099"></a>00099         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getPower_Ol_max();
+<a name="l00103"></a>00103         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPower_Ol_max(<span class="keywordtype">double</span> powerOl_i);
+<a name="l00107"></a>00107         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getGain();
+<a name="l00111"></a>00111         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setGain(<span class="keywordtype">double</span> gain);
+<a name="l00115"></a>00115         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getPowerIn();
+<a name="l00119"></a>00119         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPowerIn(<span class="keywordtype">double</span> p_in);
+<a name="l00123"></a>00123         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getPowerOut();
+<a name="l00126"></a>00126         <span class="keyword">virtual</span> <span class="keywordtype">void</span> waitHotFrequencyOl();
+<a name="l00130"></a>00130         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> getOl_overload();
+<a name="l00134"></a>00134         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setOl_overload(<span class="keywordtype">bool</span> b);
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="keyword">public</span>:
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139         <span class="comment">//Construction &amp; Destructeur.</span>
+<a name="l00142"></a>00142 <span class="comment"></span>        <a class="code" href="classvirtual__receiver___c.html#aff3d3889732a7d9958dde571b108c08b" title="Constructeur de la fonction virtual_receiver_C.">virtual_receiver_C</a>();
+<a name="l00145"></a>00145         <a class="code" href="classvirtual__receiver___c.html#a68c46113384b11e4fa572fcbbd6be937" title="Destructeur de la fonction virtual_receiver_C.">~virtual_receiver_C</a>();
+<a name="l00146"></a>00146 
+<a name="l00152"></a>00152         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__receiver___c.html#a784ada9c20e288e748ae1862cdf65faf" title="Fixe les constantes de l&#39;equipement.">setConsEqpt</a>(<span class="keywordtype">int</span> nb_tranche_m,<span class="keywordtype">int</span> nb_alim_m,<span class="keywordtype">int</span> nb_tmtc_m);
+<a name="l00153"></a>00153 
+<a name="l00157"></a>00157         <span class="keyword">virtual</span> <a class="code" href="struct_t_comp_eqpt.html" title="Structure de l&#39;equipement.">TCompEqpt</a> <a class="code" href="classvirtual__receiver___c.html#a757fd159d0c2c1ff65f107b0ca9f7fee" title="Recupere les constantes de l&#39;equipement.">getConsEqpt</a>();
+<a name="l00158"></a>00158 
+<a name="l00161"></a><a class="code" href="classvirtual__receiver___c.html#aa85b4c7a19400923de7f4a5a1253de2f">00161</a>         __property equipmentEnum <a class="code" href="classvirtual__receiver___c.html#aa85b4c7a19400923de7f4a5a1253de2f" title="Propriete DeviceType de la variable FDeviceType en lecture et SetDeviceType en ecriture.">DeviceType</a> = {read=FDeviceType, write=<a class="code" href="classvirtual__receiver___c.html#a8b4d357cf12a40b892c9b82bf3c3be09" title="Fixe le type d&#39;equipement utilise.">SetDeviceType</a>};
+<a name="l00164"></a><a class="code" href="classvirtual__receiver___c.html#adc6421aafa35d975fbb1f243eae26724">00164</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#adc6421aafa35d975fbb1f243eae26724" title="Propriete Frequency_OL des fonctions getFrequency_Ol et setFrequency_Ol.">Frequency_OL</a> = {read=getFrequency_Ol, write=setFrequency_Ol};
+<a name="l00167"></a><a class="code" href="classvirtual__receiver___c.html#a4591c744de987422402597c83560edd9">00167</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a4591c744de987422402597c83560edd9" title="Propriete Interval_Fq_OL de la variable interval_Fq_OL.">Interval_Fq_OL</a> = {read=interval_Fq_OL, write=interval_Fq_OL};
+<a name="l00170"></a><a class="code" href="classvirtual__receiver___c.html#a7cc03df3708161e6f9c0fdfe805518a9">00170</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a7cc03df3708161e6f9c0fdfe805518a9" title="Propriete Power_Ol des fonctions getPower_Ol et setPower_Ol.">Power_Ol</a> = {read=getPower_Ol, write=setPower_Ol};
+<a name="l00173"></a><a class="code" href="classvirtual__receiver___c.html#a4530ed206d757108ae4ed06a910db340">00173</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a4530ed206d757108ae4ed06a910db340" title="Propriete Power_Ol_Min des fonctions getPower_Ol_Min et setPower_Ol_Min.">Power_Ol_Min</a> = {read=getPower_Ol_min, write=setPower_Ol_min};
+<a name="l00176"></a><a class="code" href="classvirtual__receiver___c.html#a428e596b84511289a506723f7c8efd2b">00176</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a428e596b84511289a506723f7c8efd2b" title="Propriete Power_Ol_Max des fonctions getPower_Ol_Max et setPower_Ol_Max.">Power_Ol_Max</a> = {read=getPower_Ol_max, write=setPower_Ol_max};
+<a name="l00179"></a><a class="code" href="classvirtual__receiver___c.html#a2ef857a3e623dfcc509619918f719d38">00179</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a2ef857a3e623dfcc509619918f719d38" title="Propriete Gain des fonctions getGain et setGain.">Gain</a> = {read=getGain, write=setGain};
+<a name="l00182"></a><a class="code" href="classvirtual__receiver___c.html#a5010f5099d641b445fc086200c766f80">00182</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a5010f5099d641b445fc086200c766f80" title="Propriete PowerIn des fonctions getPowerIn et setPowerIn.">PowerIn</a> = {read=getPowerIn,write=setPowerIn};
+<a name="l00185"></a><a class="code" href="classvirtual__receiver___c.html#a015999567bfbf89f7f57bbf9f1ac2fb6">00185</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a015999567bfbf89f7f57bbf9f1ac2fb6" title="Propriete PowerOut de la fonction getPowerOut en lecture.">PowerOut</a> = {read=getPowerOut};
+<a name="l00188"></a><a class="code" href="classvirtual__receiver___c.html#aaad9593fcdda9c4f4f4c5d2a55fd1a3e">00188</a>         __property <span class="keywordtype">bool</span> <a class="code" href="classvirtual__receiver___c.html#aaad9593fcdda9c4f4f4c5d2a55fd1a3e" title="Propriete OlActive des fonctions FOl_Active et FOl_Active.">OlActive</a> = {read=FOl_Active, write=FOl_Active};
+<a name="l00191"></a><a class="code" href="classvirtual__receiver___c.html#a3678df8e7a0a88cc89af08c9aabd1d41">00191</a>         __property <span class="keywordtype">bool</span> <a class="code" href="classvirtual__receiver___c.html#a3678df8e7a0a88cc89af08c9aabd1d41" title="Propriete OlOverload des fonctions getOl_overload et setOl_overload.">OlOverload</a> = {read=getOl_overload, write=setOl_overload};
+<a name="l00194"></a><a class="code" href="classvirtual__receiver___c.html#a4983a86cddddacc73020b43d6e200a4a">00194</a>         __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__receiver___c.html#a4983a86cddddacc73020b43d6e200a4a" title="Propriete TimeHot des fonctions getTime_Hot et setTime_Hot.">TimeHot</a> = {read=getTime_Hot,write=setTime_Hot};
+<a name="l00198"></a>00198         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__receiver___c.html#a8b4d357cf12a40b892c9b82bf3c3be09" title="Fixe le type d&#39;equipement utilise.">SetDeviceType</a>(equipmentEnum AValue);
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200 <span class="keyword">protected</span>:
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202 };
+<a name="l00203"></a>00203 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:39 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

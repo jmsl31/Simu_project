@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.0">
+  <compound refid="classvalim___c" kind="class"><name>valim_C</name>
+  </compound>
+  <compound refid="classvirtual__alim___c" kind="class"><name>virtual_alim_C</name>
+    <member refid="classvirtual__alim___c_1a0a588dbd698c4a9e745e6b77aa498545" kind="variable"><name>voltage_m</name></member>
+    <member refid="classvirtual__alim___c_1ac3952b2858641365e78c6a66f7a17dd7" kind="variable"><name>current_m</name></member>
+    <member refid="classvirtual__alim___c_1a4ce2e626e346df3d2811db21ced9cc5e" kind="variable"><name>protVoltage_m</name></member>
+    <member refid="classvirtual__alim___c_1acdfe8ca14d43726cf258fde4ff34c574" kind="variable"><name>protcurrent_m</name></member>
+    <member refid="classvirtual__alim___c_1a34e9ffe2fd06b77f0d4ecbd643233b1a" kind="variable"><name>puissance_m</name></member>
+    <member refid="classvirtual__alim___c_1aae960cd7759b894efe24246f918d4e5e" kind="variable"><name>FProtectedVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a55202c6c831caa03bcaa5c61cc103987" kind="variable"><name>FProtectedCurrent</name></member>
+    <member refid="classvirtual__alim___c_1a6bd9d63b4d35501202b3f53b57f19e08" kind="variable"><name>Voltage</name></member>
+    <member refid="classvirtual__alim___c_1a300060a886d0628ad4175d51eedab44e" kind="variable"><name>Current</name></member>
+    <member refid="classvirtual__alim___c_1a41a37be4ccc4cfd9df0bcd6eaf3b1f66" kind="variable"><name>Puissance</name></member>
+    <member refid="classvirtual__alim___c_1a09fe0a27b4ace14525f0ee56eab16fa2" kind="variable"><name>ProtectedVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a26fa35106f5f7879f6dc5cf21a6c331b" kind="variable"><name>ProtectedCurrent</name></member>
+    <member refid="classvirtual__alim___c_1a9f0abcd7f10dd4538869f501ad4e1b2b" kind="function"><name>getVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a5666a9e4c3038054d7abf501e1759c32" kind="function"><name>setVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a12abdda3b415bf2ab2009e6bed855eb3" kind="function"><name>getCurrent</name></member>
+    <member refid="classvirtual__alim___c_1aa96f92a7d03fcab9f5ac71348e4564b7" kind="function"><name>setCurrent</name></member>
+    <member refid="classvirtual__alim___c_1a0a5d28f6afe2edde9ee4488fda49d1b5" kind="function"><name>getProtVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a186a40002b82a4737d1497e06b25a01a" kind="function"><name>setProtVoltage</name></member>
+    <member refid="classvirtual__alim___c_1a37e18fe9b24cad4dc3e5ced71df8c6ac" kind="function"><name>getProtCurrent</name></member>
+    <member refid="classvirtual__alim___c_1afc2bcf20bc6ff249aa98bfc4f3515a83" kind="function"><name>setProtCurrent</name></member>
+    <member refid="classvirtual__alim___c_1a3fe04b47079eac9e5f293366faa67ff2" kind="function"><name>getPuissance</name></member>
+    <member refid="classvirtual__alim___c_1aff2b06f4ca06e918792eba6dcac6ddbb" kind="function"><name>setPuissance</name></member>
+    <member refid="classvirtual__alim___c_1a51659cf279e162ca3217ab58d8952874" kind="function"><name>virtual_alim_C</name></member>
+    <member refid="classvirtual__alim___c_1a4e4ba81b0d47560bb5c0a8af9643d915" kind="function"><name>initAlim</name></member>
+    <member refid="classvirtual__alim___c_1a60f0f83652ab04d40530ef633fa4d662" kind="function"><name>~virtual_alim_C</name></member>
+  </compound>
+  <compound refid="classvirtual__equipment___c" kind="class"><name>virtual_equipment_C</name>
+    <member refid="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" kind="variable"><name>name_m</name></member>
+    <member refid="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" kind="variable"><name>Type_m</name></member>
+    <member refid="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" kind="variable"><name>temperature_m</name></member>
+    <member refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" kind="variable"><name>FActive</name></member>
+    <member refid="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" kind="variable"><name>FVerifyInUse</name></member>
+    <member refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kind="variable"><name>FLock</name></member>
+    <member refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" kind="variable"><name>tranche_m</name></member>
+    <member refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" kind="variable"><name>alim_m</name></member>
+    <member refid="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" kind="variable"><name>tmtc_m</name></member>
+    <member refid="classvirtual__equipment___c_1a8ab64a7264339bb0b0bb023dc1dc5b5d" kind="variable"><name>Temperature</name></member>
+    <member refid="classvirtual__equipment___c_1a1a3634302dfe0be7248ff75db6e97c7a" kind="variable"><name>Name</name></member>
+    <member refid="classvirtual__equipment___c_1ae96562ebbf3407b31444cb8295501064" kind="variable"><name>Type</name></member>
+    <member refid="classvirtual__equipment___c_1ad19694d55eff900974dcfa8b58d7c88a" kind="variable"><name>TrancheRF</name></member>
+    <member refid="classvirtual__equipment___c_1a01eb135acd3086e9d16ea5e1d2e6376a" kind="variable"><name>Alim</name></member>
+    <member refid="classvirtual__equipment___c_1a64c21edeeaf1f63028ed0c376007d894" kind="variable"><name>Tmtc</name></member>
+    <member refid="classvirtual__equipment___c_1a3cc4146571b64705bb151477262a8ff3" kind="variable"><name>Active</name></member>
+    <member refid="classvirtual__equipment___c_1a81c505d194373587b5931961dfbc01cd" kind="variable"><name>VerifyInUse</name></member>
+    <member refid="classvirtual__equipment___c_1a45d9b28bc0f6a789458b30f4c2c3a1a2" kind="variable"><name>Lock</name></member>
+    <member refid="classvirtual__equipment___c_1a0f2134b2169de19fa70188cd7323541b" kind="function"><name>getTranche</name></member>
+    <member refid="classvirtual__equipment___c_1a145d94336958ebd33de11c7c45570e9a" kind="function"><name>getAlim</name></member>
+    <member refid="classvirtual__equipment___c_1a428918b25cfbb179380007b6219c5adf" kind="function"><name>getTmtc</name></member>
+    <member refid="classvirtual__equipment___c_1aaf8f0c20c81d987b46c80ac5111b036c" kind="function"><name>getTemperature</name></member>
+    <member refid="classvirtual__equipment___c_1a103af7dc6c923013f0add4a1b9645f49" kind="function"><name>setTemperature</name></member>
+    <member refid="classvirtual__equipment___c_1ad43dd1d6d2ed521d2027c473a39e443b" kind="function"><name>getName</name></member>
+    <member refid="classvirtual__equipment___c_1a0193c2f421e075f057ecc2754f0cd83e" kind="function"><name>setName</name></member>
+    <member refid="classvirtual__equipment___c_1abb04bb70248f80ed4db751cec03520dd" kind="function"><name>getType</name></member>
+    <member refid="classvirtual__equipment___c_1a78a36daea33c28deaefeb98e72c5ab11" kind="function"><name>setType</name></member>
+    <member refid="classvirtual__equipment___c_1a343b266f2f6d3908c645df90776a83a3" kind="function"><name>SetActive</name></member>
+    <member refid="classvirtual__equipment___c_1a2c51023b7a82513676d155e6d63496f5" kind="function"><name>GetActive</name></member>
+    <member refid="classvirtual__equipment___c_1a1c3a353cafb5d790d70dd6ae59b7b17f" kind="function"><name>LockDevice</name></member>
+    <member refid="classvirtual__equipment___c_1a44207e2691b20701e6f595cecf06d1f3" kind="function"><name>UnlockDevice</name></member>
+    <member refid="classvirtual__equipment___c_1ae879279aefc29ff6b998838c8753d9dc" kind="function"><name>check_Eqpt</name></member>
+    <member refid="classvirtual__equipment___c_1a74f8c62a44f96ea524392e93648354d5" kind="function"><name>virtual_equipment_C</name></member>
+    <member refid="classvirtual__equipment___c_1abd3c7644895339403fbe3485d8d56168" kind="function"><name>~virtual_equipment_C</name></member>
+    <member refid="classvirtual__equipment___c_1ab68a023d661bdab14eded1f3cca1ada2" kind="function"><name>setTranche</name></member>
+    <member refid="classvirtual__equipment___c_1a89495dac7bc60b8df6b83dbd2272c01e" kind="function"><name>setAlim</name></member>
+    <member refid="classvirtual__equipment___c_1a9df560e74b3a55eefee3bee74f1b7805" kind="function"><name>setTmtc</name></member>
+  </compound>
+  <compound refid="classvirtual___r_f___c" kind="class"><name>virtual_RF_C</name>
+    <member refid="classvirtual___r_f___c_1a076dd8eeec60b6619cfef4ce13f715e1" kind="variable"><name>frequency_Start_In_m</name></member>
+    <member refid="classvirtual___r_f___c_1ae6d3b2fdce70dcbc73d1f8101ae4f2eb" kind="variable"><name>frequency_Stop_In_m</name></member>
+    <member refid="classvirtual___r_f___c_1aac8d9e82856335a15f3583165a744c17" kind="variable"><name>bandwidth_m</name></member>
+    <member refid="classvirtual___r_f___c_1aa40e42ddeca4747a9e81f402405ed647" kind="variable"><name>step_m</name></member>
+    <member refid="classvirtual___r_f___c_1abe10cc664f592bb7cbf47e7eebfeaea0" kind="variable"><name>power_m</name></member>
+    <member refid="classvirtual___r_f___c_1a2dfb45ea10f7e634e55319514df468bb" kind="variable"><name>frequency_Min</name></member>
+    <member refid="classvirtual___r_f___c_1aa72387e37888ee635fb298478dce7eae" kind="variable"><name>frequency_Max</name></member>
+    <member refid="classvirtual___r_f___c_1aba305abade5825d7c662bed679f85c57" kind="variable"><name>frequency_Start_Out_m</name></member>
+    <member refid="classvirtual___r_f___c_1a744191630940374c0aba01618d62ce60" kind="variable"><name>frequency_Stop_Out_m</name></member>
+    <member refid="classvirtual___r_f___c_1abd7e1ee3d0a5f3ab2d903c10b27c07fc" kind="variable"><name>power_min</name></member>
+    <member refid="classvirtual___r_f___c_1a46f1162208b282b134bc2b2203fb28bd" kind="variable"><name>power_max</name></member>
+    <member refid="classvirtual___r_f___c_1af31a92a06591ea42e46c9d67c4272d15" kind="variable"><name>FActiveRF</name></member>
+    <member refid="classvirtual___r_f___c_1a51e3497481fdf464a7158df877e62058" kind="variable"><name>FActivePower</name></member>
+    <member refid="classvirtual___r_f___c_1adba3c60843f4cc57cb0a1354f98983be" kind="variable"><name>FOverload</name></member>
+    <member refid="classvirtual___r_f___c_1aa1c0bb61e269834084bff564fed93be9" kind="variable"><name>Frequency_Start_In</name></member>
+    <member refid="classvirtual___r_f___c_1adbd657bfed979418e9baba3bf2acad54" kind="variable"><name>Frequency_Stop_In</name></member>
+    <member refid="classvirtual___r_f___c_1a0a6f90a516e7f0092d7b680f26ff4046" kind="variable"><name>Frequency_Start_Out</name></member>
+    <member refid="classvirtual___r_f___c_1a178551e534240fa3752776d15827b396" kind="variable"><name>Frequency_Stop_Out</name></member>
+    <member refid="classvirtual___r_f___c_1a067af8ef71bc9bd692526eef7a99cf14" kind="variable"><name>Frequency_Min</name></member>
+    <member refid="classvirtual___r_f___c_1a62ecc7cb74f2c52cc181c4309593071a" kind="variable"><name>Frequency_Max</name></member>
+    <member refid="classvirtual___r_f___c_1a2833110b7df41da1e17fd4ceaf614d19" kind="variable"><name>Bandwidth</name></member>
+    <member refid="classvirtual___r_f___c_1a10309966d163b7ab3848a18e57a081ff" kind="variable"><name>Step</name></member>
+    <member refid="classvirtual___r_f___c_1af1802cdd2af3c0046c0f3cd99148583f" kind="variable"><name>Power</name></member>
+    <member refid="classvirtual___r_f___c_1a419563ccc61b5d9b0e519c52088f6f8b" kind="variable"><name>Power_Max</name></member>
+    <member refid="classvirtual___r_f___c_1abcfade6f1fb74842ceca5ab82be340f9" kind="variable"><name>Power_Min</name></member>
+    <member refid="classvirtual___r_f___c_1ae656ba5421d8abea5b41e672bf1789b0" kind="variable"><name>ActiveRF</name></member>
+    <member refid="classvirtual___r_f___c_1a336ecd5a7e101170ef75642a83f4d8cd" kind="variable"><name>ActivePower</name></member>
+    <member refid="classvirtual___r_f___c_1a389bac327ade1cada6c70880d176d94d" kind="variable"><name>Overload</name></member>
+    <member refid="classvirtual___r_f___c_1a8f3a187c3eedfe6fc188df73a7deedfb" kind="function"><name>getFrequency_Start_In</name></member>
+    <member refid="classvirtual___r_f___c_1ae3b594f89f20a6f59eb580002a76d90e" kind="function"><name>setFrequency_Start_In</name></member>
+    <member refid="classvirtual___r_f___c_1a0e84565066ebce9363018a69b499382b" kind="function"><name>getFrequency_Stop_In</name></member>
+    <member refid="classvirtual___r_f___c_1a570a1299af432f23561f8cd84fbf8ca5" kind="function"><name>setFrequency_Stop_In</name></member>
+    <member refid="classvirtual___r_f___c_1a0338f6e31d64217a736b6ff2b65a1670" kind="function"><name>getFrequency_Start_Out</name></member>
+    <member refid="classvirtual___r_f___c_1aa43198ec6fc8ee6592bda2629b9d5213" kind="function"><name>setFrequency_Start_Out</name></member>
+    <member refid="classvirtual___r_f___c_1a2b443a85edde2d1521da7941b0605cba" kind="function"><name>getFrequency_Stop_Out</name></member>
+    <member refid="classvirtual___r_f___c_1a2e769b7b583f7aeed1f9bcc28816e376" kind="function"><name>setFrequency_Stop_Out</name></member>
+    <member refid="classvirtual___r_f___c_1acc9b848e1dbd3c849ce88791a1eaaf8a" kind="function"><name>getFrequency_Min</name></member>
+    <member refid="classvirtual___r_f___c_1a56093f2b396c0289b50999a86adc3e5d" kind="function"><name>setFrequency_Min</name></member>
+    <member refid="classvirtual___r_f___c_1a1ed069bb6f5c7890964627e5b6f4d2a3" kind="function"><name>getFrequency_Max</name></member>
+    <member refid="classvirtual___r_f___c_1ad6699cf880574c4504edb072054b8b9a" kind="function"><name>setFrequency_Max</name></member>
+    <member refid="classvirtual___r_f___c_1ae7f307eaddee27b8ceecf6eeb9b2fc26" kind="function"><name>getbandwidth</name></member>
+    <member refid="classvirtual___r_f___c_1ad6a5891df634c32b7d899315fd48d0d0" kind="function"><name>setbandwidth</name></member>
+    <member refid="classvirtual___r_f___c_1a5d7222325568d45245736a80dc286ff4" kind="function"><name>getstep</name></member>
+    <member refid="classvirtual___r_f___c_1a1c37515ed56132bb1a683f9e1d1e7f7f" kind="function"><name>setstep</name></member>
+    <member refid="classvirtual___r_f___c_1a739758015e7a7d6763634819e0a191a4" kind="function"><name>getPower</name></member>
+    <member refid="classvirtual___r_f___c_1a25ebb3b14a7059265a82d840e20029d6" kind="function"><name>setPower</name></member>
+    <member refid="classvirtual___r_f___c_1af4ed8a5ab03950dee465cb0eef9ab1ac" kind="function"><name>getPower_Min</name></member>
+    <member refid="classvirtual___r_f___c_1a9ca483cde23f46b55bcf6191c1141b94" kind="function"><name>setPower_Min</name></member>
+    <member refid="classvirtual___r_f___c_1af900749d18122ad63ccae2dc801283c8" kind="function"><name>getPower_Max</name></member>
+    <member refid="classvirtual___r_f___c_1a9e870fec204b1f7966ab01f48e226510" kind="function"><name>setPower_Max</name></member>
+    <member refid="classvirtual___r_f___c_1a597ed6b637c8ed976a68948488ff5904" kind="function"><name>virtual_RF_C</name></member>
+    <member refid="classvirtual___r_f___c_1a46a550b9fa08d7d42b5bd99ca6f76495" kind="function"><name>initTranche</name></member>
+  </compound>
+  <compound refid="classvirtual__tmtc___c" kind="class"><name>virtual_tmtc_C</name>
+    <member refid="classvirtual__tmtc___c_1a4ef562383e7eaec55b9f2193f45082e2" kind="variable"><name>tm_Status_m</name></member>
+    <member refid="classvirtual__tmtc___c_1a7218481a38e43d229f7f5d8817d98e14" kind="variable"><name>tm_ON_OFF_m</name></member>
+    <member refid="classvirtual__tmtc___c_1a6fae5ef5888e25519f94422db59a9e53" kind="variable"><name>Tm_Status</name></member>
+    <member refid="classvirtual__tmtc___c_1a42dccafaa3c2f23a7023ad49b6c45527" kind="variable"><name>Tm_ON_OFF</name></member>
+    <member refid="classvirtual__tmtc___c_1ae776f69eef4cba95d742992a598b15de" kind="function"><name>setTm_Status</name></member>
+    <member refid="classvirtual__tmtc___c_1a305dc2b2a2895a8a1b174976dbea7ee4" kind="function"><name>getTm_Status</name></member>
+    <member refid="classvirtual__tmtc___c_1afc4307280bb7617ba7d3949a930e4d47" kind="function"><name>setTm_ON_OFF</name></member>
+    <member refid="classvirtual__tmtc___c_1a47d4f50a52129e1c9352408c9cebf44a" kind="function"><name>getTm_ON_OFF</name></member>
+    <member refid="classvirtual__tmtc___c_1a544015eb15ccc141bed8543d31b26402" kind="function"><name>virtual_tmtc_C</name></member>
+    <member refid="classvirtual__tmtc___c_1a3525b738b21e49474c45ba890066a5a1" kind="function"><name>~virtual_tmtc_C</name></member>
+  </compound>
+  <compound refid="virtual__alim___c_8cpp" kind="file"><name>virtual_alim_C.cpp</name>
+  </compound>
+  <compound refid="virtual__alim___c_8h" kind="file"><name>virtual_alim_C.h</name>
+    <member refid="virtual__alim___c_8h_1a94c4c586bcdde1e55a7af16a40ab2a74" kind="define"><name>virtual_alim_</name></member>
+  </compound>
+  <compound refid="virtual__equipment___c_8cpp" kind="file"><name>virtual_equipment_C.cpp</name>
+  </compound>
+  <compound refid="virtual__equipment___c_8h" kind="file"><name>virtual_equipment_C.h</name>
+  </compound>
+  <compound refid="virtual___r_f___c_8cpp" kind="file"><name>virtual_RF_C.cpp</name>
+  </compound>
+  <compound refid="virtual___r_f___c_8h" kind="file"><name>virtual_RF_C.h</name>
+  </compound>
+  <compound refid="virtual__tmtc___c_8cpp" kind="file"><name>virtual_tmtc_C.cpp</name>
+  </compound>
+  <compound refid="virtual__tmtc___c_8h" kind="file"><name>virtual_tmtc_C.h</name>
+  </compound>
+  <compound refid="dir_53bc45e0405f6df7ed830d521bdc0728" kind="dir"><name>D:/cpp/</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:/</name>
+  </compound>
+  <compound refid="dir_5b8bb53a53b65e961d8c34c7e6d3763b" kind="dir"><name>D:/cpp/simu_cpp/src/equipment/</name>
+  </compound>
+  <compound refid="dir_7831604a3080dfd50ed4b3015efd46f1" kind="dir"><name>D:/cpp/simu_cpp/</name>
+  </compound>
+  <compound refid="dir_d466d905a6639e7b3aacffae9f39d3e5" kind="dir"><name>D:/cpp/simu_cpp/src/</name>
+  </compound>
+</doxygenindex>

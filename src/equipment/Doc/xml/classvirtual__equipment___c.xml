@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="classvirtual__equipment___c" kind="class" prot="public">
+    <compoundname>virtual_equipment_C</compoundname>
+    <includes refid="virtual__equipment___c_8h" local="no">virtual_equipment_C.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string virtual_equipment_C::name_m</definition>
+        <argsstring></argsstring>
+        <name>name_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="28" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string virtual_equipment_C::Type_m</definition>
+        <argsstring></argsstring>
+        <name>Type_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="29" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_equipment_C::temperature_m</definition>
+        <argsstring></argsstring>
+        <name>temperature_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="30" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_equipment_C::FActive</definition>
+        <argsstring></argsstring>
+        <name>FActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="31" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_equipment_C::FVerifyInUse</definition>
+        <argsstring></argsstring>
+        <name>FVerifyInUse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="31" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_equipment_C::FLock</definition>
+        <argsstring></argsstring>
+        <name>FLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="31" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvirtual___r_f___c" kindref="compound">virtual_RF_C</ref> &gt; *</type>
+        <definition>std::vector&lt;virtual_RF_C&gt;* virtual_equipment_C::tranche_m</definition>
+        <argsstring></argsstring>
+        <name>tranche_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="33" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvirtual__alim___c" kindref="compound">virtual_alim_C</ref> &gt; *</type>
+        <definition>std::vector&lt;virtual_alim_C&gt;* virtual_equipment_C::alim_m</definition>
+        <argsstring></argsstring>
+        <name>alim_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="34" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvirtual__tmtc___c" kindref="compound">virtual_tmtc_C</ref> &gt; *</type>
+        <definition>std::vector&lt;virtual_tmtc_C&gt;* virtual_equipment_C::tmtc_m</definition>
+        <argsstring></argsstring>
+        <name>tmtc_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="35" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a8ab64a7264339bb0b0bb023dc1dc5b5d" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_equipment_C::Temperature</definition>
+        <argsstring></argsstring>
+        <name>Temperature</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1aaf8f0c20c81d987b46c80ac5111b036c" kindref="member">getTemperature</ref>, write = <ref refid="classvirtual__equipment___c_1a103af7dc6c923013f0add4a1b9645f49" kindref="member">setTemperature</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="84" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a1a3634302dfe0be7248ff75db6e97c7a" prot="public" static="no" mutable="no">
+        <type>__property std::string</type>
+        <definition>__property std::string virtual_equipment_C::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1ad43dd1d6d2ed521d2027c473a39e443b" kindref="member">getName</ref>, write = <ref refid="classvirtual__equipment___c_1a0193c2f421e075f057ecc2754f0cd83e" kindref="member">setName</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="85" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1ae96562ebbf3407b31444cb8295501064" prot="public" static="no" mutable="no">
+        <type>__property std::string</type>
+        <definition>__property std::string virtual_equipment_C::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1abb04bb70248f80ed4db751cec03520dd" kindref="member">getType</ref>, write = <ref refid="classvirtual__equipment___c_1a78a36daea33c28deaefeb98e72c5ab11" kindref="member">setType</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="86" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1ad19694d55eff900974dcfa8b58d7c88a" prot="public" static="no" mutable="no">
+        <type>__property std::vector&lt; <ref refid="classvirtual___r_f___c" kindref="compound">virtual_RF_C</ref> &gt;</type>
+        <definition>__property std::vector&lt;virtual_RF_C&gt; virtual_equipment_C::TrancheRF</definition>
+        <argsstring></argsstring>
+        <name>TrancheRF</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a0f2134b2169de19fa70188cd7323541b" kindref="member">getTranche</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="87" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a01eb135acd3086e9d16ea5e1d2e6376a" prot="public" static="no" mutable="no">
+        <type>__property std::vector&lt; <ref refid="classvirtual__alim___c" kindref="compound">virtual_alim_C</ref> &gt;</type>
+        <definition>__property std::vector&lt;virtual_alim_C&gt; virtual_equipment_C::Alim</definition>
+        <argsstring></argsstring>
+        <name>Alim</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a145d94336958ebd33de11c7c45570e9a" kindref="member">getAlim</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="88" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a64c21edeeaf1f63028ed0c376007d894" prot="public" static="no" mutable="no">
+        <type>__property std::vector&lt; <ref refid="classvirtual__tmtc___c" kindref="compound">virtual_tmtc_C</ref> &gt;</type>
+        <definition>__property std::vector&lt;virtual_tmtc_C&gt; virtual_equipment_C::Tmtc</definition>
+        <argsstring></argsstring>
+        <name>Tmtc</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a428918b25cfbb179380007b6219c5adf" kindref="member">getTmtc</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="89" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a3cc4146571b64705bb151477262a8ff3" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_equipment_C::Active</definition>
+        <argsstring></argsstring>
+        <name>Active</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a2c51023b7a82513676d155e6d63496f5" kindref="member">GetActive</ref>, write = <ref refid="classvirtual__equipment___c_1a343b266f2f6d3908c645df90776a83a3" kindref="member">SetActive</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="90" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a81c505d194373587b5931961dfbc01cd" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_equipment_C::VerifyInUse</definition>
+        <argsstring></argsstring>
+        <name>VerifyInUse</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" kindref="member">FVerifyInUse</ref>, write = <ref refid="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" kindref="member">FVerifyInUse</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="91" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__equipment___c_1a45d9b28bc0f6a789458b30f4c2c3a1a2" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_equipment_C::Lock</definition>
+        <argsstring></argsstring>
+        <name>Lock</name>
+        <initializer> {read = <ref refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kindref="member">FLock</ref>, write = <ref refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" kindref="member">FLock</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="92" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvirtual__equipment___c_1a0f2134b2169de19fa70188cd7323541b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classvirtual___r_f___c" kindref="compound">virtual_RF_C</ref> &gt;</type>
+        <definition>std::vector&lt; virtual_RF_C &gt; virtual_equipment_C::getTranche</definition>
+        <argsstring>()</argsstring>
+        <name>getTranche</name>
+        <briefdescription>
+<para>Recupere la tension de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere la tension instantanée de l&apos;equipement. Si la tension est superieur à la tension de protection de l&apos;equipement. la valeur de la tension sera etabli à 0 et le registre <emphasis>FProtectedVoltage</emphasis> sera activé à <emphasis>true</emphasis>. Sinon la valeur de la tension instantanée de l&apos;equipement sera retourné. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant la tension instantanée. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="48" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a145d94336958ebd33de11c7c45570e9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classvirtual__alim___c" kindref="compound">virtual_alim_C</ref> &gt;</type>
+        <definition>std::vector&lt; virtual_alim_C &gt; virtual_equipment_C::getAlim</definition>
+        <argsstring>()</argsstring>
+        <name>getAlim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="50" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a428918b25cfbb179380007b6219c5adf" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classvirtual__tmtc___c" kindref="compound">virtual_tmtc_C</ref> &gt;</type>
+        <definition>std::vector&lt; virtual_tmtc_C &gt; virtual_equipment_C::getTmtc</definition>
+        <argsstring>()</argsstring>
+        <name>getTmtc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="52" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1aaf8f0c20c81d987b46c80ac5111b036c" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_equipment_C::getTemperature</definition>
+        <argsstring>()</argsstring>
+        <name>getTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="54" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a103af7dc6c923013f0add4a1b9645f49" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setTemperature</definition>
+        <argsstring>(double temp_i)</argsstring>
+        <name>setTemperature</name>
+        <param>
+          <type>double</type>
+          <declname>temp_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="55" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1ad43dd1d6d2ed521d2027c473a39e443b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string virtual_equipment_C::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="56" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a0193c2f421e075f057ecc2754f0cd83e" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setName</definition>
+        <argsstring>(std::string name_i)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>std::string</type>
+          <declname>name_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="57" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1abb04bb70248f80ed4db751cec03520dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string virtual_equipment_C::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="58" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a78a36daea33c28deaefeb98e72c5ab11" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setType</definition>
+        <argsstring>(std::string type_i)</argsstring>
+        <name>setType</name>
+        <param>
+          <type>std::string</type>
+          <declname>type_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="59" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a343b266f2f6d3908c645df90776a83a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::SetActive</definition>
+        <argsstring>(bool AValue)</argsstring>
+        <name>SetActive</name>
+        <param>
+          <type>bool</type>
+          <declname>AValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="62" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a2c51023b7a82513676d155e6d63496f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool virtual_equipment_C::GetActive</definition>
+        <argsstring>()</argsstring>
+        <name>GetActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="63" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a1c3a353cafb5d790d70dd6ae59b7b17f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::LockDevice</definition>
+        <argsstring>()</argsstring>
+        <name>LockDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="64" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a44207e2691b20701e6f595cecf06d1f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::UnlockDevice</definition>
+        <argsstring>()</argsstring>
+        <name>UnlockDevice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="65" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1ae879279aefc29ff6b998838c8753d9dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::check_Eqpt</definition>
+        <argsstring>(TObject *Sender, virtual_equipment_C *eqpt)</argsstring>
+        <name>check_Eqpt</name>
+        <param>
+          <type>TObject *</type>
+          <declname>Sender</declname>
+        </param>
+        <param>
+          <type><ref refid="classvirtual__equipment___c" kindref="compound">virtual_equipment_C</ref> *</type>
+          <declname>eqpt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="67" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="90" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvirtual__equipment___c_1a74f8c62a44f96ea524392e93648354d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_equipment_C::virtual_equipment_C</definition>
+        <argsstring>()</argsstring>
+        <name>virtual_equipment_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="72" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="14" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1abd3c7644895339403fbe3485d8d56168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_equipment_C::~virtual_equipment_C</definition>
+        <argsstring>()</argsstring>
+        <name>~virtual_equipment_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="73" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1ab68a023d661bdab14eded1f3cca1ada2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setTranche</definition>
+        <argsstring>(double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max)</argsstring>
+        <name>setTranche</name>
+        <param>
+          <type>double</type>
+          <declname>fq_start_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fq_stop_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bandwidth_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_max</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frequency_min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frequency_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="78" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a89495dac7bc60b8df6b83dbd2272c01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setAlim</definition>
+        <argsstring>(double voltage_i, double current_i, double protVoltage_i, double protcurrent_i)</argsstring>
+        <name>setAlim</name>
+        <param>
+          <type>double</type>
+          <declname>voltage_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>current_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>protVoltage_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>protcurrent_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="79" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__equipment___c_1a9df560e74b3a55eefee3bee74f1b7805" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_equipment_C::setTmtc</definition>
+        <argsstring>(bool tm_status, bool tm_On_Off)</argsstring>
+        <name>setTmtc</name>
+        <param>
+          <type>bool</type>
+          <declname>tm_status</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>tm_On_Off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="80" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.cpp" bodystart="120" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" line="23" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h" bodystart="23" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classvirtual__equipment___c_1a3cc4146571b64705bb151477262a8ff3" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Active</name></member>
+      <member refid="classvirtual__equipment___c_1a01eb135acd3086e9d16ea5e1d2e6376a" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Alim</name></member>
+      <member refid="classvirtual__equipment___c_1a8a937b945f365d731bfcdee198717ba6" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>alim_m</name></member>
+      <member refid="classvirtual__equipment___c_1ae879279aefc29ff6b998838c8753d9dc" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>check_Eqpt</name></member>
+      <member refid="classvirtual__equipment___c_1af99d7e1ba7ef7924171b2076599011c0" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>FActive</name></member>
+      <member refid="classvirtual__equipment___c_1a80e782d53bf399f3de19213987fdebe8" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>FLock</name></member>
+      <member refid="classvirtual__equipment___c_1a8b9d7344119b44749f9d7e19b247c3c6" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>FVerifyInUse</name></member>
+      <member refid="classvirtual__equipment___c_1a2c51023b7a82513676d155e6d63496f5" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>GetActive</name></member>
+      <member refid="classvirtual__equipment___c_1a145d94336958ebd33de11c7c45570e9a" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getAlim</name></member>
+      <member refid="classvirtual__equipment___c_1ad43dd1d6d2ed521d2027c473a39e443b" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getName</name></member>
+      <member refid="classvirtual__equipment___c_1aaf8f0c20c81d987b46c80ac5111b036c" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getTemperature</name></member>
+      <member refid="classvirtual__equipment___c_1a428918b25cfbb179380007b6219c5adf" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getTmtc</name></member>
+      <member refid="classvirtual__equipment___c_1a0f2134b2169de19fa70188cd7323541b" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getTranche</name></member>
+      <member refid="classvirtual__equipment___c_1abb04bb70248f80ed4db751cec03520dd" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>getType</name></member>
+      <member refid="classvirtual__equipment___c_1a45d9b28bc0f6a789458b30f4c2c3a1a2" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Lock</name></member>
+      <member refid="classvirtual__equipment___c_1a1c3a353cafb5d790d70dd6ae59b7b17f" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>LockDevice</name></member>
+      <member refid="classvirtual__equipment___c_1a1a3634302dfe0be7248ff75db6e97c7a" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Name</name></member>
+      <member refid="classvirtual__equipment___c_1a04e51ece2ea68ce2d4f96e4385e123a0" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>name_m</name></member>
+      <member refid="classvirtual__equipment___c_1a343b266f2f6d3908c645df90776a83a3" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>SetActive</name></member>
+      <member refid="classvirtual__equipment___c_1a89495dac7bc60b8df6b83dbd2272c01e" prot="public" virt="virtual"><scope>virtual_equipment_C</scope><name>setAlim</name></member>
+      <member refid="classvirtual__equipment___c_1a0193c2f421e075f057ecc2754f0cd83e" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>setName</name></member>
+      <member refid="classvirtual__equipment___c_1a103af7dc6c923013f0add4a1b9645f49" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>setTemperature</name></member>
+      <member refid="classvirtual__equipment___c_1a9df560e74b3a55eefee3bee74f1b7805" prot="public" virt="virtual"><scope>virtual_equipment_C</scope><name>setTmtc</name></member>
+      <member refid="classvirtual__equipment___c_1ab68a023d661bdab14eded1f3cca1ada2" prot="public" virt="virtual"><scope>virtual_equipment_C</scope><name>setTranche</name></member>
+      <member refid="classvirtual__equipment___c_1a78a36daea33c28deaefeb98e72c5ab11" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>setType</name></member>
+      <member refid="classvirtual__equipment___c_1a8ab64a7264339bb0b0bb023dc1dc5b5d" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Temperature</name></member>
+      <member refid="classvirtual__equipment___c_1ae570e59c3fbcb415393b6e8eba491df4" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>temperature_m</name></member>
+      <member refid="classvirtual__equipment___c_1a64c21edeeaf1f63028ed0c376007d894" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Tmtc</name></member>
+      <member refid="classvirtual__equipment___c_1a9acf304287d7c275bbfd410b371fe890" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>tmtc_m</name></member>
+      <member refid="classvirtual__equipment___c_1a756a73b9c510ec1191ae32d553753af4" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>tranche_m</name></member>
+      <member refid="classvirtual__equipment___c_1ad19694d55eff900974dcfa8b58d7c88a" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>TrancheRF</name></member>
+      <member refid="classvirtual__equipment___c_1ae96562ebbf3407b31444cb8295501064" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Type</name></member>
+      <member refid="classvirtual__equipment___c_1a2d6c34a7767b61dafb65c64f71a68b6d" prot="private" virt="non-virtual"><scope>virtual_equipment_C</scope><name>Type_m</name></member>
+      <member refid="classvirtual__equipment___c_1a44207e2691b20701e6f595cecf06d1f3" prot="private" virt="virtual"><scope>virtual_equipment_C</scope><name>UnlockDevice</name></member>
+      <member refid="classvirtual__equipment___c_1a81c505d194373587b5931961dfbc01cd" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>VerifyInUse</name></member>
+      <member refid="classvirtual__equipment___c_1a74f8c62a44f96ea524392e93648354d5" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>virtual_equipment_C</name></member>
+      <member refid="classvirtual__equipment___c_1abd3c7644895339403fbe3485d8d56168" prot="public" virt="non-virtual"><scope>virtual_equipment_C</scope><name>~virtual_equipment_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

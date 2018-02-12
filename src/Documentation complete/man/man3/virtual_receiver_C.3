@@ -1,0 +1,133 @@
+.TH "virtual_receiver_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_receiver_C \- 
+.PP
+Classe du recepteur virtuel\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <virtual_receiver_C\&.h>\fP
+.PP
+Est dérivée de \fBvirtual_equipment_C\fP\&.
+.PP
+Dérivée par \fBRx_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_receiver_C\fP ()"
+.br
+.RI "\fIConstructeur de la fonction \fBvirtual_receiver_C\fP\&. \fP"
+.ti -1c
+.RI "\fB~virtual_receiver_C\fP ()"
+.br
+.RI "\fIDestructeur de la fonction \fBvirtual_receiver_C\fP\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetConsEqpt\fP (int nb_tranche_m, int nb_alim_m, int nb_tmtc_m)"
+.br
+.RI "\fIFixe les constantes de l'equipement\&. \fP"
+.ti -1c
+.RI "virtual \fBTCompEqpt\fP \fBgetConsEqpt\fP ()"
+.br
+.RI "\fIRecupere les constantes de l'equipement\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetDeviceType\fP (equipmentEnum AValue)"
+.br
+.RI "\fIFixe le type d'equipement utilise\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property equipmentEnum \fBDeviceType\fP = {read=FDeviceType, write=\fBSetDeviceType\fP}"
+.br
+.RI "\fIPropriete DeviceType de la variable FDeviceType en lecture et SetDeviceType en ecriture\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_OL\fP = {read=getFrequency_Ol, write=setFrequency_Ol}"
+.br
+.RI "\fIPropriete Frequency_OL des fonctions getFrequency_Ol et setFrequency_Ol\&. \fP"
+.ti -1c
+.RI "__property double \fBInterval_Fq_OL\fP = {read=interval_Fq_OL, write=interval_Fq_OL}"
+.br
+.RI "\fIPropriete Interval_Fq_OL de la variable interval_Fq_OL\&. \fP"
+.ti -1c
+.RI "__property double \fBPower_Ol\fP = {read=getPower_Ol, write=setPower_Ol}"
+.br
+.RI "\fIPropriete Power_Ol des fonctions getPower_Ol et setPower_Ol\&. \fP"
+.ti -1c
+.RI "__property double \fBPower_Ol_Min\fP = {read=getPower_Ol_min, write=setPower_Ol_min}"
+.br
+.RI "\fIPropriete Power_Ol_Min des fonctions getPower_Ol_Min et setPower_Ol_Min\&. \fP"
+.ti -1c
+.RI "__property double \fBPower_Ol_Max\fP = {read=getPower_Ol_max, write=setPower_Ol_max}"
+.br
+.RI "\fIPropriete Power_Ol_Max des fonctions getPower_Ol_Max et setPower_Ol_Max\&. \fP"
+.ti -1c
+.RI "__property double \fBGain\fP = {read=getGain, write=setGain}"
+.br
+.RI "\fIPropriete Gain des fonctions getGain et setGain\&. \fP"
+.ti -1c
+.RI "__property double \fBPowerIn\fP = {read=getPowerIn,write=setPowerIn}"
+.br
+.RI "\fIPropriete PowerIn des fonctions getPowerIn et setPowerIn\&. \fP"
+.ti -1c
+.RI "__property double \fBPowerOut\fP = {read=getPowerOut}"
+.br
+.RI "\fIPropriete PowerOut de la fonction getPowerOut en lecture\&. \fP"
+.ti -1c
+.RI "__property bool \fBOlActive\fP = {read=FOl_Active, write=FOl_Active}"
+.br
+.RI "\fIPropriete OlActive des fonctions FOl_Active et FOl_Active\&. \fP"
+.ti -1c
+.RI "__property bool \fBOlOverload\fP = {read=getOl_overload, write=setOl_overload}"
+.br
+.RI "\fIPropriete OlOverload des fonctions getOl_overload et setOl_overload\&. \fP"
+.ti -1c
+.RI "__property double \fBTimeHot\fP = {read=getTime_Hot,write=setTime_Hot}"
+.br
+.RI "\fIPropriete TimeHot des fonctions getTime_Hot et setTime_Hot\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe du recepteur virtuel\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBTCompEqpt\fP \fBvirtual_receiver_C::getConsEqpt\fP ()\fC [virtual]\fP"
+
+.PP
+Recupere les constantes de l'equipement\&. \fBRenvoie:\fP
+.RS 4
+Variable \fBTCompEqpt\fP 
+.RE
+.PP
+
+.SS "void \fBvirtual_receiver_C::setConsEqpt\fP (intnb_tranche_m, intnb_alim_m, intnb_tmtc_m)\fC [virtual]\fP"
+
+.PP
+Fixe les constantes de l'equipement\&. \fBParamètres:\fP
+.RS 4
+\fIint\fP nb_tranche_m : nombre de tranche 
+.br
+\fIint\fP nb_alim_m : nombre d'alim 
+.br
+\fIint\fP nb_tmtc_m 
+.RE
+.PP
+
+.SS "void \fBvirtual_receiver_C::SetDeviceType\fP (equipmentEnumAValue)\fC [virtual]\fP"
+
+.PP
+Fixe le type d'equipement utilise\&. \fBParamètres:\fP
+.RS 4
+\fIequipmentEnum\fP AValue : variable de type AValue 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

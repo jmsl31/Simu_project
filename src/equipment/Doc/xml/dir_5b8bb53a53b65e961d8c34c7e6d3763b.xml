@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_5b8bb53a53b65e961d8c34c7e6d3763b" kind="dir">
+    <compoundname>D:/cpp/simu_cpp/src/equipment/</compoundname>
+    <innerfile refid="virtual__alim___c_8cpp">virtual_alim_C.cpp</innerfile>
+    <innerfile refid="virtual__alim___c_8h">virtual_alim_C.h</innerfile>
+    <innerfile refid="virtual__equipment___c_8cpp">virtual_equipment_C.cpp</innerfile>
+    <innerfile refid="virtual__equipment___c_8h">virtual_equipment_C.h</innerfile>
+    <innerfile refid="virtual___r_f___c_8cpp">virtual_RF_C.cpp</innerfile>
+    <innerfile refid="virtual___r_f___c_8h">virtual_RF_C.h</innerfile>
+    <innerfile refid="virtual__tmtc___c_8cpp">virtual_tmtc_C.cpp</innerfile>
+    <innerfile refid="virtual__tmtc___c_8h">virtual_tmtc_C.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/"/>
+  </compounddef>
+</doxygen>

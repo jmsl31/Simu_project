@@ -1,0 +1,380 @@
+﻿// ---------------------------------------------------------------------------
+
+#ifndef SAlimFormUnitH
+#define SAlimFormUnitH
+// ---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include "SimuFormUnit.h"
+#include "AdvSmoothLedLabel.hpp"
+#include "AdvGlassButton.hpp"
+#include <Data.Bind.Components.hpp>
+#include <Data.Bind.EngExt.hpp>
+#include <System.Bindings.Outputs.hpp>
+#include <System.Rtti.hpp>
+#include <Vcl.Bind.DBEngExt.hpp>
+#include <Vcl.Bind.Editors.hpp>
+#include <SAlimentations.h>
+#include "SAlimThread.h"
+#include "ConstanteDefine.h"
+#include <Vcl.Buttons.hpp>
+#include <Vcl.HtmlHelpViewer.hpp>
+// ---------------------------------------------------------------------------
+
+/** \file : RxFormUnit.c
+ *	\class TRxFormUnit
+ *	\version : 1.0
+ *   \date : 17/10/2017
+ *   \brief Definit la class d'interface Homme/Machine de l'instrumentation Alimentation.
+ *	La classe herite de la classe TSimuForm.
+ *	\details
+ */
+class TAlimFormUnit : public TSimuForm {
+__published: // Composants gérés par l'EDI
+
+	TTimer *Timer1;
+	TPageControl *PageControl;
+	TTabSheet *TabSheet1;
+	TTabSheet *TabSheet2;
+	TTabSheet *TabSheet3;
+	TGroupBox *GroupBoxAlim;
+	TLabel *VoltUnitLabel;
+	TLabel *CurrUnitLabel;
+	TShape *ShapeOverVoltage;
+	TShape *ShapeOverCurrent;
+	TShape *ShapeOverTemperature;
+	TShape *ShapeRemote;
+	TShape *ShapeUnregulation;
+	TShape *ShapeActive;
+	TGroupBox *GroupBoxParameters;
+	TLabel *LTitre;
+	TLabel *LTensionMax;
+	TLabel *LCourantMax;
+	TLabel *LPuissanceMax;
+	TLabel *LTensionRMS;
+	TLabel *LtensionPeak;
+	TLabel *LCourantRMS;
+	TEdit *TextTensionMax;
+	TEdit *TextCourantMax;
+	TEdit *TextPowerMax;
+	TEdit *TextTensionRMS;
+	TEdit *TextTensionpeak;
+	TEdit *TextCourantRMS;
+	TGroupBox *GroupBox1;
+	TGroupBox *GroupBox2;
+	TAdvSmoothLedLabel *VoltageLabel;
+	TAdvSmoothLedLabel *CurrentLabel;
+	TGroupBox *GroupBox3;
+	TEdit *ActionTensionText;
+	TGroupBox *GroupBox4;
+	TEdit *ActionCourantText;
+	TAdvGlassButton *ButDisjonctionApp;
+	TAdvGlassButton *ButTensionparam;
+	TAdvGlassButton *ButCourantApp;
+	TAdvGlassButton *ButSurchauffeApp;
+	TAdvGlassButton *ButRegulApp;
+	TAdvGlassButton *AdvGlassButton1;
+	TGroupBox *GroupBoxParamAlim;
+	TAdvSmoothLedLabel *VoltageProgLabel;
+	TAdvSmoothLedLabel *VoltageProtLabel;
+	TAdvSmoothLedLabel *CurrentProtLabel;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TBitBtn *ButHelpAlim;
+
+	void __fastcall ButTensionparamClick(TObject *Sender);
+	void __fastcall ButCourantAppClick(TObject *Sender);
+
+	void __fastcall FormShow(TObject *Sender, AnsiString filebaie,
+		AnsiString baie, AnsiString caption);
+	void __fastcall AdvGlassButton1Click(TObject *Sender);
+	void __fastcall ButDisjonctionAppClick(TObject *Sender);
+	void __fastcall ButSurchauffeAppClick(TObject *Sender);
+	void __fastcall ButHelpAlimClick(TObject *Sender);
+
+private: // Déclarations utilisateur
+
+	bool BOverVoltage, // Flag de gestion de Overvoltage.
+		BOverTemperature, // Flag de gestion de OverTemperature.
+		BUnRegulation; // Flag de gestion de Regulation de tension.
+
+	// Panel Vue
+
+	/* ! \brief Setter de la variable VoltageActive.
+	 * \param double tension : Tension active de l'alimentation.
+	 */
+
+	void setVoltageActive(double tension);
+	/* ! \brief Setter de la variable VoltageActive.
+	 * \return double tension : Tension active de l'alimentation.
+	 */
+	double getVoltageActive();
+	/* ! \brief Setter de la variable CurrentActive.
+	 * \param double courant : Courant active de l'alimentation.
+	 */
+	void setCurrentActive(double courant);
+	/* ! \brief Getter de la variable CurrentActive.
+	 * \return double courant : Tension active de l'alimentation.
+	 */
+	double getCurrentActive();
+	/* ! \brief Setter de la variable OverVoltage.
+	 * \param bool b : valeur du flag d'activation de l'Overvoltage.
+	 */
+	void setOverVoltage(bool b);
+	/* ! \brief Getter de la variable OverVoltage.
+	 * \return bool b : valeur du flag d'activation de l'Overvoltage.
+	 */
+	bool getOverVoltage();
+	/* ! \brief Setter de la variable OverCurrent.
+	 * \param bool b : valeur du flag d'activation de l'OverCurrent.
+	 */
+
+	void setOverCurrent(bool b);
+	/* ! \brief Getter de la variable OverCurrent.
+	 * \return bool b : valeur du flag d'activation de l'OverCurrent.
+	 */
+	bool getOverCurrent();
+	/* ! \brief Setter de la variable OverTemperature.
+	 * \param bool b : valeur du flag d'activation de l'OverTemperature.
+	 */
+
+	void setOverTemperature(bool b);
+	/* ! \brief Getter de la variable OverTemperature.
+	 * \return bool b : valeur du flag d'activation de l'OverTemperature.
+	 */
+	bool getOverTemperature();
+	/* ! \brief Setter de la variable Remote.
+	 * \param bool b : valeur du flag d'activation du Remote.
+	 */
+
+	void setRemote(bool b);
+	/* ! \brief Getter de la variable Remote.
+	 * \return bool b : valeur du flag d'activation du Remote.
+	 */
+	bool getRemote();
+	/* ! \brief Setter de la variable Unregulation.
+	 * \param bool b : valeur du flag d'activation du Unregulation.
+	 */
+
+	void setUnregulation(bool b);
+	/* ! \brief Getter de la variable Unregulation.
+	 * \return bool b : valeur du flag d'activation du Unregulation.
+	 */
+	bool getUnregulation();
+	/* ! \brief Setter de la variable Active.
+	 * \param bool b : valeur du flag d'activation du Active.
+	 */
+
+	void setActive(bool b);
+	/* ! \brief Getter de la variable Active.
+	 * \return bool b : valeur du flag d'activation du Active.
+	 */
+	bool getActive();
+
+	// Panel Parametres
+
+	/* ! \brief Setter de la variable Tension Max.
+	 * \param double t : valeur de la tension Maximal suportée par le banc.
+	 */
+	void setTensionMax(double t);
+	/* ! \brief Getter de la variable Tension Max.
+	 * \return double t : valeur de la tension Maximal suportée par le banc.
+	 */
+	double getTensionMax();
+	/* ! \brief Setter de la variable Tension Min.
+	 * \param double t : valeur de la tension Minimal suportée par le banc.
+	 */
+
+	void setTensionMin(double t);
+	/* ! \brief Getter de la variable Tension Min.
+	 * \return double t : valeur de la tension Minimal suportée par le banc.
+	 */
+	double getTensionMin();
+	/* ! \brief Setter de la variable Courant Max.
+	 * \param double t : valeur du Courant Max suporté par le banc.
+	 */
+
+	void setCourantMax(double t);
+	/* ! \brief Getter de la variable Courant Max.
+	 * \return double t : valeur du Courant Max suporté par le banc.
+	 */
+	double getCourantMax();
+	/* ! \brief Setter de la variable puissance Maximal.
+	 * \param double t : valeur de la puissance Maximal suporté par le banc.
+	 */
+
+	void setPowerMax(double t);
+	/* ! \brief Getter de la variable puissance Maximal.
+	 * \return double t : valeur de la puissance Maximal suportée par le banc.
+	 */
+	double getPowerMax();
+	/* ! \brief Setter de la variable Tension RMS.
+	 * \param double t : valeur de la Tension RMS suportée par le banc.
+	 */
+
+	void setTensionRMS(double t);
+	/* ! \brief Getter de la variable Tension RMS.
+	 * \return double t : valeur de la Tension RMS suportée par le banc.
+	 */
+	double getTensionRMS();
+	/* ! \brief Setter de la variable Tension Peak to Peak.
+	 * \param double t : valeur de la Tension Peak to Peak suportée par le banc.
+	 */
+
+	void setTensionpeak(double t);
+	/* ! \brief Getter de la variable Tension Peak to Peak.
+	 * \return double t : valeur de la Tension Peak to Peak suportée par le banc.
+	 */
+	double getTensionpeak();
+	/* ! \brief Setter de la variable Courant RMS.
+	 * \param double t : valeur du Courant RMS suporté par le banc.
+	 */
+
+	void setCourantRMS(double t);
+	/* ! \brief Getter de la variable Courant RMS.
+	 * \return double t : valeur du Courant RMS suporté par le banc.
+	 */
+	double getCourantRMS();
+
+	// Panel Action
+
+	/* ! \brief Setter de la variable Tension applicable .
+	 * \param double t : valeur de la Tension applicable suportée par le banc.
+	 */
+	void setTensionApp(double t);
+	/* ! \brief Getter de la variable Tension applicable.
+	 * \return double t : valeur de la Tension applicable suportée par le banc.
+	 */
+	double getTensionApp();
+	/* ! \brief Setter de la variable Courant applicable .
+	 * \param double t : valeur du Courant applicable suportée par le banc.
+	 */
+
+	void setCourantApp(double t);
+	/* ! \brief Getter de la variable Courant applicable.
+	 * \return double t : valeur du Courant applicable suportée par le banc.
+	 */
+	double getCourantApp();
+	/* ! \brief Methode d'activation du Flag Over Voltage.
+	 */
+
+	void setOVoltage();
+	/* ! \brief Methode d'activation du Flag Over Temperature.
+	 */
+	void setOTemperature();
+	/* ! \brief Methode d'activation du Flag Un regulation.
+	 */
+	void setUregulation();
+	/* ! \brief Methode Init de l'instrument Alimentation. */
+	void SetInit();
+
+public:
+
+	// Variable de la classe
+
+	SAlimentations* AlimDevice;   // defintion de l'objet Alimentation.
+
+	// Déclarations utilisateur
+ /* ! \brief Construteur de Classe.
+	 */
+	__fastcall TAlimFormUnit(TComponent* Owner);
+
+
+
+	// property Panel Vue
+
+	/**
+	 *\brief propriete \e VoltageActive de l'objet virtual_Alim .
+	 */
+	__property double VoltageActive = {read = getVoltageActive, write = setVoltageActive};
+    /**
+	 *\brief propriete \e CurrentActive de l'objet virtual_Alim .
+	 */
+
+	__property double CurrentActive = {read = getCurrentActive, write = setCurrentActive};
+    /**
+	 *\brief propriete \e OverVoltage de l'objet virtual_Alim .
+	 */
+
+	__property bool OverVoltage = {read = getOverVoltage, write = setOverVoltage};
+    /**
+	 *\brief propriete \e OverCurrent de l'objet virtual_Alim .
+	 */
+
+	__property bool OverCurrent = {read = getOverCurrent, write = setOverCurrent};
+    /**
+	 *\brief propriete \e OverTemperature de l'objet virtual_Alim .
+	 */
+
+	__property bool OverTemperature = {read = getOverTemperature, write = setOverTemperature};
+    /**
+	 *\brief propriete \e Remote de l'objet virtual_Alim .
+	 */
+
+	__property bool Remote = {read = getRemote, write = setRemote};
+   /**
+	 *\brief propriete \e Active de l'objet virtual_Alim .
+	 */
+
+	__property bool Active = {read = getActive, write = setActive};
+
+	// Property Panel Parametres
+    /**
+	 *\brief propriete \e TensionMax de l'objet virtual_Alim .
+	 */
+
+	__property double TensionMax = {read = getTensionMax, write = setTensionMax};
+    /**
+	 *\brief propriete \e TensionMin de l'objet virtual_Alim .
+	 */
+
+	__property double TensionMin = {read = getTensionMin, write = setTensionMin};
+    /**
+	 *\brief propriete \e CourantMax de l'objet virtual_Alim .
+	 */
+
+	__property double CourantMax = {read = getCourantMax, write = setCourantMax};
+    /**
+	 *\brief propriete \e PowerMax de l'objet virtual_Alim .
+	 */
+
+	__property double PowerMax = {read = getPowerMax, write = setPowerMax};
+    /**
+	 *\brief propriete \e TensionRMS de l'objet virtual_Alim .
+	 */
+
+	__property double TensionRMS = {read = getTensionRMS, write = setTensionRMS};
+    /**
+	 *\brief propriete \e Tensionpeak de l'objet virtual_Alim .
+	 */
+
+	__property double Tensionpeak = {read = getTensionpeak, write = setTensionpeak};
+    /**
+	 *\brief propriete \e CourantRMS de l'objet virtual_Alim .
+	 */
+
+	__property double CourantRMS = {read = getCourantRMS, write = setCourantRMS};
+
+	// Property Panel Action
+    /**
+	 *\brief propriete \e TensionApp de l'objet virtual_Alim .
+	 */
+
+	__property double TensionApp = {read = getTensionApp, write = setTensionApp};
+    /**
+	 *\brief propriete \e CourantApp de l'objet virtual_Alim .
+	 */
+	__property double CourantApp = {read = getCourantApp, write = setCourantApp
+	};
+
+};
+
+// ---------------------------------------------------------------------------
+extern PACKAGE TAlimFormUnit *AlimFormUnit;
+// ---------------------------------------------------------------------------
+#endif

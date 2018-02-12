@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="classvirtual__tmtc___c" kind="class" prot="public">
+    <compoundname>virtual_tmtc_C</compoundname>
+    <includes refid="virtual__tmtc___c_8h" local="no">virtual_tmtc_C.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvirtual__tmtc___c_1a4ef562383e7eaec55b9f2193f45082e2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_tmtc_C::tm_Status_m</definition>
+        <argsstring></argsstring>
+        <name>tm_Status_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="13" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__tmtc___c_1a7218481a38e43d229f7f5d8817d98e14" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_tmtc_C::tm_ON_OFF_m</definition>
+        <argsstring></argsstring>
+        <name>tm_ON_OFF_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="13" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvirtual__tmtc___c_1a6fae5ef5888e25519f94422db59a9e53" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_tmtc_C::Tm_Status</definition>
+        <argsstring></argsstring>
+        <name>Tm_Status</name>
+        <initializer> {read = <ref refid="classvirtual__tmtc___c_1a305dc2b2a2895a8a1b174976dbea7ee4" kindref="member">getTm_Status</ref>, write = <ref refid="classvirtual__tmtc___c_1ae776f69eef4cba95d742992a598b15de" kindref="member">setTm_Status</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="29" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__tmtc___c_1a42dccafaa3c2f23a7023ad49b6c45527" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_tmtc_C::Tm_ON_OFF</definition>
+        <argsstring></argsstring>
+        <name>Tm_ON_OFF</name>
+        <initializer> {read = <ref refid="classvirtual__tmtc___c_1a47d4f50a52129e1c9352408c9cebf44a" kindref="member">getTm_ON_OFF</ref>, write = <ref refid="classvirtual__tmtc___c_1afc4307280bb7617ba7d3949a930e4d47" kindref="member">setTm_ON_OFF</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="30" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvirtual__tmtc___c_1ae776f69eef4cba95d742992a598b15de" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void virtual_tmtc_C::setTm_Status</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>setTm_Status</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__tmtc___c_1a305dc2b2a2895a8a1b174976dbea7ee4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool virtual_tmtc_C::getTm_Status</definition>
+        <argsstring>()</argsstring>
+        <name>getTm_Status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="16" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__tmtc___c_1afc4307280bb7617ba7d3949a930e4d47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void virtual_tmtc_C::setTm_ON_OFF</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>setTm_ON_OFF</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="17" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__tmtc___c_1a47d4f50a52129e1c9352408c9cebf44a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool virtual_tmtc_C::getTm_ON_OFF</definition>
+        <argsstring>()</argsstring>
+        <name>getTm_ON_OFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="18" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvirtual__tmtc___c_1a544015eb15ccc141bed8543d31b26402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_tmtc_C::virtual_tmtc_C</definition>
+        <argsstring>()</argsstring>
+        <name>virtual_tmtc_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="26" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__tmtc___c_1a3525b738b21e49474c45ba890066a5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_tmtc_C::~virtual_tmtc_C</definition>
+        <argsstring>()</argsstring>
+        <name>~virtual_tmtc_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="27" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.cpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" line="9" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_tmtc_C.h" bodystart="9" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classvirtual__tmtc___c_1a47d4f50a52129e1c9352408c9cebf44a" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>getTm_ON_OFF</name></member>
+      <member refid="classvirtual__tmtc___c_1a305dc2b2a2895a8a1b174976dbea7ee4" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>getTm_Status</name></member>
+      <member refid="classvirtual__tmtc___c_1afc4307280bb7617ba7d3949a930e4d47" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>setTm_ON_OFF</name></member>
+      <member refid="classvirtual__tmtc___c_1ae776f69eef4cba95d742992a598b15de" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>setTm_Status</name></member>
+      <member refid="classvirtual__tmtc___c_1a42dccafaa3c2f23a7023ad49b6c45527" prot="public" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>Tm_ON_OFF</name></member>
+      <member refid="classvirtual__tmtc___c_1a7218481a38e43d229f7f5d8817d98e14" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>tm_ON_OFF_m</name></member>
+      <member refid="classvirtual__tmtc___c_1a6fae5ef5888e25519f94422db59a9e53" prot="public" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>Tm_Status</name></member>
+      <member refid="classvirtual__tmtc___c_1a4ef562383e7eaec55b9f2193f45082e2" prot="private" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>tm_Status_m</name></member>
+      <member refid="classvirtual__tmtc___c_1a544015eb15ccc141bed8543d31b26402" prot="public" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>virtual_tmtc_C</name></member>
+      <member refid="classvirtual__tmtc___c_1a3525b738b21e49474c45ba890066a5a1" prot="public" virt="non-virtual"><scope>virtual_tmtc_C</scope><name>~virtual_tmtc_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,319 @@
+
+class __declspec(delphirtti) TU_virtual_equipment_C : public TObject
+{
+public:
+  virtual void __fastcall SetUp();
+  virtual void __fastcall TearDown();
+
+__published:
+
+	virtual void __fastcall Verif_temperature();
+	virtual void __fastcall Verif_Name();
+	virtual void __fastcall Verif_type();
+	virtual void __fastcall Verif_Active();
+	virtual void __fastcall Verif_Use();
+	virtual void __fastcall Verif_Lock();
+
+	virtual void __fastcall AjoutUneTranche();
+	virtual void __fastcall AjoutDeuxTranche();
+	virtual void __fastcall AjoutXTranche();
+	virtual void __fastcall AjoutTrancheDefaut();
+	virtual void __fastcall AjoutUneAlim();
+	virtual void __fastcall AjoutDeuxAlim();
+	virtual void __fastcall AjoutXAlim();
+	virtual void __fastcall AjoutAlimDefaut();
+	virtual void __fastcall AjoutTmtc();
+
+};
+
+  virtual_equipment_C *E;
+
+ AnsiString	name="Recepteur SGDC";
+ AnsiString 	Type="RX 14/12 Ghz Type 1";
+ double 		temperature=25;
+ bool FActive= false;
+ bool FResetOnActivated= false;
+ bool FVerifyInUse= false;
+ bool FLock= false;
+
+void __fastcall TU_virtual_equipment_C::SetUp()
+{
+ 	E = new virtual_equipment_C();
+}
+
+void __fastcall TU_virtual_equipment_C::TearDown()
+{
+	delete E;
+}
+//*******************************************************************************************************************
+//							Tests Fonctionnalités vequipment_c
+//*******************************************************************************************************************
+
+void __fastcall TU_virtual_equipment_C::Verif_temperature()
+{
+	SetUp() ;
+	E->Temperature = temperature;
+	Dunitx::Testframework::Assert::IsTrue(E->Temperature == temperature);
+
+};
+
+void __fastcall TU_virtual_equipment_C::Verif_Name(){
+
+
+   bool t =E->Name.compare("");
+   Dunitx::Testframework::Assert::IsTrue(!E->Name.compare(""));
+   E->Name = name.c_str();
+   Dunitx::Testframework::Assert::IsTrue(!E->Name.compare("Recepteur SGDC"));
+
+};
+void __fastcall TU_virtual_equipment_C::Verif_type(){
+
+
+   Dunitx::Testframework::Assert::IsTrue(!E->Type.compare(""));
+   E->Type = Type.c_str();
+   Dunitx::Testframework::Assert::IsTrue(!E->Type.compare("RX 14/12 Ghz Type 1"));
+   Dunitx::Testframework::Assert::IsTrue(!E->Name.compare("Recepteur SGDC"));
+
+};
+void __fastcall TU_virtual_equipment_C::Verif_Active(){
+
+
+	Dunitx::Testframework::Assert::IsTrue(E->Active == false);
+	E->Active = true;
+	Dunitx::Testframework::Assert::IsTrue(E->Active == true);
+	Dunitx::Testframework::Assert::IsTrue(!E->Type.compare("RX 14/12 Ghz Type 1"));
+	Dunitx::Testframework::Assert::IsTrue(!E->Name.compare("Recepteur SGDC"));
+
+};
+void __fastcall TU_virtual_equipment_C::Verif_Use(){
+
+
+	Dunitx::Testframework::Assert::IsTrue(E->VerifyInUse == false);
+	E->VerifyInUse = true;
+	Dunitx::Testframework::Assert::IsTrue(E->VerifyInUse == true);
+	Dunitx::Testframework::Assert::IsTrue(E->Active == true);
+	Dunitx::Testframework::Assert::IsTrue(!E->Type.compare("RX 14/12 Ghz Type 1"));
+	Dunitx::Testframework::Assert::IsTrue(!E->Name.compare("Recepteur SGDC"));
+
+};
+void __fastcall TU_virtual_equipment_C::Verif_Lock(){
+
+	Dunitx::Testframework::Assert::IsTrue(E->Lock == false);
+	E->Lock = true;
+	Dunitx::Testframework::Assert::IsTrue(E->Lock == true);
+	Dunitx::Testframework::Assert::IsTrue(E->VerifyInUse == true);
+	Dunitx::Testframework::Assert::IsTrue(E->Active == true);
+	Dunitx::Testframework::Assert::IsTrue(!E->Type.compare("RX 14/12 Ghz Type 1"));
+	Dunitx::Testframework::Assert::IsTrue(!E->Name.compare("Recepteur SGDC"));
+
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutUneTranche(){
+
+
+	E->setTranche(12000,12500,500,1,-25,-65,-20,2000,26000,35);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m.size()==1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Start_In == 12000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Stop_In == 12500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Bandwidth == 500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Step == 1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power == -25);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Min == -65);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Max == -20);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Min == 2000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Max == 26000);
+
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutDeuxTranche(){
+
+	E->setTranche(11500,12000,500,1,-35,-75,-5,2000,26000,35);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m.size()==2);
+	E->tranche_m.begin();
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Start_In == 12000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Stop_In == 12500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Bandwidth == 500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Step == 1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power == -25);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Min == -65);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Max == -20);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Min == 2000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Max == 26000);
+	E->tranche_m.back();
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Frequency_Start_In == 11500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Frequency_Stop_In == 12000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Bandwidth == 500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Step == 1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Power == -35);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Power_Min == -75);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Power_Max == -5);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Frequency_Min == 2000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[1].Frequency_Max == 26000);
+
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutXTranche(){
+
+
+	SetUp() ;
+	int temp = random(25);
+
+	for (int i = 0; i < temp; i++)
+	{
+	   E->setTranche(11500,12000,500,1,-35,-75,-5,2000,26000,30);
+	}
+
+    for (int i = 0; i < temp; i++)
+	{
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Frequency_Start_In == 11500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Frequency_Stop_In == 12000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Bandwidth == 500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Step == 1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Power == -35);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Power_Min == -75);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Power_Max == -5);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Frequency_Min == 2000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[i].Frequency_Max == 26000);
+	}
+
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutTrancheDefaut(){
+
+	SetUp() ;
+
+	E->setTranche(11500,12000,500,1,-25,-75,-35,2000,26000,30);
+
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Start_In == 11500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Stop_In == 12000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Bandwidth == 500);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Step == 1);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power == -120);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Min == -75);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Power_Max == -35);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Min == 2000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Frequency_Max == 26000);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].ActiveRF == true);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].ActivePower == false);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Overload == true);
+	Dunitx::Testframework::Assert::IsTrue(E->tranche_m[0].Gain == 30);
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutUneAlim(){
+	SetUp() ;
+
+	E->setAlim(100,0.09,102,0.25,102,0.02,0.22,12,15);
+	E->Active = true;
+	E->alim_m[0].Puissance = 100*0.09 ;
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Voltage== 100);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Current == 0.09);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Puissance == 9);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtCurrent == 0.25);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtVoltage == 102);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedVoltage == false);
+    Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedCurrent == false);
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutDeuxAlim(){
+
+	SetUp() ;
+
+	E->setAlim(100,0.09,102,0.25,102,0.02,0.22,12,15);
+	E->setAlim(98,0.12,101,0.13,102,0.02,0.22,12,15);
+	E->Active = true;
+	E->alim_m[0].Puissance = 100*0.09 ;
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Voltage== 100);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Current == 0.09);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Puissance == 9);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtCurrent == 0.25);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtVoltage == 102);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedVoltage == false);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedCurrent == false);
+    E->Active = true;
+	E->alim_m[1].Puissance = 98*0.12 ;
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Voltage== 98);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Current == 0.12);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Puissance == 11.76);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtCurrent == 0.13);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtVoltage == 101);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtectedVoltage == false);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtectedCurrent == false);
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutXAlim(){
+	SetUp() ;
+
+	int temp = random(35);
+	for (int i = 0; i < temp; i++) {
+		E->setAlim(100,0.09,102,0.25,102,0.02,0.22,12,15);
+		E->alim_m[i].Puissance = 100*0.09 ;
+	}
+	E->Active = true;
+
+	for (int i = 0; i < temp; i++)
+	{
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].Voltage== 100);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].Current == 0.09);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].Puissance == 9);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].ProtCurrent == 0.25);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].ProtVoltage == 102);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].ProtectedVoltage == false);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[i].ProtectedCurrent == false);
+	}
+
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutAlimDefaut(){
+
+   SetUp() ;
+	E->setAlim(100,0.25,102,0.15,102,0.02,0.22,12,15);
+	E->setAlim(103,0.26,102,0.25,102,0.02,0.22,12,15);
+	E->Active = true;
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Voltage== 100);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Current == 0);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].Puissance == 0);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtCurrent == 0.15);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtVoltage == 102);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedVoltage == false);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[0].ProtectedCurrent == true);
+
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Voltage== 0);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Current == 0);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].Puissance == 0);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtCurrent == 0.25);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtVoltage == 102);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtectedVoltage == true);
+	Dunitx::Testframework::Assert::IsTrue(E->alim_m[1].ProtectedCurrent == true);
+	TearDown();
+};
+
+void __fastcall TU_virtual_equipment_C::AjoutTmtc(){
+
+   SetUp() ;
+   E->setTmtc(false,false);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m.size()== 1);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[0].Tm_Status== false);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[0].Tm_ON_OFF == false);
+
+   E->setTmtc(true,false);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m.size()== 2);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[1].Tm_Status== true);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[1].Tm_ON_OFF == false);
+
+   E->setTmtc(true,true);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m.size()== 3);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[2].Tm_Status== true);
+   Dunitx::Testframework::Assert::IsTrue(E->tmtc_m[2].Tm_ON_OFF == true);
+   TearDown();
+
+};
+static void registerTests()
+{
+  TDUnitX::RegisterTestFixture(__classid(TU_virtual_equipment_C));
+}
+#pragma startup registerTests 33

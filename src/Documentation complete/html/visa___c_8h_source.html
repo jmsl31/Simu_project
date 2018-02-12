@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/Librairie/visa_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/Librairie/visa_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#ifndef visa_CH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define visa_CH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;visa.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;visatype.h&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#define BUFFER_LENGTH               20240</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span>
+<a name="l00010"></a>00010 <span class="preprocessor">#define VISA_ERR_VISA_CLASS         &quot;VISA&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span>
+<a name="l00012"></a>00012 <span class="preprocessor">#define VISA_ERR_INTER_RESPONSE     1</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define VISA_ERR_DETECTED_BY_INSTR  2</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#ifndef linux</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#include &lt;Classes.hpp&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#endif</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="keyword">using namespace </span>std;
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viOpenDefaultRM)(ViPSession vi);
+<a name="l00024"></a>00024 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viOpen)(ViSession sesn, ViRsrc name, ViAccessMode mode, ViUInt32 timeout, ViPSession vi);
+<a name="l00025"></a>00025 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viClose)(ViObject vi);
+<a name="l00026"></a>00026 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viSetAttribute)(ViObject vi, ViAttr attrName, ViAttrState attrValue);
+<a name="l00027"></a>00027 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viGetAttribute)(ViObject vi, ViAttr attrName, <span class="keywordtype">void</span> _VI_PTR attrValue);
+<a name="l00028"></a>00028 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viStatusDesc)(ViObject vi, ViStatus status, ViChar _VI_FAR desc[]);
+<a name="l00029"></a>00029 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viRead)(ViSession vi, ViPBuf buf, ViUInt32 cnt, ViPUInt32 retCnt);
+<a name="l00030"></a>00030 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viWrite)(ViSession vi, ViBuf  buf, ViUInt32 cnt, ViPUInt32 retCnt);
+<a name="l00031"></a>00031 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viPrintf)(ViSession vi, ViString writeFmt, ...);
+<a name="l00032"></a>00032 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viQueryf)(ViSession vi, ViString writeFmt, ViString readFmt, ...);
+<a name="l00033"></a>00033 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viScanf)(ViSession vi, ViString readFmt, ...);
+<a name="l00034"></a>00034 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viReadSTB)(ViSession vi, ViPUInt16 status);
+<a name="l00035"></a>00035 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viClear)(ViSession vi);
+<a name="l00036"></a>00036 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viEnableEvent)(ViSession vi, ViEventType eventType, ViUInt16 mechanism,
+<a name="l00037"></a>00037                                     ViEventFilter context);
+<a name="l00038"></a>00038 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viDisableEvent)(ViSession vi, ViEventType eventType, ViUInt16 mechanism);
+<a name="l00039"></a>00039 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viDiscardEvents)(ViSession vi, ViEventType eventType, ViUInt16 mechanism);
+<a name="l00040"></a>00040 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viWaitOnEvent)(ViSession vi, ViEventType inEventType, ViUInt32 timeout,
+<a name="l00041"></a>00041                                     ViPEventType outEventType, ViPEvent outContext);
+<a name="l00042"></a>00042 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viFlush)(ViSession vi, ViUInt16 mask);
+<a name="l00043"></a>00043 <span class="keyword">typedef</span> ViStatus (__stdcall *PTR_FUNCTION_viSetBuf)(ViSession vi, ViUInt16 mask, ViUInt32 size);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="keyword">static</span> PTR_FUNCTION_viOpenDefaultRM viOpenDefaultRM_s = NULL;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="keyword">static</span> PTR_FUNCTION_viOpen viOpen_s = NULL;
+<a name="l00048"></a>00048 <span class="keyword">static</span> PTR_FUNCTION_viClose viClose_s = NULL;
+<a name="l00049"></a>00049 <span class="keyword">static</span> PTR_FUNCTION_viSetAttribute viSetAttribute_s = NULL;
+<a name="l00050"></a>00050 <span class="keyword">static</span> PTR_FUNCTION_viGetAttribute viGetAttribute_s = NULL;
+<a name="l00051"></a>00051 <span class="keyword">static</span> PTR_FUNCTION_viFlush viFlush_s = NULL;
+<a name="l00052"></a>00052 <span class="keyword">static</span> PTR_FUNCTION_viStatusDesc viStatusDesc_s = NULL;
+<a name="l00053"></a>00053 <span class="keyword">static</span> PTR_FUNCTION_viRead viRead_s = NULL;
+<a name="l00054"></a>00054 <span class="keyword">static</span> PTR_FUNCTION_viWrite viWrite_s = NULL;
+<a name="l00055"></a>00055 <span class="keyword">static</span> PTR_FUNCTION_viPrintf viPrintf_s = NULL;
+<a name="l00056"></a>00056 <span class="keyword">static</span> PTR_FUNCTION_viQueryf viQueryf_s = NULL;
+<a name="l00057"></a>00057 <span class="keyword">static</span> PTR_FUNCTION_viScanf viScanf_s = NULL;
+<a name="l00058"></a>00058 <span class="keyword">static</span> PTR_FUNCTION_viReadSTB viReadSTB_s = NULL;
+<a name="l00059"></a>00059 <span class="keyword">static</span> PTR_FUNCTION_viClear viClear_s = NULL;
+<a name="l00060"></a>00060 <span class="keyword">static</span> PTR_FUNCTION_viEnableEvent viEnableEvent_s = NULL;
+<a name="l00061"></a>00061 <span class="keyword">static</span> PTR_FUNCTION_viDisableEvent viDisableEvent_s = NULL;
+<a name="l00062"></a>00062 <span class="keyword">static</span> PTR_FUNCTION_viDiscardEvents viDiscardEvents_s = NULL;
+<a name="l00063"></a>00063 <span class="keyword">static</span> PTR_FUNCTION_viWaitOnEvent viWaitOnEvent_s = NULL;
+<a name="l00064"></a>00064 <span class="keyword">static</span> PTR_FUNCTION_viSetBuf viSetBuf_s = NULL;
+<a name="l00065"></a>00065 
+<a name="l00069"></a><a class="code" href="classerror___ex.html">00069</a> <span class="keyword">class </span><a class="code" href="classerror___ex.html">error_Ex</a>
+<a name="l00070"></a>00070 {
+<a name="l00071"></a>00071 <span class="keyword">public</span>:
+<a name="l00072"></a>00072 
+<a name="l00076"></a><a class="code" href="classerror___ex.html#aa829f794854347c95bd860c2b8f04a4c">00076</a>     <span class="keywordtype">string</span> <a class="code" href="classerror___ex.html#aa829f794854347c95bd860c2b8f04a4c">erreurStr</a>;
+<a name="l00077"></a>00077 
+<a name="l00081"></a><a class="code" href="classerror___ex.html#a465186594037e343bc5c912957cc43f7">00081</a>     <span class="keywordtype">int</span> <a class="code" href="classerror___ex.html#a465186594037e343bc5c912957cc43f7">erreurCode</a>;
+<a name="l00082"></a>00082 
+<a name="l00088"></a><a class="code" href="classerror___ex.html#a0e70a08cdd48cc097e809665be6a297d">00088</a>     <a class="code" href="classerror___ex.html">error_Ex</a>(<span class="keywordtype">int</span> errnum, <span class="keywordtype">char</span>* errstr)
+<a name="l00089"></a>00089     {
+<a name="l00090"></a>00090     erreurStr = errstr;
+<a name="l00091"></a>00091     erreurCode = errnum;
+<a name="l00092"></a>00092     }
+<a name="l00093"></a>00093 
+<a name="l00099"></a><a class="code" href="classerror___ex.html#aea081a81dea96d55dbc37943eda767a5">00099</a>     <a class="code" href="classerror___ex.html">error_Ex</a>(<span class="keywordtype">int</span> errnum, <span class="keywordtype">string</span> errstr)
+<a name="l00100"></a>00100     {
+<a name="l00101"></a>00101     erreurStr = errstr;
+<a name="l00102"></a>00102     erreurCode = errnum;
+<a name="l00103"></a>00103     }
+<a name="l00104"></a>00104 };
+<a name="l00105"></a>00105 
+<a name="l00109"></a><a class="code" href="classvisa_default_r_m___c.html">00109</a> <span class="keyword">class </span><a class="code" href="classvisa_default_r_m___c.html">visaDefaultRM_C</a>
+<a name="l00110"></a>00110 {
+<a name="l00111"></a>00111 <span class="keyword">private</span>:
+<a name="l00112"></a>00112     HMODULE LibId;
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="keyword">public</span>:
+<a name="l00115"></a>00115 
+<a name="l00119"></a><a class="code" href="classvisa_default_r_m___c.html#aed58610566e8e999bf9801145cefd0dc">00119</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classvisa_default_r_m___c.html#aed58610566e8e999bf9801145cefd0dc">sess_m</a>;
+<a name="l00120"></a>00120 
+<a name="l00124"></a>00124     <span class="keywordtype">void</span> OpenDefaultRm();
+<a name="l00125"></a>00125 
+<a name="l00129"></a>00129     <span class="keywordtype">void</span> CloseDefaultRm();
+<a name="l00130"></a>00130 };
+<a name="l00131"></a>00131 
+<a name="l00135"></a><a class="code" href="classvisa___c.html">00135</a> <span class="keyword">class </span><a class="code" href="classvisa___c.html">visa_C</a>
+<a name="l00136"></a>00136 {
+<a name="l00137"></a>00137 <span class="keyword">private</span>:
+<a name="l00138"></a>00138 
+<a name="l00142"></a>00142     <span class="keywordtype">bool</span> debug_m;
+<a name="l00143"></a>00143 
+<a name="l00147"></a>00147     <span class="keywordtype">string</span> visaRessource_m;
+<a name="l00148"></a>00148 
+<a name="l00153"></a>00153     <span class="keywordtype">bool</span> deviceClosed_m;
+<a name="l00154"></a>00154 
+<a name="l00155"></a>00155 <span class="keyword">public</span>:
+<a name="l00156"></a>00156 
+<a name="l00160"></a><a class="code" href="classvisa___c.html#a7b502b8ef6b922b2705c26f94469109c">00160</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classvisa___c.html#a7b502b8ef6b922b2705c26f94469109c">session_m</a>;            <span class="comment">//Numero de session instrument</span>
+<a name="l00161"></a>00161 
+<a name="l00167"></a>00167     <span class="keywordtype">void</span> Open(<a class="code" href="classvisa_default_r_m___c.html">visaDefaultRM_C</a> *viRM, <span class="keywordtype">char</span> instr_i[]);
+<a name="l00168"></a>00168 
+<a name="l00175"></a>00175     <span class="keywordtype">void</span> ReadBinary(<span class="keywordtype">char</span> *buf_i, <span class="keywordtype">long</span> sizeBuf_i, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> *retCnt_i);
+<a name="l00176"></a>00176 
+<a name="l00181"></a>00181     <span class="keywordtype">void</span> ReadAscii(<span class="keywordtype">string</span> *data_i);
+<a name="l00182"></a>00182 
+<a name="l00188"></a>00188     <span class="keywordtype">void</span> ReadAscii(<span class="keywordtype">string</span> *data_i, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bufferLength_i);
+<a name="l00189"></a>00189 
+<a name="l00195"></a>00195     <span class="keywordtype">void</span> WriteBinary(<span class="keyword">const</span> <span class="keywordtype">char</span> *data_i, <span class="keywordtype">int</span> size_i);
+<a name="l00196"></a>00196 
+<a name="l00201"></a>00201     <span class="keywordtype">void</span> WriteAscii(<span class="keyword">const</span> <span class="keywordtype">string</span> *data_i);
+<a name="l00202"></a>00202 
+<a name="l00207"></a>00207     <span class="keywordtype">void</span> WriteAscii(<span class="keyword">const</span> <span class="keywordtype">char</span> *data_i);
+<a name="l00208"></a>00208 
+<a name="l00212"></a>00212     <span class="keywordtype">void</span> Clear();
+<a name="l00213"></a>00213 
+<a name="l00217"></a>00217     <span class="keywordtype">long</span> ReadSTB();
+<a name="l00218"></a>00218 
+<a name="l00222"></a>00222     <span class="keywordtype">void</span> Close();
+<a name="l00223"></a>00223 
+<a name="l00229"></a>00229     <span class="keywordtype">void</span> SetAttribute(<span class="keywordtype">long</span> attr_i, <span class="keywordtype">long</span> attrstate_i);
+<a name="l00230"></a>00230 
+<a name="l00235"></a>00235     <span class="keywordtype">void</span> GetAttribute(<span class="keywordtype">long</span> attr_i, <span class="keywordtype">void</span> _VI_PTR attrstate_i);
+<a name="l00236"></a>00236 
+<a name="l00241"></a>00241     <span class="keywordtype">void</span> Flush(<span class="keywordtype">long</span> mask_i);
+<a name="l00242"></a>00242 
+<a name="l00247"></a>00247     <span class="keywordtype">void</span> SetBuf(<span class="keywordtype">long</span> mask_i, <span class="keywordtype">long</span> size_i);
+<a name="l00248"></a>00248 
+<a name="l00253"></a>00253     <span class="keywordtype">void</span> Wait(<span class="keywordtype">int</span> Delay_ms_i = 100);
+<a name="l00254"></a>00254 
+<a name="l00259"></a>00259     <span class="keywordtype">void</span> OperationComplete(<span class="keywordtype">int</span> Timeout_ms_i = 300000);
+<a name="l00260"></a>00260 
+<a name="l00265"></a>00265     <span class="keywordtype">void</span> setDebug(<span class="keywordtype">bool</span> debug_i = <span class="keyword">true</span>);
+<a name="l00266"></a>00266 
+<a name="l00271"></a>00271     <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetTimeOutMs(<span class="keywordtype">long</span> timeOutMs);
+<a name="l00272"></a>00272 
+<a name="l00276"></a>00276     ~<a class="code" href="classvisa___c.html">visa_C</a>();
+<a name="l00277"></a>00277 
+<a name="l00281"></a>00281     <a class="code" href="classvisa___c.html">visa_C</a>();
+<a name="l00282"></a>00282 
+<a name="l00283"></a>00283     ViStatus viSetAttribute(<span class="keywordtype">long</span> attr_i, ViAttrState attrstate_i);
+<a name="l00284"></a>00284     ViStatus viGetAttribute(<span class="keywordtype">long</span> attr_i, <span class="keywordtype">void</span> _VI_PTR attrstate_i);
+<a name="l00285"></a>00285     ViStatus viRead(ViPBuf buf, ViUInt32 cnt, ViPUInt32 retCnt);
+<a name="l00286"></a>00286     ViStatus viWrite(ViBuf  buf, ViUInt32 cnt, ViPUInt32 retCnt);
+<a name="l00287"></a>00287     ViStatus viPrintf(ViString writeFmt, <span class="keywordtype">void</span> _VI_PTR param);
+<a name="l00288"></a>00288     ViStatus viQueryf(ViString writeFmt, ViString readFmt);
+<a name="l00289"></a>00289     ViStatus viQueryf(ViString writeFmt, ViString readFmt, <span class="keywordtype">void</span> _VI_PTR param);
+<a name="l00290"></a>00290     ViStatus viQueryf(ViString writeFmt, ViString readFmt, <span class="keywordtype">void</span> _VI_PTR param, <span class="keywordtype">void</span> _VI_PTR param2);
+<a name="l00291"></a>00291     ViStatus viScanf(ViString readFmt, <span class="keywordtype">void</span> _VI_PTR param);
+<a name="l00292"></a>00292     ViStatus viStatusDesc(ViStatus status, ViChar _VI_FAR desc[]);
+<a name="l00293"></a>00293     ViStatus viReadSTB(ViPUInt16 status);
+<a name="l00294"></a>00294     ViStatus viFlush(ViUInt16 mask);
+<a name="l00295"></a>00295 
+<a name="l00296"></a>00296 };
+<a name="l00297"></a>00297 <span class="comment">//----------------------------------------------------------------------------</span>
+<a name="l00298"></a>00298 <span class="preprocessor">#endif</span>
+<a name="l00299"></a>00299 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:39 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

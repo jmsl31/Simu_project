@@ -1,0 +1,486 @@
+.TH "virtual_multimeters_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_multimeters_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <virtual_multimeters_C\&.h>\fP
+.PP
+Est dérivée de \fBvsim_C\fP\&.
+.PP
+Dérivée par \fBShp34970a_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual double \fBcreateValueRand\fP (double value_i)"
+.br
+.ti -1c
+.RI "virtual double \fBcreateMoyenne\fP (double value_i)"
+.br
+.ti -1c
+.RI "\fBvirtual_multimeters_C\fP ()"
+.br
+.ti -1c
+.RI "virtual double \fBgetDcVolt\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetAcVolt\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetDcAmp\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetAcAmp\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetOhm\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetOhm_FourWire\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetFreq\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetFreqMon\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetTemp\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetPower\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBsetDcVolt\fP (double DcVolt_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetAcVolt\fP (double AcVolt_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetDcAmp\fP (double DcAmp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetAcAmp\fP (double AcAmp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetOhm\fP (double Ohm_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetOhm_FourWire\fP (double Ohm_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetFreq\fP (double Freq_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetFreqMon\fP (double Freq_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetTemp\fP (double Temp_i)"
+.br
+.ti -1c
+.RI "virtual double \fBsetPower\fP (double Power_dbm_i)"
+.br
+.ti -1c
+.RI "virtual void \fBsetDoErrorQueryInDriver\fP (bool doErrorQueryInDriver_i)"
+.br
+.ti -1c
+.RI "std::string \fBrecvMessage\fP (std::string message, int adr, GPIB_BUSDATA *status)"
+.br
+.RI "\fIReception du Message\&. Fonction virtualle abstraite\&. \fP"
+.ti -1c
+.RI "void \fBChangeConfiguration\fP ()"
+.br
+.RI "\fIdefini un changement de configuration\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrPrimaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "void \fBChangeAdrSecondaire\fP (int Adr)"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "void \fBtimeoutRecvData\fP (double timeout=0)"
+.br
+.RI "\fIdefini le time Out du Reception\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property bool \fBErrorQueryInDriver\fP = {read = doErrorQueryInDriver_m, write = doErrorQueryInDriver_m}"
+.br
+.RI "\fIpropriété ErrorQueryInDriver de la variable doErrorQueryInDriver_m\&. \fP"
+.ti -1c
+.RI "__property std::string \fBMsgError\fP = {read = error_m, write = error_m}"
+.br
+.RI "\fIpropriété MsgError de la variable error_m\&. \fP"
+.ti -1c
+.RI "__property bool \fBMode_Ac\fP = {read = mode_Ac_m, write = mode_Ac_m}"
+.br
+.RI "\fIpropriété ErrorQueryInDriver de la variable doErrorQueryInDriver_m\&. \fP"
+.ti -1c
+.RI "__property int \fBChannel\fP = {read = channel_m, write = channel_m}"
+.br
+.RI "\fIpropriété Channel de la variable channel_m\&. \fP"
+.ti -1c
+.RI "__property int \fBAverage\fP = {read = average_m, write = average_m}"
+.br
+.RI "\fIpropriété Average de la variable average_m\&. \fP"
+.ti -1c
+.RI "__property double \fBDcVolt\fP = {read = dcVolt_v_m, write = dcVolt_v_m}"
+.br
+.RI "\fIpropriété DcVolt de la variable dcVolt_v_m\&. \fP"
+.ti -1c
+.RI "__property double \fBDelta_Mes\fP = {read = delta_mes_m, write = delta_mes_m}"
+.br
+.RI "\fIpropriété DcVolt de la variable delta_mes_m\&. \fP"
+.ti -1c
+.RI "__property double \fBAcVolt\fP = {read = acVolt_v_m, write = acVolt_v_m}"
+.br
+.RI "\fIpropriété AcVolt de la variable acVolt_v_m\&. \fP"
+.ti -1c
+.RI "__property double \fBDcAmp\fP = {read = dcAmp_a_m, write = dcAmp_a_m}"
+.br
+.RI "\fIpropriété DcAmp de la variable dcAmp_a_m\&. \fP"
+.ti -1c
+.RI "__property double \fBAcAmp\fP = {read = acAmp_a_m, write = acAmp_a_m}"
+.br
+.RI "\fIpropriété AcAmp de la variable acAmp_a_m\&. \fP"
+.ti -1c
+.RI "__property double \fBOhm\fP = {read = ohm_m, write = ohm_m}"
+.br
+.RI "\fIpropriété Ohm de la variable ohm_m\&. \fP"
+.ti -1c
+.RI "__property double \fBFreq\fP = {read = freq_m, write = freq_m}"
+.br
+.RI "\fIpropriété Freq de la variable freq_m\&. \fP"
+.ti -1c
+.RI "__property double \fBTemp\fP = {read = temp_m, write = temp_m}"
+.br
+.RI "\fIpropriété Temp de la variable temp_m\&. \fP"
+.ti -1c
+.RI "__property double \fBPow_dBm\fP = {read = pow_dBm_m, write = pow_dBm_m}"
+.br
+.RI "\fIpropriété Pow_dBm de la variable pow_dBm_m\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe de multimètres virtuels de base, tous les autres multimètres vont hériter de celle ci\&. Tous les multimètres implémenterons au moins ces fonctions\&. 
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBvirtual_multimeters_C::virtual_multimeters_C\fP ()"
+.PP
+.nf
+   /**
+.fi
+.PP
+ Constructeur 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_multimeters_C::ChangeAdrPrimaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBShp34970a_C\fP\&.
+.SS "void \fBvirtual_multimeters_C::ChangeAdrSecondaire\fP (intAdr)"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBShp34970a_C\fP\&.
+.SS "void \fBvirtual_multimeters_C::ChangeConfiguration\fP ()"
+
+.PP
+defini un changement de configuration\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getAcAmp\fP ()\fC [pure virtual]\fP"
+Mesure en mode ampèremètre alternatif\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIacAmp_a_o\fP pointeur sur le courant mesuré en ampères\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getAcVolt\fP ()\fC [pure virtual]\fP"
+Mesure en mode voltmètre alternatif\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIacVolt_v_o\fP pointeur sur la tension mesurée en volts\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getDcAmp\fP ()\fC [pure virtual]\fP"
+Mesure en mode ampèremètre continu\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdcAmp_a_o\fP pointeur sur le courant mesuré en ampères\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getDcVolt\fP ()\fC [pure virtual]\fP"
+Mesure en mode voltmètre continu\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdcVolt_v_o\fP pointeur sur la tension mesurée en volts\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getFreq\fP ()\fC [pure virtual]\fP"
+Mesure en mode fréquence-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIfreq_o\fP pointeur sur la fréquence mesurée en Hz\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getFreqMon\fP ()\fC [pure virtual]\fP"
+Mesure en mode fréquence-mètre pour un monitoring\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIfreq_o\fP pointeur sur la fréquence mesurée en Hz\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getOhm\fP ()\fC [pure virtual]\fP"
+Mesure en mode ohm-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIohm_o\fP pointeur sur la résistance mesurée en ohms\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant le canal sur lequel effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getOhm_FourWire\fP ()\fC [pure virtual]\fP"
+Mesure en mode ohm-mètre, en mode 4 fils\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIohm_o\fP pointeur sur la résistance mesurée en ohms\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.br
+\fIrange_i\fP range de mesure\&. 
+.br
+\fIintegTimePlcOrS_i\fP resolution de la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getPower\fP ()\fC [pure virtual]\fP"
+Mesure en mode power-mètre\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIpow_dBm_o\fP pointeur sur la puissance mesurée en dBm\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "virtual double \fBvirtual_multimeters_C::getTemp\fP ()\fC [pure virtual]\fP"
+Mesure en mode thermocouple K\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fItemp_o\fP pointeur sur la température mesurée en °C\&. 
+.br
+\fIaverage_i\fP paramètre d'entrée désignant le nombre de mesures entrants dans la moyenne\&. 
+.br
+\fIchannel_i\fP paramètre d'entrée désignant les canaux sur lesquels effectuer la mesure\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBShp34970a_C\fP\&.
+.SS "std::string \fBvirtual_multimeters_C::recvMessage\fP (std::stringmessage, intadr, GPIB_BUSDATA *status)"
+
+.PP
+Reception du Message\&. Fonction virtualle abstraite\&. \fBParamètres:\fP
+.RS 4
+\fIstring\fP message : Message reçu\&. 
+.br
+\fIint\fP adr : Adresse du l'instrument\&. 
+.br
+\fIGPIB_STATUS*\fP status : pointeur Status de l'interface GPIB\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBShp34970a_C\fP\&.
+.SS "virtual void \fBvirtual_multimeters_C::setDoErrorQueryInDriver\fP (booldoErrorQueryInDriver_i)\fC [virtual]\fP"
+Permet de desaciver les errorQuery dans le driver 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdoErrorQueryInDriver_i\fP : bool activer / desactiver les errorQuery 
+.RE
+.PP
+
+.SS "void \fBvirtual_multimeters_C::timeoutRecvData\fP (doubletimeout = \fC0\fP)"
+
+.PP
+defini le time Out du Reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée dans \fBShp34970a_C\fP\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "__property double \fBvirtual_multimeters_C::AcAmp\fP = {read = acAmp_a_m, write = acAmp_a_m}"
+
+.PP
+propriété AcAmp de la variable acAmp_a_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::AcVolt\fP = {read = acVolt_v_m, write = acVolt_v_m}"
+
+.PP
+propriété AcVolt de la variable acVolt_v_m\&. /** 
+.SS "__property int \fBvirtual_multimeters_C::Average\fP = {read = average_m, write = average_m}"
+
+.PP
+propriété Average de la variable average_m\&. /** 
+.SS "__property int \fBvirtual_multimeters_C::Channel\fP = {read = channel_m, write = channel_m}"
+
+.PP
+propriété Channel de la variable channel_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::DcAmp\fP = {read = dcAmp_a_m, write = dcAmp_a_m}"
+
+.PP
+propriété DcAmp de la variable dcAmp_a_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::DcVolt\fP = {read = dcVolt_v_m, write = dcVolt_v_m}"
+
+.PP
+propriété DcVolt de la variable dcVolt_v_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::Delta_Mes\fP = {read = delta_mes_m, write = delta_mes_m}"
+
+.PP
+propriété DcVolt de la variable delta_mes_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::Freq\fP = {read = freq_m, write = freq_m}"
+
+.PP
+propriété Freq de la variable freq_m\&. /** 
+.SS "__property bool \fBvirtual_multimeters_C::Mode_Ac\fP = {read = mode_Ac_m, write = mode_Ac_m}"
+
+.PP
+propriété ErrorQueryInDriver de la variable doErrorQueryInDriver_m\&. /** 
+.SS "__property std::string \fBvirtual_multimeters_C::MsgError\fP = {read = error_m, write = error_m}"
+
+.PP
+propriété MsgError de la variable error_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::Ohm\fP = {read = ohm_m, write = ohm_m}"
+
+.PP
+propriété Ohm de la variable ohm_m\&. /** 
+.SS "__property double \fBvirtual_multimeters_C::Pow_dBm\fP = {read = pow_dBm_m, write = pow_dBm_m}"
+
+.PP
+propriété Pow_dBm de la variable pow_dBm_m\&. pow_dBm_m 
+.PP
+.nf
+   /**
+.fi
+.PP
+ 
+.SS "__property double \fBvirtual_multimeters_C::Temp\fP = {read = temp_m, write = temp_m}"
+
+.PP
+propriété Temp de la variable temp_m\&. /** 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

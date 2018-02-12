@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="classvalim___c" kind="class" prot="public">
+    <compoundname>valim_C</compoundname>
+    <briefdescription>
+<para>definit la classe Alimentation representant l&apos;Objet Alimentation d&apos;un equipement. </para>    </briefdescription>
+    <detaileddescription>
+<para><verbatim> \version : 1.0
+</verbatim> <simplesect kind="date"><para>: 2/01/2017 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="10"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

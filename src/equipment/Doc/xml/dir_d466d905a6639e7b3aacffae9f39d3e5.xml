@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_d466d905a6639e7b3aacffae9f39d3e5" kind="dir">
+    <compoundname>D:/cpp/simu_cpp/src/</compoundname>
+    <innerdir refid="dir_5b8bb53a53b65e961d8c34c7e6d3763b">D:/cpp/simu_cpp/src/equipment/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/"/>
+  </compounddef>
+</doxygen>

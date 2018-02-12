@@ -1,0 +1,162 @@
+.TH "virtual_alim_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_alim_C \- 
+.PP
+definit la classe alimentation representant l'objet \fBAlimentation\fP d'un equipement  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <virtual_alim_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_alim_C\fP ()"
+.br
+.RI "\fIConstructeur de la Classe virtual_Alim_C\&. \fP"
+.ti -1c
+.RI "virtual void \fBinitAlim\fP (double voltage_i, double current_i, double protVoltage_i, double protcurrent_i, double tension_max_i, double courant_min_m, double courant_max_i, double puissance_i, double puissance_max_i)"
+.br
+.RI "\fIInitialise la tranche Alim de l'equipement\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetCurrentActifs\fP ()"
+.br
+.RI "\fIConfigure la courant actif de l'equipement\&.\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetPuissanceActive\fP ()"
+.br
+.RI "\fICalcule la puissance active de l'equipement\&. \fP"
+.ti -1c
+.RI "\fB~virtual_alim_C\fP ()"
+.br
+.RI "\fIDestructeur de la Classe virtual_Alim_C\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property double \fBVoltage\fP = {read = getVoltage, write = setVoltage}"
+.br
+.RI "\fIpropriete \fIVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrent\fP = {read = getCurrent, write = setCurrent}"
+.br
+.RI "\fIpropriete \fICurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageActif\fP = {read = getVoltageActifs, write = setVoltageActifs}"
+.br
+.RI "\fIpropriete \fIVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentActif\fP = {read = getCurrentActifs, write = current_actif_m}"
+.br
+.RI "\fIpropriete \fICurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBProtVoltage\fP = {read = getProtVoltage, write = setProtVoltage}"
+.br
+.RI "\fIpropriete \fIProtVoltage\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBProtCurrent\fP = {read = getProtCurrent, write = setProtCurrent}"
+.br
+.RI "\fIpropriete \fIProtCurrent\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBPuissance\fP = {read = getPuissance, write = setPuissance}"
+.br
+.RI "\fIpropriete \fIPuissance\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBPuissanceActive\fP = {read = getPuissanceActive, write = puissance_active_m}"
+.br
+.RI "\fIpropriete \fIPuissance\fP de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBProtectedVoltage\fP = {read = FProtectedVoltage, write = FProtectedVoltage}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Tension de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBProtectedCurrent\fP = {read = FProtectedCurrent, write = FProtectedCurrent}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Tension de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = FActive, write = FActive}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Tension de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageMax\fP = {read = getVoltageMax, write = setVoltageMax}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Courant de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentMin\fP = {read = getCurrentMin, write = setCurrentMin}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Courant de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentMax\fP = {read = getCurrentMax, write = setCurrentMax}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Courant de l'objet virtual_Alim \&. \fP"
+.ti -1c
+.RI "__property double \fBPuissanceMax\fP = {read = getPuissanceMax, write = setPuissanceMax}"
+.br
+.RI "\fIpropriete \fIRegistre\fP Protection en Courant de l'objet virtual_Alim \&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe alimentation representant l'objet \fBAlimentation\fP d'un equipement 
+
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 2/01/2017 
+.RE
+.PP
+\fBAuteur:\fP
+.RS 4
+JOHANN MEISSL 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_alim_C::initAlim\fP (doublevoltage_i, doublecurrent_i, doubleprotVoltage_i, doubleprotcurrent_i, doubletension_max_i, doublecourant_min_m, doublecourant_max_i, doublepuissance_i, doublepuissance_max_i)\fC [virtual]\fP"
+
+.PP
+Initialise la tranche Alim de l'equipement\&. \fBParamètres:\fP
+.RS 4
+\fIvoltage_i\fP tension de l'equipement\&. 
+.br
+\fIcurrent_i\fP courant de l'equipement\&. 
+.br
+\fIprotVoltage_i\fP protection de la tension de l'equipement\&. 
+.br
+\fIprotcurrent_i\fP protection du courant de l'equipement\&. 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un double representant la tension instantanee\&. 
+.RE
+.PP
+
+.SS "void \fBvirtual_alim_C::setCurrentActifs\fP ()\fC [virtual]\fP"
+
+.PP
+Configure la courant actif de l'equipement\&.\&. \fBParamètres:\fP
+.RS 4
+\fIProtVoltage_i\fP la valeur de la tension de protection de l'equipement\&. 
+.RE
+.PP
+
+.SS "void \fBvirtual_alim_C::setPuissanceActive\fP ()\fC [virtual]\fP"
+
+.PP
+Calcule la puissance active de l'equipement\&. Si les registres de protection \fIFProtectedVoltage\fP & \fIFProtectedCurrent\fP sont actives *Alors la puissance renseignee sera egale a 0\&. *Sinon la puissance sera egale a \fIvoltage_i\fP * \fIcurrent_i\fP\&. 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

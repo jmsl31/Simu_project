@@ -1,0 +1,289 @@
+.TH "visa_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+visa_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <visa_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBOpen\fP (\fBvisaDefaultRM_C\fP *viRM, char instr_i[])"
+.br
+.ti -1c
+.RI "void \fBReadBinary\fP (char *buf_i, long sizeBuf_i, unsigned long *retCnt_i)"
+.br
+.ti -1c
+.RI "void \fBReadAscii\fP (string *data_i)"
+.br
+.ti -1c
+.RI "void \fBReadAscii\fP (string *data_i, unsigned int bufferLength_i)"
+.br
+.ti -1c
+.RI "void \fBWriteBinary\fP (const char *data_i, int size_i)"
+.br
+.ti -1c
+.RI "void \fBWriteAscii\fP (const string *data_i)"
+.br
+.ti -1c
+.RI "void \fBWriteAscii\fP (const char *data_i)"
+.br
+.ti -1c
+.RI "void \fBClear\fP ()"
+.br
+.ti -1c
+.RI "long \fBReadSTB\fP ()"
+.br
+.ti -1c
+.RI "void \fBClose\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetAttribute\fP (long attr_i, long attrstate_i)"
+.br
+.ti -1c
+.RI "void \fBGetAttribute\fP (long attr_i, void _VI_PTR attrstate_i)"
+.br
+.ti -1c
+.RI "void \fBFlush\fP (long mask_i)"
+.br
+.ti -1c
+.RI "void \fBSetBuf\fP (long mask_i, long size_i)"
+.br
+.ti -1c
+.RI "void \fBWait\fP (int Delay_ms_i=100)"
+.br
+.ti -1c
+.RI "void \fBOperationComplete\fP (int Timeout_ms_i=300000)"
+.br
+.ti -1c
+.RI "void \fBsetDebug\fP (bool debug_i=true)"
+.br
+.ti -1c
+.RI "virtual void \fBSetTimeOutMs\fP (long timeOutMs)"
+.br
+.ti -1c
+.RI "\fB~visa_C\fP ()"
+.br
+.ti -1c
+.RI "\fBvisa_C\fP ()"
+.br
+.ti -1c
+.RI "ViStatus \fBviSetAttribute\fP (long attr_i, ViAttrState attrstate_i)"
+.br
+.ti -1c
+.RI "ViStatus \fBviGetAttribute\fP (long attr_i, void _VI_PTR attrstate_i)"
+.br
+.ti -1c
+.RI "ViStatus \fBviRead\fP (ViPBuf buf, ViUInt32 cnt, ViPUInt32 retCnt)"
+.br
+.ti -1c
+.RI "ViStatus \fBviWrite\fP (ViBuf buf, ViUInt32 cnt, ViPUInt32 retCnt)"
+.br
+.ti -1c
+.RI "ViStatus \fBviPrintf\fP (ViString writeFmt, void _VI_PTR param)"
+.br
+.ti -1c
+.RI "ViStatus \fBviQueryf\fP (ViString writeFmt, ViString readFmt)"
+.br
+.ti -1c
+.RI "ViStatus \fBviQueryf\fP (ViString writeFmt, ViString readFmt, void _VI_PTR param)"
+.br
+.ti -1c
+.RI "ViStatus \fBviQueryf\fP (ViString writeFmt, ViString readFmt, void _VI_PTR param, void _VI_PTR param2)"
+.br
+.ti -1c
+.RI "ViStatus \fBviScanf\fP (ViString readFmt, void _VI_PTR param)"
+.br
+.ti -1c
+.RI "ViStatus \fBviStatusDesc\fP (ViStatus status, ViChar _VI_FAR desc[])"
+.br
+.ti -1c
+.RI "ViStatus \fBviReadSTB\fP (ViPUInt16 status)"
+.br
+.ti -1c
+.RI "ViStatus \fBviFlush\fP (ViUInt16 mask)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBsession_m\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe Visa niveau instrument\&. 
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBvisa_C::~visa_C\fP ()"
+Destructeur, fermeture implicite de session de carte\&. 
+.SS "\fBvisa_C::visa_C\fP ()"
+Constructeur par défaut\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvisa_C::Clear\fP ()"
+Effacement\&. 
+.SS "void \fBvisa_C::Close\fP ()"
+Fermeture session instrument\&. 
+.SS "void \fBvisa_C::Flush\fP (longmask_i)"
+Gestion du mack\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fImask_i\fP paramètre d'entrée définissant le mask\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::GetAttribute\fP (longattr_i, void _VI_PTRattrstate_i)"
+Lecture des attributs\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIattr_i\fP paramètre d'entrée définissant l'attribut à manipuler\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::Open\fP (\fBvisaDefaultRM_C\fP *viRM, charinstr_i[])"
+Ouverture session instrument\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIviRM\fP pointeur sur la session VISA d'accés à la carte GPIB\&. 
+.br
+\fIinstr_i\fP pointeur sur le premier caractère de l'adresse de l'instrument\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::OperationComplete\fP (intTimeout_ms_i = \fC300000\fP)"
+Attente fin d'opération instrument\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITimeout_ms_i\fP paramètre d'entrée optionnel définissant la durée de l'attente en ms avant de remonter un timeout, par défaut cette durée de timeout est de 5min\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::ReadAscii\fP (string *data_i)"
+Lecture en ASCII sous la forme string\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdata_i\fP pointeur sur la chaine de string retournée par la fonction\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::ReadAscii\fP (string *data_i, unsigned intbufferLength_i)"
+Lecture en ASCII sous la forme char\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdata_i\fP pointeur sur le premier caractère de la chaine de string retournée par la fonction\&. 
+.br
+\fIbufferLength_i\fP paramètre d'entrée définissant la longeur du buffer alloué en entrée de la fonction\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::ReadBinary\fP (char *buf_i, longsizeBuf_i, unsigned long *retCnt_i)"
+Lecture en binaire\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIbuf_i\fP pointeur sur le buffer retourné par la fonction\&. 
+.br
+\fIsizeBuf_i\fP paramètre d'entrée définissant la longeur du buffer alloué en entrée de la fonction\&. 
+.br
+\fIretCnt_i\fP pointeur sur le nombre de caractères retournés par la fonction\&. 
+.RE
+.PP
+
+.SS "long \fBvisa_C::ReadSTB\fP ()"
+Lecture de l'octet de status, retourne un long\&. 
+.SS "void \fBvisa_C::SetAttribute\fP (longattr_i, longattrstate_i)"
+Ecriture des attributs\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIattr_i\fP paramètre d'entrée définissant l'attribut à manipuler\&. 
+.br
+\fIattrstate_i\fP paramètre d'entrée définissant l'état à donner à l'attribut\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::SetBuf\fP (longmask_i, longsize_i)"
+Ecriture du buffer\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fImask_i\fP paramètre d'entrée définissant le mask\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::setDebug\fP (booldebug_i = \fCtrue\fP)"
+Activation / désaction debug\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdebug_i\fP paramètre d'entrée optionnel définissant si on est en mode debug ou pas, par défaut la couche VISA fonctionne en mode debug\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::SetTimeOutMs\fP (longtimeOutMs)\fC [virtual]\fP"
+Positionnement du time-out de reception des donnees 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fItimeOutMs\fP time-out en milliseconde 
+.RE
+.PP
+
+.SS "void \fBvisa_C::Wait\fP (intDelay_ms_i = \fC100\fP)"
+Attente\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIDelay_ms_i\fP paramètre d'entrée optionnel définissant la durée de l'attente en ms, par défaut cette durée est de 100ms\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::WriteAscii\fP (const string *data_i)"
+Ecriture en ASCII sous la forme string\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdata_i\fP paramètre d'entrée définissant la chaine de string en entrée de la fonction\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::WriteAscii\fP (const char *data_i)"
+Ecriture en ASCII sous la forme char\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdata_i\fP pointeur sur le premier caractère de la chaine de char en entrée de la fonction\&. 
+.RE
+.PP
+
+.SS "void \fBvisa_C::WriteBinary\fP (const char *data_i, intsize_i)"
+Ecriture en binaire\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdata_i\fP pointeur sur le premier caractère à envoyer par la fonction\&. 
+.br
+\fIsize_i\fP paramètre d'entrée définissant la longeur de la chaine en entrée de la fonction\&. 
+.RE
+.PP
+
+.SH "Documentation des données membres"
+.PP 
+.SS "unsigned long \fBvisa_C::session_m\fP"
+Variable membre privée contenant le numéro de session VISA au niveau instrument\&. 
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

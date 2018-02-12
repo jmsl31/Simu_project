@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>GPIB Interface:  Fichier source de D:/cpp/drivers_cpp/src/utils/Gpib/ClientInterface.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GPIB Interface
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/drivers_cpp/src/utils/Gpib/ClientInterface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_client_interface_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef ClientInterfaceH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define ClientInterfaceH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="_gpib_interface_8h.html">GpibInterface.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="_gpib_observer_8h.html">GpibObserver.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="keyword">namespace </span>Utils{            <span class="comment">// \namespace Utils</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="class_utils_1_1_client_interface.html">00015</a> <span class="keyword">class </span><a class="code" href="class_utils_1_1_client_interface.html">ClientInterface</a> : <span class="keyword">public</span> <a class="code" href="class_utils_1_1_gpib_observer.html" title="definit la classe Observer GPIB .">GpibObserver</a>
+<a name="l00016"></a>00016  {
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018   <span class="keyword">public</span>:
+<a name="l00019"></a>00019 
+<a name="l00023"></a>00023         <a class="code" href="class_utils_1_1_client_interface.html#a5aa2c90799c7ffc3f0152cf648165fe7">ClientInterface</a>();
+<a name="l00024"></a>00024 
+<a name="l00028"></a>00028         <a class="code" href="class_utils_1_1_client_interface.html#a23c005bb86aa3bf6d073512d6ad0d756">~ClientInterface</a>();
+<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a58df84a5f1d1c06cce59f40bafdc3a6b" title="Change le Status du GPIB.">changeStatus</a>(<a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="code" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a>);
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a4d241c60c3141b553ea8e3072dae765d" title="Reception du Message.">recvMessage</a>(std::string <a class="code" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">message</a>,<span class="keywordtype">int</span> adr,<a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a>* status);
+<a name="l00043"></a>00043         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#ac97510e9339462b1c06e78300720cf40" title="defini un changement de configuration.">ChangeConfiguration</a>();
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a388f015119767fcf2ed3f280eb30c976" title="defini un changement de l&#39;adresse primaire.">ChangeAdrPrimaire</a>(<span class="keywordtype">int</span> Adr);
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a6c631a48b18336a0b6aae70728e0f59f" title="defini un changement de l&#39;adresse secondaire.">ChangeAdrSecondaire</a>(<span class="keywordtype">int</span> Adr);
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a61fce75c77b7255e766de0b0813410f2" title="defini le time Out du Reception.">timeoutRecvData</a>(<span class="keywordtype">double</span> <a class="code" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">timeout</a>=0);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060         <a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="code" href="class_utils_1_1_client_interface.html#a5668e7a1b32dc3d6f62b03affd1d4ad9">getStatus</a>();
+<a name="l00061"></a>00061         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#ad2a60971ef87a66a2d3c8f4b6704f6e2">setStatus</a>( <a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> status);
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063         <span class="keywordtype">int</span> <a class="code" href="class_utils_1_1_client_interface.html#a6e51b918200cc295e9aabd2a7fa460ad">getAdrprimaire</a>();
+<a name="l00064"></a>00064         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#af6fe9ce96d2b55ab51a203a7cf6c56e0">setAdrPrimarie</a>(<span class="keywordtype">int</span> adr);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066         <span class="keywordtype">int</span> <a class="code" href="class_utils_1_1_client_interface.html#a41380a87563d2f80ab781955e8a68f54">getAdrSecondaire</a>();
+<a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#aeb91e7db803d413dbc9e572675c7d1b5">setAdrSecondaire</a>(<span class="keywordtype">int</span> adr);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069         std::string <a class="code" href="class_utils_1_1_client_interface.html#a4e53e797e772ab1c05a1923b7a98e951">getmessage</a>();
+<a name="l00070"></a>00070         <span class="keywordtype">void</span> <a class="code" href="class_utils_1_1_client_interface.html#a6065c35dec7344724536c93260ed15ef">setmessage</a>(std::string mes);
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072   <span class="keyword">protected</span>:
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074   <span class="keyword">private</span>:
+<a name="l00075"></a>00075 
+<a name="l00076"></a><a class="code" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">00076</a>         <a class="code" href="namespace_utils.html#a984a8322d22a5deed510bb9d28b931e8">GPIB_STATUS</a> <a class="code" href="class_utils_1_1_client_interface.html#a294746ed5a9b8d80911b72453e6bcaa3">status</a>;
+<a name="l00077"></a><a class="code" href="class_utils_1_1_client_interface.html#af70c08c002e3197535b6f252f2e2d7c3">00077</a>         <span class="keywordtype">int</span> <a class="code" href="class_utils_1_1_client_interface.html#af70c08c002e3197535b6f252f2e2d7c3">AdrPrimaire</a>;
+<a name="l00078"></a><a class="code" href="class_utils_1_1_client_interface.html#acce41ecbf147d67a692431562a78f07d">00078</a>         <span class="keywordtype">int</span> <a class="code" href="class_utils_1_1_client_interface.html#acce41ecbf147d67a692431562a78f07d">AdrSecondaire</a>;
+<a name="l00079"></a><a class="code" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">00079</a>         <span class="keywordtype">double</span> <a class="code" href="class_utils_1_1_client_interface.html#a7d7ce2a713743236ffea043ee2044d5c">timeout</a>;
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">00081</a>         std::string <a class="code" href="class_utils_1_1_client_interface.html#aafb210cdd9c884552425ad76e864dc08">message</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084   };
+<a name="l00085"></a>00085 }
+<a name="l00086"></a>00086 <span class="preprocessor">  #endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Avril 12 2017 09:49:09 pour GPIB Interface par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

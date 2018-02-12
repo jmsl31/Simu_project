@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Alimentation:  Fichier source de D:/cpp/simu_cpp/src/instruments/Alim/SAlimentations.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Alimentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/instruments/Alim/SAlimentations.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef SAlimentationsH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define SAlimentationsH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;virtual_alimentation_C.h&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;Shp661xxa_C.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;GpibInterface.h&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;SBenchAdr.h&quot;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="comment">/*\enum AlimEnum</span>
+<a name="l00014"></a>00014 <span class="comment">*\brief Liste des instruments d&#39;alimentation possible de simulés</span>
+<a name="l00015"></a>00015 <span class="comment">*/</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">enum</span> SAlimEnum {alDebug, alAuto, alDAC488, alHP661XXA, alHP66XXA, alHP3640A, alN67XX, alDAQmx, alBILT, alBiltBE58x, alClient, alKiPlz};
+<a name="l00018"></a>00018 <span class="comment">/*\typedef T1DStringArray</span>
+<a name="l00019"></a>00019 <span class="comment">*\brief Definition d&#39;un tableau 1D de string.</span>
+<a name="l00020"></a>00020 <span class="comment">*/</span>
+<a name="l00021"></a>00021 <span class="keyword">typedef</span> DynamicArray &lt; AnsiString &gt; T1DStringArray;
+<a name="l00022"></a>00022 
+<a name="l00031"></a><a class="code" href="class_s_alimentations.html">00031</a> <span class="keyword">class </span><a class="code" href="class_s_alimentations.html">SAlimentations</a>
+<a name="l00032"></a>00032 {
+<a name="l00033"></a>00033   <span class="keyword">protected</span>:
+<a name="l00034"></a>00034         <a class="code" href="classvirtual__alimentation___c.html">virtual_alimentation_C</a>* FDevice;         <span class="comment">// Objet Appareils virtual_alimentations</span>
+<a name="l00035"></a>00035         GpibInterface* FGPIB_m;                  <span class="comment">// Objet GpibInterface.</span>
+<a name="l00036"></a>00036         SAlimEnum FDeviceType;
+<a name="l00037"></a>00037         AnsiString FDeviceStr,                                  <span class="comment">// Type de drivers simulé .</span>
+<a name="l00038"></a>00038                            FCaption,                    <span class="comment">//</span>
+<a name="l00039"></a>00039                            FAdresseString,                              <span class="comment">// Adresse GPIB Complete Exemple : GPIB0::2::0::INTFC</span>
+<a name="l00040"></a>00040                            FNameDevice;                 <span class="comment">// Nom de l&#39;appareils de mesure</span>
+<a name="l00041"></a>00041         SBenchAdrComp* FBenchAdrFile_m;         <span class="comment">// Objet permettant la lecture et initalisation du materiels de la Baie.</span>
+<a name="l00042"></a>00042 
+<a name="l00047"></a>00047         <span class="keywordtype">void</span>  <a class="code" href="class_s_alimentations.html#a7bfcf1d344c001b29f3d4b5ba551bf54" title="Active ou Deactive le composant SAlimentation.">SetActive</a>(<span class="keywordtype">bool</span> AValue);
+<a name="l00052"></a>00052         <span class="keywordtype">void</span>  <a class="code" href="class_s_alimentations.html#ae871c5b6f74c6550ce8a6accc2aec5c1" title="Recherche et Inialisation du type de driver simulé.">SetDeviceFind</a>(AnsiString AValue);
+<a name="l00057"></a>00057         <span class="keywordtype">void</span>  <a class="code" href="class_s_alimentations.html#a6e817de229cc3a13dbdc1d29c6ac6391" title="Recherche et Initialisation du type de driver simulé en fonction de la Liste des instruments d&#39;alimen...">SetDeviceType</a>(SAlimEnum AValue);
+<a name="l00062"></a>00062         <span class="keywordtype">void</span> <a class="code" href="class_s_alimentations.html#a520f3fef4f4f2d98fcaa2dcf34675910" title="Renseigne le Alias du driver simulé.">setCaption</a>(AnsiString AValue);
+<a name="l00067"></a>00067         AnsiString <a class="code" href="class_s_alimentations.html#a748b60d7fd8a0eb2d412310fb7a6ac95" title=".Retourne l&#39;Alias du driver simulé.">getCaption</a>();
+<a name="l00072"></a>00072         <span class="keywordtype">void</span> <a class="code" href="class_s_alimentations.html#aa86bf309a0528fc62789e90c4b6a1633" title=".Renseigne la chaine complete de l&#39;adresse du driver simulé.">setAdresseString</a>(AnsiString AValue);
+<a name="l00077"></a>00077         AnsiString <a class="code" href="class_s_alimentations.html#a6bdf1cc95cb523f4259dbbd046a7aa88" title=".Retourne la chaine complete de l&#39;adresse du driver simulé. /">getAdresseString</a>();
+<a name="l00082"></a>00082         AnsiString <a class="code" href="class_s_alimentations.html#a943d16957dcaf1e7949937d2e5b3b14f" title="Retourne le Nom du Driver simulé.">getNameDevice</a>();
+<a name="l00087"></a>00087         T1DStringArray <a class="code" href="class_s_alimentations.html#ac7cff89d0346aae94c40943206f643fb" title="Renseigne les differents parametres de l&#39;adresse GPIB /.">SepareAdressGpib</a>(AnsiString Str_i);
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089         <span class="keywordtype">bool</span> FActive;                                   <span class="comment">// Registre d&#39;activation ,deactviation du Composant.</span>
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091   <span class="keyword">public</span>:
+<a name="l00092"></a>00092 
+<a name="l00096"></a>00096         <a class="code" href="class_s_alimentations.html#a94a5dc3e6d0eb606d9d30c156a40443a" title="Constructeur de la classe SAlimentations.">SAlimentations</a>();
+<a name="l00103"></a>00103          T1DStringArray <a class="code" href="class_s_alimentations.html#a6f0cbc8aac39adeb6f5d7f6be5f0b023" title="Separation de la chaine de caractere en fonction du separateur souhaité.">SepareTab</a>(AnsiString Str_i, AnsiString Separateur_i);
+<a name="l00107"></a>00107         <span class="keywordtype">void</span> <a class="code" href="class_s_alimentations.html#a4e635a163ecc801e42af13fcbd6f8987" title="Lecture de la configuration de l&#39;instrument dans le ficheir de configuration.">ReadBenchAdrFile</a>();
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110         <span class="keywordtype">double</span> GetMeasure(AnsiString ACommand);
+<a name="l00111"></a>00111 
+<a name="l00115"></a>00115          <span class="keywordtype">void</span> <a class="code" href="class_s_alimentations.html#ad182e814f7e1ad3576046a561859c4df" title="Description de l&#39;Alimentation .">DescriptSimInstr</a>(<a class="code" href="classvirtual__alimentation___c.html">virtual_alimentation_C</a>* alim);
+<a name="l00119"></a><a class="code" href="class_s_alimentations.html#a4b7580a9e536febc756a2ea03c330150">00119</a>         __property  <span class="keywordtype">bool</span> <a class="code" href="class_s_alimentations.html#a4b7580a9e536febc756a2ea03c330150" title="propriété Active de la variable FActive.">Active</a> = {read = FActive, write = SetActive};
+<a name="l00123"></a><a class="code" href="class_s_alimentations.html#a0ed8901e4290dfc86a71c672cf7f4ff8">00123</a>         __property AnsiString <a class="code" href="class_s_alimentations.html#a0ed8901e4290dfc86a71c672cf7f4ff8" title="propriété Caption de la variable FCaption.">Caption</a> = {read = <a class="code" href="class_s_alimentations.html#a748b60d7fd8a0eb2d412310fb7a6ac95" title=".Retourne l&#39;Alias du driver simulé.">getCaption</a>, write = setCaption};
+<a name="l00127"></a><a class="code" href="class_s_alimentations.html#adc368376f4812780f113497d7474749a">00127</a>         __property AnsiString <a class="code" href="class_s_alimentations.html#adc368376f4812780f113497d7474749a" title="propriété NameDevice de la variable NameDevice.">NameDevice</a> = {read = FNameDevice, write = SetDeviceFind};
+<a name="l00132"></a><a class="code" href="class_s_alimentations.html#a7413cf3032dea6af0949529f2292a8c3">00132</a> 
+<a name="l00136"></a><a class="code" href="class_s_alimentations.html#a28e16abc22a516ae28ef4c9bc64686eb">00136</a> 
+<a name="l00140"></a><a class="code" href="class_s_alimentations.html#a9b7fddd45413a280c9dcb950453ef520">00140</a> 
+<a name="l00144"></a><a class="code" href="class_s_alimentations.html#ade2c0b6b8afc7b60bcf56c9b82d08501">00144</a> 
+<a name="l00148"></a><a class="code" href="class_s_alimentations.html#a4de407c1825158558d41c08a698fdebe">00148</a> </pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Mai 18 2017 10:54:12 pour Alimentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

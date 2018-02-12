@@ -1,0 +1,106 @@
+.TH "Utils" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBClientInterface\fP"
+.br
+.ti -1c
+.RI "struct \fBGPIB_T\fP"
+.br
+.ti -1c
+.RI "class \fBGpibInterface\fP"
+.br
+.RI "\fIdefinit la classe d'Interface GPIB \&. \fP"
+.ti -1c
+.RI "class \fBGpibObserver\fP"
+.br
+.RI "\fIdefinit la classe Observer GPIB \&. \fP"
+.ti -1c
+.RI "class \fBGpibSubject\fP"
+.br
+.RI "\fIdefinit la classe Observable GPIB \&. \fP"
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTYPE_GPIB\fP { \fBSERVER\fP, \fBCLIENT\fP }"
+.br
+.ti -1c
+.RI "enum \fBGPIB_STATUS\fP { \fBSTOPPED\fP, \fBCONNECTED\fP, \fBUNDEFINED\fP }"
+.br
+.ti -1c
+.RI "enum \fBGPIB_BUSDATA\fP { \fBLISTTED\fP, \fBWRITTED\fP, \fBREQUEST\fP, \fBREPLY\fP }"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "\fBGPIB_STATUS\fP \fBtoGpibStatus\fP (std::string status)"
+.br
+.ti -1c
+.RI "\fBGPIB_BUSDATA\fP \fBtoGpibBusData\fP (std::string statusBus)"
+.br
+.ti -1c
+.RI "DWORD WINAPI \fBRecvProcessing\fP (LPVOID arg)"
+.br
+.in -1c
+.SH "Documentation du type de l'énumération"
+.PP 
+.SS "enum \fBUtils::GPIB_BUSDATA\fP"
+
+.PP
+\fBValeurs énumérées: \fP
+.in +1c
+.TP
+\fB\fILISTTED \fP\fP
+.TP
+\fB\fIWRITTED \fP\fP
+.TP
+\fB\fIREQUEST \fP\fP
+.TP
+\fB\fIREPLY \fP\fP
+
+.SS "enum \fBUtils::GPIB_STATUS\fP"
+
+.PP
+\fBValeurs énumérées: \fP
+.in +1c
+.TP
+\fB\fISTOPPED \fP\fP
+.TP
+\fB\fICONNECTED \fP\fP
+.TP
+\fB\fIUNDEFINED \fP\fP
+
+.SS "enum \fBUtils::TYPE_GPIB\fP"
+
+.PP
+\fBValeurs énumérées: \fP
+.in +1c
+.TP
+\fB\fISERVER \fP\fP
+Enum de Type Server\&. 
+.TP
+\fB\fICLIENT \fP\fP
+Enum de Type Client\&. 
+.SH "Documentation des fonctions"
+.PP 
+.SS "DWORD WINAPI \fBUtils::RecvProcessing\fP (LPVOIDarg)"
+
+.SS "\fBGPIB_BUSDATA\fP \fBUtils::toGpibBusData\fP (std::stringstatusBus)"
+
+.SS "\fBGPIB_STATUS\fP \fBUtils::toGpibStatus\fP (std::stringstatus)"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

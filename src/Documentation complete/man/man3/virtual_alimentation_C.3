@@ -1,0 +1,287 @@
+.TH "virtual_alimentation_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_alimentation_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBvsim_C\fP, \fBUtils::InstSubject\fP, et \fBUtils::EqptObserver\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_alimentation_C\fP ()"
+.br
+.RI "\fIConstructeur de la classe\&. \fP"
+.ti -1c
+.RI "virtual void \fBresetInstr\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBClearProtect\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetVoltLevel\fP (double voltLevel_V_i)=0"
+.br
+.RI "\fIProgramme la tension de sortie désirée\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetVoltLevel\fP (double *voltLevel_V_o)=0"
+.br
+.RI "\fILecture de la tension de sortie réelle\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetOVProtLevel\fP (double OVPLevel_V_i)=0"
+.br
+.RI "\fIProgramme la tension de sortie désirée en mode Rampe\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetOVProtLevel\fP (double *OVPLevel_V_o)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetCurrLevel\fP (double currLevel_A_i)=0"
+.br
+.RI "\fIPrograme la tension de trigger à la valeur désirée\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetCurrLevel\fP (double *currLevel_A_o)=0"
+.br
+.RI "\fILecture du courant de sortie réel\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetOCProtState\fP (bool state_i=true)=0"
+.br
+.RI "\fIPrograme la protection en courant dans l'état désiré (ON ou OFF)\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetOCProtState\fP (bool *state_o)=0"
+.br
+.RI "\fILecture de l'état dans lequel est la protection en courant\&. \fP"
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (std::string value, TYPE_PARAM type)"
+.br
+.RI "\fIProgramme le courant\&. \fP"
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (bool value, TYPE_PARAM type)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property bool \fBOverVoltage\fP = {read = FOverVoltage, write = setOverVoltage}"
+.br
+.RI "\fIpropriété OverVoltage de la variable FOverVoltage\&. \fP"
+.ti -1c
+.RI "__property bool \fBOverCurrent\fP = {read = FOverCurrent, write = setOverCurrent}"
+.br
+.RI "\fIpropriété OverCurrent de la variable FOverCurrent\&. \fP"
+.ti -1c
+.RI "__property bool \fBActiveOverCurrent\fP = {read = FActiveOverCurrent, write = FActiveOverCurrent}"
+.br
+.RI "\fIpropriété OverCurrent de la variable FOverCurrent\&. \fP"
+.ti -1c
+.RI "__property bool \fBOverTemperature\fP = {read = FOverTemperature, write = setOverTemperature}"
+.br
+.RI "\fIpropriété OverTemperature de la variable FOverTemperature\&. \fP"
+.ti -1c
+.RI "__property bool \fBRemoteInhibit\fP = {read = FRemoteInhibit, write = setRemoteInhibit}"
+.br
+.RI "\fIpropriété RemoteInhibit de la variable FRemoteInhibit\&. \fP"
+.ti -1c
+.RI "__property bool \fBUnregulation\fP = {read = FUnregulation, write = setUnregulation}"
+.br
+.RI "\fIpropriété Unregulation de la variable FUnregulation\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageMax\fP = {read = voltageMax_m, write = voltageMax_m}"
+.br
+.RI "\fIpropriété VoltageMax de la variable voltageMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentMax\fP = {read = currentMax_m, write = currentMax_m}"
+.br
+.RI "\fIpropriété CurrentMax de la variable currentMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBPowerMax\fP = {read = powerMax_m, write = setpowerMax}"
+.br
+.RI "\fIpropriété PowerMax de la variable powerMax_m\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltageRMS\fP = {read = voltageRMS_m, write = voltageRMS_m}"
+.br
+.RI "\fIpropriété VoltageRMS de la variable voltageRMS_m\&. \fP"
+.ti -1c
+.RI "__property double \fBCurrentRMS\fP = {read = currentRMS_m, write = currentRMS_m}"
+.br
+.RI "\fIpropriété CurrentRMS de la variable currentRMS_m\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltagePeak\fP = {read = voltagePeak_m, write = voltagePeak_m}"
+.br
+.RI "\fIpropriété VoltagePeak de la variable voltagePeak_m\&. \fP"
+.ti -1c
+.RI "__property double \fBWantingCurrent\fP = {read = wantingCurrent_m, write = wantingCurrent_m}"
+.br
+.ti -1c
+.RI "__property double \fBWantingVoltage\fP = {read = wantingVoltage_m, write = wantingVoltage_m}"
+.br
+.RI "\fIpropriété ActiveVoltage de la variable activeVoltage_m\&. \fP"
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = FActive, write = setActive}"
+.br
+.RI "\fIpropriété ActiveCurrent de la variable activeCurrent_m\&. \fP"
+.ti -1c
+.RI "__property bool \fBActiveReturn\fP = {read = FActiveReturn, write = FActiveReturn}"
+.br
+.RI "\fIpropriété ActiveReturn de la variable FActiveReturn\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveCurrent\fP = {read = activeCurrent_m, write = setActiveCurrent}"
+.br
+.RI "\fIpropriété ActiveCurrent de la variable activeCurrent_m\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveVoltage\fP = {read = activeVoltage_m, write = setActiveVoltage}"
+.br
+.RI "\fIpropriété ActiveVoltage de la variable activeVoltage_m\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveVoltageProt\fP = {read = activeVoltageProt_m, write = activeVoltageProt_m}"
+.br
+.RI "\fIpropriété ActiveVoltage de la variable activeVoltage_m\&. \fP"
+.ti -1c
+.RI "__property double \fBActiveCurrentProt\fP = {read = activeCurrentProt_m, write = activeCurrentProt_m}"
+.br
+.RI "\fIpropriété ActiveVoltage de la variable activeVoltage_m\&. \fP"
+.ti -1c
+.RI "__property double \fBChannel\fP = {read = channel_m, write = channel_m}"
+.br
+.RI "\fIpropriété Channel de la variable channel_m\&. \fP"
+.ti -1c
+.RI "__property double \fBSubChannel\fP = {read = sub_channel_m, write = sub_channel_m}"
+.br
+.RI "\fIpropriété SubChannel de la variable sub_channel_m\&. \fP"
+.ti -1c
+.RI "__property std::string \fBName\fP = {read = Name_m, write = Name_m}"
+.br
+.RI "\fIpropriété Name de la variable Name_m\&. \fP"
+.ti -1c
+.RI "__property std::string \fBError\fP = {read = error_m, write = error_m}"
+.br
+.RI "\fIpropriété Error de la variable Error_m\&. \fP"
+.ti -1c
+.RI "__property double \fBVoltTrig\fP = {read = activeVoltTrig_m, write = activeVoltTrig_m}"
+.br
+.RI "\fIpropriété VoltTrig de la variable activeVoltTrig_m\&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_alimentation_C::ChangeValueRising\fP (std::stringvalue, TYPE_PARAMtype)\fC [virtual]\fP"
+
+.PP
+Programme le courant\&. \fBParamètres:\fP
+.RS 4
+\fIcurrentRange_A_o\fP valeur du courant\&. 
+.br
+\fIchannel_i\fP channel utilisé\&. lecture du courant 
+.br
+\fIcurrentRange_A_o\fP valeur du courant\&. 
+.br
+\fIchannel_i\fP channel utilisé\&.
+.RE
+.PP
+Methode de communication de l'observer montante permettant la propagation de l'inforamtion entre les objets\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::EqptObserver\fP\&.
+.SS "virtual void \fBvirtual_alimentation_C::getCurrLevel\fP (double *currLevel_A_o)\fC [pure virtual]\fP"
+
+.PP
+Lecture du courant de sortie réel\&. \fBParamètres:\fP
+.RS 4
+\fIcurrLevel_A_o\fP pointeur sur le courant de sortie actuel en ampères\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::getOCProtState\fP (bool *state_o)\fC [pure virtual]\fP"
+
+.PP
+Lecture de l'état dans lequel est la protection en courant\&. \fBParamètres:\fP
+.RS 4
+\fIstate_o\fP pointeur sur l'état de la protection en courant (TRUE pour ON, FALSE pour OFF)\&. 
+.br
+\fIocpDelayS_o\fP pointeur sur le delai de prise en compte de la protection en courant (en secondes)\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::getOVProtLevel\fP (double *OVPLevel_V_o)\fC [pure virtual]\fP"
+Lecture de la valeur de surtension de sortie appliquée\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIOVPLevel_V_o\fP pointeur sur la surtension de sortie en volts avant activation de la protection\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::getVoltLevel\fP (double *voltLevel_V_o)\fC [pure virtual]\fP"
+
+.PP
+Lecture de la tension de sortie réelle\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_o\fP pointeur sur la tension de sortie actuelle en volts\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setCurrLevel\fP (doublecurrLevel_A_i)\fC [pure virtual]\fP"
+
+.PP
+Programe la tension de trigger à la valeur désirée\&. \fBParamètres:\fP
+.RS 4
+\fIvoltTrig_V_i\fP paramètre d'entrée définissant la tension de trigger désirée en volts\&. Lecture de la tension de trigger appliquée\&. 
+.br
+\fIvoltTrig_V_o\fP pointeur sur la tension de trigger en volts\&. Programe le courant de sortie désiré\&. 
+.br
+\fIcurrLevel_A_i\fP paramètre d'entrée définissant le courant de sortie désirée en ampères\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setOCProtState\fP (boolstate_i = \fCtrue\fP)\fC [pure virtual]\fP"
+
+.PP
+Programe la protection en courant dans l'état désiré (ON ou OFF)\&. \fBParamètres:\fP
+.RS 4
+\fIstate_i\fP paramètre d'entrée définissant l'état de la protection en courant (TRUE pour ON, FALSE pour OFF), l'état ON étant sélectionné par défaut\&. 
+.br
+\fIocpDelayS_i\fP paramètre d'entrée définissant le delai de prise en compte de la protection en courant (en secondes), 0 étant sélectionné par défaut\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setOVProtLevel\fP (doubleOVPLevel_V_i)\fC [pure virtual]\fP"
+
+.PP
+Programme la tension de sortie désirée en mode Rampe\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Lecture la tension de sortie désirée en mode Rampe\&. 
+.br
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Programe la protection en surtension de sortie à la valeur désirée\&. 
+.br
+\fIOVPLevel_V_i\fP paramètre d'entrée définissant la surtension de sortie maximum désirée en volts avant protection\&. 
+.RE
+.PP
+
+.SS "virtual void \fBvirtual_alimentation_C::setVoltLevel\fP (doublevoltLevel_V_i)\fC [pure virtual]\fP"
+
+.PP
+Programme la tension de sortie désirée\&. \fBParamètres:\fP
+.RS 4
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

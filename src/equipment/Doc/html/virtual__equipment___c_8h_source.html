@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project:  Fichier source de C:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/cpp/simu_cpp/src/equipment/virtual_equipment_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef virtual_equipment_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define virtual_equipment_CH</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;IniFiles.hpp&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;virtual_RF_C.h&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;virtual_alim_C.h&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;virtual_tmtc_C.h&quot;</span>
+<a name="l00013"></a>00013 
+<a name="l00024"></a><a class="code" href="classvirtual__equipment___c.html">00024</a> <span class="keyword">class </span><a class="code" href="classvirtual__equipment___c.html" title="Permet la representation objet d&#39;un equipement.">virtual_equipment_C</a> {
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">private</span>:
+<a name="l00027"></a>00027         <span class="comment">// Parametre Privée de la \a Classe vequipment_C</span>
+<a name="l00029"></a><a class="code" href="classvirtual__equipment___c.html#a04e51ece2ea68ce2d4f96e4385e123a0">00029</a> <span class="comment"></span>        std::string     <a class="code" href="classvirtual__equipment___c.html#a04e51ece2ea68ce2d4f96e4385e123a0" title="Nom de l&#39;equipement.">name_m</a>;
+<a name="l00031"></a><a class="code" href="classvirtual__equipment___c.html#a2d6c34a7767b61dafb65c64f71a68b6d">00031</a>         std::string <a class="code" href="classvirtual__equipment___c.html#a2d6c34a7767b61dafb65c64f71a68b6d" title="Type d&#39;equipement.">Type_m</a>;
+<a name="l00033"></a><a class="code" href="classvirtual__equipment___c.html#ae570e59c3fbcb415393b6e8eba491df4">00033</a>         <span class="keywordtype">double</span> <a class="code" href="classvirtual__equipment___c.html#ae570e59c3fbcb415393b6e8eba491df4" title="Temperature equipement.">temperature_m</a>;
+<a name="l00035"></a><a class="code" href="classvirtual__equipment___c.html#a8b9d7344119b44749f9d7e19b247c3c6">00035</a>         <span class="keywordtype">bool</span> <a class="code" href="classvirtual__equipment___c.html#af99d7e1ba7ef7924171b2076599011c0" title="Variable d&#39;activation.">FActive</a>,
+<a name="l00037"></a>00037         <a class="code" href="classvirtual__equipment___c.html#a8b9d7344119b44749f9d7e19b247c3c6" title="Verifie si l&#39;equipement est active.">FVerifyInUse</a>,
+<a name="l00039"></a>00039         <a class="code" href="classvirtual__equipment___c.html#a80e782d53bf399f3de19213987fdebe8" title="Variable de blocage.">FLock</a>;
+<a name="l00040"></a>00040 
+<a name="l00042"></a><a class="code" href="classvirtual__equipment___c.html#a756a73b9c510ec1191ae32d553753af4">00042</a>         std::vector&lt;virtual_RF_C&gt;               *<a class="code" href="classvirtual__equipment___c.html#a756a73b9c510ec1191ae32d553753af4" title="Pointeur de type std::vector&lt;virtual_RF_C&gt;">tranche_m</a>;
+<a name="l00044"></a><a class="code" href="classvirtual__equipment___c.html#a8a937b945f365d731bfcdee198717ba6">00044</a>         std::vector&lt;virtual_alim_C&gt;             *<a class="code" href="classvirtual__equipment___c.html#a8a937b945f365d731bfcdee198717ba6" title="Pointeur de type std::vector&lt;virtual_alim_C&gt;">alim_m</a>;
+<a name="l00046"></a><a class="code" href="classvirtual__equipment___c.html#a9acf304287d7c275bbfd410b371fe890">00046</a>         std::vector&lt;virtual_tmtc_C&gt;             *<a class="code" href="classvirtual__equipment___c.html#a9acf304287d7c275bbfd410b371fe890" title="Pointeur de type std::vector&lt;virtual_tmtc_C&gt;">tmtc_m</a>;
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="comment">// Méthode Privée de la \a Classe vequipment_C</span>
+<a name="l00049"></a>00049 
+<a name="l00053"></a>00053         <span class="keyword">virtual</span> std::vector&lt;virtual_RF_C&gt; <a class="code" href="classvirtual__equipment___c.html#a0f2134b2169de19fa70188cd7323541b" title="Recupere la tranche de l&#39;equipement.">getTranche</a>();
+<a name="l00054"></a>00054 
+<a name="l00058"></a>00058         <span class="keyword">virtual</span> std::vector&lt;virtual_alim_C&gt; <a class="code" href="classvirtual__equipment___c.html#a145d94336958ebd33de11c7c45570e9a" title="Recupere l&#39;alimentation de l&#39;equipement.">getAlim</a>();
+<a name="l00059"></a>00059 
+<a name="l00063"></a>00063         <span class="keyword">virtual</span> std::vector&lt;virtual_tmtc_C&gt; <a class="code" href="classvirtual__equipment___c.html#a428918b25cfbb179380007b6219c5adf" title="Recupere le tmtc de l&#39;equipement.">getTmtc</a>();
+<a name="l00064"></a>00064 
+<a name="l00068"></a>00068         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classvirtual__equipment___c.html#aaf8f0c20c81d987b46c80ac5111b036c" title="Recupere la temperature de l&#39;equipement.">getTemperature</a>();
+<a name="l00072"></a>00072         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a103af7dc6c923013f0add4a1b9645f49" title="Fixe la temperature de l&#39;equipement.">setTemperature</a>(<span class="keywordtype">double</span> temp_i);
+<a name="l00076"></a>00076         <span class="keyword">virtual</span> std::string <a class="code" href="classvirtual__equipment___c.html#ad43dd1d6d2ed521d2027c473a39e443b" title="Recupere le nom de l&#39;equipement.">getName</a>();
+<a name="l00080"></a>00080         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a0193c2f421e075f057ecc2754f0cd83e" title="Fixe le nom de l&#39;equipement.">setName</a>(std::string name_i);
+<a name="l00084"></a>00084         <span class="keyword">virtual</span> std::string <a class="code" href="classvirtual__equipment___c.html#abb04bb70248f80ed4db751cec03520dd" title="Recupere le type d&#39;equipement.">getType</a>();
+<a name="l00088"></a>00088         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a78a36daea33c28deaefeb98e72c5ab11" title="Fixe le type d&#39;equipement.">setType</a>(std::string type_i);
+<a name="l00089"></a>00089 
+<a name="l00093"></a>00093         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a343b266f2f6d3908c645df90776a83a3" title="Determine l&#39;activation de l&#39;equipement.">SetActive</a>(<span class="keywordtype">bool</span> AValue);
+<a name="l00097"></a>00097         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvirtual__equipment___c.html#a2c51023b7a82513676d155e6d63496f5" title="Determine si l&#39;equipement est active.">GetActive</a>();
+<a name="l00100"></a>00100         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a1c3a353cafb5d790d70dd6ae59b7b17f" title="Bloque l&#39;equipement.">LockDevice</a>();
+<a name="l00103"></a>00103         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a44207e2691b20701e6f595cecf06d1f3" title="Debloque l&#39;equipement.">UnlockDevice</a>();
+<a name="l00108"></a>00108         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#ae879279aefc29ff6b998838c8753d9dc" title="Realise le checkup de l&#39;equipement.">check_Eqpt</a>(TObject *Sender,<a class="code" href="classvirtual__equipment___c.html" title="Permet la representation objet d&#39;un equipement.">virtual_equipment_C</a> *eqpt);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 <span class="keyword">public</span>:
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112         <span class="comment">//Construceur &amp; Destructeur</span>
+<a name="l00115"></a>00115 <span class="comment"></span>         <a class="code" href="classvirtual__equipment___c.html#a74f8c62a44f96ea524392e93648354d5" title="Constructeur de la fonction virtual_equipment_C.">virtual_equipment_C</a>();
+<a name="l00118"></a>00118         <a class="code" href="classvirtual__equipment___c.html#abd3c7644895339403fbe3485d8d56168" title="Destructeur de la fonction virtual_equipment_C.">~virtual_equipment_C</a>();
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120         <span class="comment">//Methode</span>
+<a name="l00132"></a>00132 <span class="comment"></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#ab68a023d661bdab14eded1f3cca1ada2" title="Fixe la tranche.">setTranche</a>(<span class="keywordtype">double</span> fq_start_i,<span class="keywordtype">double</span> fq_stop_i,<span class="keywordtype">double</span> bandwidth_i,<span class="keywordtype">double</span> step_i,<span class="keywordtype">double</span> power_i,
+<a name="l00133"></a>00133                                                                 <span class="keywordtype">double</span> power_min,<span class="keywordtype">double</span> power_max,<span class="keywordtype">double</span> frequency_min,<span class="keywordtype">double</span> frequency_max);
+<a name="l00140"></a>00140         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a89495dac7bc60b8df6b83dbd2272c01e" title="Fixe l&#39;alimentation.">setAlim</a>(<span class="keywordtype">double</span> voltage_i,<span class="keywordtype">double</span> current_i,<span class="keywordtype">double</span> protVoltage_i,<span class="keywordtype">double</span> protcurrent_i);
+<a name="l00145"></a>00145         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvirtual__equipment___c.html#a9df560e74b3a55eefee3bee74f1b7805" title="Fixe le tmtc de l&#39;equipement.">setTmtc</a>(<span class="keywordtype">bool</span> tm_status,<span class="keywordtype">bool</span> tm_On_Off);
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147         <span class="comment">// Propriété de la \a Classe vequipment_C</span>
+<a name="l00150"></a><a class="code" href="classvirtual__equipment___c.html#a8ab64a7264339bb0b0bb023dc1dc5b5d">00150</a> <span class="comment"></span>        __property <span class="keywordtype">double</span> <a class="code" href="classvirtual__equipment___c.html#a8ab64a7264339bb0b0bb023dc1dc5b5d" title="Propriete Temperature des fonctions getTemperature et setTemperature.">Temperature</a> = {read = <a class="code" href="classvirtual__equipment___c.html#aaf8f0c20c81d987b46c80ac5111b036c" title="Recupere la temperature de l&#39;equipement.">getTemperature</a>, write = <a class="code" href="classvirtual__equipment___c.html#a103af7dc6c923013f0add4a1b9645f49" title="Fixe la temperature de l&#39;equipement.">setTemperature</a>};
+<a name="l00153"></a><a class="code" href="classvirtual__equipment___c.html#a1a3634302dfe0be7248ff75db6e97c7a">00153</a>         __property std::string <a class="code" href="classvirtual__equipment___c.html#a1a3634302dfe0be7248ff75db6e97c7a" title="Propriete Name des fonctions getName et setName.">Name</a> = {read = <a class="code" href="classvirtual__equipment___c.html#ad43dd1d6d2ed521d2027c473a39e443b" title="Recupere le nom de l&#39;equipement.">getName</a>, write = <a class="code" href="classvirtual__equipment___c.html#a0193c2f421e075f057ecc2754f0cd83e" title="Fixe le nom de l&#39;equipement.">setName</a>};
+<a name="l00156"></a><a class="code" href="classvirtual__equipment___c.html#ae96562ebbf3407b31444cb8295501064">00156</a>         __property std::string <a class="code" href="classvirtual__equipment___c.html#ae96562ebbf3407b31444cb8295501064" title="Propriete Type des fonctions getType et setType.">Type</a> = {read = <a class="code" href="classvirtual__equipment___c.html#abb04bb70248f80ed4db751cec03520dd" title="Recupere le type d&#39;equipement.">getType</a>, write = <a class="code" href="classvirtual__equipment___c.html#a78a36daea33c28deaefeb98e72c5ab11" title="Fixe le type d&#39;equipement.">setType</a>};
+<a name="l00159"></a><a class="code" href="classvirtual__equipment___c.html#ad19694d55eff900974dcfa8b58d7c88a">00159</a>         __property std::vector&lt;virtual_RF_C&gt;  <a class="code" href="classvirtual__equipment___c.html#ad19694d55eff900974dcfa8b58d7c88a" title="Propriete TrancheRF de la fonction getTranche en lecture.">TrancheRF</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a0f2134b2169de19fa70188cd7323541b" title="Recupere la tranche de l&#39;equipement.">getTranche</a>};
+<a name="l00162"></a><a class="code" href="classvirtual__equipment___c.html#a01eb135acd3086e9d16ea5e1d2e6376a">00162</a>         __property std::vector&lt;virtual_alim_C&gt; <a class="code" href="classvirtual__equipment___c.html#a01eb135acd3086e9d16ea5e1d2e6376a" title="Propriete Alim de la fonction getAlim en lecture.">Alim</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a145d94336958ebd33de11c7c45570e9a" title="Recupere l&#39;alimentation de l&#39;equipement.">getAlim</a>};
+<a name="l00165"></a><a class="code" href="classvirtual__equipment___c.html#a64c21edeeaf1f63028ed0c376007d894">00165</a>         __property std::vector&lt;virtual_tmtc_C&gt; <a class="code" href="classvirtual__equipment___c.html#a64c21edeeaf1f63028ed0c376007d894" title="Propriete Tmtc de la fonction getTmtc en lecture.">Tmtc</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a428918b25cfbb179380007b6219c5adf" title="Recupere le tmtc de l&#39;equipement.">getTmtc</a>};
+<a name="l00168"></a><a class="code" href="classvirtual__equipment___c.html#a3cc4146571b64705bb151477262a8ff3">00168</a>         __property <span class="keywordtype">bool</span> <a class="code" href="classvirtual__equipment___c.html#a3cc4146571b64705bb151477262a8ff3" title="Propriete Active des fonctions GetActive et SetActive.">Active</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a2c51023b7a82513676d155e6d63496f5" title="Determine si l&#39;equipement est active.">GetActive</a>, write = <a class="code" href="classvirtual__equipment___c.html#a343b266f2f6d3908c645df90776a83a3" title="Determine l&#39;activation de l&#39;equipement.">SetActive</a>};
+<a name="l00171"></a><a class="code" href="classvirtual__equipment___c.html#a81c505d194373587b5931961dfbc01cd">00171</a>         __property <span class="keywordtype">bool</span> <a class="code" href="classvirtual__equipment___c.html#a81c505d194373587b5931961dfbc01cd" title="Propriete VerifyInUse de la fonction FVerifyInUse.">VerifyInUse</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a8b9d7344119b44749f9d7e19b247c3c6" title="Verifie si l&#39;equipement est active.">FVerifyInUse</a>, write = <a class="code" href="classvirtual__equipment___c.html#a8b9d7344119b44749f9d7e19b247c3c6" title="Verifie si l&#39;equipement est active.">FVerifyInUse</a>};
+<a name="l00174"></a><a class="code" href="classvirtual__equipment___c.html#a45d9b28bc0f6a789458b30f4c2c3a1a2">00174</a>         __property <span class="keywordtype">bool</span> <a class="code" href="classvirtual__equipment___c.html#a45d9b28bc0f6a789458b30f4c2c3a1a2" title="Propriete Lock de la fonction FLock.">Lock</a> = {read = <a class="code" href="classvirtual__equipment___c.html#a80e782d53bf399f3de19213987fdebe8" title="Variable de blocage.">FLock</a>, write = <a class="code" href="classvirtual__equipment___c.html#a80e782d53bf399f3de19213987fdebe8" title="Variable de blocage.">FLock</a>};
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 };
+<a name="l00177"></a>00177 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+GÃ©nÃ©rÃ© le Mardi Juin 6 2017 12:43:25 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

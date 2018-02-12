@@ -1,0 +1,90 @@
+.TH "Rx_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Rx_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBvirtual_receiver_C\fP, \fBUtils::InstObserver\fP, et \fBUtils::EqptSubject\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "double \fBgetNb_Tranche\fP ()"
+.br
+.RI "\fIRecupere le nombre de tranche\&. \fP"
+.ti -1c
+.RI "double \fBgetNb_Alim\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetNb_Tmtc\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetFrequency_Start_Out\fP (int Num_Tranche)"
+.br
+.ti -1c
+.RI "void \fBsetFrequency_Start_Out\fP (int Num_Tranche, double fq_out_start_i)"
+.br
+.ti -1c
+.RI "double \fBgetFrequency_Stop_Out\fP (int Num_Tranche)"
+.br
+.ti -1c
+.RI "void \fBsetFrequency_Stop_Out\fP (int Num_Tranche, double fq_out_stop_i)"
+.br
+.ti -1c
+.RI "double \fBgetPout\fP (int Num_Tranche, double Pin)"
+.br
+.ti -1c
+.RI "void \fBReturnValue\fP (double Voltage, double Current, bool overvoltage, bool overcurrent, bool active_power, bool active_alim, double power)"
+.br
+.ti -1c
+.RI "void \fBsetActive\fP ()"
+.br
+.ti -1c
+.RI "void \fBInitEqpt\fP (TIniFile *file)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (std::string value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (bool value, TYPE_PARAM type)"
+.br
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBRx_C::ChangeValueDown\fP (std::stringvalue, TYPE_PARAMtype)\fC [virtual]\fP"
+Methode de communication de l'observer descendant permettant la propagation de l'inforamtion entre les objets\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::InstObserver\fP\&.
+.SS "double \fBRx_C::getNb_Tranche\fP ()"
+
+.PP
+Recupere le nombre de tranche\&. ! 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Nombre de tranche 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

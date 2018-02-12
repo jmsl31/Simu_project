@@ -1,0 +1,140 @@
+.TH "TMainSimuForm" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TMainSimuForm \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dérivée par \fBTMainForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBFormShow\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBFormClose\fP (TObject *Sender, TCloseAction &Action)"
+.br
+.ti -1c
+.RI "void __fastcall \fBFormCreate\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBcatMenuItemsCategories0Items0Click\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBcatMenuItemsCategories0Items1Click\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBcatMenuItemsMouseEnter\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBcatMenuItemsMouseLeave\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBUnlockButtonClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBApplicationEvents1Exception\fP (TObject *Sender, Exception *E)"
+.br
+.ti -1c
+.RI "void \fBWaitMs\fP (int NbMsSec)"
+.br
+.ti -1c
+.RI "void \fBShutdown\fP (bool WithReboot)"
+.br
+.ti -1c
+.RI "__fastcall \fBTMainSimuForm\fP (TComponent *Owner)"
+.br
+.ti -1c
+.RI "void \fBgetInfos\fP (TStringList *StrList, int *NbLine)"
+.br
+.ti -1c
+.RI "void \fBSendScpiCmd\fP (AnsiString Cmd_i, int Port_i)"
+.br
+.ti -1c
+.RI "void __fastcall \fBMsgEvent\fP (TObject *Sender, int priority, AnsiString Msg)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TRichEdit * \fBMsgMemo\fP"
+.br
+.ti -1c
+.RI "TPanel * \fBMainPanel\fP"
+.br
+.ti -1c
+.RI "TStatusBar * \fBMainStatusBar\fP"
+.br
+.ti -1c
+.RI "TIdTCPServer * \fBIdTCPServer\fP"
+.br
+.ti -1c
+.RI "TPageControl * \fBMainPageControl\fP"
+.br
+.ti -1c
+.RI "TSplitView * \fBMainSplitView\fP"
+.br
+.ti -1c
+.RI "TCategoryButtons * \fBcatMenuItems\fP"
+.br
+.ti -1c
+.RI "TImageList * \fBMainIcons\fP"
+.br
+.ti -1c
+.RI "TActionList * \fBActionList1\fP"
+.br
+.ti -1c
+.RI "TAction * \fBactStatus\fP"
+.br
+.ti -1c
+.RI "TAction * \fBact1553\fP"
+.br
+.ti -1c
+.RI "TAction * \fBactPower\fP"
+.br
+.ti -1c
+.RI "TSpeedButton * \fBUnlockButton\fP"
+.br
+.ti -1c
+.RI "TIdHTTPServer * \fBIdHTTPServer\fP"
+.br
+.ti -1c
+.RI "TApplicationEvents * \fBApplicationEvents1\fP"
+.br
+.ti -1c
+.RI "bool \fBScpiBin_m\fP"
+.br
+.ti -1c
+.RI "bool \fBLocalMode_m\fP"
+.br
+.ti -1c
+.RI "char * \fBScpiBinValTab_m\fP"
+.br
+.ti -1c
+.RI "AnsiString \fBScpiResult_m\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBScpiBinValNb_m\fP"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBRegisterDep\fP (TObject *Sender, AnsiString ModuleName)"
+.br
+.ti -1c
+.RI "void \fBRegisterTmtcForm\fP (TComponentClass InstanceClass, \fBTSimuForm\fP **ATmtcForm, AnsiString ASection)"
+.br
+.ti -1c
+.RI "virtual void \fBRegisterForms\fP ()"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,99 @@
+.TH "Utils::vOption_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::vOption_C \- 
+.PP
+Definit la classe option des instruments simules\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <vOption_Sim_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvOption_C\fP ()"
+.br
+.RI "\fIConstructeur de la classe vOption_c\&. \fP"
+.ti -1c
+.RI "\fBvOption_C\fP (AnsiString name, AnsiString version)"
+.br
+.RI "\fIConstructeur surcharge de la classe \fBvOption_C\fP\&. \fP"
+.ti -1c
+.RI "AnsiString \fBgetName\fP ()"
+.br
+.RI "\fIRecupere le nom de l'instrument\&. \fP"
+.ti -1c
+.RI "void \fBsetName\fP (AnsiString name)"
+.br
+.RI "\fIFixe le nom de l'instrument\&. \fP"
+.ti -1c
+.RI "AnsiString \fBgetVersion\fP ()"
+.br
+.RI "\fIRecupere la version de l'instrument\&. \fP"
+.ti -1c
+.RI "void \fBsetVersion\fP (AnsiString version)"
+.br
+.RI "\fIFixe la version de l'instrument\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Definit la classe option des instruments simules\&. 
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::vOption_C::vOption_C\fP (AnsiStringname, AnsiStringversion)"
+
+.PP
+Constructeur surcharge de la classe \fBvOption_C\fP\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP name : Chaine de caractere indiquant le nom 
+.br
+\fIAnsiString\fP version : Chaine de caractere indiquant la version 
+.RE
+.PP
+
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "AnsiString \fBUtils::vOption_C::getName\fP ()"
+
+.PP
+Recupere le nom de l'instrument\&. \fBRenvoie:\fP
+.RS 4
+AnsiString name_m : nom de l'instrument 
+.RE
+.PP
+
+.SS "AnsiString \fBUtils::vOption_C::getVersion\fP ()"
+
+.PP
+Recupere la version de l'instrument\&. \fBRenvoie:\fP
+.RS 4
+AnsiString version_m : Chaine de caractere indiquant la version 
+.RE
+.PP
+
+.SS "void \fBUtils::vOption_C::setName\fP (AnsiStringname)"
+
+.PP
+Fixe le nom de l'instrument\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP name : Chaine de caractere indiquant le nom 
+.RE
+.PP
+
+.SS "void \fBUtils::vOption_C::setVersion\fP (AnsiStringversion)"
+
+.PP
+Fixe la version de l'instrument\&. \fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP version : Chaine de caractere indiquant la version 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

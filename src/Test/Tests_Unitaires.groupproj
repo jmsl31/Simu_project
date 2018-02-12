@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9831AC24-20AF-4E8C-A1FA-C876C4BB0797}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\simu_cpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Instrument\TU_simu_cpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Simulateur\SIMULATEUR.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\smtlib_cpp\src\smtlib_cpp10.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="simu_cpp">
+        <MSBuild Projects="..\..\simu_cpp.cbproj"/>
+    </Target>
+    <Target Name="simu_cpp:Clean">
+        <MSBuild Projects="..\..\simu_cpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="simu_cpp:Make">
+        <MSBuild Projects="..\..\simu_cpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="TU_simu_cpp">
+        <MSBuild Projects="Instrument\TU_simu_cpp.cbproj"/>
+    </Target>
+    <Target Name="TU_simu_cpp:Clean">
+        <MSBuild Projects="Instrument\TU_simu_cpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TU_simu_cpp:Make">
+        <MSBuild Projects="Instrument\TU_simu_cpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="SIMULATEUR">
+        <MSBuild Projects="Simulateur\SIMULATEUR.cbproj"/>
+    </Target>
+    <Target Name="SIMULATEUR:Clean">
+        <MSBuild Projects="Simulateur\SIMULATEUR.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SIMULATEUR:Make">
+        <MSBuild Projects="Simulateur\SIMULATEUR.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="smtlib_cpp10">
+        <MSBuild Projects="..\..\..\smtlib_cpp\src\smtlib_cpp10.cbproj"/>
+    </Target>
+    <Target Name="smtlib_cpp10:Clean">
+        <MSBuild Projects="..\..\..\smtlib_cpp\src\smtlib_cpp10.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="smtlib_cpp10:Make">
+        <MSBuild Projects="..\..\..\smtlib_cpp\src\smtlib_cpp10.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="simu_cpp;TU_simu_cpp;SIMULATEUR;smtlib_cpp10"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="simu_cpp:Clean;TU_simu_cpp:Clean;SIMULATEUR:Clean;smtlib_cpp10:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="simu_cpp:Make;TU_simu_cpp:Make;SIMULATEUR:Make;smtlib_cpp10:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

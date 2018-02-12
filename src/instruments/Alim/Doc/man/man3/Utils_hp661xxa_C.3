@@ -1,0 +1,244 @@
+.TH "Utils::hp661xxa_C" 3 "Fri Apr 14 2017" "Simulateur Banc" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::hp661xxa_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <hp661xxa_C\&.h>\fP
+.PP
+Inherits \fBvirtual_alimentation_C\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhp661xxa_C\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBrecvMessage\fP (std::string *message, int adr, GPIB_STATUS *status)"
+.br
+.RI "\fIReception du Message\&. \fP"
+.ti -1c
+.RI "\fBInitInstrumSimu\fP (int channel_i, int sub_channel_i=0)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBresetInstr\fP ()"
+.br
+.RI "\fIReset l'instrument\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetVoltLevel\fP (double voltLevel_V_i, int channel_i=0, int sub_channel_i=-1)"
+.br
+.RI "\fIDéclenche alim virtual void startAlim();\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetVoltLevel\fP (double *voltLevel_V_o, int channel_i=0, int sub_channel_i=-1)"
+.br
+.RI "\fILecture de la tension de sortie réelle\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetCurrLevel\fP (double currLevel_A_i, int channel_i=0, int sub_channel_i=-1)"
+.br
+.RI "\fIProgramme la tension de sortie désirée en mode Rampe\&. \fP"
+.ti -1c
+.RI "virtual void \fBgetCurrLevel\fP (double *currLevel_A_o, int channel_i=0, int sub_channel_i=-1)"
+.br
+.RI "\fILecture du courant de sortie réel\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBTrigDelay_m\fP"
+.br
+.ti -1c
+.RI "double \fBVoltage_m\fP"
+.br
+.ti -1c
+.RI "double \fBVolatgeRange_m\fP"
+.br
+.ti -1c
+.RI "double \fBProtVoltage_m\fP"
+.br
+.ti -1c
+.RI "double \fBTrigVoltage_m\fP"
+.br
+.ti -1c
+.RI "double \fBCurrent_m\fP"
+.br
+.ti -1c
+.RI "double \fBProtCurrent_m\fP"
+.br
+.ti -1c
+.RI "double \fBCurrentRange\fP"
+.br
+.ti -1c
+.RI "double \fBProtDFI\fP"
+.br
+.ti -1c
+.RI "int \fBchannel_m\fP"
+.br
+.ti -1c
+.RI "int \fBsub_channel_m\fP"
+.br
+.ti -1c
+.RI "std::string \fBName_m\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBUtils::hp661xxa_C::hp661xxa_C\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void \fBhp661xxa_C::getCurrLevel\fP (double *currLevel_A_o, intchannel_i = \fC0\fP, intsub_channel_i = \fC-1\fP)\fC [private, virtual]\fP"
+
+.PP
+Lecture du courant de sortie réel\&. \fBParameters:\fP
+.RS 4
+\fIcurrLevel_A_o\fP pointeur sur le courant de sortie actuel en ampères\&. 
+.RE
+.PP
+
+.PP
+Implements \fBvirtual_alimentation_C\fP\&.
+.SS "void \fBhp661xxa_C::getVoltLevel\fP (double *voltLevel_V_o, intchannel_i = \fC0\fP, intsub_channel_i = \fC-1\fP)\fC [private, virtual]\fP"
+
+.PP
+Lecture de la tension de sortie réelle\&. \fBParameters:\fP
+.RS 4
+\fIvoltLevel_V_o\fP pointeur sur la tension de sortie actuelle en volts\&. 
+.RE
+.PP
+
+.PP
+Implements \fBvirtual_alimentation_C\fP\&.
+.SS "\fBhp661xxa_C::InitInstrumSimu\fP (intchannel_i, intsub_channel_i = \fC0\fP)"
+
+.SS "void \fBhp661xxa_C::recvMessage\fP (std::string *message, intadr, GPIB_STATUS *status)\fC [virtual]\fP"
+
+.PP
+Reception du Message\&. \fBParameters:\fP
+.RS 4
+\fIstring\fP message : Message reçu\&. 
+.RE
+.PP
+
+.SS "void \fBhp661xxa_C::resetInstr\fP ()\fC [private, virtual]\fP"
+
+.PP
+Reset l'instrument\&. 
+.PP
+Implements \fBvirtual_alimentation_C\fP\&.
+.SS "void \fBhp661xxa_C::setCurrLevel\fP (doublecurrLevel_A_i, intchannel_i = \fC0\fP, intsub_channel_i = \fC-1\fP)\fC [private, virtual]\fP"
+
+.PP
+Programme la tension de sortie désirée en mode Rampe\&. \fBParameters:\fP
+.RS 4
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Lecture la tension de sortie désirée en mode Rampe\&. 
+.br
+\fIvoltLevel_V_i\fP paramètre d'entrée définissant la tension de sortie désirée en volts\&. Programe la protection en surtension de sortie à la valeur désirée\&. 
+.br
+\fIOVPLevel_V_i\fP paramètre d'entrée définissant la surtension de sortie maximum désirée en volts avant protection\&. Lecture de la valeur de surtension de sortie appliquée\&. 
+.br
+\fIOVPLevel_V_o\fP pointeur sur la surtension de sortie en volts avant activation de la protection\&. Programe la tension de trigger à la valeur désirée\&. 
+.br
+\fIvoltTrig_V_i\fP paramètre d'entrée définissant la tension de trigger désirée en volts\&. Lecture de la tension de trigger appliquée\&. 
+.br
+\fIvoltTrig_V_o\fP pointeur sur la tension de trigger en volts\&. Programe le courant de sortie désiré\&. 
+.br
+\fIcurrLevel_A_i\fP paramètre d'entrée définissant le courant de sortie désirée en ampères\&. 
+.RE
+.PP
+
+.PP
+Implements \fBvirtual_alimentation_C\fP\&.
+.SS "void \fBhp661xxa_C::setVoltLevel\fP (doublevoltLevel_V_i, intchannel_i = \fC0\fP, intsub_channel_i = \fC-1\fP)\fC [private, virtual]\fP"
+
+.PP
+Déclenche alim virtual void startAlim();\&. .PP
+.nf
+    /**Déclenche un trigger immédiat
+    virtual void startImmTrigger();
+
+    /**----------Trigger Source
+virtual void setTrigSrcBus();
+    /**Trigger Source Externe
+virtual void setTrigSrcExt();
+
+virtual void setTrigSrcHold();
+
+virtual void setTrigSrcTTLT();
+    /**Retourne le Trigger Source *
+virtual void getTrigSrc(char *trigSrc_o);
+
+    /**Initialise Trigger Delay
+virtual void setTrigDelay(double trigDelay_s_i);
+    /**Retourne Trigger Delay
+    virtual void getTrigDelay(double *trigDelay_s_o);.fi
+.PP
+ /*==================Trigger Out Signal======================================== virtual void setTTLTState(bool state_i = false);
+.PP
+virtual void getTTLTState(bool *state_o); 
+.PP
+.nf
+        /*----------TTLT source-----------------------------------------------
+
+.fi
+.PP
+ virtual void setTTLTSrcBus();
+.PP
+virtual void setTTLTSrcExt();
+.PP
+virtual void setTTLTSrcHold(); 
+.PP
+.nf
+virtual void getTTLTSrc(char *TTLTSrc_o);
+.fi
+.PP
+ /*==================Reset===================================================== virtual void \fBresetInstr()\fP;
+.PP
+/*==================Identification============================================ virtual void identInstr();
+.PP
+/*==================Gestion d'erreurs========================================= virtual void errorQuery(long *errorToTolerate_i = NULL, int nbError_i = 0);
+.PP
+/*==================Sortie on/off============================================= virtual void setOutputState(bool state_i = false, int channel_i = 0, int sub_channel_i = -1);
+.PP
+virtual void getOutputState(bool *state_o, int channel_i = 0, int sub_channel_i = -1);
+.PP
+/*==================Tension=================================================== 
+.PP
+Implements \fBvirtual_alimentation_C\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBUtils::hp661xxa_C::channel_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::Current_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::CurrentRange\fP\fC [private]\fP"
+
+.SS "std::string \fBUtils::hp661xxa_C::Name_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::ProtCurrent_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::ProtDFI\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::ProtVoltage_m\fP\fC [private]\fP"
+
+.SS "int \fBUtils::hp661xxa_C::sub_channel_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::TrigDelay_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::TrigVoltage_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::VolatgeRange_m\fP\fC [private]\fP"
+
+.SS "double \fBUtils::hp661xxa_C::Voltage_m\fP\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Simulateur Banc from the source code\&.

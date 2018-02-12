@@ -1,0 +1,30 @@
+// ---------------------------------------------------------------------------
+
+#ifndef SRxThreadH
+#define SRxThreadH
+// ---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include "Rx_C.h"
+
+// ---------------------------------------------------------------------------
+class SRxThread : public TThread {
+protected:
+
+	long stop_m;
+
+	void __fastcall Execute();
+	void __fastcall UpdateIhm();
+	void __fastcall Monitoring();
+	void __fastcall GentleStop();
+
+public:
+
+	__fastcall SRxThread(bool CreateSuspended);
+
+
+
+
+
+};
+// ---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,139 @@
+.TH "Utils::GpibObserver" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::GpibObserver \- 
+.PP
+definit la classe Observer GPIB \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GpibObserver\&.h>\fP
+.PP
+Dérivée par \fBUtils::ClientInterface\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~GpibObserver\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBchangeStatus\fP (\fBGPIB_STATUS\fP status)=0"
+.br
+.RI "\fIChange le Status du GPIB\&. \fP"
+.ti -1c
+.RI "virtual void \fBrecvMessage\fP (std::string message, int adr, \fBGPIB_STATUS\fP *status)=0"
+.br
+.RI "\fIReception du Message\&. \fP"
+.ti -1c
+.RI "virtual void \fBChangeConfiguration\fP ()=0"
+.br
+.RI "\fIdefini un changement de configuration\&. \fP"
+.ti -1c
+.RI "virtual void \fBChangeAdrPrimaire\fP (int Adr)=0"
+.br
+.RI "\fIdefini un changement de l'adresse primaire\&. \fP"
+.ti -1c
+.RI "virtual void \fBChangeAdrSecondaire\fP (int Adr)=0"
+.br
+.RI "\fIdefini un changement de l'adresse secondaire\&. \fP"
+.ti -1c
+.RI "virtual void \fBtimeoutRecvData\fP (double timeout=0)=0"
+.br
+.RI "\fIdefini le time Out du Reception\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+definit la classe Observer GPIB \&. 
+
+.PP
+.nf
+ \version : 1.0
+.fi
+.PP
+ 
+.PP
+\fBDate:\fP
+.RS 4
+: 29/03/2017 
+.RE
+.PP
+
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBUtils::GpibObserver::~GpibObserver\fP ()\fC [virtual]\fP"
+Destructeur de la classe\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "virtual void \fBUtils::GpibObserver::ChangeAdrPrimaire\fP (intAdr)\fC [pure virtual]\fP"
+
+.PP
+defini un changement de l'adresse primaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+.SS "virtual void \fBUtils::GpibObserver::ChangeAdrSecondaire\fP (intAdr)\fC [pure virtual]\fP"
+
+.PP
+defini un changement de l'adresse secondaire\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+.SS "virtual void \fBUtils::GpibObserver::ChangeConfiguration\fP ()\fC [pure virtual]\fP"
+
+.PP
+defini un changement de configuration\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+.SS "virtual void \fBUtils::GpibObserver::changeStatus\fP (\fBGPIB_STATUS\fPstatus)\fC [pure virtual]\fP"
+
+.PP
+Change le Status du GPIB\&. \fBParamètres:\fP
+.RS 4
+\fIstatus\fP : Statut du GPIB\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+.SS "virtual void \fBUtils::GpibObserver::recvMessage\fP (std::stringmessage, intadr, \fBGPIB_STATUS\fP *status)\fC [pure virtual]\fP"
+
+.PP
+Reception du Message\&. \fBParamètres:\fP
+.RS 4
+\fIstring\fP message : Message re�u\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+.SS "virtual void \fBUtils::GpibObserver::timeoutRecvData\fP (doubletimeout = \fC0\fP)\fC [pure virtual]\fP"
+
+.PP
+defini le time Out du Reception\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP timeout : Time Out de reception\&. 
+.RE
+.PP
+
+.PP
+Implémenté dans \fBUtils::ClientInterface\fP\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

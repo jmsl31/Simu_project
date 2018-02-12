@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{43F61FF7-33AF-454A-AF7E-AB09CF1197F8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\drivers_cpp\src\drivers_cpp10.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\simu_cpp.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="drivers_cpp10">
+        <MSBuild Projects="..\..\drivers_cpp\src\drivers_cpp10.cbproj"/>
+    </Target>
+    <Target Name="drivers_cpp10:Clean">
+        <MSBuild Projects="..\..\drivers_cpp\src\drivers_cpp10.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="drivers_cpp10:Make">
+        <MSBuild Projects="..\..\drivers_cpp\src\drivers_cpp10.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="simu_cpp">
+        <MSBuild Projects="..\simu_cpp.cbproj"/>
+    </Target>
+    <Target Name="simu_cpp:Clean">
+        <MSBuild Projects="..\simu_cpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="simu_cpp:Make">
+        <MSBuild Projects="..\simu_cpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="drivers_cpp10;simu_cpp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="drivers_cpp10:Clean;simu_cpp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="drivers_cpp10:Make;simu_cpp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

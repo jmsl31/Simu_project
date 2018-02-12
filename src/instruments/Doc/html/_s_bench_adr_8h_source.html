@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project:  Fichier source de C:/cpp/simu_cpp/src/instruments/SBenchAdr.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/cpp/simu_cpp/src/instruments/SBenchAdr.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef SBenchAdrH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define SBenchAdrH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#include &lt;Classes.hpp&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;io.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00017"></a><a class="code" href="struct_s_adrs_struct.html">00017</a> <span class="comment"></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{
+<a name="l00019"></a><a class="code" href="struct_s_adrs_struct.html#ac84dbce81d0e5a49247c2625a35d5f53">00019</a>         AnsiString DeviceName,
+<a name="l00021"></a>00021                            Address,
+<a name="l00023"></a>00023                            <a class="code" href="struct_s_adrs_struct.html#ac84dbce81d0e5a49247c2625a35d5f53" title="Chaine de caracteres contenant : Librairie utilisee.">Library</a>,
+<a name="l00025"></a>00025                            DeviceType,
+<a name="l00027"></a>00027                            FDescription,
+<a name="l00029"></a>00029                            Comment;
+<a name="l00031"></a><a class="code" href="struct_s_adrs_struct.html#a7bdf9a374029de98169bd1ad04c608c4">00031</a>         <span class="keywordtype">int</span> <a class="code" href="struct_s_adrs_struct.html#a7bdf9a374029de98169bd1ad04c608c4" title="Variable de type int : utilisation des instruments.">InUse</a>;
+<a name="l00032"></a>00032 } <a class="code" href="struct_s_adrs_struct.html" title="Structure des adresses.">SAdrsStruct</a>;
+<a name="l00033"></a>00033 
+<a name="l00036"></a>00036 <span class="keyword">typedef</span> DynamicArray &lt; SAdrsStruct &gt; SAdrsArray;
+<a name="l00039"></a>00039 <span class="keyword">typedef</span> DynamicArray &lt; AnsiString &gt; T1DStringArray;
+<a name="l00043"></a><a class="code" href="class_s_bench_adrs.html">00043</a> <span class="keyword">class </span><a class="code" href="class_s_bench_adrs.html" title="Classe des adresses de bancs.">SBenchAdrs</a>
+<a name="l00044"></a>00044 {
+<a name="l00045"></a>00045   <span class="keyword">private</span>:     
+<a name="l00046"></a><a class="code" href="class_s_bench_adrs.html#a86075a5d278fd95f2ec3d334ddbd2558">00046</a>         AnsiString <a class="code" href="class_s_bench_adrs.html#a86075a5d278fd95f2ec3d334ddbd2558" title="Nom de la section.">FSection</a>,
+<a name="l00048"></a>00048                            <a class="code" href="class_s_bench_adrs.html#a73dd01dc8d03fd4a4dd9051794586b4b" title="Nom du fichier.">FFileName</a>;
+<a name="l00049"></a>00049   <span class="keyword">public</span>:
+<a name="l00051"></a><a class="code" href="class_s_bench_adrs.html#a9405078331fbb937df4ccd16382d85fc">00051</a>         AnsiString <a class="code" href="class_s_bench_adrs.html#a9405078331fbb937df4ccd16382d85fc" title="Chaine de caracteres contenant : Titre.">Title</a>;
+<a name="l00053"></a><a class="code" href="class_s_bench_adrs.html#a476e5a5af0fba2fcbc451dcf572e37dd">00053</a>         SAdrsArray <a class="code" href="class_s_bench_adrs.html#a476e5a5af0fba2fcbc451dcf572e37dd" title="Chaine de caracteres contenant : Tableau d&#39;adresse.">AdrArray</a>;
+<a name="l00054"></a>00054 
+<a name="l00059"></a>00059         <a class="code" href="struct_s_adrs_struct.html" title="Structure des adresses.">SAdrsStruct</a>* <a class="code" href="class_s_bench_adrs.html#a4ba4407226478178dd367f9a250e04b0" title="Recherche l&#39;appareil dans la structure.">GetDevice</a>(AnsiString DeviceName);
+<a name="l00064"></a>00064         <a class="code" href="class_s_bench_adrs.html#a1ebb4896fd1062f557c87f34db499d66" title="Constructeur de la classe.">SBenchAdrs</a>(AnsiString AFileName, AnsiString ASection=<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00067"></a>00067         <span class="keywordtype">void</span> <a class="code" href="class_s_bench_adrs.html#afaad0c8ebe2b08dc5636c9adab90e18a" title="Fonction de sauvegarde.">Save</a>(<span class="keywordtype">void</span>);
+<a name="l00072"></a>00072         T1DStringArray <a class="code" href="class_s_bench_adrs.html#ab8c1d806c5f9ba5ce33ce0c97ae2355d" title="Cree un tableau de caractere separes par un separateur.">SepareTab</a>(AnsiString Str_i, AnsiString Separateur_i);
+<a name="l00073"></a>00073 };
+<a name="l00077"></a><a class="code" href="class_s_bench_adr_comp.html">00077</a> <span class="keyword">class </span><a class="code" href="class_s_bench_adr_comp.html" title="Classe des complements d&#39;adresse des bancs.">SBenchAdrComp</a>
+<a name="l00078"></a>00078 {
+<a name="l00079"></a>00079   <span class="keyword">private</span>:
+<a name="l00081"></a><a class="code" href="class_s_bench_adr_comp.html#a8e64cac25dadaa0709b55acfe3ab4d13">00081</a>         AnsiString <a class="code" href="class_s_bench_adr_comp.html#a8e64cac25dadaa0709b55acfe3ab4d13" title="Chaine de caracteres contenant : Section.">FSection</a>;
+<a name="l00083"></a><a class="code" href="class_s_bench_adr_comp.html#aa1fd0bfc09023c015a7bc7bd6fa7f76a">00083</a>         <a class="code" href="class_s_bench_adrs.html" title="Classe des adresses de bancs.">SBenchAdrs</a>* <a class="code" href="class_s_bench_adr_comp.html#aa1fd0bfc09023c015a7bc7bd6fa7f76a" title="Pointeur de type SBenchAdrs.">SBenchAdrFile</a>;
+<a name="l00084"></a>00084   <span class="keyword">protected</span>:
+<a name="l00086"></a><a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66">00086</a>         <span class="keywordtype">bool</span> <a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66" title="Variable de type bool caracterisant l&#39;etat.">FActive</a>;
+<a name="l00088"></a><a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441">00088</a>         AnsiString <a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441" title="Chaine de caracteres contenant : nom du fichier.">FFileName</a>;
+<a name="l00090"></a><a class="code" href="class_s_bench_adr_comp.html#ab3b23cb26404564932e81f246d8dc5e1">00090</a>         AnsiString <a class="code" href="class_s_bench_adr_comp.html#ab3b23cb26404564932e81f246d8dc5e1" title="Chaine de caracteres contenant : legende.">FCaption</a>;
+<a name="l00094"></a>00094         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall <a class="code" href="class_s_bench_adr_comp.html#a4efc7d7d6755549943ac0e72494bed2f" title="Fixe l&#39;activation de l&#39;instrument.">SetActive</a>(<span class="keywordtype">bool</span> AValue);
+<a name="l00098"></a>00098         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall <a class="code" href="class_s_bench_adr_comp.html#a4bfc0fa019ce48f001bc5aa3a9270e22" title="Fixe le nom du fichier.">SetFileName</a>(AnsiString AValue);
+<a name="l00102"></a>00102         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall <a class="code" href="class_s_bench_adr_comp.html#a8fbd289bffd82ca916eedd3a95f6bcdc" title="Fixe la section de l&#39;instrument.">SetSection</a>(AnsiString AValue);
+<a name="l00103"></a>00103   <span class="keyword">public</span>:
+<a name="l00105"></a>00105          <a class="code" href="class_s_bench_adr_comp.html#ae1e9751d19e2d5aef0a39c753b6a5811" title="Constructeur de la classe.">SBenchAdrComp</a>();
+<a name="l00107"></a>00107         <a class="code" href="class_s_bench_adr_comp.html#a86b3ed1c94cba719f527780295d8762e" title="Destructeur de la classe.">~SBenchAdrComp</a>();
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 
+<a name="l00113"></a>00113         T1DStringArray <a class="code" href="class_s_bench_adr_comp.html#ad7ce709f503d49eb8e975259c810c564" title="Methode qui permet de chercher dans le fichier baie.adr la liste des Devices associes a un type...">searchDevice</a>(AnsiString <a class="code" href="class_s_bench_adr_comp.html#a0a8aed6ac98cab0d4e2f5dd833bddebe" title="Propriete Section identifiant la rubrique du fichier.">Section</a>, AnsiString searchValue, <span class="keywordtype">bool</span> *valueFind);
+<a name="l00117"></a><a class="code" href="class_s_bench_adr_comp.html#abb39ed22afaef261cf29ce1dc0f7b742">00117</a>         __property <a class="code" href="class_s_bench_adrs.html" title="Classe des adresses de bancs.">SBenchAdrs</a>* <a class="code" href="class_s_bench_adr_comp.html#abb39ed22afaef261cf29ce1dc0f7b742" title="Propriete BenchAdrFile identifiant SBenchAdrFile.">BenchAdrFile</a> = {read=<a class="code" href="class_s_bench_adr_comp.html#aa1fd0bfc09023c015a7bc7bd6fa7f76a" title="Pointeur de type SBenchAdrs.">SBenchAdrFile</a>};
+<a name="l00120"></a><a class="code" href="class_s_bench_adr_comp.html#a876bd3aec865de4ac0aa44378fe81e4d">00120</a>         __property <span class="keywordtype">bool</span> <a class="code" href="class_s_bench_adr_comp.html#a876bd3aec865de4ac0aa44378fe81e4d" title="Propriete Active identifiant l&#39;activation de l&#39;equipement.">Active</a> = {read=<a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66" title="Variable de type bool caracterisant l&#39;etat.">FActive</a>, write=<a class="code" href="class_s_bench_adr_comp.html#a4efc7d7d6755549943ac0e72494bed2f" title="Fixe l&#39;activation de l&#39;instrument.">SetActive</a><span class="comment">/*, default=false*/</span>};
+<a name="l00124"></a><a class="code" href="class_s_bench_adr_comp.html#a3e0bc1b819b31dae831f943c6c133a4c">00124</a>         __property AnsiString <a class="code" href="class_s_bench_adr_comp.html#a3e0bc1b819b31dae831f943c6c133a4c" title="Propriete FileName identifiant le fichier.">FileName</a> = {read = <a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441" title="Chaine de caracteres contenant : nom du fichier.">FFileName</a>, write = <a class="code" href="class_s_bench_adr_comp.html#a4bfc0fa019ce48f001bc5aa3a9270e22" title="Fixe le nom du fichier.">SetFileName</a>};
+<a name="l00128"></a><a class="code" href="class_s_bench_adr_comp.html#a0a8aed6ac98cab0d4e2f5dd833bddebe">00128</a>     __property AnsiString <a class="code" href="class_s_bench_adr_comp.html#a0a8aed6ac98cab0d4e2f5dd833bddebe" title="Propriete Section identifiant la rubrique du fichier.">Section</a> = {read = <a class="code" href="class_s_bench_adr_comp.html#a8e64cac25dadaa0709b55acfe3ab4d13" title="Chaine de caracteres contenant : Section.">FSection</a>, write = <a class="code" href="class_s_bench_adr_comp.html#a8fbd289bffd82ca916eedd3a95f6bcdc" title="Fixe la section de l&#39;instrument.">SetSection</a>};
+<a name="l00129"></a>00129 };
+<a name="l00130"></a>00130 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 8 2017 10:35:13 pour My Project par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

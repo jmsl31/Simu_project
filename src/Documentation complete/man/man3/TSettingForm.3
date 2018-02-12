@@ -1,0 +1,61 @@
+.TH "TSettingForm" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TSettingForm \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBTSimuForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBcbxVclStylesChange\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBScpiSwitchClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBHttpSwitchClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBHttpPortLabelLinkClick\fP (TObject *Sender, const UnicodeString Link, TSysLinkType LinkType)"
+.br
+.ti -1c
+.RI "void __fastcall \fBChangeFormSwitchClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "void __fastcall \fBLockFormSwitchClick\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "__fastcall \fBTSettingForm\fP (TComponent *Owner)"
+.br
+.ti -1c
+.RI "virtual void \fBInit\fP (TBenchAdrComp *BenchAdr_i, AnsiString Section_i)"
+.br
+.ti -1c
+.RI "void \fBsetSettings\fP (int MainScpiPort_i, bool ScpiActive_i, int HttpPort_i, bool HttpActive_i, bool SwitchActive_i, bool LockActive_i)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TLabel * \fBlblVclStyle\fP"
+.br
+.ti -1c
+.RI "TComboBox * \fBcbxVclStyles\fP"
+.br
+.ti -1c
+.RI "TToggleSwitch * \fBLockFormSwitch\fP"
+.br
+.ti -1c
+.RI "__property TSettingsEvent \fBOnSettings\fP = {read = FOnSettings, write = FOnSettings}"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,844 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="classvirtual___r_f___c" kind="class" prot="public">
+    <compoundname>virtual_RF_C</compoundname>
+    <includes refid="virtual___r_f___c_8h" local="no">virtual_RF_C.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a076dd8eeec60b6619cfef4ce13f715e1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Start_In_m</definition>
+        <argsstring></argsstring>
+        <name>frequency_Start_In_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1ae6d3b2fdce70dcbc73d1f8101ae4f2eb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Stop_In_m</definition>
+        <argsstring></argsstring>
+        <name>frequency_Stop_In_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1aac8d9e82856335a15f3583165a744c17" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::bandwidth_m</definition>
+        <argsstring></argsstring>
+        <name>bandwidth_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1aa40e42ddeca4747a9e81f402405ed647" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::step_m</definition>
+        <argsstring></argsstring>
+        <name>step_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1abe10cc664f592bb7cbf47e7eebfeaea0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::power_m</definition>
+        <argsstring></argsstring>
+        <name>power_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a2dfb45ea10f7e634e55319514df468bb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Min</definition>
+        <argsstring></argsstring>
+        <name>frequency_Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1aa72387e37888ee635fb298478dce7eae" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Max</definition>
+        <argsstring></argsstring>
+        <name>frequency_Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="15" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1aba305abade5825d7c662bed679f85c57" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Start_Out_m</definition>
+        <argsstring></argsstring>
+        <name>frequency_Start_Out_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="16" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a744191630940374c0aba01618d62ce60" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::frequency_Stop_Out_m</definition>
+        <argsstring></argsstring>
+        <name>frequency_Stop_Out_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="16" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1abd7e1ee3d0a5f3ab2d903c10b27c07fc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::power_min</definition>
+        <argsstring></argsstring>
+        <name>power_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="17" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a46f1162208b282b134bc2b2203fb28bd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_RF_C::power_max</definition>
+        <argsstring></argsstring>
+        <name>power_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="17" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1af31a92a06591ea42e46c9d67c4272d15" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_RF_C::FActiveRF</definition>
+        <argsstring></argsstring>
+        <name>FActiveRF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="18" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a51e3497481fdf464a7158df877e62058" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_RF_C::FActivePower</definition>
+        <argsstring></argsstring>
+        <name>FActivePower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="18" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1adba3c60843f4cc57cb0a1354f98983be" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_RF_C::FOverload</definition>
+        <argsstring></argsstring>
+        <name>FOverload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="18" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvirtual___r_f___c_1aa1c0bb61e269834084bff564fed93be9" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Start_In</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Start_In</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a8f3a187c3eedfe6fc188df73a7deedfb" kindref="member">getFrequency_Start_In</ref>, write = <ref refid="classvirtual___r_f___c_1ae3b594f89f20a6f59eb580002a76d90e" kindref="member">setFrequency_Start_In</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="68" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1adbd657bfed979418e9baba3bf2acad54" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Stop_In</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Stop_In</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a0e84565066ebce9363018a69b499382b" kindref="member">getFrequency_Stop_In</ref>, write = <ref refid="classvirtual___r_f___c_1a570a1299af432f23561f8cd84fbf8ca5" kindref="member">setFrequency_Stop_In</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="69" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a0a6f90a516e7f0092d7b680f26ff4046" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Start_Out</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Start_Out</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a0338f6e31d64217a736b6ff2b65a1670" kindref="member">getFrequency_Start_Out</ref>, write = <ref refid="classvirtual___r_f___c_1aa43198ec6fc8ee6592bda2629b9d5213" kindref="member">setFrequency_Start_Out</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="70" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a178551e534240fa3752776d15827b396" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Stop_Out</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Stop_Out</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a2b443a85edde2d1521da7941b0605cba" kindref="member">getFrequency_Stop_Out</ref>, write = <ref refid="classvirtual___r_f___c_1a2e769b7b583f7aeed1f9bcc28816e376" kindref="member">setFrequency_Stop_Out</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="71" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a067af8ef71bc9bd692526eef7a99cf14" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Min</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Min</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1acc9b848e1dbd3c849ce88791a1eaaf8a" kindref="member">getFrequency_Min</ref>, write = <ref refid="classvirtual___r_f___c_1a56093f2b396c0289b50999a86adc3e5d" kindref="member">setFrequency_Min</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="72" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a62ecc7cb74f2c52cc181c4309593071a" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Frequency_Max</definition>
+        <argsstring></argsstring>
+        <name>Frequency_Max</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a1ed069bb6f5c7890964627e5b6f4d2a3" kindref="member">getFrequency_Max</ref>, write = <ref refid="classvirtual___r_f___c_1ad6699cf880574c4504edb072054b8b9a" kindref="member">setFrequency_Max</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="73" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a2833110b7df41da1e17fd4ceaf614d19" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Bandwidth</definition>
+        <argsstring></argsstring>
+        <name>Bandwidth</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1ae7f307eaddee27b8ceecf6eeb9b2fc26" kindref="member">getbandwidth</ref>, write = <ref refid="classvirtual___r_f___c_1ad6a5891df634c32b7d899315fd48d0d0" kindref="member">setbandwidth</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="74" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a10309966d163b7ab3848a18e57a081ff" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Step</definition>
+        <argsstring></argsstring>
+        <name>Step</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a5d7222325568d45245736a80dc286ff4" kindref="member">getstep</ref>, write = <ref refid="classvirtual___r_f___c_1a1c37515ed56132bb1a683f9e1d1e7f7f" kindref="member">setstep</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="75" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1af1802cdd2af3c0046c0f3cd99148583f" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Power</definition>
+        <argsstring></argsstring>
+        <name>Power</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a739758015e7a7d6763634819e0a191a4" kindref="member">getPower</ref>, write = <ref refid="classvirtual___r_f___c_1a25ebb3b14a7059265a82d840e20029d6" kindref="member">setPower</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="76" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a419563ccc61b5d9b0e519c52088f6f8b" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Power_Max</definition>
+        <argsstring></argsstring>
+        <name>Power_Max</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1af900749d18122ad63ccae2dc801283c8" kindref="member">getPower_Max</ref>, write = <ref refid="classvirtual___r_f___c_1a9e870fec204b1f7966ab01f48e226510" kindref="member">setPower_Max</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="77" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1abcfade6f1fb74842ceca5ab82be340f9" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_RF_C::Power_Min</definition>
+        <argsstring></argsstring>
+        <name>Power_Min</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1af4ed8a5ab03950dee465cb0eef9ab1ac" kindref="member">getPower_Min</ref>, write = <ref refid="classvirtual___r_f___c_1a9ca483cde23f46b55bcf6191c1141b94" kindref="member">setPower_Min</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="78" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1ae656ba5421d8abea5b41e672bf1789b0" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_RF_C::ActiveRF</definition>
+        <argsstring></argsstring>
+        <name>ActiveRF</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1af31a92a06591ea42e46c9d67c4272d15" kindref="member">FActiveRF</ref>, write = <ref refid="classvirtual___r_f___c_1af31a92a06591ea42e46c9d67c4272d15" kindref="member">FActiveRF</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="79" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a336ecd5a7e101170ef75642a83f4d8cd" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_RF_C::ActivePower</definition>
+        <argsstring></argsstring>
+        <name>ActivePower</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1a51e3497481fdf464a7158df877e62058" kindref="member">FActivePower</ref>, write = <ref refid="classvirtual___r_f___c_1a51e3497481fdf464a7158df877e62058" kindref="member">FActivePower</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="80" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual___r_f___c_1a389bac327ade1cada6c70880d176d94d" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_RF_C::Overload</definition>
+        <argsstring></argsstring>
+        <name>Overload</name>
+        <initializer> {read = <ref refid="classvirtual___r_f___c_1adba3c60843f4cc57cb0a1354f98983be" kindref="member">FOverload</ref>, write = <ref refid="classvirtual___r_f___c_1adba3c60843f4cc57cb0a1354f98983be" kindref="member">FOverload</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="81" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvirtual___r_f___c_1a8f3a187c3eedfe6fc188df73a7deedfb" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Start_In</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Start_In</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="22" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1ae3b594f89f20a6f59eb580002a76d90e" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Start_In</definition>
+        <argsstring>(double fq_start_i)</argsstring>
+        <name>setFrequency_Start_In</name>
+        <param>
+          <type>double</type>
+          <declname>fq_start_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="23" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a0e84565066ebce9363018a69b499382b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Stop_In</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Stop_In</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="24" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a570a1299af432f23561f8cd84fbf8ca5" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Stop_In</definition>
+        <argsstring>(double fq_stop_i)</argsstring>
+        <name>setFrequency_Stop_In</name>
+        <param>
+          <type>double</type>
+          <declname>fq_stop_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="25" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a0338f6e31d64217a736b6ff2b65a1670" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Start_Out</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Start_Out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="26" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1aa43198ec6fc8ee6592bda2629b9d5213" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Start_Out</definition>
+        <argsstring>(double fq_start_i)</argsstring>
+        <name>setFrequency_Start_Out</name>
+        <param>
+          <type>double</type>
+          <declname>fq_start_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="27" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="66" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a2b443a85edde2d1521da7941b0605cba" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Stop_Out</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Stop_Out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="28" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a2e769b7b583f7aeed1f9bcc28816e376" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Stop_Out</definition>
+        <argsstring>(double fq_stop_i)</argsstring>
+        <name>setFrequency_Stop_Out</name>
+        <param>
+          <type>double</type>
+          <declname>fq_stop_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="29" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="83" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1acc9b848e1dbd3c849ce88791a1eaaf8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Min</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="31" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a56093f2b396c0289b50999a86adc3e5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Min</definition>
+        <argsstring>(double fq_min_i)</argsstring>
+        <name>setFrequency_Min</name>
+        <param>
+          <type>double</type>
+          <declname>fq_min_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="32" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a1ed069bb6f5c7890964627e5b6f4d2a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getFrequency_Max</definition>
+        <argsstring>()</argsstring>
+        <name>getFrequency_Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="33" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1ad6699cf880574c4504edb072054b8b9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setFrequency_Max</definition>
+        <argsstring>(double fq_max_i)</argsstring>
+        <name>setFrequency_Max</name>
+        <param>
+          <type>double</type>
+          <declname>fq_max_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="34" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1ae7f307eaddee27b8ceecf6eeb9b2fc26" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getbandwidth</definition>
+        <argsstring>()</argsstring>
+        <name>getbandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="36" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1ad6a5891df634c32b7d899315fd48d0d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setbandwidth</definition>
+        <argsstring>(double bandwidth_i)</argsstring>
+        <name>setbandwidth</name>
+        <param>
+          <type>double</type>
+          <declname>bandwidth_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="37" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="99" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a5d7222325568d45245736a80dc286ff4" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getstep</definition>
+        <argsstring>()</argsstring>
+        <name>getstep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="38" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a1c37515ed56132bb1a683f9e1d1e7f7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setstep</definition>
+        <argsstring>(double step_i)</argsstring>
+        <name>setstep</name>
+        <param>
+          <type>double</type>
+          <declname>step_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="39" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a739758015e7a7d6763634819e0a191a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getPower</definition>
+        <argsstring>()</argsstring>
+        <name>getPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="42" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a25ebb3b14a7059265a82d840e20029d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setPower</definition>
+        <argsstring>(double power_i)</argsstring>
+        <name>setPower</name>
+        <param>
+          <type>double</type>
+          <declname>power_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="43" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="123" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1af4ed8a5ab03950dee465cb0eef9ab1ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getPower_Min</definition>
+        <argsstring>()</argsstring>
+        <name>getPower_Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="44" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a9ca483cde23f46b55bcf6191c1141b94" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setPower_Min</definition>
+        <argsstring>(double power_min_i)</argsstring>
+        <name>setPower_Min</name>
+        <param>
+          <type>double</type>
+          <declname>power_min_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="45" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1af900749d18122ad63ccae2dc801283c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_RF_C::getPower_Max</definition>
+        <argsstring>()</argsstring>
+        <name>getPower_Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="46" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a9e870fec204b1f7966ab01f48e226510" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::setPower_Max</definition>
+        <argsstring>(double power_max_i)</argsstring>
+        <name>setPower_Max</name>
+        <param>
+          <type>double</type>
+          <declname>power_max_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="47" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="147" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvirtual___r_f___c_1a597ed6b637c8ed976a68948488ff5904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_RF_C::virtual_RF_C</definition>
+        <argsstring>()</argsstring>
+        <name>virtual_RF_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="57" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual___r_f___c_1a46a550b9fa08d7d42b5bd99ca6f76495" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_RF_C::initTranche</definition>
+        <argsstring>(double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max)</argsstring>
+        <name>initTranche</name>
+        <param>
+          <type>double</type>
+          <declname>fq_start_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fq_stop_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bandwidth_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>power_max</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frequency_min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frequency_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="63" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.cpp" bodystart="19" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" line="10" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_RF_C.h" bodystart="10" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classvirtual___r_f___c_1a336ecd5a7e101170ef75642a83f4d8cd" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>ActivePower</name></member>
+      <member refid="classvirtual___r_f___c_1ae656ba5421d8abea5b41e672bf1789b0" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>ActiveRF</name></member>
+      <member refid="classvirtual___r_f___c_1a2833110b7df41da1e17fd4ceaf614d19" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Bandwidth</name></member>
+      <member refid="classvirtual___r_f___c_1aac8d9e82856335a15f3583165a744c17" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>bandwidth_m</name></member>
+      <member refid="classvirtual___r_f___c_1a51e3497481fdf464a7158df877e62058" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>FActivePower</name></member>
+      <member refid="classvirtual___r_f___c_1af31a92a06591ea42e46c9d67c4272d15" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>FActiveRF</name></member>
+      <member refid="classvirtual___r_f___c_1adba3c60843f4cc57cb0a1354f98983be" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>FOverload</name></member>
+      <member refid="classvirtual___r_f___c_1a62ecc7cb74f2c52cc181c4309593071a" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Max</name></member>
+      <member refid="classvirtual___r_f___c_1aa72387e37888ee635fb298478dce7eae" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Max</name></member>
+      <member refid="classvirtual___r_f___c_1a067af8ef71bc9bd692526eef7a99cf14" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Min</name></member>
+      <member refid="classvirtual___r_f___c_1a2dfb45ea10f7e634e55319514df468bb" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Min</name></member>
+      <member refid="classvirtual___r_f___c_1aa1c0bb61e269834084bff564fed93be9" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Start_In</name></member>
+      <member refid="classvirtual___r_f___c_1a076dd8eeec60b6619cfef4ce13f715e1" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Start_In_m</name></member>
+      <member refid="classvirtual___r_f___c_1a0a6f90a516e7f0092d7b680f26ff4046" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Start_Out</name></member>
+      <member refid="classvirtual___r_f___c_1aba305abade5825d7c662bed679f85c57" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Start_Out_m</name></member>
+      <member refid="classvirtual___r_f___c_1adbd657bfed979418e9baba3bf2acad54" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Stop_In</name></member>
+      <member refid="classvirtual___r_f___c_1ae6d3b2fdce70dcbc73d1f8101ae4f2eb" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Stop_In_m</name></member>
+      <member refid="classvirtual___r_f___c_1a178551e534240fa3752776d15827b396" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Frequency_Stop_Out</name></member>
+      <member refid="classvirtual___r_f___c_1a744191630940374c0aba01618d62ce60" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>frequency_Stop_Out_m</name></member>
+      <member refid="classvirtual___r_f___c_1ae7f307eaddee27b8ceecf6eeb9b2fc26" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getbandwidth</name></member>
+      <member refid="classvirtual___r_f___c_1a1ed069bb6f5c7890964627e5b6f4d2a3" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Max</name></member>
+      <member refid="classvirtual___r_f___c_1acc9b848e1dbd3c849ce88791a1eaaf8a" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Min</name></member>
+      <member refid="classvirtual___r_f___c_1a8f3a187c3eedfe6fc188df73a7deedfb" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Start_In</name></member>
+      <member refid="classvirtual___r_f___c_1a0338f6e31d64217a736b6ff2b65a1670" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Start_Out</name></member>
+      <member refid="classvirtual___r_f___c_1a0e84565066ebce9363018a69b499382b" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Stop_In</name></member>
+      <member refid="classvirtual___r_f___c_1a2b443a85edde2d1521da7941b0605cba" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getFrequency_Stop_Out</name></member>
+      <member refid="classvirtual___r_f___c_1a739758015e7a7d6763634819e0a191a4" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getPower</name></member>
+      <member refid="classvirtual___r_f___c_1af900749d18122ad63ccae2dc801283c8" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getPower_Max</name></member>
+      <member refid="classvirtual___r_f___c_1af4ed8a5ab03950dee465cb0eef9ab1ac" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getPower_Min</name></member>
+      <member refid="classvirtual___r_f___c_1a5d7222325568d45245736a80dc286ff4" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>getstep</name></member>
+      <member refid="classvirtual___r_f___c_1a46a550b9fa08d7d42b5bd99ca6f76495" prot="public" virt="virtual"><scope>virtual_RF_C</scope><name>initTranche</name></member>
+      <member refid="classvirtual___r_f___c_1a389bac327ade1cada6c70880d176d94d" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Overload</name></member>
+      <member refid="classvirtual___r_f___c_1af1802cdd2af3c0046c0f3cd99148583f" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Power</name></member>
+      <member refid="classvirtual___r_f___c_1abe10cc664f592bb7cbf47e7eebfeaea0" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>power_m</name></member>
+      <member refid="classvirtual___r_f___c_1a46f1162208b282b134bc2b2203fb28bd" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>power_max</name></member>
+      <member refid="classvirtual___r_f___c_1a419563ccc61b5d9b0e519c52088f6f8b" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Power_Max</name></member>
+      <member refid="classvirtual___r_f___c_1abd7e1ee3d0a5f3ab2d903c10b27c07fc" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>power_min</name></member>
+      <member refid="classvirtual___r_f___c_1abcfade6f1fb74842ceca5ab82be340f9" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Power_Min</name></member>
+      <member refid="classvirtual___r_f___c_1ad6a5891df634c32b7d899315fd48d0d0" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setbandwidth</name></member>
+      <member refid="classvirtual___r_f___c_1ad6699cf880574c4504edb072054b8b9a" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Max</name></member>
+      <member refid="classvirtual___r_f___c_1a56093f2b396c0289b50999a86adc3e5d" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Min</name></member>
+      <member refid="classvirtual___r_f___c_1ae3b594f89f20a6f59eb580002a76d90e" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Start_In</name></member>
+      <member refid="classvirtual___r_f___c_1aa43198ec6fc8ee6592bda2629b9d5213" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Start_Out</name></member>
+      <member refid="classvirtual___r_f___c_1a570a1299af432f23561f8cd84fbf8ca5" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Stop_In</name></member>
+      <member refid="classvirtual___r_f___c_1a2e769b7b583f7aeed1f9bcc28816e376" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setFrequency_Stop_Out</name></member>
+      <member refid="classvirtual___r_f___c_1a25ebb3b14a7059265a82d840e20029d6" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setPower</name></member>
+      <member refid="classvirtual___r_f___c_1a9e870fec204b1f7966ab01f48e226510" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setPower_Max</name></member>
+      <member refid="classvirtual___r_f___c_1a9ca483cde23f46b55bcf6191c1141b94" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setPower_Min</name></member>
+      <member refid="classvirtual___r_f___c_1a1c37515ed56132bb1a683f9e1d1e7f7f" prot="private" virt="virtual"><scope>virtual_RF_C</scope><name>setstep</name></member>
+      <member refid="classvirtual___r_f___c_1a10309966d163b7ab3848a18e57a081ff" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>Step</name></member>
+      <member refid="classvirtual___r_f___c_1aa40e42ddeca4747a9e81f402405ed647" prot="private" virt="non-virtual"><scope>virtual_RF_C</scope><name>step_m</name></member>
+      <member refid="classvirtual___r_f___c_1a597ed6b637c8ed976a68948488ff5904" prot="public" virt="non-virtual"><scope>virtual_RF_C</scope><name>virtual_RF_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

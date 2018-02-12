@@ -1,0 +1,4 @@
+// Scanario example
+TC_CAS	0	12	12
+TC_CAS2	0	12	13	100	12	13
+TC_ADR	8

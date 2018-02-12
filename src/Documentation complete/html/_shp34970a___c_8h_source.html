@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/instruments/Multimeters/Shp34970a_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/instruments/Multimeters/Shp34970a_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef Shp34970a_CH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define Shp34970a_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#define HP34970A_BUFFER_LENGTH      1024</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span><span class="preprocessor">#define HP34970A_MESSAGE_LENGTH     256</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define HP34970A_IDENT              &quot;HEWLETT-PACKARD,34970A&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#define HP34972A_IDENT              &quot;Agilent Technologies,34972A&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define HP34970A_NOERROR            &quot;+0,&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;virtual_multimeters_C.h&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="class_shp34970a___c.html">00017</a> <span class="keyword">class </span><a class="code" href="class_shp34970a___c.html">Shp34970a_C</a> : <span class="keyword">public</span> <a class="code" href="classvirtual__multimeters___c.html">virtual_multimeters_C</a> {
+<a name="l00018"></a>00018 <span class="keyword">private</span>:
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021         <span class="keyword">virtual</span> <span class="keywordtype">void</span> resetInstr();
+<a name="l00022"></a>00022         <span class="keyword">virtual</span> std::string identInstr();
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026         <a class="code" href="class_shp34970a___c.html">Shp34970a_C</a>() : <a class="code" href="classvirtual__multimeters___c.html#a6ad18936bc7a5a8501340e86c1547f1f">virtual_multimeters_C</a>() {
+<a name="l00027"></a>00027                 this-&gt;resetInstr();
+<a name="l00028"></a>00028         };
+<a name="l00029"></a>00029         <span class="keyword">virtual</span> <span class="keywordtype">void</span> errorQuery(<span class="keywordtype">long</span> *errorToTolerate_i = NULL, <span class="keywordtype">int</span> nbError_i = 0);
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031         <span class="comment">/* ==================Méthodes de la classe virtual_multimeters_C=============== */</span>
+<a name="l00032"></a>00032         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#a5934978b7c16c9bdb1b51208895b79d7">getDcVolt</a>();
+<a name="l00033"></a>00033         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#a09207801a14482b04283c352c555d4cb">getAcVolt</a>();
+<a name="l00034"></a>00034         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#adc532498d97414d2bcae65939647f2f7">getDcAmp</a>();
+<a name="l00035"></a>00035         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#aeace180a1d8ce40cab18eea31158e8f0">getAcAmp</a>();
+<a name="l00036"></a>00036         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#a38341b0f60cd35de61638150ec3084cf">getOhm</a>();
+<a name="l00037"></a>00037         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#aeeb5f7a8e718686f9a73c2dacbe59b60">getOhm_FourWire</a>();
+<a name="l00038"></a>00038         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#addaf402d5ffcfb3012ad5fec3ff5ebcf">getFreq</a>();
+<a name="l00039"></a>00039         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#aa881de4c8bf172d5276e32e2e0441a1a">getFreqMon</a>();
+<a name="l00040"></a>00040         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#a56e123bdb4646d19ba9f2119dcbd8dfc">getTemp</a>();
+<a name="l00041"></a>00041         <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_shp34970a___c.html#a0b88dc8d52c26014db5a61dc2dff9da5">getPower</a>();
+<a name="l00042"></a>00042         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getAverage();
+<a name="l00043"></a>00043         <span class="keyword">virtual</span> std::string getError();
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setDcVolt(<span class="keywordtype">double</span> DcVolt_i);
+<a name="l00046"></a>00046         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setAcVolt(<span class="keywordtype">double</span> AcVolt_i);
+<a name="l00047"></a>00047         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setDcAmp(<span class="keywordtype">double</span> DcAmp_i);
+<a name="l00048"></a>00048         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setAcAmp(<span class="keywordtype">double</span> AcAmp_i);
+<a name="l00049"></a>00049         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setOhm(<span class="keywordtype">double</span> Ohm_i);
+<a name="l00050"></a>00050         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setOhm_FourWire(<span class="keywordtype">double</span> Ohm_i);
+<a name="l00051"></a>00051         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setFreq(<span class="keywordtype">double</span> Freq_i);
+<a name="l00052"></a>00052         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setFreqMon(<span class="keywordtype">double</span> Freq_i);
+<a name="l00053"></a>00053         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setTemp(<span class="keywordtype">double</span> Temp_i);
+<a name="l00054"></a>00054         <span class="keyword">virtual</span> <span class="keywordtype">double</span> setPower(<span class="keywordtype">double</span> Power_dbm_i);
+<a name="l00055"></a>00055         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAverage(<span class="keywordtype">int</span> Average_i);
+<a name="l00056"></a>00056         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setError(std::string error_i); std::string <a class="code" href="class_shp34970a___c.html#ad99a1db7979b563d5c3772fd795df467" title="Reception du Message. Fonction virtualle abstraite.">recvMessage</a>(std::string message, <span class="keywordtype">int</span> adr, GPIB_BUSDATA * status); <span class="keywordtype">void</span> <a class="code" href="class_shp34970a___c.html#ab068c8a3d9037e854e41989807bc0890" title="defini un changement de configuration.">ChangeConfiguration</a>(); <span class="keywordtype">void</span> <a class="code" href="class_shp34970a___c.html#a12873fc6d5109ad9685d5ffea4fa92a9" title="defini un changement de l&#39;adresse primaire.">ChangeAdrPrimaire</a>(<span class="keywordtype">int</span> Adr); <span class="keywordtype">void</span> <a class="code" href="class_shp34970a___c.html#a2c3aa9bc509b55f294333726b6f365fc" title="defini un changement de l&#39;adresse secondaire.">ChangeAdrSecondaire</a>(<span class="keywordtype">int</span> Adr); <span class="keywordtype">void</span> <a class="code" href="class_shp34970a___c.html#a5a5a07e38c97d0abcb973f143b7d3f7b" title="defini le time Out du Reception.">timeoutRecvData</a>(<span class="keywordtype">double</span> timeout = 0);
+<a name="l00079"></a>00079 };
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:39 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

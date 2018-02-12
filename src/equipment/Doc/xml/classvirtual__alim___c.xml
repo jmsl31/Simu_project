@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="classvirtual__alim___c" kind="class" prot="public">
+    <compoundname>virtual_alim_C</compoundname>
+    <includes refid="virtual__alim___c_8h" local="no">virtual_alim_C.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvirtual__alim___c_1a0a588dbd698c4a9e745e6b77aa498545" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_alim_C::voltage_m</definition>
+        <argsstring></argsstring>
+        <name>voltage_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="20" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1ac3952b2858641365e78c6a66f7a17dd7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_alim_C::current_m</definition>
+        <argsstring></argsstring>
+        <name>current_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="20" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a4ce2e626e346df3d2811db21ced9cc5e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_alim_C::protVoltage_m</definition>
+        <argsstring></argsstring>
+        <name>protVoltage_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="20" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1acdfe8ca14d43726cf258fde4ff34c574" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_alim_C::protcurrent_m</definition>
+        <argsstring></argsstring>
+        <name>protcurrent_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="20" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a34e9ffe2fd06b77f0d4ecbd643233b1a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double virtual_alim_C::puissance_m</definition>
+        <argsstring></argsstring>
+        <name>puissance_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="20" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1aae960cd7759b894efe24246f918d4e5e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_alim_C::FProtectedVoltage</definition>
+        <argsstring></argsstring>
+        <name>FProtectedVoltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="21" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a55202c6c831caa03bcaa5c61cc103987" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool virtual_alim_C::FProtectedCurrent</definition>
+        <argsstring></argsstring>
+        <name>FProtectedCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="21" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvirtual__alim___c_1a6bd9d63b4d35501202b3f53b57f19e08" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_alim_C::Voltage</definition>
+        <argsstring></argsstring>
+        <name>Voltage</name>
+        <initializer> {read = <ref refid="classvirtual__alim___c_1a9f0abcd7f10dd4538869f501ad4e1b2b" kindref="member">getVoltage</ref>, write = <ref refid="classvirtual__alim___c_1a5666a9e4c3038054d7abf501e1759c32" kindref="member">setVoltage</ref>}</initializer>
+        <briefdescription>
+<para>proprieté <emphasis>Voltage</emphasis> de l&apos;objet virtual_Alim . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="129" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a300060a886d0628ad4175d51eedab44e" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_alim_C::Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <initializer> {read = <ref refid="classvirtual__alim___c_1a12abdda3b415bf2ab2009e6bed855eb3" kindref="member">getCurrent</ref>, write = <ref refid="classvirtual__alim___c_1aa96f92a7d03fcab9f5ac71348e4564b7" kindref="member">setCurrent</ref>}</initializer>
+        <briefdescription>
+<para>proprieté <emphasis>Current</emphasis> de l&apos;objet virtual_Alim . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="133" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a41a37be4ccc4cfd9df0bcd6eaf3b1f66" prot="public" static="no" mutable="no">
+        <type>__property double</type>
+        <definition>__property double virtual_alim_C::Puissance</definition>
+        <argsstring></argsstring>
+        <name>Puissance</name>
+        <initializer> {read = <ref refid="classvirtual__alim___c_1a3fe04b47079eac9e5f293366faa67ff2" kindref="member">getPuissance</ref>, write = <ref refid="classvirtual__alim___c_1aff2b06f4ca06e918792eba6dcac6ddbb" kindref="member">setPuissance</ref>}</initializer>
+        <briefdescription>
+<para>proprieté <emphasis>Puissance</emphasis> de l&apos;objet virtual_Alim . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="137" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a09fe0a27b4ace14525f0ee56eab16fa2" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_alim_C::ProtectedVoltage</definition>
+        <argsstring></argsstring>
+        <name>ProtectedVoltage</name>
+        <initializer> {read = <ref refid="classvirtual__alim___c_1aae960cd7759b894efe24246f918d4e5e" kindref="member">FProtectedVoltage</ref>, write = <ref refid="classvirtual__alim___c_1aae960cd7759b894efe24246f918d4e5e" kindref="member">FProtectedVoltage</ref>}</initializer>
+        <briefdescription>
+<para>proprieté <emphasis>Registre</emphasis> Protection en Tension de l&apos;objet virtual_Alim . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="142" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvirtual__alim___c_1a26fa35106f5f7879f6dc5cf21a6c331b" prot="public" static="no" mutable="no">
+        <type>__property bool</type>
+        <definition>__property bool virtual_alim_C::ProtectedCurrent</definition>
+        <argsstring></argsstring>
+        <name>ProtectedCurrent</name>
+        <initializer> {read = <ref refid="classvirtual__alim___c_1a55202c6c831caa03bcaa5c61cc103987" kindref="member">FProtectedCurrent</ref>, write = <ref refid="classvirtual__alim___c_1a55202c6c831caa03bcaa5c61cc103987" kindref="member">FProtectedCurrent</ref>}</initializer>
+        <briefdescription>
+<para>proprieté <emphasis>Registre</emphasis> Protection en Courant de l&apos;objet virtual_Alim . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="146" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvirtual__alim___c_1a9f0abcd7f10dd4538869f501ad4e1b2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_alim_C::getVoltage</definition>
+        <argsstring>()</argsstring>
+        <name>getVoltage</name>
+        <briefdescription>
+<para>Recupere la tension de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere la tension instantanée de l&apos;equipement. Si la tension est superieur à la tension de protection de l&apos;equipement. la valeur de la tension sera etabli à 0 et le registre <emphasis>FProtectedVoltage</emphasis> sera activé à <emphasis>true</emphasis>. Sinon la valeur de la tension instantanée de l&apos;equipement sera retourné. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant la tension instantanée. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="34" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="30" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a5666a9e4c3038054d7abf501e1759c32" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::setVoltage</definition>
+        <argsstring>(double voltage_i)</argsstring>
+        <name>setVoltage</name>
+        <param>
+          <type>double</type>
+          <declname>voltage_i</declname>
+        </param>
+        <briefdescription>
+<para>Configure la tension de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configure la tension de l&apos;equipement. Si la tension est superieur à la tension de protection de l&apos;equipement ou que le registre <emphasis>FProtectedVoltage</emphasis> est activé. la valeur de la tension sera etabli à 0. Sinon la valeur de la tension instantanée de l&apos;equipement sera configuré. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voltage_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La valeur du courant. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="43" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="40" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a12abdda3b415bf2ab2009e6bed855eb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_alim_C::getCurrent</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrent</name>
+        <briefdescription>
+<para>Recupere le courant de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere le courant instantanée de l&apos;equipement. Si le courant est superieur au courant de protection de l&apos;equipement. la valeur du courant sera etabli à 0 et le registre <emphasis>FProtectedCurrent</emphasis> sera activé à <emphasis>true</emphasis>. Sinon la valeur du courant instantanée de l&apos;equipement sera retourné. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant le courant instantanée. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="52" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1aa96f92a7d03fcab9f5ac71348e4564b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::setCurrent</definition>
+        <argsstring>(double current_i)</argsstring>
+        <name>setCurrent</name>
+        <param>
+          <type>double</type>
+          <declname>current_i</declname>
+        </param>
+        <briefdescription>
+<para>Configure le courant de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configure le courant de l&apos;equipement. Si le courant est superieur au courant de protection de l&apos;equipement ou que le registre <emphasis>FProtectedVoltage</emphasis> est activé. ou que le registre <emphasis>FProtectedCurrent</emphasis> est activé. la valeur du courant sera etabli à 0. Sinon la valeur du courant instantanée de l&apos;equipement sera configuré. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La valeur du courant. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="63" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="81" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a0a5d28f6afe2edde9ee4488fda49d1b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_alim_C::getProtVoltage</definition>
+        <argsstring>()</argsstring>
+        <name>getProtVoltage</name>
+        <briefdescription>
+<para>Recupere la tension de protection de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere la tension de protection de l&apos;equipement. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant la tension de protection. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="69" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a186a40002b82a4737d1497e06b25a01a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::setProtVoltage</definition>
+        <argsstring>(double ProtVoltage_i)</argsstring>
+        <name>setProtVoltage</name>
+        <param>
+          <type>double</type>
+          <declname>ProtVoltage_i</declname>
+        </param>
+        <briefdescription>
+<para>Configure la tension de protection de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configure la tension de protection de l&apos;equipement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProtVoltage_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la avleur de la tension de protection de l&apos;equipement. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="75" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a37e18fe9b24cad4dc3e5ced71df8c6ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_alim_C::getProtCurrent</definition>
+        <argsstring>()</argsstring>
+        <name>getProtCurrent</name>
+        <briefdescription>
+<para>Recupere le courant de protection de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere le courant de protection de l&apos;equipement. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant le courant de protection. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="81" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1afc2bcf20bc6ff249aa98bfc4f3515a83" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::setProtCurrent</definition>
+        <argsstring>(double ProtCurrent_i)</argsstring>
+        <name>setProtCurrent</name>
+        <param>
+          <type>double</type>
+          <declname>ProtCurrent_i</declname>
+        </param>
+        <briefdescription>
+<para>Configure le courant de protection de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configure le courant de protection de l&apos;equipement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProtCurrent_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la avleur de la tension de protection de l&apos;equipement. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="87" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a3fe04b47079eac9e5f293366faa67ff2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double virtual_alim_C::getPuissance</definition>
+        <argsstring>()</argsstring>
+        <name>getPuissance</name>
+        <briefdescription>
+<para>Recupere la puissance instantanée de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Recupere la puissance instantanée de l&apos;equipement. <simplesect kind="return"><para>Un <emphasis>double</emphasis> representant la puissance instantanée </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="93" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1aff2b06f4ca06e918792eba6dcac6ddbb" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::setPuissance</definition>
+        <argsstring>()</argsstring>
+        <name>setPuissance</name>
+        <briefdescription>
+<para>Calcul la puissance instantanée de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calcul la puissance instantanée de l&apos;equipement. Si les registres de protection <emphasis>FProtectedVoltage</emphasis> &amp; <emphasis>FProtectedCurrent</emphasis> sont activé *Alors la puissance renseignée sera egale à 0. *Sinon la puissance sera egale à <emphasis>voltage_i</emphasis> * <emphasis>current_i</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="101" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="63" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvirtual__alim___c_1a51659cf279e162ca3217ab58d8952874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_alim_C::virtual_alim_C</definition>
+        <argsstring>()</argsstring>
+        <name>virtual_alim_C</name>
+        <briefdescription>
+<para>RConstructeur de la Classe virtual_Alim_C. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="110" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a4e4ba81b0d47560bb5c0a8af9643d915" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void virtual_alim_C::initAlim</definition>
+        <argsstring>(double voltage_i, double current_i, double protVoltage_i, double protcurrent_i)</argsstring>
+        <name>initAlim</name>
+        <param>
+          <type>double</type>
+          <declname>voltage_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>current_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>protVoltage_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>protcurrent_i</declname>
+        </param>
+        <briefdescription>
+<para>Initialise la tranche Alim de l&apos;equipement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initialise la tranche Alim de l&apos;equipement. param <emphasis>voltage_i</emphasis> tension de l&apos;equipement. param <emphasis>current_i</emphasis> courant de l&apos;equipement. param <emphasis>protVoltage_i</emphasis> protection de la tension de l&apos;equipement. param <emphasis>protcurrent_i</emphasis> protection du courant de l&apos;equipement.</para><para><simplesect kind="return"><para>Un <emphasis>double</emphasis> representant la tension instantanée. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="122" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classvirtual__alim___c_1a60f0f83652ab04d40530ef633fa4d662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>virtual_alim_C::~virtual_alim_C</definition>
+        <argsstring>()</argsstring>
+        <name>~virtual_alim_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="123" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" line="16" bodyfile="D:/cpp/simu_cpp/src/equipment/virtual_alim_C.h" bodystart="16" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classvirtual__alim___c_1a300060a886d0628ad4175d51eedab44e" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>Current</name></member>
+      <member refid="classvirtual__alim___c_1ac3952b2858641365e78c6a66f7a17dd7" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>current_m</name></member>
+      <member refid="classvirtual__alim___c_1a55202c6c831caa03bcaa5c61cc103987" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>FProtectedCurrent</name></member>
+      <member refid="classvirtual__alim___c_1aae960cd7759b894efe24246f918d4e5e" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>FProtectedVoltage</name></member>
+      <member refid="classvirtual__alim___c_1a12abdda3b415bf2ab2009e6bed855eb3" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>getCurrent</name></member>
+      <member refid="classvirtual__alim___c_1a37e18fe9b24cad4dc3e5ced71df8c6ac" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>getProtCurrent</name></member>
+      <member refid="classvirtual__alim___c_1a0a5d28f6afe2edde9ee4488fda49d1b5" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>getProtVoltage</name></member>
+      <member refid="classvirtual__alim___c_1a3fe04b47079eac9e5f293366faa67ff2" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>getPuissance</name></member>
+      <member refid="classvirtual__alim___c_1a9f0abcd7f10dd4538869f501ad4e1b2b" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>getVoltage</name></member>
+      <member refid="classvirtual__alim___c_1a4e4ba81b0d47560bb5c0a8af9643d915" prot="public" virt="virtual"><scope>virtual_alim_C</scope><name>initAlim</name></member>
+      <member refid="classvirtual__alim___c_1acdfe8ca14d43726cf258fde4ff34c574" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>protcurrent_m</name></member>
+      <member refid="classvirtual__alim___c_1a26fa35106f5f7879f6dc5cf21a6c331b" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>ProtectedCurrent</name></member>
+      <member refid="classvirtual__alim___c_1a09fe0a27b4ace14525f0ee56eab16fa2" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>ProtectedVoltage</name></member>
+      <member refid="classvirtual__alim___c_1a4ce2e626e346df3d2811db21ced9cc5e" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>protVoltage_m</name></member>
+      <member refid="classvirtual__alim___c_1a41a37be4ccc4cfd9df0bcd6eaf3b1f66" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>Puissance</name></member>
+      <member refid="classvirtual__alim___c_1a34e9ffe2fd06b77f0d4ecbd643233b1a" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>puissance_m</name></member>
+      <member refid="classvirtual__alim___c_1aa96f92a7d03fcab9f5ac71348e4564b7" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>setCurrent</name></member>
+      <member refid="classvirtual__alim___c_1afc2bcf20bc6ff249aa98bfc4f3515a83" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>setProtCurrent</name></member>
+      <member refid="classvirtual__alim___c_1a186a40002b82a4737d1497e06b25a01a" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>setProtVoltage</name></member>
+      <member refid="classvirtual__alim___c_1aff2b06f4ca06e918792eba6dcac6ddbb" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>setPuissance</name></member>
+      <member refid="classvirtual__alim___c_1a5666a9e4c3038054d7abf501e1759c32" prot="private" virt="virtual"><scope>virtual_alim_C</scope><name>setVoltage</name></member>
+      <member refid="classvirtual__alim___c_1a51659cf279e162ca3217ab58d8952874" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>virtual_alim_C</name></member>
+      <member refid="classvirtual__alim___c_1a6bd9d63b4d35501202b3f53b57f19e08" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>Voltage</name></member>
+      <member refid="classvirtual__alim___c_1a0a588dbd698c4a9e745e6b77aa498545" prot="private" virt="non-virtual"><scope>virtual_alim_C</scope><name>voltage_m</name></member>
+      <member refid="classvirtual__alim___c_1a60f0f83652ab04d40530ef633fa4d662" prot="public" virt="non-virtual"><scope>virtual_alim_C</scope><name>~virtual_alim_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

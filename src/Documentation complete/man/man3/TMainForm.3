@@ -1,0 +1,56 @@
+.TH "TMainForm" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TMainForm \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBTMainSimuForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBFormShow\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "__fastcall \fBTMainForm\fP (TComponent *Owner)"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBRegisterForms\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBRegisterObserver\fP ()"
+.br
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBTMainForm::RegisterForms\fP ()\fC [protected, virtual]\fP"
+Methode enregistre les fentres Enfants du programme\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+AnsiString : le numero d'immo\&. 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBTMainSimuForm\fP\&.
+.SS "void \fBTMainForm::RegisterObserver\fP ()\fC [protected, virtual]\fP"
+Methode definissant la stratégies et la hiéarchie des objets du programme\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+AnsiString : le numero d'immo\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,123 @@
+.TH "virtual_RF_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_RF_C \- 
+.PP
+Classe du RF virtuel\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <virtual_RF_C\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBvirtual_RF_C\fP ()"
+.br
+.RI "\fIConstructeur de la fonction \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "virtual void \fBinitTranche\fP (double fq_start_i, double fq_stop_i, double bandwidth_i, double step_i, double power_i, double power_min, double power_max, double frequency_min, double frequency_max, double gain_i)"
+.br
+.RI "\fIInitialise la tranche\&. \fP"
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property double \fBFrequency_Start_In\fP = {read = getFrequency_Start_In, write = setFrequency_Start_In}"
+.br
+.RI "\fIPropriete Frequency_Start_In de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_Stop_In\fP = {read = getFrequency_Stop_In, write = setFrequency_Stop_In}"
+.br
+.RI "\fIPropriete Frequency_Stop_In de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBGain\fP = {read = getGain, write = setGain}"
+.br
+.RI "\fIPropriete Frequency_Stop_In de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_Start_Out\fP = {read = getFrequency_Start_Out, write = setFrequency_Start_Out}"
+.br
+.RI "\fIPropriete Frequency_Start_Out de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_Stop_Out\fP = {read = getFrequency_Stop_Out, write = setFrequency_Stop_Out}"
+.br
+.RI "\fIPropriete Frequency_Stop_Out de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_Min\fP = {read = getFrequency_Min, write = setFrequency_Min}"
+.br
+.RI "\fIPropriete Frequency_Min de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBFrequency_Max\fP = {read = getFrequency_Max, write = setFrequency_Max}"
+.br
+.RI "\fIPropriete Frequency_Max de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBBandwidth\fP = {read = getbandwidth, write = setbandwidth}"
+.br
+.RI "\fIPropriete Bandwidth de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBStep\fP = {read = getstep, write = setstep}"
+.br
+.RI "\fIPropriete Step de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBPower\fP = {read = getPower, write = setPower}"
+.br
+.RI "\fIPropriete Power de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBPower_Max\fP = {read = getPower_Max, write = setPower_Max}"
+.br
+.RI "\fIPropriete Power_Max de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property double \fBPower_Min\fP = {read = getPower_Min, write = setPower_Min}"
+.br
+.RI "\fIPropriete Power_Minde l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBActiveRF\fP = {read = FActiveRF, write = FActiveRF}"
+.br
+.RI "\fIPropriete ActiveRF de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBActivePower\fP = {read = FActivePower, write = FActivePower}"
+.br
+.RI "\fIPropriete ActivePower de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.ti -1c
+.RI "__property bool \fBOverload\fP = {read = FOverload, write = FOverload}"
+.br
+.RI "\fIPropriete Overload de l'objet \fBvirtual_RF_C\fP\&. \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe du RF virtuel\&. 
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBvirtual_RF_C::initTranche\fP (doublefq_start_i, doublefq_stop_i, doublebandwidth_i, doublestep_i, doublepower_i, doublepower_min, doublepower_max, doublefrequency_min, doublefrequency_max, doublegain_i)\fC [virtual]\fP"
+
+.PP
+Initialise la tranche\&. \fBParamètres:\fP
+.RS 4
+\fIdouble\fP fq_start_i : frequence de depart 
+.br
+\fIdouble\fP fq_stop_i : frequence de fin 
+.br
+\fIdouble\fP bandwidth_i : bande passante 
+.br
+\fIdouble\fP step_i : etape 
+.br
+\fIdouble\fP power_i : puissance 
+.br
+\fIdouble\fP power_min : puissance minimum 
+.br
+\fIdouble\fP power_max : puissance maximum 
+.br
+\fIdouble\fP frequency_min : frequence minimum 
+.br
+\fIdouble\fP frequency_max : frequence maximum 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,239 @@
+.TH "SBench_C" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SBench_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBUtils::InstObserver\fP, \fBUtils::InstSubject\fP, \fBUtils::EqptObserver\fP, et \fBUtils::EqptSubject\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBSBenchAdrComp\fP * \fBgetBenchAdrSimu\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetBenchAdrSimu\fP (\fBSBenchAdrComp\fP *AppSimu)"
+.br
+.ti -1c
+.RI "AnsiString \fBgetPcImmo\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPcImmo\fP (AnsiString immo)"
+.br
+.ti -1c
+.RI "TCal \fBgetCalIn\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCalIn\fP (TCal Cal)"
+.br
+.ti -1c
+.RI "TCal \fBgetCalOut\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCalOut\fP (TCal Cal)"
+.br
+.ti -1c
+.RI "TCal \fBgetCalSpectrum\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCalSpectrum\fP (TCal Cal)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (std::string value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueDown\fP (bool value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (std::string value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "virtual void \fBChangeValueRising\fP (bool value, TYPE_PARAM type)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property AnsiString \fBName\fP = {read = name_m, write = name_m}"
+.br
+.ti -1c
+.RI "__property AnsiString \fBpcImmo\fP = {read = pcImmo_m, write = pcImmo_m}"
+.br
+.ti -1c
+.RI "__property AnsiString \fBCheminCalIn\fP = {read = Chemin_CalIn, write = Chemin_CalIn}"
+.br
+.ti -1c
+.RI "__property AnsiString \fBCheminCalOut\fP = {read = Chemin_CalOut, write = Chemin_CalOut}"
+.br
+.ti -1c
+.RI "__property AnsiString \fBCheminCalSpectrum\fP = {read = Chemin_CalSpectrum, write = Chemin_CalSpectrum}"
+.br
+.ti -1c
+.RI "__property double \fBActive_Voltage\fP = {read = voltage_active_m, write = voltage_active_m}"
+.br
+.ti -1c
+.RI "__property double \fBReturn_Voltage\fP = {read = voltage_return_m, write = voltage_return_m}"
+.br
+.ti -1c
+.RI "__property double \fBActive_Current\fP = {read = active_Current_m, write = active_Current_m}"
+.br
+.ti -1c
+.RI "__property double \fBReturn_Current\fP = {read = current_return_m, write = current_return_m}"
+.br
+.ti -1c
+.RI "__property double \fBActive_Power\fP = {read = active_Power_m, write = active_Power_m}"
+.br
+.ti -1c
+.RI "__property bool \fBActive\fP = {read = active_m, write = SetActive}"
+.br
+.ti -1c
+.RI "__property bool \fBAlim_Active\fP = {read = alim_Active_m, write = alim_Active_m}"
+.br
+.ti -1c
+.RI "__property bool \fBOverVoltage\fP = {read = FOverVoltage, write = FOverVoltage}"
+.br
+.ti -1c
+.RI "__property bool \fBOverCurrent\fP = {read = FOverCurrent, write = FOverCurrent}"
+.br
+.ti -1c
+.RI "__property \fBSBenchAdrComp\fP * \fBBenchSimu\fP = {read = BenchSimu_m, write = BenchSimu_m}"
+.br
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBSBench_C::ChangeValueDown\fP (std::stringvalue, TYPE_PARAMtype)\fC [virtual]\fP"
+Methode de communication de l'observer descendant permettant la propagation de l'inforamtion entre les objets\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::InstObserver\fP\&.
+.SS "void \fBSBench_C::ChangeValueRising\fP (std::stringvalue, TYPE_PARAMtype)\fC [virtual]\fP"
+Methode de communication de l'observer montant permettant la propagation de l'inforamtion entre les objets\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.PP
+Implémente \fBUtils::EqptObserver\fP\&.
+.SS "\fBSBenchAdrComp\fP* \fBSBench_C::getBenchAdrSimu\fP ()"
+Recupere l'objet de BenchAdrSimu\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+TBenchAdrComp : Objet regroupant l'ensemble des appareils de mesures du Bench de simulation\&. 
+.RE
+.PP
+
+.SS "TCal \fBSBench_C::getCalIn\fP ()"
+Recupere Les calibrations d'entrées simulées du Banc de Simulation 
+.PP
+\fBRenvoie:\fP
+.RS 4
+TCal : Objet regroupant Les calibrations d'entrées simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "TCal \fBSBench_C::getCalOut\fP ()"
+Recupere Les calibrations de sorties simulées du Banc de Simulation 
+.PP
+\fBRenvoie:\fP
+.RS 4
+TCal : Objet regroupant Les calibrations de sorties simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "TCal \fBSBench_C::getCalSpectrum\fP ()"
+Recupere Les calibrations de spectrum simulées du Banc de Simulation 
+.PP
+\fBRenvoie:\fP
+.RS 4
+TCal : Objet regroupant Les calibrations de Spectrum simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "AnsiString \fBSBench_C::getPcImmo\fP ()"
+Recupere le Numero Immo du Pc\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+AnsiString : le numero d'immo\&. 
+.RE
+.PP
+
+.SS "void \fBSBench_C::SetBenchAdrSimu\fP (\fBSBenchAdrComp\fP *AppSimu)"
+Initialise l'objet de BenchAdrSimu\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITBenchAdrComp\fP : Objet regroupant l'ensemble des appareils de mesures du Bench de simulation\&. 
+.RE
+.PP
+
+.SS "void \fBSBench_C::setCalIn\fP (TCalCal)"
+Initialise Les calibrations d'entrées simulées du Banc de Simulation\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITCal\fP Cal_in : Objet regroupant les calibrations d'entrées simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "void \fBSBench_C::setCalOut\fP (TCalCal)"
+Initialise Les calibrations de sorties simulées du Banc de Simulation\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITCal\fP Cal_out : Objet regroupant les calibrations de sorties simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "void \fBSBench_C::setCalSpectrum\fP (TCalCal)"
+Initialise Les calibrations de Spectrum simulées du Banc de Simulation\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fITCal\fP Cal_Spectrum : Objet regroupant les calibrations de Spectrum simulées du Banc de Simulation 
+.RE
+.PP
+
+.SS "void \fBSBench_C::setPcImmo\fP (AnsiStringimmo)"
+Initialise le numero d'Immo du pc\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIAnsiString\fP : le numero d'immo\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

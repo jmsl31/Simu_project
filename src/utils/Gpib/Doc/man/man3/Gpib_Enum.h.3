@@ -1,0 +1,51 @@
+.TH "D:/cpp/drivers_cpp/src/utils/Gpib/Gpib_Enum.h" 3 "Mercredi Avril 12 2017" "GPIB Interface" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/cpp/drivers_cpp/src/utils/Gpib/Gpib_Enum.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBUtils::GPIB_T\fP"
+.br
+.in -1c
+.SS "Espaces de nommage"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBUtils\fP"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBUtils::TYPE_GPIB\fP { \fBUtils::SERVER\fP, \fBUtils::CLIENT\fP }"
+.br
+.ti -1c
+.RI "enum \fBUtils::GPIB_STATUS\fP { \fBUtils::STOPPED\fP, \fBUtils::CONNECTED\fP, \fBUtils::UNDEFINED\fP }"
+.br
+.ti -1c
+.RI "enum \fBUtils::GPIB_BUSDATA\fP { \fBUtils::LISTTED\fP, \fBUtils::WRITTED\fP, \fBUtils::REQUEST\fP, \fBUtils::REPLY\fP }"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "GPIB_STATUS \fBUtils::toGpibStatus\fP (std::string status)"
+.br
+.ti -1c
+.RI "GPIB_BUSDATA \fBUtils::toGpibBusData\fP (std::string statusBus)"
+.br
+.in -1c
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour GPIB Interface à partir du code source\&.

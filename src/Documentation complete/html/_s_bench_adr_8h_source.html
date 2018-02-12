@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/instruments/SBenchAdr.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/instruments/SBenchAdr.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef SBenchAdrH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define SBenchAdrH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#include &lt;Classes.hpp&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;io.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00014"></a>00014 <span class="comment">/* ! \struct SAdrsStruct</span>
+<a name="l00015"></a>00015 <span class="comment"> \brief Structure des adresses</span>
+<a name="l00016"></a>00016 <span class="comment"> */</span>
+<a name="l00017"></a><a class="code" href="struct_s_adrs_struct.html">00017</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00019"></a><a class="code" href="struct_s_adrs_struct.html#ac84dbce81d0e5a49247c2625a35d5f53">00019</a>         AnsiString DeviceName,
+<a name="l00021"></a>00021         Address,
+<a name="l00023"></a>00023         <a class="code" href="struct_s_adrs_struct.html#ac84dbce81d0e5a49247c2625a35d5f53" title="Chaine de caracteres contenant : Librairie utilisee.">Library</a>,
+<a name="l00025"></a>00025         DeviceType,
+<a name="l00027"></a>00027         FDescription,
+<a name="l00029"></a>00029         Comment;
+<a name="l00031"></a><a class="code" href="struct_s_adrs_struct.html#a7bdf9a374029de98169bd1ad04c608c4">00031</a>         <span class="keywordtype">int</span> <a class="code" href="struct_s_adrs_struct.html#a7bdf9a374029de98169bd1ad04c608c4" title="Variable de type int : utilisation des instruments.">InUse</a>;
+<a name="l00032"></a>00032 } <a class="code" href="struct_s_adrs_struct.html">SAdrsStruct</a>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="comment">/* ! \brief Definition tableau 1D de la structure des adresses d&#39;instruments</span>
+<a name="l00035"></a>00035 <span class="comment"> */</span>
+<a name="l00036"></a>00036 <span class="keyword">typedef</span> DynamicArray&lt;SAdrsStruct&gt;SAdrsArray;
+<a name="l00037"></a>00037 <span class="comment">/* ! \brief Definition tableau 1 dimension de string</span>
+<a name="l00038"></a>00038 <span class="comment"> */</span>
+<a name="l00039"></a>00039 <span class="keyword">typedef</span> DynamicArray&lt;AnsiString&gt;T1DStringArray;
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="comment">/* ! \class SBenchAdrs</span>
+<a name="l00042"></a>00042 <span class="comment"> \brief Classe des adresses de bancs</span>
+<a name="l00043"></a>00043 <span class="comment"> */</span>
+<a name="l00044"></a><a class="code" href="class_s_bench_adrs.html">00044</a> <span class="keyword">class </span><a class="code" href="class_s_bench_adrs.html">SBenchAdrs</a> {
+<a name="l00045"></a>00045 <span class="keyword">private</span>:
+<a name="l00047"></a>00047         AnsiString FSection,
+<a name="l00048"></a>00048 
+<a name="l00050"></a>00050         FFileName;
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="keyword">public</span>:
+<a name="l00054"></a><a class="code" href="class_s_bench_adrs.html#a9405078331fbb937df4ccd16382d85fc">00054</a>         AnsiString <a class="code" href="class_s_bench_adrs.html#a9405078331fbb937df4ccd16382d85fc" title="Chaine de caracteres contenant : Titre.">Title</a>;
+<a name="l00056"></a><a class="code" href="class_s_bench_adrs.html#a476e5a5af0fba2fcbc451dcf572e37dd">00056</a>         SAdrsArray <a class="code" href="class_s_bench_adrs.html#a476e5a5af0fba2fcbc451dcf572e37dd" title="Chaine de caracteres contenant : Tableau d&#39;adresse.">AdrArray</a>;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058         <span class="comment">/* ! \brief Recherche l&#39;appareil dans la structure</span>
+<a name="l00059"></a>00059 <span class="comment">         \param AnsiString DeviceName :nom de l&#39;appareil</span>
+<a name="l00060"></a>00060 <span class="comment">         \return SAdrsStruct* : pointeur de SAdrsStruct</span>
+<a name="l00061"></a>00061 <span class="comment">         */</span>
+<a name="l00062"></a>00062         <a class="code" href="struct_s_adrs_struct.html">SAdrsStruct</a>* GetDevice(AnsiString DeviceName);
+<a name="l00063"></a>00063         <span class="comment">/* ! \brief Return la liste des appareils du Banc</span>
+<a name="l00064"></a>00064 <span class="comment"></span>
+<a name="l00065"></a>00065 <span class="comment">         \return T1DStringArray : Liste des appareils</span>
+<a name="l00066"></a>00066 <span class="comment">         */</span>
+<a name="l00067"></a>00067         T1DStringArray GetDeviceAll();
+<a name="l00068"></a>00068         <span class="comment">/* ! \brief Constructeur de la classe</span>
+<a name="l00069"></a>00069 <span class="comment">         \param AnsiString AFileName : nom du fichier</span>
+<a name="l00070"></a>00070 <span class="comment">         \param AnsiString ASection : nom de la section</span>
+<a name="l00071"></a>00071 <span class="comment">         */</span>
+<a name="l00072"></a>00072         <a class="code" href="class_s_bench_adrs.html">SBenchAdrs</a>(AnsiString AFileName, AnsiString ASection = <span class="stringliteral">&quot;&quot;</span>);
+<a name="l00073"></a>00073         <span class="comment">/* ! \brief Fonction de sauvegarde</span>
+<a name="l00074"></a>00074 <span class="comment">         */</span>
+<a name="l00075"></a>00075         <span class="keywordtype">void</span> Save(<span class="keywordtype">void</span>);
+<a name="l00076"></a>00076         <span class="comment">/* ! \brief Cree un tableau de caractere separes par un separateur</span>
+<a name="l00077"></a>00077 <span class="comment">         \param AnsiString Str_i : chaine de caractere</span>
+<a name="l00078"></a>00078 <span class="comment">         \param AnsiString Separateur_i : separateur souhaite</span>
+<a name="l00079"></a>00079 <span class="comment">         */</span>
+<a name="l00080"></a>00080         T1DStringArray SepareTab(AnsiString Str_i, AnsiString Separateur_i);
+<a name="l00081"></a>00081 };
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 <span class="comment">/* ! \class SBenchAdrComp</span>
+<a name="l00084"></a>00084 <span class="comment"> \brief Classe des complements d&#39;adresse des bancs</span>
+<a name="l00085"></a>00085 <span class="comment"> */</span>
+<a name="l00086"></a><a class="code" href="class_s_bench_adr_comp.html">00086</a> <span class="keyword">class </span><a class="code" href="class_s_bench_adr_comp.html">SBenchAdrComp</a> {
+<a name="l00087"></a>00087 <span class="keyword">private</span>:
+<a name="l00089"></a>00089         AnsiString FSection;
+<a name="l00091"></a>00091         <a class="code" href="class_s_bench_adrs.html">SBenchAdrs</a>* SBenchAdrFile;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="keyword">protected</span>:
+<a name="l00095"></a><a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66">00095</a>         <span class="keywordtype">bool</span> <a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66" title="Variable de type bool caracterisant l&#39;etat.">FActive</a>;
+<a name="l00097"></a><a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441">00097</a>         AnsiString <a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441" title="Chaine de caracteres contenant : nom du fichier.">FFileName</a>;
+<a name="l00099"></a><a class="code" href="class_s_bench_adr_comp.html#ab3b23cb26404564932e81f246d8dc5e1">00099</a>         AnsiString <a class="code" href="class_s_bench_adr_comp.html#ab3b23cb26404564932e81f246d8dc5e1" title="Chaine de caracteres contenant : legende.">FCaption</a>;
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101         <span class="comment">/* ! \brief Fixe l&#39;activation de l&#39;instrument</span>
+<a name="l00102"></a>00102 <span class="comment">         \param bool AValue : etat de l&#39;equipement</span>
+<a name="l00103"></a>00103 <span class="comment">         */</span>
+<a name="l00104"></a>00104         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall SetActive(<span class="keywordtype">bool</span> AValue);
+<a name="l00105"></a>00105         <span class="comment">/* ! \brief Fixe le nom du fichier</span>
+<a name="l00106"></a>00106 <span class="comment">         \param AnsiString AValue : nom du fichier souhaite</span>
+<a name="l00107"></a>00107 <span class="comment">         */</span>
+<a name="l00108"></a>00108         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall SetFileName(AnsiString AValue);
+<a name="l00109"></a>00109         <span class="comment">/* ! \brief Fixe la section de l&#39;instrument</span>
+<a name="l00110"></a>00110 <span class="comment">         \param AnsiString AValue : nom de la section souhaite</span>
+<a name="l00111"></a>00111 <span class="comment">         */</span>
+<a name="l00112"></a>00112         <span class="keyword">virtual</span> <span class="keywordtype">void</span> __fastcall SetSection(AnsiString AValue);
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="keyword">public</span>:
+<a name="l00116"></a>00116         <a class="code" href="class_s_bench_adr_comp.html#ae1e9751d19e2d5aef0a39c753b6a5811" title="Constructeur de la classe.">SBenchAdrComp</a>();
+<a name="l00118"></a>00118         <a class="code" href="class_s_bench_adr_comp.html#a86b3ed1c94cba719f527780295d8762e" title="Destructeur de la classe.">~SBenchAdrComp</a>();
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120         <span class="comment">/* ! \brief Methode qui permet de chercher dans le fichier baie.adr la liste des Devices associes a un type</span>
+<a name="l00121"></a>00121 <span class="comment">         \details (par exemple : tmAlis, tmDebug, etc...)</span>
+<a name="l00122"></a>00122 <span class="comment">         */</span>
+<a name="l00123"></a>00123         T1DStringArray searchDevice(AnsiString Section, AnsiString searchValue, <span class="keywordtype">bool</span> *valueFind);
+<a name="l00124"></a>00124         <span class="comment">/* !</span>
+<a name="l00125"></a>00125 <span class="comment">         \brief Propriete BenchAdrFile identifiant  SBenchAdrFile.</span>
+<a name="l00126"></a>00126 <span class="comment">         */</span>
+<a name="l00127"></a>00127         __property <a class="code" href="class_s_bench_adrs.html">SBenchAdrs</a>* BenchAdrFile = {read = SBenchAdrFile};
+<a name="l00128"></a>00128         <span class="comment">/* ! \brief Propriete Active identifiant l&#39;activation de l&#39;equipement</span>
+<a name="l00129"></a>00129 <span class="comment">         */</span>
+<a name="l00130"></a>00130         __property <span class="keywordtype">bool</span> Active = {read = <a class="code" href="class_s_bench_adr_comp.html#a96c4de1d94b6ee3a476cb36a0f4fdc66" title="Variable de type bool caracterisant l&#39;etat.">FActive</a>, write = SetActive <span class="comment">/* , default=false */</span> };
+<a name="l00131"></a>00131         <span class="comment">/* !</span>
+<a name="l00132"></a>00132 <span class="comment">         \brief Propriete FileName identifiant le fichier.</span>
+<a name="l00133"></a>00133 <span class="comment">         */</span>
+<a name="l00134"></a>00134         __property AnsiString FileName = {read = <a class="code" href="class_s_bench_adr_comp.html#ae03f9cb6a07633ba2e949a7b0d3a3441" title="Chaine de caracteres contenant : nom du fichier.">FFileName</a>, write = SetFileName};
+<a name="l00135"></a>00135         <span class="comment">/* !</span>
+<a name="l00136"></a>00136 <span class="comment">         \brief Propriete Section identifiant la rubrique du fichier.</span>
+<a name="l00137"></a>00137 <span class="comment">         */</span>
+<a name="l00138"></a>00138         __property AnsiString Section = {read = FSection, write = SetSection};
+<a name="l00139"></a>00139 };
+<a name="l00140"></a>00140 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:39 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

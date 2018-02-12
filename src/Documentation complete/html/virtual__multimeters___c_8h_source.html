@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur Documentation:  Fichier source de D:/cpp/simu_cpp/src/instruments/Multimeters/virtual_multimeters_C.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="36463.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur Documentation
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.8.0 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/cpp/simu_cpp/src/instruments/Multimeters/virtual_multimeters_C.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef virtual_multimeters_CH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define virtual_multimeters_CH</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="comment">// ---------------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;IniFiles.hpp&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;vsim_C.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;iostream.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">using namespace </span>Utils;
+<a name="l00013"></a>00013 
+<a name="l00018"></a><a class="code" href="classvirtual__multimeters___c.html">00018</a> <span class="keyword">class </span><a class="code" href="classvirtual__multimeters___c.html">virtual_multimeters_C</a> : <span class="keyword">public</span> <a class="code" href="classvsim___c.html" title="definit la classe virtuelle des instruments Alimentation simulés .">vsim_C</a>, <span class="keyword">public</span> GpibObserver {
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">private</span>:
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022         <span class="keywordtype">int</span> channel_m, <span class="comment">// Channel principale du Mutimetre.</span>
+<a name="l00023"></a>00023           average_m; <span class="comment">// Average_m  Average de Mesure.</span>
+<a name="l00024"></a>00024         <span class="keywordtype">double</span> dcVolt_v_m, <span class="comment">// dcVolt_v_m Valeur de la tension en Continu.</span>
+<a name="l00025"></a>00025           acVolt_v_m, <span class="comment">// AcVolt_v_m Valeur de la tension en Alternatif.</span>
+<a name="l00026"></a>00026           dcAmp_a_m, <span class="comment">// dcAmp_a_m Valeur du courant en Continu.</span>
+<a name="l00027"></a>00027           acAmp_a_m, <span class="comment">// acAmp_a_m Valeur du courant en Alternatif.</span>
+<a name="l00028"></a>00028           ohm_m, <span class="comment">// ohm_m Valeur de résistance en Ohm.</span>
+<a name="l00029"></a>00029           freq_m, <span class="comment">// freq_m Valeur de frequence.</span>
+<a name="l00030"></a>00030           temp_m, <span class="comment">// temp_m Valeur de Temperature.</span>
+<a name="l00031"></a>00031           pow_dBm_m, <span class="comment">// pow_dBm_m Valeur Puissance en dBm.</span>
+<a name="l00032"></a>00032           delta_mes_m; <span class="comment">// delta_mes_m Delta de precision de mesure.</span>
+<a name="l00033"></a>00033         <span class="keywordtype">bool</span> doErrorQueryInDriver_m, <span class="comment">// doErrorQueryInDriver_m flag d&#39;erreur.</span>
+<a name="l00034"></a>00034           mode_Ac_m; <span class="comment">// mode_Ac_m Mode de Mesure : 0 Ac /1 Dc.</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036         <span class="keyword">virtual</span> <span class="keywordtype">void</span> resetInst(<span class="keywordtype">int</span> channel_i, <span class="keywordtype">int</span> average_i, <span class="keywordtype">double</span> dcVolt_v_i, <span class="keywordtype">double</span> acVolt_v_i, <span class="keywordtype">double</span> dcAmp_a_i, <span class="keywordtype">double</span> acAmp_a_i, <span class="keywordtype">double</span> ohm_i, <span class="keywordtype">double</span> freq_i,
+<a name="l00037"></a>00037           <span class="keywordtype">double</span> temp_i, <span class="keywordtype">double</span> pow_dBm_i, <span class="keywordtype">double</span> delta_mes_i, <span class="keywordtype">bool</span> doErrorQueryInDriver_i, <span class="keywordtype">bool</span> mode_Ac_i);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039         std::string error_m; <span class="comment">// error</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041         <span class="keyword">virtual</span> <span class="keywordtype">double</span> getAverage();
+<a name="l00042"></a>00042         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAverage(<span class="keywordtype">int</span> Average_i);
+<a name="l00043"></a>00043         <span class="keyword">virtual</span> std::string getError();
+<a name="l00044"></a>00044         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setError(std::string error_i);
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="keyword">public</span>:
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="keyword">virtual</span> <span class="keywordtype">double</span> createValueRand(<span class="keywordtype">double</span> value_i);
+<a name="l00049"></a>00049         <span class="keyword">virtual</span> <span class="keywordtype">double</span> createMoyenne(<span class="keywordtype">double</span> value_i);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 
+<a name="l00055"></a><a class="code" href="classvirtual__multimeters___c.html#a78cf693d27cd777e90e84aca89d60fff">00055</a>         __property <span class="keywordtype">bool</span> ErrorQueryInDriver = {read = doErrorQueryInDriver_m, write = doErrorQueryInDriver_m};
+<a name="l00061"></a><a class="code" href="classvirtual__multimeters___c.html#add6fa0749bd7fd4367780a19b4396805">00061</a> 
+<a name="l00067"></a><a class="code" href="classvirtual__multimeters___c.html#ad0f680e566003431bf0325f0fa2e2f9d">00067</a> 
+<a name="l00073"></a><a class="code" href="classvirtual__multimeters___c.html#a1d9aa26bb894aba9c30b4dd8f155bb3c">00073</a> 
+<a name="l00079"></a><a class="code" href="classvirtual__multimeters___c.html#a57596f2ea36322852c8877b3a7f11662">00079</a> 
+<a name="l00085"></a><a class="code" href="classvirtual__multimeters___c.html#a293c87c52b3039dd3a3acd4a948d999b">00085</a> 
+<a name="l00090"></a><a class="code" href="classvirtual__multimeters___c.html#ad9be4e188f50c415b515a704be0b182a">00090</a> 
+<a name="l00095"></a><a class="code" href="classvirtual__multimeters___c.html#a25da319cc40d786e7ea70c628bab2d2b">00095</a> 
+<a name="l00101"></a><a class="code" href="classvirtual__multimeters___c.html#a060b75ebfae76d7edf768e81a33ec98e">00101</a> 
+<a name="l00107"></a><a class="code" href="classvirtual__multimeters___c.html#a97846615a08c99db32d781af912e519c">00107</a> 
+<a name="l00113"></a><a class="code" href="classvirtual__multimeters___c.html#ae053f6ccc890ba594e23ce7b67464c84">00113</a> 
+<a name="l00119"></a><a class="code" href="classvirtual__multimeters___c.html#ae35f65626e625891bab52c6dd2a65b20">00119</a> 
+<a name="l00125"></a><a class="code" href="classvirtual__multimeters___c.html#afa38054ff006b41e5b07ab0148a26e7c">00125</a> 
+<a name="l00131"></a><a class="code" href="classvirtual__multimeters___c.html#a0091e55480305ec93b999937df825765">00131</a> 
+<a name="l00138"></a>00138 
+<a name="l00148"></a>00148 
+<a name="l00158"></a>00158 
+<a name="l00168"></a>00168 
+<a name="l00178"></a>00178 </pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mercredi Octobre 25 2017 15:12:39 pour Simulateur Documentation par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

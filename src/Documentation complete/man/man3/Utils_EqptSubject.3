@@ -1,0 +1,70 @@
+.TH "Utils::EqptSubject" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Utils::EqptSubject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dérivée par \fBRx_C\fP, et \fBSBench_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBnotifyChangeValueRising\fP (std::string value, TYPE_PARAM type)"
+.br
+.RI "\fIMethode de communication de l'observer montante permettant la propagation de l'inforamtion entre les objets\&. \fP"
+.ti -1c
+.RI "void \fBnotifyChangeValueRising\fP (double value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBnotifyChangeValueRising\fP (int value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBnotifyChangeValueRising\fP (bool value, TYPE_PARAM type)"
+.br
+.ti -1c
+.RI "void \fBaddObserverRising\fP (\fBEqptObserver\fP *obs)"
+.br
+.RI "\fIAjout dans la pile d'un objet \fBEqptObserver\fP\&. \fP"
+.ti -1c
+.RI "void \fBremoveObserverRising\fP (\fBEqptObserver\fP *obs)"
+.br
+.RI "\fISupprime un Observateur\&. \fP"
+.in -1c
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBUtils::EqptSubject::addObserverRising\fP (\fBEqptObserver\fP *obs)"
+
+.PP
+Ajout dans la pile d'un objet \fBEqptObserver\fP\&. \fBParamètres:\fP
+.RS 4
+\fI\fBEqptObserver\fP\fP obs : Objet \fBEqptObserver\fP\&. 
+.RE
+.PP
+
+.SS "void \fBUtils::EqptSubject::notifyChangeValueRising\fP (std::stringvalue, TYPE_PARAMtype)"
+
+.PP
+Methode de communication de l'observer montante permettant la propagation de l'inforamtion entre les objets\&. \fBParamètres:\fP
+.RS 4
+\fIstd::string\fP value : parametres a transmettre\&. 
+.br
+\fITYPE_PARAM\fP type : Type de parametres transmis 
+.RE
+.PP
+
+.SS "void \fBUtils::EqptSubject::removeObserverRising\fP (\fBEqptObserver\fP *obs)"
+
+.PP
+Supprime un Observateur\&. \fBParamètres:\fP
+.RS 4
+\fI\fBEqptObserver\fP\fP &obs\&. 
+.RE
+.PP
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

@@ -1,0 +1,105 @@
+.TH "TChildForm" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TChildForm \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dérivée par \fBTAboutForm\fP, et \fBTLogForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBFormClose\fP (TObject *Sender, TCloseAction &Action)"
+.br
+.ti -1c
+.RI "__fastcall \fBTChildForm\fP (TComponent *Owner)"
+.br
+.ti -1c
+.RI "virtual void \fBInit\fP (TCTX *CTX_i, TPIBTDatabase *PIBTDatabase_i, TIdTCPClient *IdTCPClient1)"
+.br
+.ti -1c
+.RI "virtual void \fBExecute\fP ()"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TImage * \fBImage1\fP"
+.br
+.ti -1c
+.RI "__property TMsgEvent \fBOnMsg\fP = {read = FOnMsg, write = FOnMsg}"
+.br
+.ti -1c
+.RI "__property TDepEvent \fBOnDependency\fP = {read = FOnDependency, write = FOnDependency}"
+.br
+.ti -1c
+.RI "__property TNotifyEvent \fBOnQuit\fP = {read = FOnQuit, write = FOnQuit}"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBRegisterDep\fP (TObject *Sender, AnsiString ModuleName)"
+.br
+.ti -1c
+.RI "void __fastcall \fBMsgEvent\fP (TObject *Sender, int priority, AnsiString msg)"
+.br
+.ti -1c
+.RI "void __fastcall \fBWaitEvent\fP (TObject *Sender, int delay_ms)"
+.br
+.ti -1c
+.RI "void \fBWaitMs\fP (int NbMsSec)"
+.br
+.ti -1c
+.RI "void \fBSaveFile\fP (bool Update_i)"
+.br
+.in -1c
+.SS "Attributs protégés"
+
+.in +1c
+.ti -1c
+.RI "bool \fBstopTest_m\fP"
+.br
+.ti -1c
+.RI "TMsgEvent \fBFOnMsg\fP"
+.br
+.ti -1c
+.RI "TDepEvent \fBFOnDependency\fP"
+.br
+.ti -1c
+.RI "TNotifyEvent \fBFOnRemote\fP"
+.br
+.ti -1c
+.RI "TNotifyEvent \fBFOnQuit\fP"
+.br
+.ti -1c
+.RI "TCTX * \fBCTX_m\fP"
+.br
+.ti -1c
+.RI "TPIBTDatabase * \fBPIBTDatabase_m\fP"
+.br
+.ti -1c
+.RI "AnsiString \fBSection_m\fP"
+.br
+.ti -1c
+.RI "AnsiString \fBPCName_m\fP"
+.br
+.ti -1c
+.RI "bool \fBSpecimen_m\fP"
+.br
+.ti -1c
+.RI "TDateTime \fBT0\fP"
+.br
+.ti -1c
+.RI "TIdTCPClient * \fBIdTCPClient1\fP"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.

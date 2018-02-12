@@ -1,0 +1,69 @@
+.TH "virtual_receiver_C" 3 "Jeudi Mai 18 2017" "Equipements" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+virtual_receiver_C \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Est dérivée de \fBvirtual_equipment_C\fP\&.
+.PP
+Dérivée par \fBRx_C\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBsetConsEqpt\fP (int nb_tranche_m, int nb_alim_m, int nb_tmtc_m)"
+.br
+.ti -1c
+.RI "virtual \fBTCompEqpt\fP \fBgetConsEqpt\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetDeviceType\fP (equipmentEnum AValue)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "__property equipmentEnum \fBDeviceType\fP = {read=FDeviceType, write=SetDeviceType}"
+.br
+.ti -1c
+.RI "__property double \fBFrequency_OL\fP = {read=getFrequency_Ol, write=setFrequency_Ol}"
+.br
+.ti -1c
+.RI "__property double \fBInterval_Fq_OL\fP = {read=interval_Fq_OL, write=interval_Fq_OL}"
+.br
+.ti -1c
+.RI "__property double \fBPower_Ol\fP = {read=getPower_Ol, write=setPower_Ol}"
+.br
+.ti -1c
+.RI "__property double \fBPower_Ol_Min\fP = {read=getPower_Ol_min, write=setPower_Ol_min}"
+.br
+.ti -1c
+.RI "__property double \fBPower_Ol_Max\fP = {read=getPower_Ol_max, write=setPower_Ol_max}"
+.br
+.ti -1c
+.RI "__property double \fBGain\fP = {read=getGain, write=setGain}"
+.br
+.ti -1c
+.RI "__property double \fBPowerIn\fP = {read=getPowerIn,write=setPowerIn}"
+.br
+.ti -1c
+.RI "__property double \fBPowerOut\fP = {read=getPowerOut}"
+.br
+.ti -1c
+.RI "__property bool \fBOlActive\fP = {read=FOl_Active, write=FOl_Active}"
+.br
+.ti -1c
+.RI "__property bool \fBOlOverload\fP = {read=getOl_overload, write=setOl_overload}"
+.br
+.ti -1c
+.RI "__property double \fBTimeHot\fP = {read=getTime_Hot,write=setTime_Hot}"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Equipements à partir du code source\&.

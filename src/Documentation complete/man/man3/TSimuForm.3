@@ -1,0 +1,87 @@
+.TH "TSimuForm" 3 "Mercredi Octobre 25 2017" "Simulateur Documentation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TSimuForm \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Dérivée par \fBTAlimFormUnit\fP, \fBTBenchFormUnit\fP, \fBTRxFormUnit\fP, et \fBTSettingForm\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBFormDestroy\fP (TObject *Sender)"
+.br
+.ti -1c
+.RI "__fastcall \fBTSimuForm\fP (TComponent *Owner)"
+.br
+.ti -1c
+.RI "virtual void \fBInit\fP (TBenchAdrComp *BenchAdr_i, AnsiString Section_i)"
+.br
+.ti -1c
+.RI "void __fastcall \fBRemoteEvent\fP (TObject *Sender)"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "TImage * \fBImage1\fP"
+.br
+.ti -1c
+.RI "AnsiString \fBScpiResult_m\fP"
+.br
+.ti -1c
+.RI "int \fBScpiPort_m\fP"
+.br
+.ti -1c
+.RI "__property TMsgEvent \fBOnMsg\fP = {read = FOnMsg, write = FOnMsg}"
+.br
+.ti -1c
+.RI "__property TDepEvent \fBOnDependency\fP = {read = FOnDependency, write = FOnDependency}"
+.br
+.ti -1c
+.RI "__property TNotifyEvent \fBOnRemote\fP = {read = FOnRemote, write = FOnRemote}"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "void __fastcall \fBRegisterDep\fP (TObject *Sender, AnsiString ModuleName)"
+.br
+.ti -1c
+.RI "void __fastcall \fBMsgEvent\fP (TObject *Sender, int priority, AnsiString msg)"
+.br
+.ti -1c
+.RI "void __fastcall \fBWaitEvent\fP (TObject *Sender, int delay_ms)"
+.br
+.in -1c
+.SS "Attributs protégés"
+
+.in +1c
+.ti -1c
+.RI "TMsgEvent \fBFOnMsg\fP"
+.br
+.ti -1c
+.RI "TDepEvent \fBFOnDependency\fP"
+.br
+.ti -1c
+.RI "TNotifyEvent \fBFOnRemote\fP"
+.br
+.ti -1c
+.RI "AnsiString \fBSection_m\fP"
+.br
+.ti -1c
+.RI "TStringList * \fBErrorList_m\fP"
+.br
+.ti -1c
+.RI "std::queue< std::string > \fBLogFiFo_m\fP"
+.br
+.in -1c
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Simulateur Documentation à partir du code source\&.
